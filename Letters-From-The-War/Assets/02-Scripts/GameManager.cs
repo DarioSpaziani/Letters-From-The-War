@@ -4,17 +4,38 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [Range(0, 20)]
-    public int comprensibility = 0;
+    public WordData greenWord;
+    public WordData yellowWord;
+    public WordData redWord;
 
     [Range(0, 20)]
-    public int dailyPerformance = 0;
+    public float comprensibility = 0;
+
+    [Range(0, 20)]
+    public float dailyPerformance = 0;
 
     [Range(0, 20)]
     public int malus = 0;
 
     [Range(0, 20)]
     public int knowledge = 0;
+
+    #region Modifiers
+    [Header("MODIFIERS")]
+
+    public float greenComprensibility = 0.2f;
+    public float greenDailyPerformance = 0.2f;
+
+    public float yellowComprensibiltyObscured = 1f;
+    public float yellowComprensibiltyNotObscured = 2f;
+    public float yellowDailyPerformanceObscured = 2f;
+    public float yellowDailyPerformanceNotObscured = 1f;
+
+    public float redComprensibiltyObscured = 1f;
+    public float redComprensibiltyNotObscured = 3;
+    public float redDailyPerformanceObscured = 3f;
+    public float redDailyPerformanceNotObscured = 2f;
+    #endregion
 
     public List<Word> greenWords = new List<Word>();
     public List<Word> yellowWords = new List<Word>();
@@ -24,6 +45,8 @@ public class GameManager : MonoBehaviour
     {
         if (comprensibility <= 0) comprensibility = 0;
         if (comprensibility >= 20) comprensibility = 20;
+        if(dailyPerformance <= 0) dailyPerformance = 0;
+        if(dailyPerformance >= 20) dailyPerformance = 20;
     }
 
     public void Send()
@@ -33,12 +56,8 @@ public class GameManager : MonoBehaviour
         {
             if (greenWords[i].obscured == true)
             {
-                comprensibility -= 1;
-                Debug.Log(comprensibility);
-            }
-            if (greenWords[i].obscured == false)
-            {
-                comprensibility += 1;
+                comprensibility -= greenWord.comprensibilityWordObscured;
+                dailyPerformance -= greenWord.dailyPerfomanceWordObscured;
                 Debug.Log(comprensibility);
             }
         }
@@ -47,12 +66,14 @@ public class GameManager : MonoBehaviour
         {
             if(yellowWords[i].obscured == true)
             {
-                comprensibility += 1;
+                comprensibility -= yellowWord.comprensibilityWordObscured;
+                dailyPerformance += yellowWord.dailyPerfomanceWordObscured;
                 Debug.Log(comprensibility);
             }
             if (yellowWords[i].obscured == false)
             {
-                comprensibility -= 1;
+                comprensibility += yellowWord.comprensibilityWordNotObscured;
+                dailyPerformance -= yellowWord.dailyPerfomanceWordNotObscured;
                 Debug.Log(comprensibility);
             }
         }
@@ -61,12 +82,14 @@ public class GameManager : MonoBehaviour
         {
             if (redWords[i].obscured == true)
             {
-                comprensibility += 2;
+                comprensibility -= redWord.comprensibilityWordObscured;
+                dailyPerformance += redWord.dailyPerfomanceWordObscured;
                 Debug.Log(comprensibility);
             }
             if (redWords[i].obscured == false)
             {
-                comprensibility -= 2;
+                comprensibility += redWord.comprensibilityWordObscured;
+                dailyPerformance -= redWord.comprensibilityWordNotObscured;
                 Debug.Log(comprensibility);
             }
         }

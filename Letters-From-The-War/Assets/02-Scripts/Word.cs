@@ -7,6 +7,7 @@ public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     private Image image;
     public bool obscured = false;
     private bool isPointerOver = false;
+    public WordData wordData;
     
     void Start()
     {

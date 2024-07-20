@@ -10,10 +10,8 @@ public class WordData : ScriptableObject
 
     public wordCategory category;
 
-    [Range(-0.2f, 0.2f)]
-    public float comprensibility = 0f;
-    [Range(-0.2f, 0.2f)]
-    public float dailyPerfomance = 0f;
-
-    public string word;
+    public float comprensibilityWordObscured = 0f;
+    public float comprensibilityWordNotObscured = 0f;
+    public float dailyPerfomanceWordObscured = 0f;
+    public float dailyPerfomanceWordNotObscured = 0f;
 }
