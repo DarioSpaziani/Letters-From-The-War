@@ -75,6 +75,11 @@ public class GameManager : MonoBehaviour
                 comprensibility -= greenWord.comprensibilityWordObscured;
                 dailyPerformance -= greenWord.dailyPerfomanceWordObscured;
             }
+            if (greenWords[i].obscured == false)
+            {
+                comprensibility -= greenWord.comprensibilityWordNotObscured;
+                dailyPerformance -= greenWord.dailyPerfomanceWordNotObscured;
+            }
         }
 
         for (int i = 0; i < yellowWords.Count; i++)
