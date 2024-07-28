@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TestBossDialogue : MonoBehaviour
 {
@@ -10,24 +11,48 @@ public class TestBossDialogue : MonoBehaviour
 
     public TextMeshProUGUI dialogue1;
     public TextMeshProUGUI dialogue2;
+    public TextMeshProUGUI buttonSkip;
 
-    private int i = 0;
+    private int currentIndex = 0;
 
     private void Start()
     {
-        dialogue1.text = bossDialogue1[i];
-        dialogue2.text = bossDialogue2[i];
+        if (bossDialogue1.Count > 0 && bossDialogue2.Count > 0)
+        {
+            UpdateDialogues();
+        }
+        else
+        {
+            Debug.LogWarning("Dialogue lists are empty or not assigned.");
+        }
     }
 
-
-
-    public void Ahead()
+    public void Dialogue()
     {
-        if (i < bossDialogue1.Count - 1 || i < bossDialogue2.Count - 1) 
+        if (currentIndex < bossDialogue1.Count - 1 && currentIndex < bossDialogue2.Count - 1)
         {
-            i++;
-            dialogue1.text = bossDialogue1[i];
-            dialogue2.text = bossDialogue2[i];
+            currentIndex++;
+            UpdateDialogues();
         }
+        else
+        {
+            LoadNextScene();
+        }
+    }
+
+    private void UpdateDialogues()
+    {
+        dialogue1.text = bossDialogue1[currentIndex];
+        dialogue2.text = bossDialogue2[currentIndex];
+
+        if (currentIndex == bossDialogue1.Count - 1 || currentIndex == bossDialogue2.Count - 1)
+        {
+            buttonSkip.text = "Next Scene";
+        }
+    }
+
+    private void LoadNextScene()
+    {
+        SceneManager.LoadScene("02-Letter");
     }
 }

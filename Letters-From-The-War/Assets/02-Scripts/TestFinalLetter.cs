@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class TestFinalLetter : MonoBehaviour
 {
-    //public List<Word> greenWords = new List<Word>();
-    //public List<Word> yellowWords = new List<Word>();
-    //public List<Word> redWords = new List<Word>();
-
     public List<Word> finalLetter = new List<Word>();
     public List<string> letterList = new List<string>();
 
