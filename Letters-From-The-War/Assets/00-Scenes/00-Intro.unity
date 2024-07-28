@@ -154,7 +154,7 @@ MonoBehaviour:
   greenWord: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   yellowWord: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
   redWord: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
-  comprensibility: 8.73
+  comprensibility: 0
   dailyPerformance: 0
   malus: 0
   knowledge: 0
