@@ -120,7 +120,40 @@ public class GameManager : Singleton<GameManager>
         }
         #endregion
 
-        Debug.Log("comprensibility : " + comprensibility);
-        Debug.Log("dailyPerformance: " + dailyPerformance);
+        Knowledge();
+        Malus();
+
     }
+
+    public void Knowledge()
+    {
+        Debug.Log("Entrato");
+        if (comprensibility >= 6 && comprensibility <= 15)
+        {
+            knowledge += 1;
+            Debug.Log("knowledge : " + knowledge);
+        }
+        if (comprensibility >= 16 && comprensibility <= 20)
+        {
+            knowledge += 2;
+            Debug.Log("knowledge : " + knowledge);
+        }
+    }
+
+    public void Malus()
+    {
+        Debug.Log("Entrato");
+        if(dailyPerformance >= 0 && dailyPerformance <= 5)
+        {
+            malus += 2;
+            Debug.Log("malus : " + malus);
+        }
+        if(dailyPerformance >= 6 && dailyPerformance <= 15)
+        {
+            malus += 1;
+            Debug.Log("malus : " + malus);
+        } 
+    }    
+    
+
 }
