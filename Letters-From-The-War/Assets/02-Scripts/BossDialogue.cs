@@ -25,18 +25,17 @@ public class BossDialogue : MonoBehaviour
     #endregion
 
     private int currentIndex = 0;
-    private bool hasStarted = true;
 
     private GameManager gameManager;
 
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
-        hasStarted = true;
     }
 
     private void Start()
     {
+        Debug.Log("HasStarted : " + gameManager.hasStarted);
         if (bossDialogue1.Count > 0 && bossDialogue2.Count > 0)
         {
             UpdateDialogues();
@@ -49,7 +48,7 @@ public class BossDialogue : MonoBehaviour
 
     public void Dialogue()
     {
-        if (hasStarted) 
+        if (gameManager.hasStarted) 
         {
             if (currentIndex < bossDialogue1.Count - 1 && currentIndex < bossDialogue2.Count - 1)
             {
@@ -65,7 +64,7 @@ public class BossDialogue : MonoBehaviour
 
     private void UpdateDialogues()
     {
-        if (hasStarted) {
+        if (gameManager.hasStarted) {
             dialogue1.text = bossDialogue1[currentIndex];
             dialogue2.text = bossDialogue2[currentIndex];
             
@@ -89,14 +88,10 @@ public class BossDialogue : MonoBehaviour
                 dialogue2.text = bossFeedbackDialogueTwoBottom[currentIndex];
             }
         }
-
-        if (currentIndex >= bossDialogue1.Count - 1)
-        {
-            hasStarted = false;
-        }
-
         if (currentIndex == bossDialogue1.Count - 1 || currentIndex == bossDialogue2.Count - 1)
         {
+            gameManager.hasStarted = false;
+            Debug.Log("HasStarted : " + gameManager.hasStarted);
             buttonSkip.text = "Next Scene";
         }
     }

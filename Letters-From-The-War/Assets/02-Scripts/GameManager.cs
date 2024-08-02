@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
     public List<Word> listYellowWords = new List<Word>();
     public List<Word> listRedWords = new List<Word>();
 
+    public bool hasStarted = true;
+
     private void Awake()
     {
         DontDestroyOnLoad(this);
