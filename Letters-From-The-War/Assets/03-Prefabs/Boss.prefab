@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6914402343033969554}
-  - component: {fileID: 2007145702042218082}
   m_Layer: 5
   m_Name: BossDialogue
   m_TagString: Untagged
@@ -37,33 +36,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1819.6178, y: 980.21497}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2007145702042218082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2103333881974644703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f12d07f2af5d090478260de622a4ad1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bossDialogue1:
-  - You look like such a qualified guy.
-  - ready to give it all for our great nation.
-  - In order to come out of this war as a stronger nation
-  - Some whiny baby, accidentally drafted in the army,
-  - As a member of the censorship organization,
-  bossDialogue2:
-  - In these suffering times we need people like you,
-  - Some families are unreasonably worried for our youths at the front.
-  - the people have to support us.
-  - overstates the conditions of the conflicts.
-  - 'you have to help your country and bring faith to your fellow compatriots. '
-  dialogue1: {fileID: 1992391529598090925}
-  dialogue2: {fileID: 756615756071224866}
-  buttonSkip: {fileID: 8115063915876570130}
 --- !u!1 &2907256938868386194
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,13 +128,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -345,7 +317,7 @@ GameObject:
   - component: {fileID: 6743328323719491689}
   - component: {fileID: 6091104777311344150}
   m_Layer: 5
-  m_Name: Avanti
+  m_Name: Next
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -392,15 +364,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7075472, g: 0.7075472, b: 0.7075472, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -453,7 +425,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2007145702042218082}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TestBossDialogue, Assembly-CSharp
         m_MethodName: Dialogue
         m_Mode: 1
@@ -465,7 +437,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2007145702042218082}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TestBossDialogue, Assembly-CSharp
         m_MethodName: SkipScene
         m_Mode: 1
@@ -773,6 +745,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7067910186441393878}
+  - component: {fileID: 1867641733652212156}
   m_Layer: 5
   m_Name: Boss
   m_TagString: Untagged
@@ -787,7 +760,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8611652700985829821}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -801,6 +774,49 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1867641733652212156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8611652700985829821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f12d07f2af5d090478260de622a4ad1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossDialogue1:
+  - You look like such a qualified guy.
+  - ready to give it all for our great nation.
+  - In order to come out of this war as a stronger nation
+  - Some whiny baby, accidentally drafted in the army,
+  - As a member of the censorship organization,
+  bossDialogue2:
+  - In these suffering times we need people like you,
+  - Some families are unreasonably worried for our youths at the front.
+  - the people have to support us.
+  - overstates the conditions of the conflicts.
+  - 'you have to help your country and bring faith to your fellow compatriots. '
+  dialogue1: {fileID: 1992391529598090925}
+  dialogue2: {fileID: 756615756071224866}
+  buttonSkip: {fileID: 8115063915876570130}
+  bossFeedbackDialogueZeroTop:
+  - ZERO TOP
+  bossFeedbackDialogueZeroBottom:
+  - ZERO BOTTOM
+  bossFeedbackDialogueOneTop:
+  - ONE TOP
+  bossFeedbackDialogueOneBottom:
+  - ONE BOTTOM
+  bossFeedbackDialogueTwoTop:
+  - TWO TOP
+  bossFeedbackDialogueTwoBottom:
+  - TWO BOTTOM
+  bossFeedbackDialogueThreeTop:
+  - THREE TOP
+  bossFeedbackDialogueThreeBottom:
+  - THREE BOTTOM
 --- !u!1 &8778524398066948190
 GameObject:
   m_ObjectHideFlags: 0

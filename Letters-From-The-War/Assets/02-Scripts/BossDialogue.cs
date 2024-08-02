@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TestBossDialogue : MonoBehaviour
+public class BossDialogue : MonoBehaviour
 {
     public List<string> bossDialogue1 = new List<string>();
     public List<string> bossDialogue2 = new List<string>();
@@ -27,14 +27,16 @@ public class TestBossDialogue : MonoBehaviour
     private int currentIndex = 0;
     private bool hasStarted = true;
 
+    private GameManager gameManager;
+
     private void Awake()
     {
+        gameManager = FindObjectOfType<GameManager>();
         hasStarted = true;
     }
 
     private void Start()
     {
-        Debug.Log("hasStarted : " + hasStarted);
         if (bossDialogue1.Count > 0 && bossDialogue2.Count > 0)
         {
             UpdateDialogues();
@@ -47,10 +49,13 @@ public class TestBossDialogue : MonoBehaviour
 
     public void Dialogue()
     {
-        if (currentIndex < bossDialogue1.Count - 1 && currentIndex < bossDialogue2.Count - 1)
+        if (hasStarted) 
         {
-            currentIndex++;
-            UpdateDialogues();
+            if (currentIndex < bossDialogue1.Count - 1 && currentIndex < bossDialogue2.Count - 1)
+            {
+                currentIndex++;
+                UpdateDialogues();
+            }
         }
         else
         {
@@ -63,29 +68,32 @@ public class TestBossDialogue : MonoBehaviour
         if (hasStarted) {
             dialogue1.text = bossDialogue1[currentIndex];
             dialogue2.text = bossDialogue2[currentIndex];
-            hasStarted = false;
+            
+
         }
         else
         {
-            if (GameManager.Instance.malus == 0)
+            if (gameManager.malus == 0)
             {
                 dialogue1.text = bossFeedbackDialogueZeroTop[currentIndex];
                 dialogue2.text = bossFeedbackDialogueZeroBottom[currentIndex];
             }
-            else if (GameManager.Instance.malus == 1)
+            else if (gameManager.malus == 1)
             {
                 dialogue1.text = bossFeedbackDialogueOneTop[currentIndex];
                 dialogue2.text = bossFeedbackDialogueOneBottom[currentIndex];
             }
-            else if (GameManager.Instance.malus == 2)
+            else if (gameManager.malus == 2)
             {
                 dialogue1.text = bossFeedbackDialogueTwoTop[currentIndex];
                 dialogue2.text = bossFeedbackDialogueTwoBottom[currentIndex];
             }
         }
-        
-        //dialogue1.text = bossDialogue1[currentIndex];
-        //dialogue2.text = bossDialogue2[currentIndex];
+
+        if (currentIndex >= bossDialogue1.Count - 1)
+        {
+            hasStarted = false;
+        }
 
         if (currentIndex == bossDialogue1.Count - 1 || currentIndex == bossDialogue2.Count - 1)
         {
@@ -100,22 +108,22 @@ public class TestBossDialogue : MonoBehaviour
 
     private void BossFeedback()
     {
-        if(GameManager.Instance.malus == 0)
+        if(gameManager.malus == 0)
         {
             dialogue1.text = bossFeedbackDialogueZeroTop[currentIndex];
             dialogue2.text = bossFeedbackDialogueZeroTop[currentIndex];
         }
-        if(GameManager.Instance.malus >= 1 && GameManager.Instance.malus <= 6)
+        if(gameManager.malus >= 1 && gameManager.malus <= 6)
         {
             dialogue1.text = bossFeedbackDialogueOneTop[currentIndex];
             dialogue2.text = bossFeedbackDialogueOneTop[currentIndex];
         }
-        if (GameManager.Instance.malus >= 7 && GameManager.Instance.malus <= 15)
+        if (gameManager.malus >= 7 && gameManager.malus <= 15)
         {
             dialogue1.text = bossFeedbackDialogueTwoTop[currentIndex];
             dialogue2.text = bossFeedbackDialogueTwoTop[currentIndex];
         }
-        if(GameManager.Instance.malus >= 16 && GameManager.Instance.malus <= 20)
+        if(gameManager.malus >= 16 && gameManager.malus <= 20)
         {
             dialogue1.text = bossFeedbackDialogueThreeTop[currentIndex];
             dialogue2.text = bossFeedbackDialogueThreeTop[currentIndex];
