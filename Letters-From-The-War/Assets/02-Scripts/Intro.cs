@@ -11,12 +11,22 @@ public class Intro : MonoBehaviour
 
     void Start()
     {
-        textMPRO.alpha = 0f;
+        if(textMPRO == null)
+        {
+            return;
+        }
+        else
+        {
+            textMPRO.alpha = 0f;
+        }
     }
 
     void Update()
     {
-        textMPRO.alpha += 0.002f;
+        if (textMPRO != null)
+        {
+            textMPRO.alpha += 0.002f;
+        }
     }
 
     public void SkipIntro()

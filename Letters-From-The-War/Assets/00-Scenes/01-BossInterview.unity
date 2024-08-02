@@ -423,8 +423,96 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2007145702042218082, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueZero.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007145702042218082, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: bossFeedbackDialogueOne.Array.data[0]
       value: Arinza arunza se la stappi ti si sdunza
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007145702042218082, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueOneTop.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007145702042218082, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueTwoTop.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007145702042218082, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueZero.Array.data[0]
+      value: zeroooooooooo
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007145702042218082, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueZero.Array.data[1]
+      value: zeroooooooooo
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007145702042218082, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueZeroOne.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007145702042218082, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueZeroTop.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007145702042218082, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueThreeTop.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007145702042218082, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueOneBottom.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007145702042218082, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueOneTop.Array.data[0]
+      value: ONE TOP
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007145702042218082, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueTwoBottom.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007145702042218082, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueTwoTop.Array.data[0]
+      value: TWO TOP
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007145702042218082, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueZeroBottom.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007145702042218082, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueZeroOne.Array.data[0]
+      value: oooooone
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007145702042218082, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueZeroTop.Array.data[0]
+      value: ZERO TOP
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007145702042218082, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueThreeBottom.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007145702042218082, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueThreeTop.Array.data[0]
+      value: THREE TOP
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007145702042218082, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueThreeTop.Array.data[1]
+      value: THREE TOP
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007145702042218082, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueOneBottom.Array.data[0]
+      value: ONE BOTTOM
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007145702042218082, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueTwoBottom.Array.data[0]
+      value: TWO BOTTOM
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007145702042218082, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueZeroBottom.Array.data[0]
+      value: ZERO BOTTOM
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007145702042218082, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueThreeBottom.Array.data[0]
+      value: THREE BOTTOM
       objectReference: {fileID: 0}
     - target: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_Pivot.x
@@ -514,16 +602,101 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2007145702042218082, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8611652700985829821, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2063872171}
   m_SourcePrefab: {fileID: 100100000, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
 --- !u!224 &2063872166 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
   m_PrefabInstance: {fileID: 2063872165}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2063872167 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8115063915876570130, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+  m_PrefabInstance: {fileID: 2063872165}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2063872168 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 756615756071224866, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+  m_PrefabInstance: {fileID: 2063872165}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2063872169 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1992391529598090925, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+  m_PrefabInstance: {fileID: 2063872165}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &2063872170 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8611652700985829821, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+  m_PrefabInstance: {fileID: 2063872165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2063872171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063872170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f12d07f2af5d090478260de622a4ad1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossDialogue1:
+  - You look like such a qualified guy.
+  - ready to give it all for our great nation.
+  - In order to come out of this war as a stronger nation
+  - Some whiny baby, accidentally drafted in the army,
+  - As a member of the censorship organization,
+  bossDialogue2:
+  - In these suffering times we need people like you,
+  - Some families are unreasonably worried for our youths at the front.
+  - the people have to support us.
+  - overstates the conditions of the conflicts.
+  - 'you have to help your country and bring faith to your fellow compatriots. '
+  dialogue1: {fileID: 2063872169}
+  dialogue2: {fileID: 2063872168}
+  buttonSkip: {fileID: 2063872167}
+  bossFeedbackDialogueZeroTop:
+  - ZERO TOP
+  bossFeedbackDialogueZeroBottom:
+  - ZERO BOTTOM
+  bossFeedbackDialogueOneTop:
+  - ONE TOP
+  bossFeedbackDialogueOneBottom:
+  - ONE BOTTOM
+  bossFeedbackDialogueTwoTop:
+  - TWO TOP
+  bossFeedbackDialogueTwoBottom:
+  - TWO BOTTOM
+  bossFeedbackDialogueThreeTop:
+  - THREE TOP
+  bossFeedbackDialogueThreeBottom:
+  - THREE BOTTOM
 --- !u!1 &2076556601
 GameObject:
   m_ObjectHideFlags: 0
