@@ -1,4 +1,4 @@
-using System.Collections;
+using JetBrains.Annotations;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -26,6 +26,8 @@ public class BossDialogue : MonoBehaviour
 
     private int currentIndex = 0;
 
+    private Dictionary<int, (List<string> top, List<string> bottom)> dialogueSet;
+
     private GameManager gameManager;
 
     private void Awake()
@@ -35,7 +37,7 @@ public class BossDialogue : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("HasStarted : " + gameManager.hasStarted);
+        InitializeDialogue();
         if (bossDialogue1.Count > 0 && bossDialogue2.Count > 0)
         {
             UpdateDialogues();
@@ -45,53 +47,69 @@ public class BossDialogue : MonoBehaviour
             Debug.LogWarning("Dialogue lists are empty or not assigned.");
         }
     }
-
-    public void Dialogue()
+    private void InitializeDialogue()
     {
-        if (gameManager.hasStarted) 
+        dialogueSet = new Dictionary<int, (List<string> top, List<string> bottom)>
         {
-            if (currentIndex < bossDialogue1.Count - 1 && currentIndex < bossDialogue2.Count - 1)
-            {
-                currentIndex++;
-                UpdateDialogues();
-            }
+            { 0, (bossFeedbackDialogueZeroTop, bossFeedbackDialogueZeroBottom) },
+            { 1, (bossFeedbackDialogueOneTop, bossFeedbackDialogueOneBottom) },
+            { 2, (bossFeedbackDialogueTwoTop, bossFeedbackDialogueTwoBottom) },
+            { 3, (bossFeedbackDialogueThreeTop, bossFeedbackDialogueThreeBottom) }
+        }; 
+    }
+
+    public void CycleDialogue()
+    {
+        int dialogueSetKey = DetermineDialogueSetKey();
+        if (currentIndex < dialogueSet[dialogueSetKey].top.Count -1 && currentIndex < dialogueSet[dialogueSetKey].bottom.Count - 1)
+        {
+            currentIndex++;
+            UpdateDialogues();
         }
         else
         {
+            gameManager.hasStarted = false;
             LoadNextScene();
         }
     }
 
+    public int DetermineDialogueSetKey()
+    {
+        if(gameManager.malus == 0)
+        {
+            return 0;
+        }
+        if(gameManager.malus > 0 && gameManager.malus <= 5)
+        {
+            return 1;
+        }
+        if(gameManager.malus > 5 && gameManager.malus <= 10)
+        {
+            return 2;
+        }
+        if(gameManager.malus > 10 && gameManager.malus <= 15)
+        {
+            return 3;
+        }
+        return 0;
+    }
+
     private void UpdateDialogues()
     {
-        if (gameManager.hasStarted) {
+        int dialogueSetKey = DetermineDialogueSetKey();
+        var (topList, bottomList) = dialogueSet[dialogueSetKey];
+        if (gameManager.hasStarted)
+        {
             dialogue1.text = bossDialogue1[currentIndex];
             dialogue2.text = bossDialogue2[currentIndex];
-            
-
         }
         else
         {
-            if (gameManager.malus == 0)
-            {
-                dialogue1.text = bossFeedbackDialogueZeroTop[currentIndex];
-                dialogue2.text = bossFeedbackDialogueZeroBottom[currentIndex];
-            }
-            else if (gameManager.malus == 1)
-            {
-                dialogue1.text = bossFeedbackDialogueOneTop[currentIndex];
-                dialogue2.text = bossFeedbackDialogueOneBottom[currentIndex];
-            }
-            else if (gameManager.malus == 2)
-            {
-                dialogue1.text = bossFeedbackDialogueTwoTop[currentIndex];
-                dialogue2.text = bossFeedbackDialogueTwoBottom[currentIndex];
-            }
+            dialogue1.text= topList[currentIndex];
+            dialogue2.text= bottomList[currentIndex];
         }
         if (currentIndex == bossDialogue1.Count - 1 || currentIndex == bossDialogue2.Count - 1)
         {
-            gameManager.hasStarted = false;
-            Debug.Log("HasStarted : " + gameManager.hasStarted);
             buttonSkip.text = "Next Scene";
         }
     }
@@ -99,29 +117,5 @@ public class BossDialogue : MonoBehaviour
     private void LoadNextScene()
     {
         SceneManager.LoadScene("02-Letter");
-    }
-
-    private void BossFeedback()
-    {
-        if(gameManager.malus == 0)
-        {
-            dialogue1.text = bossFeedbackDialogueZeroTop[currentIndex];
-            dialogue2.text = bossFeedbackDialogueZeroTop[currentIndex];
-        }
-        if(gameManager.malus >= 1 && gameManager.malus <= 6)
-        {
-            dialogue1.text = bossFeedbackDialogueOneTop[currentIndex];
-            dialogue2.text = bossFeedbackDialogueOneTop[currentIndex];
-        }
-        if (gameManager.malus >= 7 && gameManager.malus <= 15)
-        {
-            dialogue1.text = bossFeedbackDialogueTwoTop[currentIndex];
-            dialogue2.text = bossFeedbackDialogueTwoTop[currentIndex];
-        }
-        if(gameManager.malus >= 16 && gameManager.malus <= 20)
-        {
-            dialogue1.text = bossFeedbackDialogueThreeTop[currentIndex];
-            dialogue2.text = bossFeedbackDialogueThreeTop[currentIndex];
-        }
     }
 }
