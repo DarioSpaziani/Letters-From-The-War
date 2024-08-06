@@ -1,14 +1,23 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Send : MonoBehaviour
 {
     private GameManager gameManager;
+    private bool hasBeenSend = false;
+    private bool calculationCompleted = false;
+
+    public TextMeshProUGUI SendText;
 
     private void Awake()
     {
+        SendText.text = "SEND";
+        hasBeenSend = false;
+        calculationCompleted = false;
         gameManager = FindObjectOfType<GameManager>();
     }
     public void SendLetter()
@@ -60,16 +69,36 @@ public class Send : MonoBehaviour
             }
         }
         #endregion
+        hasBeenSend = true;
+    }
 
-        gameManager.Knowledge();
-        gameManager.Malus();
-        SceneManager.LoadScene("03-Journal");
-        gameManager.listGreenWords.Clear();
-        gameManager.listYellowWords.Clear();
-        gameManager.listRedWords.Clear();
+    public void Update()
+    {
+        if (hasBeenSend && !calculationCompleted)
+        {
+            gameManager.Knowledge();
+            gameManager.Malus();
 
-        gameManager.comprensibility = 0;
-        gameManager.dailyPerformance = 0;
+            calculationCompleted = true;
+            hasBeenSend = false;
+
+            SendText.text = "NEXT";
+        }
+    }
+
+    public void SeeJournal()
+    {
+        if (calculationCompleted)
+        {
+            gameManager.listGreenWords.Clear();
+            gameManager.listYellowWords.Clear();
+            gameManager.listRedWords.Clear();
+
+            gameManager.comprensibility = 0;
+            gameManager.dailyPerformance = 0;
+
+            SceneManager.LoadScene("03-Journal");
+        }
     }
 
 }
