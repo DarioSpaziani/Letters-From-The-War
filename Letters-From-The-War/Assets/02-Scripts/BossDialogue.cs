@@ -14,14 +14,20 @@ public class BossDialogue : MonoBehaviour
     public TextMeshProUGUI buttonSkip;
 
     #region Feedback Lists
-    public List<string> bossFeedbackDialogueZeroTop;
-    public List<string> bossFeedbackDialogueZeroBottom;
-    public List<string> bossFeedbackDialogueOneTop;
-    public List<string> bossFeedbackDialogueOneBottom;
-    public List<string> bossFeedbackDialogueTwoTop;
-    public List<string> bossFeedbackDialogueTwoBottom;
-    public List<string> bossFeedbackDialogueThreeTop;
-    public List<string> bossFeedbackDialogueThreeBottom;
+    public List<string> bossFeedbackDialogueATop;
+    public List<string> bossFeedbackDialogueABottom;
+    public List<string> bossFeedbackDialogueBTop;
+    public List<string> bossFeedbackDialogueBBottom;
+    public List<string> bossFeedbackDialogueCTop;
+    public List<string> bossFeedbackDialogueCBottom;
+    public List<string> bossFeedbackDialogueDTop;
+    public List<string> bossFeedbackDialogueDBottom;
+    public List<string> bossFeedbackDialogueETop;
+    public List<string> bossFeedbackDialogueEBottom;
+    public List<string> bossFeedbackDialogueFTop;
+    public List<string> bossFeedbackDialogueFBottom;
+    public List<string> bossFeedbackDialogueGTop;
+    public List<string> bossFeedbackDialogueGBottom;
     #endregion
 
     private int currentIndex = 0;
@@ -59,10 +65,10 @@ public class BossDialogue : MonoBehaviour
     {
         dialogueSet = new Dictionary<int, (List<string> top, List<string> bottom)>
         {
-            { 0, (bossFeedbackDialogueZeroTop, bossFeedbackDialogueZeroBottom) },
-            { 1, (bossFeedbackDialogueOneTop, bossFeedbackDialogueOneBottom) },
-            { 2, (bossFeedbackDialogueTwoTop, bossFeedbackDialogueTwoBottom) },
-            { 3, (bossFeedbackDialogueThreeTop, bossFeedbackDialogueThreeBottom) }
+            { 0, (bossFeedbackDialogueATop, bossFeedbackDialogueABottom) },
+            { 1, (bossFeedbackDialogueBTop, bossFeedbackDialogueBBottom) },
+            { 2, (bossFeedbackDialogueCTop, bossFeedbackDialogueCBottom) },
+            { 3, (bossFeedbackDialogueDTop, bossFeedbackDialogueDBottom) }
         }; 
     }
 
@@ -129,13 +135,13 @@ public class BossDialogue : MonoBehaviour
     {
         if (gameManager.hasStarted)
         {
-            SceneManager.LoadScene("01-BossInterview");
+            SceneManager.LoadScene("02-BossInterview");
             gameManager.hasStarted = false;
         }
         else
         {
             fade.FadeEffect();
-            SceneManager.LoadScene("02-Letter");      
+            SceneManager.LoadScene("03-Letter");      
         }
     }
 }

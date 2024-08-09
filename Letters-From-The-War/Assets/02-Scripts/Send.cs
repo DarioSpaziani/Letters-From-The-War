@@ -97,7 +97,7 @@ public class Send : MonoBehaviour
             gameManager.comprensibility = 0;
             gameManager.dailyPerformance = 0;
 
-            SceneManager.LoadScene("03-Journal");
+            SceneManager.LoadScene("04-Journal");
         }
     }
 

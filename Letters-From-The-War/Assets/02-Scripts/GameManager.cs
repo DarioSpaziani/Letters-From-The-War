@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    //private GameManager instance;
     public WordData greenWord;
     public WordData yellowWord;
     public WordData redWord;

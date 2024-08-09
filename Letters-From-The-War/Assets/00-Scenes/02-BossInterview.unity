@@ -418,13 +418,125 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 668511251}
     m_Modifications:
+    - target: {fileID: 756615756071224866, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_fontSize
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 756615756071224866, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_margin.x
+      value: 47.29416
+      objectReference: {fileID: 0}
+    - target: {fileID: 756615756071224866, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_margin.z
+      value: 68.09494
+      objectReference: {fileID: 0}
+    - target: {fileID: 756615756071224866, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 756615756071224866, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 756615756071224866, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 756615756071224866, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 756615756071224866, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
     - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: listDialogues.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueATop.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueBTop.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueCTop.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueDTop.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueETop.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: bossFeedbackDialogueOneTop.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueABottom.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueATop.Array.data[0]
+      value: This is your first day here
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueATop.Array.data[1]
+      value: Some soldiers tend to express feelings
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueATop.Array.data[2]
+      value: Do you understand?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueBBottom.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueBTop.Array.data[0]
+      value: daje forza
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueBTop.Array.data[1]
+      value: grandeee
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueBTop.Array.data[2]
+      value: fortissimo
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueCBottom.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueCTop.Array.data[0]
+      value: incredibile
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueCTop.Array.data[1]
+      value: mhmh
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueCTop.Array.data[2]
+      value: mhmmmmhhh
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueDBottom.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueDTop.Array.data[0]
+      value: non so
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueETop.Array.data[0]
+      value: please
       objectReference: {fileID: 0}
     - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: bossFeedbackDialogueZeroTop.Array.size
@@ -443,16 +555,60 @@ PrefabInstance:
       value: ONE TOP2
       objectReference: {fileID: 0}
     - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueABottom.Array.data[0]
+      value: and we already expect great things from you!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueABottom.Array.data[1]
+      value: that are too moving for their families.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueABottom.Array.data[2]
+      value: 'Emotional people endanger themselves and others. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueBBottom.Array.data[0]
+      value: pazzo
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueBBottom.Array.data[1]
+      value: aaaaa
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueBBottom.Array.data[2]
+      value: bbbbb
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueCBottom.Array.data[0]
+      value: forza roma
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueCBottom.Array.data[1]
+      value: aaaa
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueCBottom.Array.data[2]
+      value: eeeeeee
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueDBottom.Array.data[0]
+      value: aiuto
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: bossFeedbackDialogueZeroBottom.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueZeroTop.Array.data[0]
+      value: This is your first day here
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: bossFeedbackDialogueZeroTop.Array.data[1]
-      value: ZERO TOP2
+      value: '|Some soldiers tend to express feelings'
       objectReference: {fileID: 0}
     - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: bossFeedbackDialogueZeroTop.Array.data[2]
-      value: ZERO TOP3
+      value: Do you understand?
       objectReference: {fileID: 0}
     - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: bossFeedbackDialogueOneBottom.Array.data[1]
@@ -463,16 +619,80 @@ PrefabInstance:
       value: ONE BOTTOM2
       objectReference: {fileID: 0}
     - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossFeedbackDialogueZeroBottom.Array.data[0]
+      value: and we already expect great things from you!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: bossFeedbackDialogueZeroBottom.Array.data[1]
-      value: ZERO BOTTOM2
+      value: that are too moving for their families.
       objectReference: {fileID: 0}
     - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: bossFeedbackDialogueZeroBottom.Array.data[2]
-      value: ZERO BOTTOM3
+      value: 'Emotional people endanger themselves and others. '
       objectReference: {fileID: 0}
     - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: bossFeedbackDialogueZeroBottom.Array.data[3]
       value: ZERO BOTTOM4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1992391529598090925, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_fontSize
+      value: 46.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1992391529598090925, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_margin.x
+      value: 47.27417
+      objectReference: {fileID: 0}
+    - target: {fileID: 1992391529598090925, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_margin.z
+      value: 75.65961
+      objectReference: {fileID: 0}
+    - target: {fileID: 1992391529598090925, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1992391529598090925, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1992391529598090925, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1992391529598090925, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1992391529598090925, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 2751607941824268690, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ee32b8ba00d51244fa5fe3f26bc486ff, type: 3}
+    - target: {fileID: 2751607941824268690, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2751607941824268690, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2751607941824268690, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204751279368678343, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0ae3989fa6b1b6146b59c45a47e56974, type: 3}
+    - target: {fileID: 5099194347287388638, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099194347287388638, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6091104777311344150, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -497,6 +717,22 @@ PrefabInstance:
     - target: {fileID: 6091104777311344150, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: BossDialogue, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367681224033779220, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ee32b8ba00d51244fa5fe3f26bc486ff, type: 3}
+    - target: {fileID: 6367681224033779220, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367681224033779220, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367681224033779220, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_Pivot.x
@@ -577,6 +813,18 @@ PrefabInstance:
     - target: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392048488624552825, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392048488624552825, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392048488624552825, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 8611652700985829821, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_Name

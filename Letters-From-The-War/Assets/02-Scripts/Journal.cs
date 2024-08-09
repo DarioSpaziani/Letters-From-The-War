@@ -8,51 +8,83 @@ using UnityEngine.UI;
 
 public class Journal : MonoBehaviour
 {
-    public Image imageJournal;
-    public TextMeshProUGUI topDescription;
-    public TextMeshProUGUI bottomDescription;
-
-    private Dictionary<int, (List<string> top, List<string> bottom)> journalDescription;
-    private Dictionary<int, List<Sprite>> journalImage;
     private GameManager gameManager;
 
-    private List<string> currentTopDescription;
-    private List<string> currentBottomDescription;
+    #region Journal Image
+    public Image imageJournal;
+    private Dictionary<int, List<Sprite>> journalImage;
     private List<Sprite> currentJournalImage;
-
     public List<Sprite> journalImageList;
+    #endregion
 
-    public List<string> journalDescriptionZeroTop;
-    public List<string> journalDescriptionZeroBottom;
-    public List<string> journalDescriptionOneTop;
-    public List<string> journalDescriptionOneBottom;
-    public List<string> journalDescriptionTwoTop;
-    public List<string> journalDescriptionTwoBottom;
-    public List<string> journalDescriptionThreeTop;
-    public List<string> journalDescriptionThreeBottom;
-    public List<string> journalDescriptionFourTop;
-    public List<string> journalDescriptionFourBottom;
+    #region Journal Description
+    public TextMeshProUGUI topDescription;
+
+    private Dictionary<int, List<string>> journalMainDescription;
+
+    private List<string> currentTopDescription;
+
+    public Dictionary<int, List<string>> currentJournalA;
+    public Dictionary<int, List<string>> currentJournalB;
+    public Dictionary<int, List<string>> currentJournalC;
+    public Dictionary<int, List<string>> currentJournalD;
+    public Dictionary<int, List<string>> currentJournalE;
+    public Dictionary<int, List<string>> currentJournalF;
+    public Dictionary<int, List<string>> currentJournalG;
+    public List<string> journalDescriptionA1;
+    public List<string> journalDescriptionA2;
+    public List<string> journalDescriptionA3;
+    public List<string> journalDescriptionA4;
+    public List<string> journalDescriptionB1;
+    public List<string> journalDescriptionB2;
+    public List<string> journalDescriptionB3;
+    public List<string> journalDescriptionB4;
+    public List<string> journalDescriptionC1;
+    public List<string> journalDescriptionC2;
+    public List<string> journalDescriptionC3;
+    public List<string> journalDescriptionC4;
+    public List<string> journalDescriptionD1;
+    public List<string> journalDescriptionD2;
+    public List<string> journalDescriptionD3;
+    public List<string> journalDescriptionD4;
+    public List<string> journalDescriptionE1;
+    public List<string> journalDescriptionE2;
+    public List<string> journalDescriptionE3;
+    public List<string> journalDescriptionE4;
+    public List<string> journalDescriptionF1;
+    public List<string> journalDescriptionF2;
+    public List<string> journalDescriptionF3;
+    public List<string> journalDescriptionF4;
+    public List<string> journalDescriptionG1;
+    public List<string> journalDescriptionG2;
+    public List<string> journalDescriptionG3;
+    public List<string> journalDescriptionG4;
+    #endregion
 
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
+        if(currentTopDescription == null)
+        {
+            return;
+        }
     }
 
     private void Start()
     {
         InitializeJournal();
-        ShowDescription();
+        //ShowImageDescription();
+        ShowTextDescription();
     }
 
     private void InitializeJournal()
     {
-        journalDescription = new Dictionary<int, (List<string> top, List<string> bottom)>
+        journalMainDescription = new Dictionary<int, List<string>>
         {
-            { 0, (journalDescriptionZeroTop, journalDescriptionZeroBottom)},
-            { 1, (journalDescriptionOneTop, journalDescriptionOneBottom)},
-            { 2, (journalDescriptionTwoTop, journalDescriptionTwoBottom)},
-            { 3, (journalDescriptionThreeTop, journalDescriptionThreeBottom)},
-            { 4, (journalDescriptionFourTop, journalDescriptionFourBottom)},
+            { 0, (journalDescriptionA1)},
+            { 1, (journalDescriptionA2)},
+            { 2, (journalDescriptionA3)},
+            { 3, (journalDescriptionA4)},
         };
 
         journalImage = new Dictionary<int, List<Sprite>>()
@@ -64,32 +96,34 @@ public class Journal : MonoBehaviour
             { 4, journalImageList},
         };
     }
+
     public int DetermineJournalDescription()
     {
-        if(gameManager.malus == 0)
+        if(gameManager.knowledge == 0)
         {
             return 0;
         }
-        if (gameManager.malus > 1 && gameManager.malus <= 3)
+        if (gameManager.knowledge > 1 && gameManager.knowledge <= 3)
         {
             return 1;
         }
-        if (gameManager.malus > 3 && gameManager.malus <= 6)
+        if (gameManager.knowledge > 3 && gameManager.knowledge <= 6)
         {
             return 2;
         }
-        if (gameManager.malus > 6 && gameManager.malus <= 9)
+        if (gameManager.knowledge > 6 && gameManager.knowledge <= 9)
         {
             return 3;
         }
-        if (gameManager.malus > 9 && gameManager.malus <= 12)
+        if (gameManager.knowledge > 9 && gameManager.knowledge <= 12)
         {
             return 4;
         }
         return 0;
     }
 
-    public void ShowDescription()
+    #region SHOW METHODS
+    public void ShowImageDescription()
     {
         int journalSetKey = DetermineJournalDescription();
         if (journalImage.ContainsKey(journalSetKey) && journalImage[journalSetKey].Count > journalSetKey)
@@ -100,10 +134,16 @@ public class Journal : MonoBehaviour
         {
             Debug.LogError($"No journal image available for key {journalSetKey} at index {journalSetKey}");
         }
+    }
 
-        if (journalDescription.ContainsKey(journalSetKey))
+    public void ShowTextDescription()
+    {
+        int journalSetKey = DetermineJournalDescription();
+
+
+        if (journalMainDescription.ContainsKey(journalSetKey))
         {
-            var(topList,bottomList) = journalDescription[journalSetKey];
+            var topList = journalMainDescription[journalSetKey];
             if (topList.Count > 0)
             {
                 topDescription.text = topList[0];
@@ -112,19 +152,11 @@ public class Journal : MonoBehaviour
             {
                 Debug.LogWarning("No top description available for this key.");
             }
-            if (bottomList.Count > 0)
-            {
-                bottomDescription.text = bottomList[0];
-            }
-            else
-            {
-                Debug.LogWarning("No bottom description available for this key.");
-            }
         }
         else
         {
             Debug.LogError($"No journal description at key {journalSetKey}.");
         }
-
     }
+    #endregion
 }
