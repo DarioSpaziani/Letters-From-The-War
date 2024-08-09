@@ -29,14 +29,21 @@ public class BossDialogue : MonoBehaviour
     private Dictionary<int, (List<string> top, List<string> bottom)> dialogueSet;
 
     private GameManager gameManager;
+    private Fade fade;
 
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
+        fade = FindObjectOfType<Fade>();
     }
 
     private void Start()
     {
+        if (!gameManager.hasStarted)
+        {
+            StartCoroutine(fade.FadeReverse());
+        }
+        
         InitializeDialogue();
         if (bossDialogue1.Count > 0 && bossDialogue2.Count > 0)
         {
@@ -47,6 +54,7 @@ public class BossDialogue : MonoBehaviour
             Debug.LogWarning("Dialogue lists are empty or not assigned.");
         }
     }
+
     private void InitializeDialogue()
     {
         dialogueSet = new Dictionary<int, (List<string> top, List<string> bottom)>
@@ -61,15 +69,18 @@ public class BossDialogue : MonoBehaviour
     public void CycleDialogue()
     {
         int dialogueSetKey = DetermineDialogueSetKey();
-        if (currentIndex < dialogueSet[dialogueSetKey].top.Count -1 && currentIndex < dialogueSet[dialogueSetKey].bottom.Count - 1)
+        if (!fade.isFadeEnded)
         {
-            currentIndex++;
-            UpdateDialogues();
-        }
-        else
-        {
-            gameManager.hasStarted = false;
-            LoadNextScene();
+            if (currentIndex < dialogueSet[dialogueSetKey].top.Count - 1 && currentIndex < dialogueSet[dialogueSetKey].bottom.Count - 1)
+            {
+                currentIndex++;
+                UpdateDialogues();
+            }
+
+            else
+            {
+                LoadNextScene();
+            }
         }
     }
 
@@ -116,6 +127,15 @@ public class BossDialogue : MonoBehaviour
 
     private void LoadNextScene()
     {
-        SceneManager.LoadScene("02-Letter");
+        if (gameManager.hasStarted)
+        {
+            SceneManager.LoadScene("01-BossInterview");
+            gameManager.hasStarted = false;
+        }
+        else
+        {
+            fade.FadeEffect();
+            SceneManager.LoadScene("02-Letter");      
+        }
     }
 }

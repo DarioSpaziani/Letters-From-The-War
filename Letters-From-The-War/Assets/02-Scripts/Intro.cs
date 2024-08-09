@@ -8,9 +8,11 @@ using UnityEngine.SceneManagement;
 public class Intro : MonoBehaviour
 {
     public TextMeshProUGUI textMPRO;
+    private Fade fade;
 
     void Start()
     {
+        fade = FindObjectOfType<Fade>();
         if(textMPRO == null)
         {
             return;
@@ -27,10 +29,16 @@ public class Intro : MonoBehaviour
         {
             textMPRO.alpha += 0.002f;
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("non sono bloccato");
+        }
+
     }
 
     public void SkipIntro()
     {
-        SceneManager.LoadScene("01-BossInterview");
+        fade.StartCoroutine(fade.CheckFadeAndLoadScene("01-BossInterview"));
     }
+
 }
