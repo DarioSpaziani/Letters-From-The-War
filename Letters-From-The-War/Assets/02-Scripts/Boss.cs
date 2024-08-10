@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class BossDialogue : MonoBehaviour
 {
-    public List<string> bossDialogue1 = new List<string>();
-    public List<string> bossDialogue2 = new List<string>();
+    public List<string> bossDialogueTop = new List<string>();
+    public List<string> bossDialogueBottom = new List<string>();
 
     public TextMeshProUGUI dialogue1;
     public TextMeshProUGUI dialogue2;
@@ -51,7 +51,7 @@ public class BossDialogue : MonoBehaviour
         }
         
         InitializeDialogue();
-        if (bossDialogue1.Count > 0 && bossDialogue2.Count > 0)
+        if (bossDialogueTop.Count > 0 && bossDialogueBottom.Count > 0)
         {
             UpdateDialogues();
         }
@@ -75,19 +75,35 @@ public class BossDialogue : MonoBehaviour
     public void CycleDialogue()
     {
         int dialogueSetKey = DetermineDialogueSetKey();
+        var (topList, bottomList) = dialogueSet[dialogueSetKey];
         if (!fade.isFadeEnded)
         {
-            if (currentIndex < dialogueSet[dialogueSetKey].top.Count - 1 && currentIndex < dialogueSet[dialogueSetKey].bottom.Count - 1)
+            if (gameManager.hasStarted)
             {
-                currentIndex++;
-                UpdateDialogues();
+                if (currentIndex < bossDialogueTop.Count - 1)
+                {
+                    currentIndex++;
+                    UpdateDialogues();
+                }
+                else
+                {
+                    LoadNextScene();
+                }
             }
-
             else
             {
-                LoadNextScene();
+                if (currentIndex < topList.Count - 1)
+                {
+                    currentIndex++;
+                    UpdateDialogues();
+                }
+                else
+                {
+                    LoadNextScene();
+                }
             }
         }
+            
     }
 
     public int DetermineDialogueSetKey()
@@ -117,15 +133,16 @@ public class BossDialogue : MonoBehaviour
         var (topList, bottomList) = dialogueSet[dialogueSetKey];
         if (gameManager.hasStarted)
         {
-            dialogue1.text = bossDialogue1[currentIndex];
-            dialogue2.text = bossDialogue2[currentIndex];
+            dialogue1.text = bossDialogueTop[currentIndex];
+            dialogue2.text = bossDialogueBottom[currentIndex];
         }
         else
         {
             dialogue1.text= topList[currentIndex];
             dialogue2.text= bottomList[currentIndex];
         }
-        if (currentIndex == bossDialogue1.Count - 1 || currentIndex == bossDialogue2.Count - 1)
+        if (gameManager.hasStarted && currentIndex == bossDialogueTop.Count - 1 
+            || !gameManager.hasStarted && currentIndex == topList.Count - 1)
         {
             buttonSkip.text = "Next Scene";
         }

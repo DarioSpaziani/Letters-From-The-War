@@ -455,6 +455,54 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossDialogueTop.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossDialogueBottom.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossDialogueTop.Array.data[0]
+      value: You look like such a qualified guy.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossDialogueTop.Array.data[1]
+      value: ready to give it all for our great nation.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossDialogueTop.Array.data[2]
+      value: In order to come out of this war as a stronger nation
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossDialogueTop.Array.data[3]
+      value: Some whiny baby, accidentally drafted in the army,
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossDialogueTop.Array.data[4]
+      value: As a member of the censorship organization,
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossDialogueBottom.Array.data[0]
+      value: In these suffering times we need people like you,
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossDialogueBottom.Array.data[1]
+      value: Some families are unreasonably worried for our youths at the front.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossDialogueBottom.Array.data[2]
+      value: the people have to support us.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossDialogueBottom.Array.data[3]
+      value: overstates the conditions of the conflicts.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: bossDialogueBottom.Array.data[4]
+      value: 'you have to help your country and bring faith to your fellow compatriots. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1867641733652212156, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: bossFeedbackDialogueATop.Array.size
       value: 3
       objectReference: {fileID: 0}
