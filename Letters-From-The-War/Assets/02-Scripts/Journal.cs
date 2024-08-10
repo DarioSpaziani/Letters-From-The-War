@@ -11,10 +11,10 @@ public class Journal : MonoBehaviour
     private GameManager gameManager;
 
     #region Journal Image
-    public Image imageJournal;
-    private Dictionary<int, List<Sprite>> journalImage;
-    private List<Sprite> currentJournalImage;
-    public List<Sprite> journalImageList;
+    //public Image imageJournal;
+    //private Dictionary<int, List<Sprite>> journalImage;
+    //private List<Sprite> currentJournalImage;
+    //public List<Sprite> journalImageList;
     #endregion
 
     #region Journal Description
@@ -81,20 +81,20 @@ public class Journal : MonoBehaviour
     {
         journalMainDescription = new Dictionary<int, List<string>>
         {
-            { 0, (journalDescriptionA1)},
-            { 1, (journalDescriptionA2)},
-            { 2, (journalDescriptionA3)},
-            { 3, (journalDescriptionA4)},
+            { 0, (currentTopDescription)},
+            { 1, (currentTopDescription)},
+            { 2, (currentTopDescription)},
+            { 3, (currentTopDescription)},
         };
 
-        journalImage = new Dictionary<int, List<Sprite>>()
-        {
-            { 0, journalImageList},
-            { 1, journalImageList},
-            { 2, journalImageList},
-            { 3, journalImageList},
-            { 4, journalImageList},
-        };
+        //journalImage = new Dictionary<int, List<Sprite>>()
+        //{
+        //    { 0, journalImageList},
+        //    { 1, journalImageList},
+        //    { 2, journalImageList},
+        //    { 3, journalImageList},
+        //    { 4, journalImageList},
+        //};
     }
 
     public int DetermineJournalDescription()
@@ -103,19 +103,19 @@ public class Journal : MonoBehaviour
         {
             return 0;
         }
-        if (gameManager.knowledge > 1 && gameManager.knowledge <= 3)
+        if (gameManager.knowledge == 1)
         {
             return 1;
         }
-        if (gameManager.knowledge > 3 && gameManager.knowledge <= 6)
+        if (gameManager.knowledge == 2)
         {
             return 2;
         }
-        if (gameManager.knowledge > 6 && gameManager.knowledge <= 9)
+        if (gameManager.knowledge == 3)
         {
             return 3;
         }
-        if (gameManager.knowledge > 9 && gameManager.knowledge <= 12)
+        if (gameManager.knowledge == 4)
         {
             return 4;
         }
@@ -123,18 +123,18 @@ public class Journal : MonoBehaviour
     }
 
     #region SHOW METHODS
-    public void ShowImageDescription()
-    {
-        int journalSetKey = DetermineJournalDescription();
-        if (journalImage.ContainsKey(journalSetKey) && journalImage[journalSetKey].Count > journalSetKey)
-        {
-            imageJournal.sprite = journalImage[journalSetKey][journalSetKey];
-        }
-        else
-        {
-            Debug.LogError($"No journal image available for key {journalSetKey} at index {journalSetKey}");
-        }
-    }
+    //public void ShowImageDescription()
+    //{
+    //    int journalSetKey = DetermineJournalDescription();
+    //    if (journalImage.ContainsKey(journalSetKey) && journalImage[journalSetKey].Count > journalSetKey)
+    //    {
+    //        imageJournal.sprite = journalImage[journalSetKey][journalSetKey];
+    //    }
+    //    else
+    //    {
+    //        Debug.LogWarning($"No journal image available for key {journalSetKey} at index {journalSetKey}");
+    //    }
+    //}
 
     public void ShowTextDescription()
     {

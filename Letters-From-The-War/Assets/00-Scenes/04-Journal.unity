@@ -828,7 +828,7 @@ GameObject:
   - component: {fileID: 2069632853}
   - component: {fileID: 2069632852}
   m_Layer: 5
-  m_Name: MainText
+  m_Name: Headline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -873,7 +873,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -900,7 +900,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1106,7 +1106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2118522496}
-  - component: {fileID: 2118522497}
+  - component: {fileID: 2118522498}
   m_Layer: 0
   m_Name: JournalSet
   m_TagString: Untagged
@@ -1129,7 +1129,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2118522497
+--- !u!114 &2118522498
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1138,80 +1138,61 @@ MonoBehaviour:
   m_GameObject: {fileID: 2118522495}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8836a361ff032847a21846a25b3f895, type: 3}
+  m_Script: {fileID: 11500000, guid: 90034d1dd237a78418c51287f334f25c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageJournal: {fileID: 1917906537}
-  journalImageList: []
-  topDescription: {fileID: 2069632852}
-  journalDescriptionA1:
+  headline: {fileID: 2069632852}
+  day1Descriptions:
   - People from Vitulia support their young heroes at the front fulfilling all the
     hard obligations. We are truly a great nation
-  journalDescriptionA2:
   - Although an anti-vitualian movement is spreading disinformation to weaken our
     nation, Vitulia has the support of all its citizens!
-  journalDescriptionA3:
   - Small minorities spreading disinformation silenced for the benefit of the truth
     and of our citizens
-  journalDescriptionA4: []
-  journalDescriptionB1:
+  - aaaaaaaaaaaaaaaaaaaaaaa
+  day2Descriptions:
   - We are winning the war! Thanks to the hard work of its men and women, Vitualia
     is proving its value to the other nations
-  journalDescriptionB2:
-  - 'Anti nationalistic fringe boycotts vitualian efforts by spreading false information '
-  journalDescriptionB3:
+  - Anti nationalistic fringe boycotts vitualian efforts by spreading false information
   - Anti nationalistic fringe boycotts vitualian efforts by accusing the government
     of wasting resources in the war
-  journalDescriptionB4: []
-  journalDescriptionC1:
+  - bbbbbbbbbbbbbbbbbb
+  day3Descriptions:
   - Soldiers at the front are happy to know that thanks to them we will come out
     stronger from the war
-  journalDescriptionC2:
   - Anti-war protesters on the streets. The police peacefully escorted them away
-  journalDescriptionC3:
   - Anti-war protesters on the streets. The government will not bear any more liars
     and will act accordingly
-  journalDescriptionC4:
   - "Government forces suppress the anti-war protestants. A people\u2019s spokesman
     states \u201CWe will come again to reveal the truth about the war\u201D"
-  journalDescriptionD1:
+  day4Descriptions:
   - 'Vitualian people interviewed: the pride for our youths and the happiness to
-    see them soon '
-  journalDescriptionD2:
+    see them soon'
   - 'Vitualian people interviewed: the worry for the situation our youths are living
-    at the front '
-  journalDescriptionD3:
+    at the front'
   - 'Vitualian people interviewed: despair in the words of some parents for the future
-    of their sons at the front '
-  journalDescriptionD4:
+    of their sons at the front'
   - 'Rumors of a possible insurrection denied by the authorities: a mean to drag
     the people down'
-  journalDescriptionE1:
+  day5Descriptions:
   - Radical turn! The war is ending soon!
-  journalDescriptionE2:
   - Citizens hope to see their relatives soon. It has been over a year the war has
     started
-  journalDescriptionE3:
   - "After over a year the war has started some citizens seem to have lost faith
     in seeing their relatives again. The government reassures: \u201CIt will be over
     soon with your help and support\u201D"
-  journalDescriptionE4:
   - People gathered under the Parliament to ask about their relatives at the front.
     Reassured by the government
-  journalDescriptionF1:
-  - LESTGOSKI LESGO
-  journalDescriptionF2:
-  - AAAAAAAAAAAA
-  journalDescriptionF3:
-  - BBBBBBBBBBB
-  journalDescriptionF4: []
-  journalDescriptionG1:
-  - CCCCCCCCCCCC
-  journalDescriptionG2:
-  - DDDDDDDDDD
-  journalDescriptionG3:
-  - EEEEEEEEEEE
-  journalDescriptionG4: []
+  day6Descriptions:
+  - ffffffffffffff1111111111111
+  - ffffffffffff22222222
+  - ffffffff3333333
+  - ffffffffffffff4444444
+  day7Descriptions:
+  - ggggggggggg11111111
+  - ggggggggggg222222222
+  - ggggggggggggg33333333
+  - gggggggggggggg444444444
 --- !u!1 &2119561701
 GameObject:
   m_ObjectHideFlags: 0

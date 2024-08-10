@@ -58,7 +58,6 @@ public class Fade : MonoBehaviour
         yield return new WaitForSeconds(timeFadePingPong);
 
         dayText.text = "";
-        gameManager.day++;
         fadeImage.CrossFadeAlpha(0.0f, speedEffect, false);
         isFadeEnded = true;
     }
