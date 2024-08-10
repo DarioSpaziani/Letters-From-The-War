@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -25,7 +26,7 @@ public class GameManager : MonoBehaviour
     public List<Word> listRedWords = new List<Word>();
 
     public bool hasStarted = true;
-    public int day = 1;
+    [HideInInspector]public int day = 1;
 
     private void Awake()
     {

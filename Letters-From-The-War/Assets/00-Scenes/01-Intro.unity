@@ -609,7 +609,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9087670698874079933, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
       propertyPath: malus
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

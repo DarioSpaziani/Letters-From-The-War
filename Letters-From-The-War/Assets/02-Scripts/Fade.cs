@@ -28,7 +28,6 @@ public class Fade : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("day : " + gameManager.day);
         dayText.text = "";
     }
 

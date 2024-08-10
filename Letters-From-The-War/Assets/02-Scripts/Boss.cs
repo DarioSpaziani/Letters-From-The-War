@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,6 +13,8 @@ public class BossDialogue : MonoBehaviour
     public TextMeshProUGUI dialogue1;
     public TextMeshProUGUI dialogue2;
     public TextMeshProUGUI buttonSkip;
+
+    private bool additionalDialogueAdded = false;
 
     #region Feedback Lists
     public List<string> bossFeedbackDialogueATop;
@@ -61,6 +64,31 @@ public class BossDialogue : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (gameManager.hasStarted || additionalDialogueAdded) return;
+        int dialogueSetKey = DetermineDialogueSetKey();
+        var (topList, bottomList) = dialogueSet[dialogueSetKey];
+
+        if (gameManager.malus == 2)
+        {
+            topList.Add("Pay more attention when you work.");
+            bottomList.Add("We will keep an eye on you.");
+            additionalDialogueAdded = true;
+        }
+        else if (gameManager.malus == 3)
+        {
+            topList.Add("This will be our last warning.");
+            bottomList.Add("You can't continue to work like this.");
+            additionalDialogueAdded = true;
+        }
+        if (additionalDialogueAdded)
+        {
+            currentIndex = 0;
+            UpdateDialogues();
+        }
+    }
+
     private void InitializeDialogue()
     {
         dialogueSet = new Dictionary<int, (List<string> top, List<string> bottom)>
@@ -92,7 +120,7 @@ public class BossDialogue : MonoBehaviour
             }
             else
             {
-                if (currentIndex < topList.Count - 1)
+                if (currentIndex < topList.Count - 1 )
                 {
                     currentIndex++;
                     UpdateDialogues();
@@ -102,8 +130,7 @@ public class BossDialogue : MonoBehaviour
                     LoadNextScene();
                 }
             }
-        }
-            
+        }  
     }
 
     public int DetermineDialogueSetKey()
@@ -141,8 +168,8 @@ public class BossDialogue : MonoBehaviour
             dialogue1.text= topList[currentIndex];
             dialogue2.text= bottomList[currentIndex];
         }
-        if (gameManager.hasStarted && currentIndex == bossDialogueTop.Count - 1 
-            || !gameManager.hasStarted && currentIndex == topList.Count - 1)
+        if ((gameManager.hasStarted && currentIndex == bossDialogueTop.Count - 1)
+            || (!gameManager.hasStarted && currentIndex == topList.Count - 1))
         {
             buttonSkip.text = "Next Scene";
         }
