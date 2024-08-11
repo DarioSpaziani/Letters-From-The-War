@@ -884,13 +884,49 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       insertIndex: 1
       addedObject: {fileID: 2126938194}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8611652700985829821, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2063872172}
   m_SourcePrefab: {fileID: 100100000, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
 --- !u!224 &2063872166 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
   m_PrefabInstance: {fileID: 2063872165}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2063872167 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8115063915876570130, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+  m_PrefabInstance: {fileID: 2063872165}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2063872168 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 756615756071224866, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+  m_PrefabInstance: {fileID: 2063872165}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2063872169 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1992391529598090925, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+  m_PrefabInstance: {fileID: 2063872165}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2063872170 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8611652700985829821, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
@@ -907,6 +943,135 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f12d07f2af5d090478260de622a4ad1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2063872172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063872170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ab3d8376253654fb889c61705dd980, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue1: {fileID: 2063872169}
+  dialogue2: {fileID: 2063872168}
+  buttonSkip: {fileID: 2063872167}
+  dayOne:
+    zeroMalus:
+      topDialogues:
+      - 
+      bottomDialogues:
+      - 
+    oneMalus:
+      topDialogues: []
+      bottomDialogues: []
+    twoMalus:
+      topDialogues: []
+      bottomDialogues: []
+    threeMalus:
+      topDialogues: []
+      bottomDialogues: []
+    fourMalus:
+      topDialogues: []
+      bottomDialogues: []
+  dayTwo:
+    zeroMalus:
+      topDialogues: []
+      bottomDialogues: []
+    oneMalus:
+      topDialogues: []
+      bottomDialogues: []
+    twoMalus:
+      topDialogues: []
+      bottomDialogues: []
+    threeMalus:
+      topDialogues: []
+      bottomDialogues: []
+    fourMalus:
+      topDialogues: []
+      bottomDialogues: []
+  dayThree:
+    zeroMalus:
+      topDialogues: []
+      bottomDialogues: []
+    oneMalus:
+      topDialogues: []
+      bottomDialogues: []
+    twoMalus:
+      topDialogues: []
+      bottomDialogues: []
+    threeMalus:
+      topDialogues: []
+      bottomDialogues: []
+    fourMalus:
+      topDialogues: []
+      bottomDialogues: []
+  dayFour:
+    zeroMalus:
+      topDialogues: []
+      bottomDialogues: []
+    oneMalus:
+      topDialogues: []
+      bottomDialogues: []
+    twoMalus:
+      topDialogues: []
+      bottomDialogues: []
+    threeMalus:
+      topDialogues: []
+      bottomDialogues: []
+    fourMalus:
+      topDialogues: []
+      bottomDialogues: []
+  dayFive:
+    zeroMalus:
+      topDialogues: []
+      bottomDialogues: []
+    oneMalus:
+      topDialogues: []
+      bottomDialogues: []
+    twoMalus:
+      topDialogues: []
+      bottomDialogues: []
+    threeMalus:
+      topDialogues: []
+      bottomDialogues: []
+    fourMalus:
+      topDialogues: []
+      bottomDialogues: []
+  daySix:
+    zeroMalus:
+      topDialogues: []
+      bottomDialogues: []
+    oneMalus:
+      topDialogues: []
+      bottomDialogues: []
+    twoMalus:
+      topDialogues: []
+      bottomDialogues: []
+    threeMalus:
+      topDialogues: []
+      bottomDialogues: []
+    fourMalus:
+      topDialogues: []
+      bottomDialogues: []
+  daySeven:
+    zeroMalus:
+      topDialogues: []
+      bottomDialogues: []
+    oneMalus:
+      topDialogues: []
+      bottomDialogues: []
+    twoMalus:
+      topDialogues: []
+      bottomDialogues: []
+    threeMalus:
+      topDialogues: []
+      bottomDialogues: []
+    fourMalus:
+      topDialogues: []
+      bottomDialogues: []
 --- !u!1 &2076556601
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,14 +5,20 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class BossDialogue : MonoBehaviour
+public class Boss : MonoBehaviour
 {
-    public List<string> bossDialogueTop = new List<string>();
-    public List<string> bossDialogueBottom = new List<string>();
+    private GameManager gameManager;
+    private Fade fade;
 
     public TextMeshProUGUI dialogue1;
     public TextMeshProUGUI dialogue2;
     public TextMeshProUGUI buttonSkip;
+
+    private int currentIndex = 0;
+
+    public List<string> bossDialogueTop = new List<string>();
+    public List<string> bossDialogueBottom = new List<string>();
+
 
     private bool additionalDialogueAdded = false;
 
@@ -33,12 +39,7 @@ public class BossDialogue : MonoBehaviour
     public List<string> bossFeedbackDialogueGBottom;
     #endregion
 
-    private int currentIndex = 0;
-
     private Dictionary<int, (List<string> top, List<string> bottom)> dialogueSet;
-
-    private GameManager gameManager;
-    private Fade fade;
 
     private void Awake()
     {
@@ -48,6 +49,7 @@ public class BossDialogue : MonoBehaviour
 
     private void Start()
     {
+
         if (!gameManager.hasStarted)
         {
             StartCoroutine(fade.FadeReverse());
@@ -87,6 +89,8 @@ public class BossDialogue : MonoBehaviour
             currentIndex = 0;
             UpdateDialogues();
         }
+
+
     }
 
     private void InitializeDialogue()
@@ -187,5 +191,14 @@ public class BossDialogue : MonoBehaviour
             fade.FadeEffect();
             SceneManager.LoadScene("03-Letter");      
         }
+    }
+
+    private int GetMalusIndex()
+    {
+        if(gameManager.malus == 0) return 0;
+        if(gameManager.malus == 1) return 1;
+        if(gameManager.malus == 2) return 2;
+        if(gameManager.malus == 3) return 3;
+        return 4;
     }
 }

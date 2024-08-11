@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
     public List<Word> listRedWords = new List<Word>();
 
     public bool hasStarted = true;
-    [HideInInspector]public int day = 1;
+    [HideInInspector]public int day = 0;
 
     private void Awake()
     {
