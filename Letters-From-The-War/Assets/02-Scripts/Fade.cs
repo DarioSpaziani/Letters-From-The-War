@@ -9,7 +9,7 @@ public class Fade : MonoBehaviour
 {
     private Image fadeImage;
     private TextMeshProUGUI dayText;
-    //modificabile scritta fade
+    //modificabile scritta fade giorno
     public float speedEffect = 1f;
     public bool isFadeEnded;
     private Color fadeColor;

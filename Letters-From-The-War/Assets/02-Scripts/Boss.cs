@@ -1,7 +1,6 @@
-using JetBrains.Annotations;
+using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,191 +13,161 @@ public class Boss : MonoBehaviour
     public TextMeshProUGUI dialogue2;
     public TextMeshProUGUI buttonSkip;
 
+    [Header("WARNING SENTENCES")]
+    public List<string> warningOneMalusTop;
+    public List<string> warningOneMalusBottom;
+    public List<string> warningTwoMalusTop;
+    public List<string> warningTwoMalusBottom;
+
+
+    [Header("FIRED SENTENCES")]
+    public List<string> firedDialogueTop;
+    public List<string> firedDialogueBottom;
+
+    [System.Serializable]
+    public class DialogueSet
+    {
+        public List<string> topDialogues;
+        public List<string> bottomDialogues;
+    }
+
+    [System.Serializable]
+    public class DailyDialogue
+    {
+        public DialogueSet zeroMalusDaily;
+        public DialogueSet oneMalusDaily;
+        public DialogueSet twoMalusDaily;
+    }
+
+    public DayZero dayZero;
+    public DayOne dayOne;
+    public DayTwo dayTwo;
+    public DayThree dayThree;
+    public DayFour dayFour;
+    public DayFive dayFive;
+    public DaySix daySix;
+    public DaySeven daySeven;
+
+    private List<DailyDialogue> dailyDialogues;
+
+    [ShowInInspector] private int fired = 4;
+
     private int currentIndex = 0;
-
-    public List<string> bossDialogueTop = new List<string>();
-    public List<string> bossDialogueBottom = new List<string>();
-
-
-    private bool additionalDialogueAdded = false;
-
-    #region Feedback Lists
-    public List<string> bossFeedbackDialogueATop;
-    public List<string> bossFeedbackDialogueABottom;
-    public List<string> bossFeedbackDialogueBTop;
-    public List<string> bossFeedbackDialogueBBottom;
-    public List<string> bossFeedbackDialogueCTop;
-    public List<string> bossFeedbackDialogueCBottom;
-    public List<string> bossFeedbackDialogueDTop;
-    public List<string> bossFeedbackDialogueDBottom;
-    public List<string> bossFeedbackDialogueETop;
-    public List<string> bossFeedbackDialogueEBottom;
-    public List<string> bossFeedbackDialogueFTop;
-    public List<string> bossFeedbackDialogueFBottom;
-    public List<string> bossFeedbackDialogueGTop;
-    public List<string> bossFeedbackDialogueGBottom;
-    #endregion
-
-    private Dictionary<int, (List<string> top, List<string> bottom)> dialogueSet;
 
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
         fade = FindObjectOfType<Fade>();
+        InitializeDailyDialogues();
+    }
+    private void InitializeDailyDialogues()
+    {
+        dailyDialogues = new List<DailyDialogue>
+        {
+            dayZero, dayOne, dayTwo, dayThree, dayFour, dayFive, daySix, daySeven
+        };
     }
 
     private void Start()
     {
 
+        Debug.Log("day : " + gameManager.day);
+        Debug.Log("malusDaily : " + gameManager.malusDaily);
         if (!gameManager.hasStarted)
         {
             StartCoroutine(fade.FadeReverse());
         }
-        
-        InitializeDialogue();
-        if (bossDialogueTop.Count > 0 && bossDialogueBottom.Count > 0)
-        {
-            UpdateDialogues();
-        }
-        else
-        {
-            Debug.LogWarning("Dialogue lists are empty or not assigned.");
-        }
-    }
-
-    private void Update()
-    {
-        if (gameManager.hasStarted || additionalDialogueAdded) return;
-        int dialogueSetKey = DetermineDialogueSetKey();
-        var (topList, bottomList) = dialogueSet[dialogueSetKey];
-
-        if (gameManager.malus == 2)
-        {
-            topList.Add("Pay more attention when you work.");
-            bottomList.Add("We will keep an eye on you.");
-            additionalDialogueAdded = true;
-        }
-        else if (gameManager.malus == 3)
-        {
-            topList.Add("This will be our last warning.");
-            bottomList.Add("You can't continue to work like this.");
-            additionalDialogueAdded = true;
-        }
-        if (additionalDialogueAdded)
-        {
-            currentIndex = 0;
-            UpdateDialogues();
-        }
-
-
-    }
-
-    private void InitializeDialogue()
-    {
-        dialogueSet = new Dictionary<int, (List<string> top, List<string> bottom)>
-        {
-            { 0, (bossFeedbackDialogueATop, bossFeedbackDialogueABottom) },
-            { 1, (bossFeedbackDialogueBTop, bossFeedbackDialogueBBottom) },
-            { 2, (bossFeedbackDialogueCTop, bossFeedbackDialogueCBottom) },
-            { 3, (bossFeedbackDialogueDTop, bossFeedbackDialogueDBottom) }
-        }; 
+        UpdateDialogues();
     }
 
     public void CycleDialogue()
     {
-        int dialogueSetKey = DetermineDialogueSetKey();
-        var (topList, bottomList) = dialogueSet[dialogueSetKey];
         if (!fade.isFadeEnded)
         {
-            if (gameManager.hasStarted)
+            DialogueSet currentDialogueSet = GetCurrentDialogueSet();
+            if (currentIndex < currentDialogueSet.topDialogues.Count - 1)
             {
-                if (currentIndex < bossDialogueTop.Count - 1)
-                {
-                    currentIndex++;
-                    UpdateDialogues();
-                }
-                else
-                {
-                    LoadNextScene();
-                }
+                currentIndex++;
+                UpdateDialogues();
             }
             else
             {
-                if (currentIndex < topList.Count - 1 )
-                {
-                    currentIndex++;
-                    UpdateDialogues();
-                }
-                else
-                {
-                    LoadNextScene();
-                }
+                LoadNextScene();
             }
-        }  
+        }
     }
 
-    public int DetermineDialogueSetKey()
+    private DialogueSet GetCurrentDialogueSet()
     {
-        if(gameManager.malus == 0)
+        DailyDialogue dailyDialogue = dailyDialogues[gameManager.day];
+
+        int malusLevel = DetermineMalusLevel(gameManager.malusDaily);
+        switch (malusLevel)
         {
-            return 0;
+            case 0: return dailyDialogue.zeroMalusDaily;
+            case 1: return dailyDialogue.oneMalusDaily;
+            case 2: return dailyDialogue.twoMalusDaily;
+            default: return dailyDialogue.zeroMalusDaily;
         }
-        if(gameManager.malus > 0 && gameManager.malus <= 5)
-        {
-            return 1;
-        }
-        if(gameManager.malus > 5 && gameManager.malus <= 10)
-        {
-            return 2;
-        }
-        if(gameManager.malus > 10 && gameManager.malus <= 15)
-        {
-            return 3;
-        }
-        return 0;
     }
 
     private void UpdateDialogues()
     {
-        int dialogueSetKey = DetermineDialogueSetKey();
-        var (topList, bottomList) = dialogueSet[dialogueSetKey];
-        if (gameManager.hasStarted)
+        DialogueSet currentDialogueSet = GetCurrentDialogueSet();
+        dialogue1.text = currentDialogueSet.topDialogues[currentIndex];
+        dialogue2.text = currentDialogueSet.bottomDialogues[currentIndex];
+
+        switch (gameManager.malusDaily)
         {
-            dialogue1.text = bossDialogueTop[currentIndex];
-            dialogue2.text = bossDialogueBottom[currentIndex];
+            case 1:
+
+                currentDialogueSet.topDialogues.Add(warningTwoMalusTop[currentIndex]);
+                currentDialogueSet.bottomDialogues.Add(warningTwoMalusBottom[currentIndex]);
+                break;
+
+            case 2:
+
+                currentDialogueSet.topDialogues.Add(warningTwoMalusTop[currentIndex]);
+                currentDialogueSet.bottomDialogues.Add(warningTwoMalusBottom[currentIndex]);
+                break;
+
+            default:
+                break;
         }
-        else
+
+        if(gameManager.malus >= fired)
         {
-            dialogue1.text= topList[currentIndex];
-            dialogue2.text= bottomList[currentIndex];
+            currentDialogueSet.topDialogues.Add(firedDialogueTop[currentIndex]);
+            currentDialogueSet.bottomDialogues.Add(firedDialogueBottom[currentIndex]);
         }
-        if ((gameManager.hasStarted && currentIndex == bossDialogueTop.Count - 1)
-            || (!gameManager.hasStarted && currentIndex == topList.Count - 1))
+
+        if (currentIndex == currentDialogueSet.topDialogues.Count - 1)
         {
             buttonSkip.text = "Next Scene";
         }
+    }
+    
+    private int DetermineMalusLevel(int malusDaily)
+    {
+        if (malusDaily == 0) return 0;
+        if (malusDaily == 1) return 1;
+        if (malusDaily == 2) return 2;
+        return 4; // Licenziamento
     }
 
     private void LoadNextScene()
     {
         if (gameManager.hasStarted)
         {
-            SceneManager.LoadScene("02-BossInterview");
+            gameManager.day++;
             gameManager.hasStarted = false;
+            SceneManager.LoadScene("02-BossInterview");
         }
         else
         {
             fade.FadeEffect();
-            SceneManager.LoadScene("03-Letter");      
+            gameManager.malusDaily = 0;
+            SceneManager.LoadScene("03-Letter");
         }
-    }
-
-    private int GetMalusIndex()
-    {
-        if(gameManager.malus == 0) return 0;
-        if(gameManager.malus == 1) return 1;
-        if(gameManager.malus == 2) return 2;
-        if(gameManager.malus == 3) return 3;
-        return 4;
     }
 }

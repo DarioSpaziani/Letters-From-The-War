@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    //TO DO modificabili valori licenziamento
     public WordData greenWord;
     public WordData yellowWord;
     public WordData redWord;

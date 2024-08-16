@@ -7,10 +7,11 @@ using UnityEngine.SceneManagement;
 
 public class Send : MonoBehaviour
 {
-    //TO DO cliccare solo una volta su send / fade e passa alla prossima scena
+    //TO DO calcolare parole oscurate, far apparire il fade e poi passare alla scena successiva
+
     private GameManager gameManager;
-    private bool hasBeenSend = false;
-    private bool calculationCompleted = false;
+    private Fade fade;
+    private bool hasBeenSend;
 
     public TextMeshProUGUI SendText;
 
@@ -18,16 +19,10 @@ public class Send : MonoBehaviour
     {
         SendText.text = "SEND";
         hasBeenSend = false;
-        calculationCompleted = false;
         gameManager = FindObjectOfType<GameManager>();
+        fade = FindObjectOfType<Fade>();
     }
-
-    private void Start()
-    {
-
-        Debug.Log("malusDaily : " + gameManager.malusDaily);
-    }
-    public void SendLetter()
+    public void CheckWords()
     {
         #region GREEN WORDS CHECK
         for (int i = 0; i < gameManager.listGreenWords.Count; i++)
@@ -76,26 +71,21 @@ public class Send : MonoBehaviour
             }
         }
         #endregion
-        hasBeenSend = true;
     }
 
     public void Update()
     {
-        if (hasBeenSend && !calculationCompleted)
+        if (hasBeenSend)
         {
             gameManager.Knowledge();
             gameManager.Malus();
-
-            calculationCompleted = true;
-            hasBeenSend = false;
-
-            SendText.text = "NEXT";
+            Invoke("SeeJournal", 1f);
         }
     }
 
     public void SeeJournal()
     {
-        if (calculationCompleted)
+        if (hasBeenSend)
         {
             gameManager.listGreenWords.Clear();
             gameManager.listYellowWords.Clear();
@@ -103,8 +93,13 @@ public class Send : MonoBehaviour
 
             gameManager.comprensibility = 0;
             gameManager.dailyPerformance = 0;
+            fade.FadeEffect();
 
-            SceneManager.LoadScene("04-Journal");
+            if (fade.isFadeEnded)
+            {
+                SceneManager.LoadScene("04-Journal");
+
+            }
         }
     }
 
