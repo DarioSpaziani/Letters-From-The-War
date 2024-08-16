@@ -10,6 +10,59 @@ public class JournalManager : MonoBehaviour
 {
     private GameManager gameManager;
 
+    #region Values journal
+    [Header("VALUES JOURNAL TITLES")]
+    [Header("DAY ONE")]
+    public float minRangeOneFirstTitle;
+    public float maxRangeOneFirstTitle;
+    public float minRangeOneSecondTitle;
+    public float maxRangeOneSecondTitle;
+    public float minRangeOneThirdTitle;
+    public float maxRangeOneThirdTitle; 
+    [Header("DAY TWO")]
+    public float minRangeTwoFirstTitle;
+    public float maxRangeTwoFirstTitle;
+    public float minRangeTwoSecondTitle;
+    public float maxRangeTwoSecondTitle;
+    public float minRangeTwoThirdTitle;
+    public float maxRangeTwoThirdTitle;
+    [Header("DAY THIRD")]
+    public float minRangeThirdFirstTitle;
+    public float maxRangeThirdFirstTitle;
+    public float minRangeThirdSecondTitle;
+    public float maxRangeThirdSecondTitle;
+    public float minRangeThirdThirdTitle;
+    public float maxRangeThirdThirdTitle;
+    [Header("DAY FOUR")]
+    public float minRangeFourthFirstTitle;
+    public float maxRangeFourthFirstTitle;
+    public float minRangeFourthSecondTitle;
+    public float maxRangeFourthSecondTitle;
+    public float minRangeFourthThirdTitle;
+    public float maxRangeFourthThirdTitle;
+    [Header("DAY FIVE")]
+    public float minRangeFiveFirstTitle;
+    public float maxRangeFiveFirstTitle;
+    public float minRangeFiveSecondTitle;
+    public float maxRangeFiveSecondTitle;
+    public float minRangeFiveThirdTitle;
+    public float maxRangeFiveThirdTitle;
+    [Header("DAY SIX")]
+    public float minRangeSixFirstTitle;
+    public float maxRangeSixFirstTitle;
+    public float minRangeSixSecondTitle;
+    public float maxRangeSixSecondTitle;
+    public float minRangeSixThirdTitle;
+    public float maxRangeSixThirdTitle;
+    [Header("DAY SEVEN")]
+    public float minRangeSevenFirstTitle;
+    public float maxRangeSevenFirstTitle;
+    public float minRangeSevenSecondTitle;
+    public float maxRangeSevenSecondTitle;
+    public float minRangeSevenThirdTitle;
+    public float maxRangeSevenThirdTitle;
+#endregion
+
     #region Journal Description
     public TextMeshProUGUI headline;
 
@@ -77,9 +130,10 @@ public class JournalManager : MonoBehaviour
 
     private int GetKnowledgeIndex(int knowledge)
     {
-        if (knowledge == 0) return 0;
-        if (knowledge >= 1 && knowledge <= 3) return 1;
-        if (knowledge >= 4 && knowledge <= 10) return 2;
+        //le modifiche devono essere modificabili a seconda del giorno
+        if (knowledge >= 0 && knowledge <= 0) return 0;
+        if (knowledge >= 0 || knowledge <= 0) return 1;
+        if (knowledge >= 0 && knowledge <= 0) return 2;
         return 3;
     }
 }

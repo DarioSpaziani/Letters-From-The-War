@@ -5,9 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    //TO DO modificabili valori licenziamento
     public WordData greenWord;
     public WordData yellowWord;
     public WordData redWord;
+
+    public int minLevelComprensibilityOne = 0;
+    public int maxLevelComprensibilityOne = 6;
+    public int minLevelComprensibilityTwo = 7;
+    public int maxLevelComprensibilityTwo = 15;
+
+    public int minLevelDailyPerfOne = 0;
+    public int maxLevelDailyPerfOne = 5;
+    public int minLevelDailyPerfTwo = 6;
+    public int maxLevelDailyPerfTwo = 10;
 
     [Range(0, 20)]
     public float comprensibility = 0;
@@ -26,7 +37,8 @@ public class GameManager : MonoBehaviour
     public List<Word> listRedWords = new List<Word>();
 
     public bool hasStarted = true;
-    [HideInInspector]public int day = 0;
+    [HideInInspector] public int malusDaily = 0;
+    [HideInInspector] public int day = 0;
 
     private void Awake()
     {
@@ -35,27 +47,27 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        comprensibility = Mathf.Clamp(comprensibility, 0, 20);
-        dailyPerformance = Mathf.Clamp(dailyPerformance, 0, 20);
+        comprensibility = Mathf.Clamp(comprensibility, minLevelComprensibilityOne, maxLevelComprensibilityTwo);
+        dailyPerformance = Mathf.Clamp(dailyPerformance, minLevelDailyPerfOne, maxLevelDailyPerfTwo);
 
-        if(comprensibility < 0)
+        if(comprensibility < minLevelComprensibilityOne)
         {
-            comprensibility = 0;
+            comprensibility = minLevelComprensibilityOne;
         }
-        if (comprensibility > 20)
+        if (comprensibility > maxLevelComprensibilityTwo)
         {
-            comprensibility = 20;
+            comprensibility = maxLevelComprensibilityTwo;
         }
     }
 
     
     public void Knowledge()
     {
-        if (comprensibility >= 6 && comprensibility <= 15)
+        if (comprensibility >= minLevelComprensibilityOne && comprensibility <= maxLevelComprensibilityOne)
         {
             knowledge += 1;
         }
-        if (comprensibility >= 16 && comprensibility <= 20)
+        if (comprensibility >= minLevelComprensibilityTwo && comprensibility <= minLevelComprensibilityTwo)
         {
             knowledge += 2;
         }
@@ -63,13 +75,15 @@ public class GameManager : MonoBehaviour
 
     public void Malus()
     {
-        if(dailyPerformance >= 0 && dailyPerformance <= 5)
+        if(dailyPerformance >= minLevelDailyPerfOne && dailyPerformance <= maxLevelDailyPerfOne)
         {
             malus += 2;
+            malusDaily += 2;
         }
-        if(dailyPerformance >= 6 && dailyPerformance <= 15)
+        if(dailyPerformance >= minLevelDailyPerfTwo && dailyPerformance <= maxLevelDailyPerfTwo)
         {
-            malus += 1;
+            malus += 1; 
+            malusDaily += 1;
         } 
     }    
 }

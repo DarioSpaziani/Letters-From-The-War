@@ -235,7 +235,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: In these suffering times we need people like you,
+  m_text: Testo di prova 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -244,8 +244,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -262,7 +262,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.1
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -298,7 +298,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 47.29416, y: 0, z: 68.09494, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -425,21 +425,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: TestBossDialogue, Assembly-CSharp
-        m_MethodName: Dialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: TestBossDialogue, Assembly-CSharp
-        m_MethodName: SkipScene
+      - m_Target: {fileID: 2512865916877227270}
+        m_TargetAssemblyTypeName: BossDialogue, Assembly-CSharp
+        m_MethodName: CycleDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -514,7 +502,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You look like such a qualified guy.
+  m_text: Testo di prova 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -523,8 +511,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -541,7 +529,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.1
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -577,7 +565,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 47.27417, y: 0, z: 75.65961, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -650,7 +638,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 700b074e5866dee46a3a3a66d4b745d6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0ae3989fa6b1b6146b59c45a47e56974, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -695,8 +683,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 157.7}
-  m_SizeDelta: {x: 700, y: 100}
+  m_AnchoredPosition: {x: 0, y: 160}
+  m_SizeDelta: {x: 900, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7051451485635557219
 CanvasRenderer:
@@ -719,14 +707,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: ee32b8ba00d51244fa5fe3f26bc486ff, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -745,7 +733,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7067910186441393878}
-  - component: {fileID: 1867641733652212156}
+  - component: {fileID: 2512865916877227270}
   m_Layer: 5
   m_Name: Boss
   m_TagString: Untagged
@@ -766,6 +754,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6914402343033969554}
+  - {fileID: 916266082326238097}
   - {fileID: 7844681425888482398}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -774,7 +763,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1867641733652212156
+--- !u!114 &2512865916877227270
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -783,40 +772,128 @@ MonoBehaviour:
   m_GameObject: {fileID: 8611652700985829821}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f12d07f2af5d090478260de622a4ad1e, type: 3}
+  m_Script: {fileID: 11500000, guid: a9ab3d8376253654fb889c61705dd980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossDialogue1:
-  - You look like such a qualified guy.
-  - ready to give it all for our great nation.
-  - In order to come out of this war as a stronger nation
-  - Some whiny baby, accidentally drafted in the army,
-  - As a member of the censorship organization,
-  bossDialogue2:
-  - In these suffering times we need people like you,
-  - Some families are unreasonably worried for our youths at the front.
-  - the people have to support us.
-  - overstates the conditions of the conflicts.
-  - 'you have to help your country and bring faith to your fellow compatriots. '
   dialogue1: {fileID: 1992391529598090925}
   dialogue2: {fileID: 756615756071224866}
   buttonSkip: {fileID: 8115063915876570130}
-  bossFeedbackDialogueZeroTop:
-  - ZERO TOP
-  bossFeedbackDialogueZeroBottom:
-  - ZERO BOTTOM
-  bossFeedbackDialogueOneTop:
-  - ONE TOP
-  bossFeedbackDialogueOneBottom:
-  - ONE BOTTOM
-  bossFeedbackDialogueTwoTop:
-  - TWO TOP
-  bossFeedbackDialogueTwoBottom:
-  - TWO BOTTOM
-  bossFeedbackDialogueThreeTop:
-  - THREE TOP
-  bossFeedbackDialogueThreeBottom:
-  - THREE BOTTOM
+  warningTwoMalusTop:
+  - aooo calmino eh
+  warningTwoMalusBottom:
+  - ti teniamo d'occhio
+  warningThirdMalusTop:
+  - alla prossima sei fuori
+  warningThirdMalusBottom:
+  - "non vogliamo pi\xF9 errori"
+  firedDialogueTop:
+  - ti abbiamo dato tante possibilita'
+  firedDialogueBottom:
+  - sei licenziato!
+  dayZero:
+    zeroMalusDaily:
+      topDialogues:
+      - colloquio
+      - colloquio1
+      - colloquio2
+      bottomDialogues:
+      - colloquio
+      - colloquio1
+      - colloquio2
+    oneMalusDaily:
+      topDialogues:
+      - 
+      bottomDialogues:
+      - 
+    twoMalusDaily:
+      topDialogues:
+      - 
+      bottomDialogues:
+      - 
+  dayOne:
+    zeroMalusDaily:
+      topDialogues:
+      - giorno1 zero malus
+      - giorno 1 zero malus 2
+      - giorno 1 zero malus 3
+      bottomDialogues:
+      - giorno 1 zero malus
+      - giorno 1 zero malus 2
+      - giorno 1 zero malus 3
+    oneMalusDaily:
+      topDialogues:
+      - giorno1 uno malus
+      - giorno1 uno malus1
+      bottomDialogues:
+      - giorno1 uno malus
+      - giorno1 uno malus1
+    twoMalusDaily:
+      topDialogues:
+      - giorno1 due malus
+      - giorno1 due malus 1
+      bottomDialogues:
+      - 'giorno1 due malus '
+      - giorno1 due malus 1
+  dayTwo:
+    zeroMalusDaily:
+      topDialogues: []
+      bottomDialogues: []
+    oneMalusDaily:
+      topDialogues: []
+      bottomDialogues: []
+    twoMalusDaily:
+      topDialogues: []
+      bottomDialogues: []
+  dayThree:
+    zeroMalusDaily:
+      topDialogues: []
+      bottomDialogues: []
+    oneMalusDaily:
+      topDialogues: []
+      bottomDialogues: []
+    twoMalusDaily:
+      topDialogues: []
+      bottomDialogues: []
+  dayFour:
+    zeroMalusDaily:
+      topDialogues: []
+      bottomDialogues: []
+    oneMalusDaily:
+      topDialogues: []
+      bottomDialogues: []
+    twoMalusDaily:
+      topDialogues: []
+      bottomDialogues: []
+  dayFive:
+    zeroMalusDaily:
+      topDialogues: []
+      bottomDialogues: []
+    oneMalusDaily:
+      topDialogues: []
+      bottomDialogues: []
+    twoMalusDaily:
+      topDialogues: []
+      bottomDialogues: []
+  daySix:
+    zeroMalusDaily:
+      topDialogues: []
+      bottomDialogues: []
+    oneMalusDaily:
+      topDialogues: []
+      bottomDialogues: []
+    twoMalusDaily:
+      topDialogues: []
+      bottomDialogues: []
+  daySeven:
+    zeroMalusDaily:
+      topDialogues: []
+      bottomDialogues: []
+    oneMalusDaily:
+      topDialogues: []
+      bottomDialogues: []
+    twoMalusDaily:
+      topDialogues: []
+      bottomDialogues: []
 --- !u!1 &8778524398066948190
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,8 +929,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 51}
-  m_SizeDelta: {x: 700, y: 100}
+  m_AnchoredPosition: {x: 0, y: 50}
+  m_SizeDelta: {x: 900, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1991500990681228059
 CanvasRenderer:
@@ -876,14 +953,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: ee32b8ba00d51244fa5fe3f26bc486ff, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -893,3 +970,117 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1001 &1165418813089238411
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7067910186441393878}
+    m_Modifications:
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 732
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 368
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4237450976111584802, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_Name
+      value: Fade
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998082865887386390, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: ping_pong_fade
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998082865887386390, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: timeFadePingPong
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8686589167798989206, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+--- !u!224 &916266082326238097 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+  m_PrefabInstance: {fileID: 1165418813089238411}
+  m_PrefabAsset: {fileID: 0}

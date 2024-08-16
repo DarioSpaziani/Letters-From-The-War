@@ -9,6 +9,7 @@ public class Fade : MonoBehaviour
 {
     private Image fadeImage;
     private TextMeshProUGUI dayText;
+    //modificabile scritta fade
     public float speedEffect = 1f;
     public bool isFadeEnded;
     private Color fadeColor;
@@ -54,7 +55,7 @@ public class Fade : MonoBehaviour
     {
         fadeImage.canvasRenderer.SetAlpha(1f);
         isFadeEnded = false;
-        dayText.text = "DAY " + gameManager.day;
+        dayText.text = "DAY : " + gameManager.day;
         yield return new WaitForSeconds(timeFadePingPong);
 
         dayText.text = "";
