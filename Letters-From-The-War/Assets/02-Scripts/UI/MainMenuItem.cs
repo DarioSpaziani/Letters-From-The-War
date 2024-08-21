@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenuItem : MonoBehaviour, IPointerEnterHandler,IPointerExitHandler, IPointerDownHandler
@@ -20,6 +21,27 @@ public class MainMenuItem : MonoBehaviour, IPointerEnterHandler,IPointerExitHand
         _text = GetComponentInChildren<TMP_Text>();
     }
 
+    public void NewGame()
+    {
+        SceneManager.LoadScene("01-Intro");
+    }
+
+    public void ContinueGame()
+    {
+        
+    }
+
+    public void ShowCredits()
+    {
+        
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+    
+    #region Pointer Events Management
     public void OnPointerEnter(PointerEventData eventData)
     {
         ToggleHighlited(true);
@@ -34,7 +56,7 @@ public class MainMenuItem : MonoBehaviour, IPointerEnterHandler,IPointerExitHand
     {
         ToggleClicked(true);
     }
-
+    
     private void ToggleHighlited(bool toggle)
     {
         if (toggle)
@@ -60,5 +82,6 @@ public class MainMenuItem : MonoBehaviour, IPointerEnterHandler,IPointerExitHand
             _text.color = _baseTextColor;
         }
     }
+    #endregion
     
 }

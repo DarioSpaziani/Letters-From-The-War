@@ -925,7 +925,13 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
+    Build: 0
+    Game Performance: 0
+    Legacy Analytics: 0
+    Purchasing: 0
+    UDP: 0
     UNet: 1
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -945,11 +951,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 3cc1af64-5061-4e17-8975-be3a671a5952
+  cloudProjectId: d9883920-3bb7-4320-aeeb-8362bbf76a00
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Letters-From-The-War 2024-07-09_20-14-45
-  organizationId: unity_wloxzoyhp3cj_q
+  projectName: Letters-From-The-War
+  organizationId: michaelbellotti
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
