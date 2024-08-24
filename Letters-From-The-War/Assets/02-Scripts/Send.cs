@@ -27,7 +27,7 @@ public class Send : MonoBehaviour
         #region GREEN WORDS CHECK
         for (int i = 0; i < gameManager.listGreenWords.Count; i++)
         {
-            if (gameManager.listGreenWords[i].obscured == true) 
+            if (gameManager.listGreenWords[i].obscured == true)
             {
                 gameManager.comprensibility = gameManager.greenWord.comprensibilityWordObscured;
                 gameManager.dailyPerformance = gameManager.greenWord.dailyPerfomanceWordObscured;
@@ -73,34 +73,21 @@ public class Send : MonoBehaviour
         #endregion
     }
 
-    public void Update()
-    {
-        if (hasBeenSend)
-        {
-            gameManager.Knowledge();
-            gameManager.Malus();
-            Invoke("SeeJournal", 1f);
-        }
-    }
-
     public void SeeJournal()
     {
-        if (hasBeenSend)
-        {
-            gameManager.listGreenWords.Clear();
-            gameManager.listYellowWords.Clear();
-            gameManager.listRedWords.Clear();
 
-            gameManager.comprensibility = 0;
-            gameManager.dailyPerformance = 0;
-            fade.FadeEffect();
+        gameManager.Knowledge();
+        gameManager.Malus();
+        gameManager.listGreenWords.Clear();
+        gameManager.listYellowWords.Clear();
+        gameManager.listRedWords.Clear();
 
-            if (fade.isFadeEnded)
-            {
-                SceneManager.LoadScene("04-Journal");
+        gameManager.comprensibility = 0;
+        gameManager.dailyPerformance = 0;
+        fade.FadeEffect();
 
-            }
-        }
+        fade.StartCoroutine(fade.CheckFadeAndLoadScene("04-Journal"));
+
     }
 
 }

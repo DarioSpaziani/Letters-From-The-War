@@ -70,9 +70,6 @@ public class Boss : MonoBehaviour
 
     private void Start()
     {
-
-        Debug.Log("day : " + gameManager.day);
-        Debug.Log("malusDaily : " + gameManager.malusDaily);
         if (!gameManager.hasStarted)
         {
             StartCoroutine(fade.FadeReverse());
@@ -161,13 +158,13 @@ public class Boss : MonoBehaviour
         {
             gameManager.day++;
             gameManager.hasStarted = false;
-            SceneManager.LoadScene("02-BossInterview");
+            fade.StartCoroutine(fade.CheckFadeAndLoadScene("02-BossInterview"));
         }
         else
         {
             fade.FadeEffect();
             gameManager.malusDaily = 0;
-            SceneManager.LoadScene("03-Letter");
+            fade.StartCoroutine(fade.CheckFadeAndLoadScene("03-Letter"));
         }
     }
 }
