@@ -2,10 +2,10 @@ using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Boss : MonoBehaviour
 {
+    #region VARIABLES
     private GameManager gameManager;
     private Fade fade;
 
@@ -13,6 +13,11 @@ public class Boss : MonoBehaviour
     public TextMeshProUGUI dialogue2;
     public TextMeshProUGUI buttonSkip;
 
+    [ShowInInspector] private int fired = 4;
+    private int currentIndex = 0;
+    #endregion
+
+    #region SENTENCES
     [Header("WARNING SENTENCES")]
     public List<string> warningOneMalusTop;
     public List<string> warningOneMalusBottom;
@@ -23,7 +28,9 @@ public class Boss : MonoBehaviour
     [Header("FIRED SENTENCES")]
     public List<string> firedDialogueTop;
     public List<string> firedDialogueBottom;
+    #endregion
 
+    #region DIALOGUES DATA
     [System.Serializable]
     public class DialogueSet
     {
@@ -49,17 +56,16 @@ public class Boss : MonoBehaviour
     public DaySeven daySeven;
 
     private List<DailyDialogue> dailyDialogues;
+    #endregion
 
-    [ShowInInspector] private int fired = 4;
-
-    private int currentIndex = 0;
-
+    #region UNITY_CALLS
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
         fade = FindObjectOfType<Fade>();
         InitializeDailyDialogues();
     }
+
     private void InitializeDailyDialogues()
     {
         dailyDialogues = new List<DailyDialogue>
@@ -167,4 +173,5 @@ public class Boss : MonoBehaviour
             fade.StartCoroutine(fade.CheckFadeAndLoadScene("03-Letter"));
         }
     }
+    #endregion
 }

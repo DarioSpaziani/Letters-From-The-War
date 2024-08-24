@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,18 +6,20 @@ using UnityEngine.UI;
 
 public class Fade : MonoBehaviour
 {
+    #region VARIABLES
     private Image fadeImage;
-    private TextMeshProUGUI dayText;
-    //modificabile scritta fade giorno
-    public float speedEffect = 1f;
-    public bool isFadeEnded;
-    private Color fadeColor;
     private Intro intro;
     private GameManager gameManager;
+    private TextMeshProUGUI dayText;
+    private Color fadeColor;
+    public float speedEffect = 1f;
     public float timeDelayScene = 1f;
     public float timeFadePingPong = 1f;
     public bool ping_pong_fade = false;
+    public bool isFadeEnded;
+    #endregion
 
+    #region UNITY_CALLS
     void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
@@ -71,4 +72,5 @@ public class Fade : MonoBehaviour
         yield return new WaitForSeconds(timeDelayScene);
         SceneManager.LoadScene(sceneName);
     }
+    #endregion
 }

@@ -7,13 +7,15 @@ using UnityEngine.SceneManagement;
 
 public class Send : MonoBehaviour
 {
-    //TO DO calcolare parole oscurate, far apparire il fade e poi passare alla scena successiva
-
+    //TO DO animazione lettera inviata
+    #region VARIABLES
     private GameManager gameManager;
     private Fade fade;
 
     public TextMeshProUGUI SendText;
+    #endregion
 
+    #region UNITY_CALLS
     private void Awake()
     {
         SendText.text = "SEND";
@@ -87,5 +89,5 @@ public class Send : MonoBehaviour
         fade.StartCoroutine(fade.CheckFadeAndLoadScene("04-Journal"));
 
     }
-
+    #endregion
 }

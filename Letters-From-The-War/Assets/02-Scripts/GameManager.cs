@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    #region VARIABLES
     public WordData greenWord;
     public WordData yellowWord;
     public WordData redWord;
@@ -38,7 +39,9 @@ public class GameManager : MonoBehaviour
     public bool hasStarted = true;
     [HideInInspector] public int malusDaily = 0;
     [HideInInspector] public int day = 0;
+    #endregion
 
+    #region UNITY_CALLS
     private void Awake()
     {
         DontDestroyOnLoad(this);
@@ -84,5 +87,6 @@ public class GameManager : MonoBehaviour
             malus += 1; 
             malusDaily += 1;
         } 
-    }    
+    }
+    #endregion
 }

@@ -1,16 +1,16 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditor.U2D.Aseprite;
 using UnityEngine;
-using UnityEngine.UI;
 
 
 public class JournalManager : MonoBehaviour
-    {
-        [System.Serializable]
+{
+    #region VARIABLES
+    private GameManager gameManager;
+    public TextMeshProUGUI headlineText;
+    #endregion
+
+    #region CLASS_DATA
+    [System.Serializable]
     public class DayRange
     {
         public float minRangeFirstTitle;
@@ -38,24 +38,24 @@ public class JournalManager : MonoBehaviour
         public DayRange range;
         public DayDescriptions descriptions;
     }
+    #endregion
 
-    private GameManager gameManager;
-
+    #region DAYS
     [Header("Day One")]
-
     public DayData dayOne;
+
     [Header("Day Two")]
-
-    public DayData dayTwo; 
+    public DayData dayTwo;
+    
     [Header("Day Three")]
-
     public DayData dayThree;
+
     [Header("Day Four")]
-
     public DayData dayFour;
-    [Header("Day Five")]
 
+    [Header("Day Five")]
     public DayData dayFive;
+
     [Header("Day Six")]
     public DayData daySix;
 
@@ -63,16 +63,12 @@ public class JournalManager : MonoBehaviour
     public DayData daySeven;
 
     private DayData[] dayData = new DayData[6]; // 0-7 (8 elementi)
+    #endregion
 
-    public TextMeshProUGUI headlineText;
-
+    #region UNITY_CALLS
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
-        if (gameManager == null)
-        {
-            Debug.LogError("GameManager not found!");
-        }
         dayData = new DayData[] { dayOne, dayTwo, dayThree, dayFour, dayFive, daySix, daySeven };
     }
 
@@ -84,19 +80,15 @@ public class JournalManager : MonoBehaviour
     public void UpdateJournalDisplay()
     {
         ShowTextDescriptions();
-        Debug.Log($"Day: {gameManager.day}, Knowledge: {gameManager.knowledge}, Index: {GetKnowledgeIndex(gameManager.day, gameManager.knowledge)}");
     }
 
     private void ShowTextDescriptions()
     {
-        Debug.Log($"Showing description for day: {gameManager.day}");
-        Debug.Log($"Current knowledge: {gameManager.knowledge}");
 
         if (gameManager.day >= 1 && gameManager.day < dayData.Length)
         {
             DayData currentDay = dayData[gameManager.day - 1];
             int knowledgeIndex = GetKnowledgeIndex(gameManager.day, gameManager.knowledge);
-            Debug.Log($"Knowledge index: {knowledgeIndex}");
 
             switch (knowledgeIndex)
             {
@@ -117,19 +109,12 @@ public class JournalManager : MonoBehaviour
                     break;
             }
         }
-        else
-        {
-            Debug.LogError($"Invalid day: {gameManager.day}");
-        }
     }
 
     private int GetKnowledgeIndex(int day, int knowledge)
     {
-        Debug.Log($"GetKnowledgeIndex called with day: {day}, knowledge: {knowledge}");
-
         if (day < 1 || day >= dayData.Length)
         {
-            Debug.LogError($"Invalid day: {day}. dayData length: {dayData.Length}");
             return 0;
         }
 
@@ -140,7 +125,7 @@ public class JournalManager : MonoBehaviour
         if (knowledge > range.minRangeThirdTitle && knowledge <= range.maxRangeThirdTitle) return 2;
         if (knowledge > range.minRangeFourthTitle && knowledge <= range.maxRangeFourthTitle) return 3;
 
-        Debug.LogWarning($"Knowledge {knowledge} is out of all ranges for day {day}");
         return 0;
     }
+    #endregion
 }

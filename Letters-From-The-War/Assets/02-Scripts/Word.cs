@@ -4,11 +4,14 @@ using UnityEngine.UI;
 
 public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
+    #region VARIABLES
     private Image image;
     public bool obscured = false;
     private bool isPointerOver = false;
     public WordData wordData;
-    
+    #endregion
+
+    #region UNITY_CALLS
     void Start()
     {
         image = GetComponent<Image>();
@@ -18,7 +21,6 @@ public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         if (Input.GetMouseButton(0))
         {
-
             if (isPointerOver)
             {
                 image.color = new Color(0, 0, 0, 1);
@@ -36,13 +38,8 @@ public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         }
     }
 
-    public void OnPointerEnter(PointerEventData pointerEventData)
-    {
-        isPointerOver = true;
-    }
+    public void OnPointerEnter(PointerEventData pointerEventData) => isPointerOver = true;
 
-    public void OnPointerExit(PointerEventData pointerEventData)
-    {
-        isPointerOver = false;
-    }
+    public void OnPointerExit(PointerEventData pointerEventData) => isPointerOver = false;
+    #endregion
 }

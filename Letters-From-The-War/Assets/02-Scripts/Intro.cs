@@ -3,9 +3,12 @@ using UnityEngine;
 
 public class Intro : MonoBehaviour
 {
+    #region VARIABLES
     public TextMeshProUGUI textMPRO;
     private Fade fade;
+    #endregion
 
+    #region UNITY_CALLS
     void Start()
     {
         fade = FindObjectOfType<Fade>();
@@ -31,5 +34,5 @@ public class Intro : MonoBehaviour
     {
         fade.StartCoroutine(fade.CheckFadeAndLoadScene("02-BossInterview"));
     }
-
+    #endregion
 }
