@@ -1141,7 +1141,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90034d1dd237a78418c51287f334f25c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  headline: {fileID: 2069632852}
+  minRangeOneFirstTitle: 0
+  maxRangeOneFirstTitle: 0
+  minRangeOneSecondTitle: 1
+  maxRangeOneSecondTitle: 1
+  minRangeOneThirdTitle: 2
+  maxRangeOneThirdTitle: 2
+  minRangeOneFourthTitle: 3
+  maxRangeOneFourthTitle: 3
+  minRangeTwoFirstTitle: 0
+  maxRangeTwoFirstTitle: 0
+  minRangeTwoSecondTitle: 1
+  maxRangeTwoSecondTitle: 2
+  minRangeTwoThirdTitle: 3
+  maxRangeTwoThirdTitle: 4
+  minRangeTwoFourthTitle: 3
+  maxRangeTwoFourthTitle: 4
+  minRangeThirdFirstTitle: 0
+  maxRangeThirdFirstTitle: 0
+  minRangeThirdSecondTitle: 1
+  maxRangeThirdSecondTitle: 1
+  minRangeThirdThirdTitle: 2
+  maxRangeThirdThirdTitle: 4
+  minRangeThirdFourthTitle: 5
+  maxRangeThirdFourthTitle: 6
+  minRangeFourthFirstTitle: 0
+  maxRangeFourthFirstTitle: 0
+  minRangeFourthSecondTitle: 1
+  maxRangeFourthSecondTitle: 2
+  minRangeFourthThirdTitle: 3
+  maxRangeFourthThirdTitle: 5
+  minRangeFourthFourthTitle: 6
+  maxRangeFourthFourthTitle: 8
+  minRangeFiveFirstTitle: 0
+  maxRangeFiveFirstTitle: 0
+  minRangeFiveSecondTitle: 1
+  maxRangeFiveSecondTitle: 3
+  minRangeFiveThirdTitle: 4
+  maxRangeFiveThirdTitle: 7
+  minRangeFiveFourthTitle: 8
+  maxRangeFiveFourthTitle: 10
+  minRangeSixFirstTitle: 0
+  maxRangeSixFirstTitle: 0
+  minRangeSixSecondTitle: 1
+  maxRangeSixSecondTitle: 3
+  minRangeSixThirdTitle: 4
+  maxRangeSixThirdTitle: 10
+  minRangeSixFourthTitle: 11
+  maxRangeSixFourthTitle: 12
+  minRangeSevenFirstTitle: 0
+  maxRangeSevenFirstTitle: 0
+  minRangeSevenSecondTitle: 1
+  maxRangeSevenSecondTitle: 3
+  minRangeSevenThirdTitle: 4
+  maxRangeSevenThirdTitle: 10
+  minRangeSevenFourthTitle: 11
+  maxRangeSevenFourthTitle: 14
+  headlineText: {fileID: 2069632852}
   day1Descriptions:
   - People from Vitulia support their young heroes at the front fulfilling all the
     hard obligations. We are truly a great nation
@@ -1149,14 +1205,14 @@ MonoBehaviour:
     nation, Vitulia has the support of all its citizens!
   - Small minorities spreading disinformation silenced for the benefit of the truth
     and of our citizens
-  - aaaaaaaaaaaaaaaaaaaaaaa
+  - non raggiungibile
   day2Descriptions:
   - We are winning the war! Thanks to the hard work of its men and women, Vitualia
     is proving its value to the other nations
   - Anti nationalistic fringe boycotts vitualian efforts by spreading false information
   - Anti nationalistic fringe boycotts vitualian efforts by accusing the government
     of wasting resources in the war
-  - bbbbbbbbbbbbbbbbbb
+  - non raggiungibile
   day3Descriptions:
   - Soldiers at the front are happy to know that thanks to them we will come out
     stronger from the war

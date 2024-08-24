@@ -12,66 +12,82 @@ public class JournalManager : MonoBehaviour
 
     #region Values journal
     [Header("VALUES JOURNAL TITLES")]
+    public DayRange[] dayRanges = new DayRange[8];
 
     [Header("DAY ONE")]
-    public float minRangeOneFirstTitle;
-    public float maxRangeOneFirstTitle;
-    public float minRangeOneSecondTitle;
-    public float maxRangeOneSecondTitle;
-    public float minRangeOneThirdTitle;
-    public float maxRangeOneThirdTitle; 
+    public int minRangeOneFirstTitle;
+    public int maxRangeOneFirstTitle;
+    public int minRangeOneSecondTitle;
+    public int maxRangeOneSecondTitle;
+    public int minRangeOneThirdTitle;
+    public int maxRangeOneThirdTitle;
+    public int minRangeOneFourthTitle;
+    public int maxRangeOneFourthTitle;
 
     [Header("DAY TWO")]
-    public float minRangeTwoFirstTitle;
-    public float maxRangeTwoFirstTitle;
-    public float minRangeTwoSecondTitle;
-    public float maxRangeTwoSecondTitle;
-    public float minRangeTwoThirdTitle;
-    public float maxRangeTwoThirdTitle;
+    public int minRangeTwoFirstTitle;
+    public int maxRangeTwoFirstTitle;
+    public int minRangeTwoSecondTitle;
+    public int maxRangeTwoSecondTitle;
+    public int minRangeTwoThirdTitle;
+    public int maxRangeTwoThirdTitle;
+    public int minRangeTwoFourthTitle;
+    public int maxRangeTwoFourthTitle;
 
     [Header("DAY THIRD")]
-    public float minRangeThirdFirstTitle;
-    public float maxRangeThirdFirstTitle;
-    public float minRangeThirdSecondTitle;
-    public float maxRangeThirdSecondTitle;
-    public float minRangeThirdThirdTitle;
-    public float maxRangeThirdThirdTitle;
+    public int minRangeThirdFirstTitle;
+    public int maxRangeThirdFirstTitle;
+    public int minRangeThirdSecondTitle;
+    public int maxRangeThirdSecondTitle;
+    public int minRangeThirdThirdTitle;
+    public int maxRangeThirdThirdTitle;
+    public int minRangeThirdFourthTitle;
+    public int maxRangeThirdFourthTitle;
 
     [Header("DAY FOUR")]
-    public float minRangeFourthFirstTitle;
-    public float maxRangeFourthFirstTitle;
-    public float minRangeFourthSecondTitle;
-    public float maxRangeFourthSecondTitle;
-    public float minRangeFourthThirdTitle;
-    public float maxRangeFourthThirdTitle;
+    public int minRangeFourthFirstTitle;
+    public int maxRangeFourthFirstTitle;
+    public int minRangeFourthSecondTitle;
+    public int maxRangeFourthSecondTitle;
+    public int minRangeFourthThirdTitle;
+    public int maxRangeFourthThirdTitle;
+    public int minRangeFourthFourthTitle;
+    public int maxRangeFourthFourthTitle;
 
     [Header("DAY FIVE")]
-    public float minRangeFiveFirstTitle;
-    public float maxRangeFiveFirstTitle;
-    public float minRangeFiveSecondTitle;
-    public float maxRangeFiveSecondTitle;
-    public float minRangeFiveThirdTitle;
-    public float maxRangeFiveThirdTitle;
+    public int minRangeFiveFirstTitle;
+    public int maxRangeFiveFirstTitle;
+    public int minRangeFiveSecondTitle;
+    public int maxRangeFiveSecondTitle;
+    public int minRangeFiveThirdTitle;
+    public int maxRangeFiveThirdTitle;
+    public int minRangeFiveFourthTitle;
+    public int maxRangeFiveFourthTitle;
 
     [Header("DAY SIX")]
-    public float minRangeSixFirstTitle;
-    public float maxRangeSixFirstTitle;
-    public float minRangeSixSecondTitle;
-    public float maxRangeSixSecondTitle;
-    public float minRangeSixThirdTitle;
-    public float maxRangeSixThirdTitle;
+    public int minRangeSixFirstTitle;
+    public int maxRangeSixFirstTitle;
+    public int minRangeSixSecondTitle;
+    public int maxRangeSixSecondTitle;
+    public int minRangeSixThirdTitle;
+    public int maxRangeSixThirdTitle;
+    public int minRangeSixFourthTitle;
+    public int maxRangeSixFourthTitle;
 
     [Header("DAY SEVEN")]
-    public float minRangeSevenFirstTitle;
-    public float maxRangeSevenFirstTitle;
-    public float minRangeSevenSecondTitle;
-    public float maxRangeSevenSecondTitle;
-    public float minRangeSevenThirdTitle;
-    public float maxRangeSevenThirdTitle;
+    public int minRangeSevenFirstTitle;
+    public int maxRangeSevenFirstTitle;
+    public int minRangeSevenSecondTitle;
+    public int maxRangeSevenSecondTitle;
+    public int minRangeSevenThirdTitle;
+    public int maxRangeSevenThirdTitle;
+    public int minRangeSevenFourthTitle;
+    public int maxRangeSevenFourthTitle;
     #endregion
 
     #region Journal Description
-    public TextMeshProUGUI headline;
+
+    public TextMeshProUGUI headlineText;
 
     private Dictionary<int, List<string>> journalDescriptions;
 
@@ -82,12 +98,134 @@ public class JournalManager : MonoBehaviour
     public List<string> day5Descriptions;
     public List<string> day6Descriptions;
     public List<string> day7Descriptions;
+
+    public class DayRange
+    {
+        public int minRangeFirstTitle;
+        public int maxRangeFirstTitle;
+        public int minRangeSecondTitle;
+        public int maxRangeSecondTitle;
+        public int minRangeThirdTitle;
+        public int maxRangeThirdTitle;
+        public int minRangeFourthTitle;
+        public int maxRangeFourthTitle;
+    }
+
     #endregion
 
     private void Awake()
     {
-        gameManager = FindObjectOfType<GameManager>();
+        gameManager = FindObjectOfType<GameManager>(); 
+        if (gameManager == null)
+        {
+            Debug.LogError("GameManager not found!");
+        }
+        if (dayRanges == null || dayRanges.Length == 0)
+        {
+            dayRanges = new DayRange[8]; // 0-7 (8 elementi)
+            for (int i = 0; i < dayRanges.Length; i++)
+            {
+                dayRanges[i] = new DayRange();
+            }
+        }
+        AssignDayRanges();
     }
+
+    #region Days
+    private void AssignDayRanges()
+    {
+        // Giorno 1
+        dayRanges[1] = new DayRange
+        {
+            minRangeFirstTitle = minRangeOneFirstTitle,
+            maxRangeFirstTitle = maxRangeOneFirstTitle,
+            minRangeSecondTitle = minRangeOneSecondTitle,
+            maxRangeSecondTitle = maxRangeOneSecondTitle,
+            minRangeThirdTitle = minRangeOneThirdTitle,
+            maxRangeThirdTitle = maxRangeOneThirdTitle,
+            minRangeFourthTitle = minRangeOneFourthTitle,
+            maxRangeFourthTitle = maxRangeOneFourthTitle
+        };
+
+        // Giorno 2
+        dayRanges[2] = new DayRange
+        {
+            minRangeFirstTitle = minRangeTwoFirstTitle,
+            maxRangeFirstTitle = maxRangeTwoFirstTitle,
+            minRangeSecondTitle = minRangeTwoSecondTitle,
+            maxRangeSecondTitle = maxRangeTwoSecondTitle,
+            minRangeThirdTitle = minRangeTwoThirdTitle,
+            maxRangeThirdTitle = maxRangeTwoThirdTitle,
+            minRangeFourthTitle = minRangeTwoFourthTitle,
+            maxRangeFourthTitle = maxRangeTwoFourthTitle
+        };
+
+        // Giorno 3
+        dayRanges[3] = new DayRange
+        {
+            minRangeFirstTitle = minRangeThirdFirstTitle,
+            maxRangeFirstTitle = maxRangeThirdFirstTitle,
+            minRangeSecondTitle = minRangeThirdSecondTitle,
+            maxRangeSecondTitle = maxRangeThirdSecondTitle,
+            minRangeThirdTitle = minRangeThirdThirdTitle,
+            maxRangeThirdTitle = maxRangeThirdThirdTitle,
+            minRangeFourthTitle = minRangeThirdFourthTitle,
+            maxRangeFourthTitle = maxRangeThirdFourthTitle
+        };
+
+        // Giorno 4
+        dayRanges[4] = new DayRange
+        {
+            minRangeFirstTitle = minRangeFourthFirstTitle,
+            maxRangeFirstTitle = maxRangeFourthFirstTitle,
+            minRangeSecondTitle = minRangeFourthSecondTitle,
+            maxRangeSecondTitle = maxRangeFourthSecondTitle,
+            minRangeThirdTitle = minRangeFourthThirdTitle,
+            maxRangeThirdTitle = maxRangeFourthThirdTitle,
+            minRangeFourthTitle = minRangeFourthFourthTitle,
+            maxRangeFourthTitle = maxRangeFourthFourthTitle
+        };
+
+        // Giorno 5
+        dayRanges[5] = new DayRange
+        {
+            minRangeFirstTitle = minRangeFiveFirstTitle,
+            maxRangeFirstTitle = maxRangeFiveFirstTitle,
+            minRangeSecondTitle = minRangeFiveSecondTitle,
+            maxRangeSecondTitle = maxRangeFiveSecondTitle,
+            minRangeThirdTitle = minRangeFiveThirdTitle,
+            maxRangeThirdTitle = maxRangeFiveThirdTitle,
+            minRangeFourthTitle = minRangeFiveFourthTitle,
+            maxRangeFourthTitle = maxRangeFiveFourthTitle
+        };
+
+        // Giorno 6
+        dayRanges[6] = new DayRange
+        {
+            minRangeFirstTitle = minRangeSixFirstTitle,
+            maxRangeFirstTitle = maxRangeSixFirstTitle,
+            minRangeSecondTitle = minRangeSixSecondTitle,
+            maxRangeSecondTitle = maxRangeSixSecondTitle,
+            minRangeThirdTitle = minRangeSixThirdTitle,
+            maxRangeThirdTitle = maxRangeSixThirdTitle,
+            minRangeFourthTitle = minRangeSixFourthTitle,
+            maxRangeFourthTitle = maxRangeSixFourthTitle
+        };
+
+        // Giorno 7
+        dayRanges[7] = new DayRange
+        {
+            minRangeFirstTitle = minRangeSevenFirstTitle,
+            maxRangeFirstTitle = maxRangeSevenFirstTitle,
+            minRangeSecondTitle = minRangeSevenSecondTitle,
+            maxRangeSecondTitle = maxRangeSevenSecondTitle,
+            minRangeThirdTitle = minRangeSevenThirdTitle,
+            maxRangeThirdTitle = maxRangeSevenThirdTitle,
+            minRangeFourthTitle = minRangeSevenFourthTitle,
+            maxRangeFourthTitle = maxRangeSevenFourthTitle
+        };
+    }
+    #endregion
 
     private void Start()
     {
@@ -111,36 +249,64 @@ public class JournalManager : MonoBehaviour
 
     public void UpdateJournalDisplay()
     {
-        ShowTextDescriptions(gameManager.day);
+        Debug.Log($"UpdateJournalDisplay called. Current day: {gameManager.day}, Knowledge: {gameManager.knowledge}");
+        ShowTextDescriptions();
+        gameManager.day++;
     }
 
-    private void ShowTextDescriptions(int day)
+    private void ShowTextDescriptions()
     {
-        if (journalDescriptions.TryGetValue(day, out List<string> descriptions))
+
+        if (journalDescriptions.TryGetValue(gameManager.day, out List<string> descriptions))
         {
             if (descriptions.Count == 4)
             {
-                int knowledgeIndex = GetKnowledgeIndex(gameManager.knowledge);
-                headline.text = (descriptions[knowledgeIndex]);   
+                int knowledgeIndex = GetKnowledgeIndex(gameManager.day, gameManager.knowledge);
+                Debug.Log("Showing description for day: {day}");
+
+                Debug.Log($"Current knowledge: {gameManager.knowledge}");
+                headlineText.text = (descriptions[knowledgeIndex]);   
             }
             else
             {
-                Debug.LogWarning($"Not enough descriptions for day {day}");
+                Debug.LogWarning($"Not enough descriptions for day {gameManager.day}");
             }
         }
         else
         {
-            Debug.LogError($"No journal descriptions for day {day}");
+            Debug.LogError($"No journal descriptions for day {gameManager.day}");
         }
-        gameManager.day++;
     }
 
-    private int GetKnowledgeIndex(int knowledge)
+    private int GetKnowledgeIndex(int day, int knowledge)
     {
-        //TO DO le variabili per settare il titolo devono essere modificabili a seconda del giorno
-        if (knowledge >= 0 && knowledge <= 0) return 0;
-        if (knowledge >= 0 || knowledge <= 0) return 1;
-        if (knowledge >= 0 && knowledge <= 0) return 2;
-        return 3;
+        Debug.Log($"GetKnowledgeIndex called with day: {day}, knowledge: {knowledge}");
+
+        if (dayRanges == null)
+        {
+            Debug.LogError("dayRanges is null");
+            return 0;
+        }
+
+        if (day < 1 || day >= dayRanges.Length)
+        {
+            Debug.LogError($"Invalid day: {day}. dayRanges length: {dayRanges.Length}");
+            return 0;
+        }
+
+        DayRange range = dayRanges[day];
+        if (range == null)
+        {
+            Debug.LogError($"DayRange for day {day} is null");
+            return 0;
+        }
+
+        if (knowledge >= range.minRangeFirstTitle && knowledge <= range.maxRangeFirstTitle) return 0;
+        if (knowledge > range.minRangeSecondTitle && knowledge <= range.maxRangeSecondTitle) return 1;
+        if (knowledge > range.minRangeThirdTitle && knowledge <= range.maxRangeThirdTitle) return 2;
+        if (knowledge > range.minRangeFourthTitle && knowledge <= range.maxRangeFourthTitle) return 3;
+
+        Debug.LogWarning($"Knowledge {knowledge} is out of all ranges for day {day}");
+        return 0;
     }
 }

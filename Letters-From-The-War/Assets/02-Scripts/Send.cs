@@ -11,14 +11,12 @@ public class Send : MonoBehaviour
 
     private GameManager gameManager;
     private Fade fade;
-    private bool hasBeenSend;
 
     public TextMeshProUGUI SendText;
 
     private void Awake()
     {
         SendText.text = "SEND";
-        hasBeenSend = false;
         gameManager = FindObjectOfType<GameManager>();
         fade = FindObjectOfType<Fade>();
     }
