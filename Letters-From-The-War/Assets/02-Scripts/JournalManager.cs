@@ -75,16 +75,16 @@ public class JournalManager : MonoBehaviour
     private void Start()
     {
         UpdateJournalDisplay();
-    }
+    } 
 
-    public void UpdateJournalDisplay()
+    public void UpdateJournalDisplay() 
     {
         ShowTextDescriptions();
-    }
+    } 
+    
 
     private void ShowTextDescriptions()
     {
-
         if (gameManager.day >= 1 && gameManager.day < dayData.Length)
         {
             DayData currentDay = dayData[gameManager.day - 1];

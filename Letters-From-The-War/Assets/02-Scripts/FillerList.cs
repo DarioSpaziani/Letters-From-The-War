@@ -1,21 +1,17 @@
-using Sirenix.OdinInspector;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FillerList : MonoBehaviour
 {
     #region VARIABLES
     private GameManager gameManager;
-
-    [ShowInInspector] private List<string> letters;
     #endregion
 
     #region UNITY_CALLS
     private void Awake()
     {
-        gameManager = FindObjectOfType<GameManager>();  
+        gameManager = FindObjectOfType<GameManager>();
     }
+
     void Start()
     {
         Word[] words = FindObjectsOfType<Word>();
@@ -34,7 +30,6 @@ public class FillerList : MonoBehaviour
             {
                 gameManager.listRedWords.Add(w);
             }
-
         }
     }
     #endregion

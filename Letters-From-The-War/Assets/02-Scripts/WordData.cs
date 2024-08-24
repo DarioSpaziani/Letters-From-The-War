@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Word", menuName = "ScriptableObjects/Data", order = 1)]

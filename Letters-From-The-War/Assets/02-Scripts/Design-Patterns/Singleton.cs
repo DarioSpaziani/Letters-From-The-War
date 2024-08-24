@@ -2,9 +2,12 @@ using UnityEngine;
 
 public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 {
+    #region VARIABLES
     private static T instance;
     public static T Instance => instance;
+    #endregion
 
+    #region UNITY_CALLS
     protected virtual void Awake()
     {
         if (instance == null)
@@ -17,4 +20,5 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    #endregion
 }

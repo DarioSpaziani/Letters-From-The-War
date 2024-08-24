@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class SelectionContainer : MonoBehaviour
 {
-    // Start is called before the first frame update
+    #region UNITY_CALLS
     void Start()
     {
         MainMenuManager._selectionContainer = this;
         gameObject.SetActive(false);
     }
+    #endregion
 }

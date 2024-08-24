@@ -1,7 +1,5 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -32,13 +30,13 @@ public class GameManager : MonoBehaviour
     [Range(0, 20)]
     public int knowledge = 0;
 
+    [HideInInspector] public int malusDaily = 0;
+    [HideInInspector] public int day = 0;
+    public bool hasStarted = true;
+
     public List<Word> listGreenWords = new List<Word>();
     public List<Word> listYellowWords = new List<Word>();
     public List<Word> listRedWords = new List<Word>();
-
-    public bool hasStarted = true;
-    [HideInInspector] public int malusDaily = 0;
-    [HideInInspector] public int day = 0;
     #endregion
 
     #region UNITY_CALLS

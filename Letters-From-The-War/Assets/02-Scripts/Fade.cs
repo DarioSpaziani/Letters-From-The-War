@@ -28,9 +28,9 @@ public class Fade : MonoBehaviour
         dayText = GetComponentInChildren<TextMeshProUGUI>();
     }
 
-    private void Start()
+    private void Start() 
     {
-        dayText.text = "";
+        dayText.text = ""; 
     }
 
     public void Update()
@@ -47,23 +47,20 @@ public class Fade : MonoBehaviour
         }
     }
 
-    public void FadeEffect()
-    {
-        fadeImage.CrossFadeAlpha(1.0f, speedEffect, false);
-    }
+    public void FadeEffect() => fadeImage.CrossFadeAlpha(1.0f, speedEffect, false);
 
     public IEnumerator FadeReverse()
     {
         fadeImage.canvasRenderer.SetAlpha(1f);
         isFadeEnded = false;
         dayText.text = "DAY : " + gameManager.day;
+
         yield return new WaitForSeconds(timeFadePingPong);
 
         dayText.text = "";
         fadeImage.CrossFadeAlpha(0.0f, speedEffect, false);
         isFadeEnded = true;
     }
-
 
     public IEnumerator CheckFadeAndLoadScene(string sceneName)
     {

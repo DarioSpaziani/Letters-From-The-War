@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class TitleContainer : MonoBehaviour
 {
+    #region UNITY_CALLS
     private void Start()
     {
         MainMenuManager._titleContainer = this;
@@ -14,4 +15,5 @@ public class TitleContainer : MonoBehaviour
             MainMenuManager.OnAnyKeyPressed();
         }
     }
+    #endregion
 }

@@ -1,17 +1,12 @@
-using JetBrains.Annotations;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Send : MonoBehaviour
 {
     //TO DO animazione lettera inviata
     #region VARIABLES
-    private GameManager gameManager;
     private Fade fade;
-
+    private GameManager gameManager;
     public TextMeshProUGUI SendText;
     #endregion
 
@@ -75,19 +70,19 @@ public class Send : MonoBehaviour
 
     public void SeeJournal()
     {
-
         gameManager.Knowledge();
         gameManager.Malus();
+
         gameManager.listGreenWords.Clear();
         gameManager.listYellowWords.Clear();
         gameManager.listRedWords.Clear();
 
         gameManager.comprensibility = 0;
         gameManager.dailyPerformance = 0;
+
         fade.FadeEffect();
 
         fade.StartCoroutine(fade.CheckFadeAndLoadScene("04-Journal"));
-
     }
     #endregion
 }

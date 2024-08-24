@@ -6,9 +6,9 @@ public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     #region VARIABLES
     private Image image;
+    public WordData wordData;
     public bool obscured = false;
     private bool isPointerOver = false;
-    public WordData wordData;
     #endregion
 
     #region UNITY_CALLS
@@ -38,6 +38,7 @@ public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         }
     }
 
+    //expression-bodied syntax
     public void OnPointerEnter(PointerEventData pointerEventData) => isPointerOver = true;
 
     public void OnPointerExit(PointerEventData pointerEventData) => isPointerOver = false;
