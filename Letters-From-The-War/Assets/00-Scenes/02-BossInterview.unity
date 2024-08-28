@@ -157,7 +157,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
 --- !u!114 &668511249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,7 +216,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2063872166}
+  - {fileID: 2011862699}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -410,7 +410,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1001 &2063872165
+--- !u!1001 &2011862698
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -418,94 +418,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 668511251}
     m_Modifications:
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: warningThreeMalusTop.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: warningThreeMalusBottom.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: warningThreeMalusTop.Array.data[0]
-      value: la giornata scorsa hai fatto troppi errori
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: warningThreeMalusBottom.Array.data[0]
-      value: stai attento o verrai licenziato
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.oneMalusDaily.topDialogues.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.twoMalusDaily.topDialogues.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.zeroMalusDaily.topDialogues.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.oneMalusDaily.bottomDialogues.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.oneMalusDaily.topDialogues.Array.data[0]
-      value: giorno 2 one malus
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.oneMalusDaily.topDialogues.Array.data[1]
-      value: giorno 2 one malus1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.twoMalusDaily.bottomDialogues.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.twoMalusDaily.topDialogues.Array.data[0]
-      value: giorno 2 two malus
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.twoMalusDaily.topDialogues.Array.data[1]
-      value: giorno 2 two malus1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.zeroMalusDaily.bottomDialogues.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.zeroMalusDaily.topDialogues.Array.data[0]
-      value: giorno 2 zero malus
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.zeroMalusDaily.topDialogues.Array.data[1]
-      value: giorno 2 zero malus1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.oneMalusDaily.bottomDialogues.Array.data[0]
-      value: giorno 2 one malus
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.oneMalusDaily.bottomDialogues.Array.data[1]
-      value: giorno 2 one malus1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.twoMalusDaily.bottomDialogues.Array.data[0]
-      value: giorno 2 two malus
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.twoMalusDaily.bottomDialogues.Array.data[1]
-      value: giorno 2 two malus1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.zeroMalusDaily.bottomDialogues.Array.data[0]
-      value: giorno 2 zero malus
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.zeroMalusDaily.bottomDialogues.Array.data[1]
-      value: giorno 2 zero malus1
-      objectReference: {fileID: 0}
     - target: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -516,27 +428,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_LocalPosition.x
@@ -556,15 +468,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -595,10 +507,10 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
---- !u!224 &2063872166 stripped
+--- !u!224 &2011862699 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-  m_PrefabInstance: {fileID: 2063872165}
+  m_PrefabInstance: {fileID: 2011862698}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2076556601
 GameObject:
