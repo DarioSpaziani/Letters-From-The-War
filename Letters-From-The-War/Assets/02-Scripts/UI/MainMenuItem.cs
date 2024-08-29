@@ -14,6 +14,8 @@ public class MainMenuItem : MonoBehaviour, IPointerEnterHandler,IPointerExitHand
     [SerializeField] private Color _baseTextColor;
     [SerializeField] private Color _highlitedTextColor;
     [SerializeField] private Color _clickedTextColor;
+    [Header("SFX")] 
+    [SerializeField] private AudioClip _hoverSound;
 
     private void Awake()
     {
@@ -45,6 +47,7 @@ public class MainMenuItem : MonoBehaviour, IPointerEnterHandler,IPointerExitHand
     public void OnPointerEnter(PointerEventData eventData)
     {
         ToggleHighlited(true);
+        AudioManager.Instance._oneShotAudioSource.PlayOneShot(_hoverSound);
     }
 
     public void OnPointerExit(PointerEventData eventData)
