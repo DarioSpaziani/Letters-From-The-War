@@ -1,6 +1,6 @@
 public class MainMenuManager
 {
-    #region VARIABLES
+    #region FIELDS
     public static MainMenuManager Instance;
     public static TitleContainer _titleContainer;
     public static SelectionContainer _selectionContainer;

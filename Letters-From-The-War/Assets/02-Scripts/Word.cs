@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    #region VARIABLES
+    #region FIELDS
     private Image image;
     public WordData wordData;
     public bool obscured = false;

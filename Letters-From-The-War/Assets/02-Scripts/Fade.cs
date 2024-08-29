@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Fade : MonoBehaviour
 {
-    #region VARIABLES
+    #region FIELDS
     private Image fadeImage;
     private Intro intro;
     private GameManager gameManager;

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class MainMenuItem : MonoBehaviour, IPointerEnterHandler,IPointerExitHandler, IPointerDownHandler
 {
-    #region VARIABLES
+    #region FIELDS
     private RectTransform _iconTransform;
     private TMP_Text _text;
     private const int _HIGHLITED_ICON_ROTATION = 45;

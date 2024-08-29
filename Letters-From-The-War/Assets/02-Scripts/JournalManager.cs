@@ -1,13 +1,11 @@
 using TMPro;
 using UnityEngine;
 
-
 public class JournalManager : MonoBehaviour
 {
-    #region VARIABLES
+    #region FIELDS
     private GameManager gameManager;
     public TextMeshProUGUI headlineText;
-    #endregion
 
     #region CLASS_DATA
     [System.Serializable]
@@ -46,7 +44,7 @@ public class JournalManager : MonoBehaviour
 
     [Header("Day Two")]
     public DayData dayTwo;
-    
+
     [Header("Day Three")]
     public DayData dayThree;
 
@@ -64,6 +62,7 @@ public class JournalManager : MonoBehaviour
 
     private DayData[] dayData = new DayData[6]; // 0-7 (8 elementi)
     #endregion
+    #endregion
 
     #region UNITY_CALLS
     private void Awake()
@@ -75,6 +74,7 @@ public class JournalManager : MonoBehaviour
     private void Start()
     {
         UpdateJournalDisplay();
+        gameManager.day++;
     } 
 
     public void UpdateJournalDisplay() 

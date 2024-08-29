@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Intro : MonoBehaviour
 {
-    #region VARIABLES
+    #region FIELDS
     public TextMeshProUGUI textMPRO;
     private Fade fade;
     #endregion

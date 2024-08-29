@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour
 {
+    #region FIELDS
     #region VARIABLES
     private GameManager gameManager;
     private Fade fade;
@@ -57,6 +58,7 @@ public class Boss : MonoBehaviour
 
     private List<DailyDialogue> dailyDialogues;
     #endregion
+    #endregion
 
     #region UNITY_CALLS
     private void Awake()
@@ -65,7 +67,7 @@ public class Boss : MonoBehaviour
         fade = FindObjectOfType<Fade>();
         InitializeDailyDialogues();
     }
-
+    
     private void InitializeDailyDialogues()
     {
         dailyDialogues = new List<DailyDialogue>

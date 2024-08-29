@@ -122,6 +122,112 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &5201720
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6308408469111590953}
+    m_Modifications:
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 732
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 368
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4237450976111584802, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_Name
+      value: Fade
+      objectReference: {fileID: 0}
+    - target: {fileID: 8686589167798989206, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+--- !u!224 &5201721 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+  m_PrefabInstance: {fileID: 5201720}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &307708598
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,6 +526,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1041349241
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 771839875268702464, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354814369207336514, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354814369207336514, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354814369207336514, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354814369207336514, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354814369207336514, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354814369207336514, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354814369207336514, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354814369207336514, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354814369207336514, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354814369207336514, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
 --- !u!1 &1912499599
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,7 +594,7 @@ GameObject:
   - component: {fileID: 1912499600}
   - component: {fileID: 1912499601}
   m_Layer: 0
-  m_Name: ButtonCreator
+  m_Name: LetterCreator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -464,6 +627,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc11d36d54692c84dadeb7869546ae5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  letters:
+  - content: "Dear Daddy,\n\nI hope you are not alarmed, you should not be. Differently
+      from last month, these days the front is calm, the weather is nice and we have
+      food and water. Sometimes I still have irrational panic because of the unexpected
+      death of William. They even told us that we will have a small truce this summer
+      for the Assumption. I would just like to come back home and hug you.\n\nYour
+      Albert\r"
+  - content: "Dear Mary,\n\nLife at the east front is safe, but worrying. We are
+      currently not fighting because we are out of resources, but we move back each
+      day to flee from the Russian army and I fear they are moving forward our borders.
+      Peter has some spare coffee; we drink that together to ease the nerves. When
+      I drink something hot looking at the sun setting, it always reminds me of us
+      just a few years ago. I miss those times before the war; now I can\u2019t spend
+      a day without thinking that if we fail, we will bring the enemy's army to our
+      front door. I can\u2019t wait to see you again.\n\n\rI am yours ever, J.\r"
+  - content: "Dear sister,\n\nReally thanks for your letter. I am happy to know that
+      you and mom are well despite everything. You even remembered to water my rosemary;
+      I hope its scent could remind you a little bit of myself. If I will be back
+      I will thank you for taking care of my stuff. A few days ago, during a retreat,
+      we ran into a minefield. I don\u2019t even have to tell you that it was not
+      signaled. It was a massacre: ten of us couldn\u2019t make it out alive and
+      the other five got injured because of an explosion. Now I got treated and I
+      feel better. Sergeant Hyam told us that it won\u2019t happen again and that
+      we are safe now\u2026 I hope he is right. I love you and tell mom I can\u2019t
+      wait to see her again.\r\n\nTake care, Liam\r"
+  - content: "Dear Mr Jones,\n\nThanks awfully for your letter. I am glad Professor
+      Parker could continue his research without the help of his students. I am just
+      sad that I could not continue with my academic career because of this war.
+      Professor Parker's company was charming with all that knowledge he could exchange
+      so easily nevertheless so wisely; compared to that, the conceited individual
+      that goes by the rank and name of Corporal Giles is an obnoxious presence.
+      We spent the last weeks walking through the French territory to come back home.
+      We are all tired because we do not eat enough food and have time to sleep;
+      all that unbearable corporal does is scream in the face of the privates who
+      can\u2019t keep pace. I just want to come back home, to my studies and my old
+      life.\r\n\nA big hug, Tom\r"
+  - content: "Dear father,\n\nI expect you are wondering why I have not written,
+      but it was a difficult time. I am really thankful for your kind words; I needed
+      to hear something like that. We have been under fire for three months now and
+      we are in awful conditions compared to when we left. I heard rumors that at
+      the other front, where Daniel is, they are doing a little bit better than us;
+      they are retreating, but at least they are alive. Here we lost almost every
+      man: we were almost three hundred defending the position and now we are way
+      less than two hundred. About a half. I do not think we will resist for much
+      longer. This may be my last letter to you.\r\n\nLove you, Sam\r"
+  - content: "Dearest Lea,\r\n\nI am writing to you in despair. I do not know which
+      information is coming from the front but we could not stop the enemy\u2019s
+      army. I hope this letter will reach you before them. You have to leave the
+      country with mom and pa. I am out of danger and I will reach a safe place soon.
+      Just do as I said and we will rejoin after the war.\r\n\nI miss you, Andy\r"
+  - content: Sono tutti scappati. Disertori
+  letterText: {fileID: 8160541887462107025}
 --- !u!1 &860722962650144515
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,7 +797,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4945087188242757339}
-  - {fileID: 3756495801647871435}
   m_Father: {fileID: 6308408469111590953}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -672,7 +886,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6001017905997752701}
-  m_Father: {fileID: 1562222495819186605}
+  m_Father: {fileID: 6308408469111590953}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -761,9 +975,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3408292428249463514}
-        m_TargetAssemblyTypeName: Send, Assembly-CSharp
-        m_MethodName: SeeJournal
+      - m_Target: {fileID: 1912499601}
+        m_TargetAssemblyTypeName: LetterCreator, Assembly-CSharp
+        m_MethodName: NextLetter
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -914,6 +1128,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1562222495819186605}
+  - {fileID: 5201721}
+  - {fileID: 3756495801647871435}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -970,8 +1186,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -24.631, y: 71.668}
-  m_SizeDelta: {x: 543.38, y: 243.33}
+  m_AnchoredPosition: {x: -25, y: 70}
+  m_SizeDelta: {x: 500, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8160541887462107025
 MonoBehaviour:
@@ -993,7 +1209,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  m_text: 'Dear John,
+
+
+    arinza arunza arrivano i soldati del fronte stiamo morendo
+    ecc. ecc. ecc. ecc. ecc. ecc. ecc., aa nahsudbau ahsidhaisdu aaa
+
+
+    Your Hughie.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1020,14 +1243,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 68.75
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1056,7 +1279,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -122.01317, y: -194.90988, z: -185.1653, w: -343.72937}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1144,3 +1367,4 @@ SceneRoots:
   - {fileID: 6308408469111590953}
   - {fileID: 337802497}
   - {fileID: 1912499600}
+  - {fileID: 1041349241}

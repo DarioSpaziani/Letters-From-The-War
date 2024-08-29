@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class FillerList : MonoBehaviour
 {
-    #region VARIABLES
+    #region FIELDS
     private GameManager gameManager;
     #endregion
 

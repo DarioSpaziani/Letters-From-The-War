@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    #region VARIABLES
+    #region FIELDS
     public WordData greenWord;
     public WordData yellowWord;
     public WordData redWord;

@@ -4,7 +4,7 @@ using UnityEngine;
 public class Send : MonoBehaviour
 {
     //TO DO animazione lettera inviata
-    #region VARIABLES
+    #region FIELDS
     private Fade fade;
     private GameManager gameManager;
     public TextMeshProUGUI SendText;
@@ -17,6 +17,7 @@ public class Send : MonoBehaviour
         gameManager = FindObjectOfType<GameManager>();
         fade = FindObjectOfType<Fade>();
     }
+
     public void CheckWords()
     {
         #region GREEN WORDS CHECK
