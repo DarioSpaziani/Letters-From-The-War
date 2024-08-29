@@ -216,7 +216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8686589167798989206, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -526,63 +526,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1041349241
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 771839875268702464, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
-      propertyPath: m_Name
-      value: GameManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 6354814369207336514, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6354814369207336514, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6354814369207336514, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6354814369207336514, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6354814369207336514, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6354814369207336514, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6354814369207336514, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6354814369207336514, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6354814369207336514, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6354814369207336514, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
 --- !u!1 &1912499599
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,6 +571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letters:
+  - content: 
   - content: "Dear Daddy,\n\nI hope you are not alarmed, you should not be. Differently
       from last month, these days the front is calm, the weather is nice and we have
       food and water. Sometimes I still have irrational panic because of the unexpected
@@ -975,9 +919,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1912499601}
-        m_TargetAssemblyTypeName: LetterCreator, Assembly-CSharp
-        m_MethodName: NextLetter
+      - m_Target: {fileID: 3408292428249463514}
+        m_TargetAssemblyTypeName: Send, Assembly-CSharp
+        m_MethodName: SeeJournal
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1367,4 +1311,3 @@ SceneRoots:
   - {fileID: 6308408469111590953}
   - {fileID: 337802497}
   - {fileID: 1912499600}
-  - {fileID: 1041349241}

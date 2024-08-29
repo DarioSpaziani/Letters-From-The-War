@@ -28,8 +28,8 @@ public class LetterCreator : MonoBehaviour
 
     void Start()
     {
+        currentDay = gameManager.day;
         DisplayLetter();
-        //currentDay = gameManager.day;
     }
 
     public void DisplayLetter()
