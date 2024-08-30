@@ -330,7 +330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 556607714}
   - component: {fileID: 556607713}
-  - component: {fileID: 556607712}
+  - component: {fileID: 556607715}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -338,14 +338,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &556607712
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 556607711}
-  m_Enabled: 1
 --- !u!20 &556607713
 Camera:
   m_ObjectHideFlags: 0
@@ -412,6 +404,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &556607715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556607711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ffdb8c4e988b4244a6aeb73d5921f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _loopMusic: {fileID: 8300000, guid: 96c961133f1830e419e1702382c97b75, type: 3}
+  _musicVolume: 50
 --- !u!1 &732735740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1141,6 +1147,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90034d1dd237a78418c51287f334f25c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minRangeOneFirstTitle: 0
+  maxRangeOneFirstTitle: 0
+  minRangeOneSecondTitle: 0
+  maxRangeOneSecondTitle: 0
+  minRangeOneThirdTitle: 0
+  maxRangeOneThirdTitle: 0
+  minRangeTwoFirstTitle: 0
+  maxRangeTwoFirstTitle: 0
+  minRangeTwoSecondTitle: 0
+  maxRangeTwoSecondTitle: 0
+  minRangeTwoThirdTitle: 0
+  maxRangeTwoThirdTitle: 0
+  minRangeThirdFirstTitle: 0
+  maxRangeThirdFirstTitle: 0
+  minRangeThirdSecondTitle: 0
+  maxRangeThirdSecondTitle: 0
+  minRangeThirdThirdTitle: 0
+  maxRangeThirdThirdTitle: 0
+  minRangeFourthFirstTitle: 0
+  maxRangeFourthFirstTitle: 0
+  minRangeFourthSecondTitle: 0
+  maxRangeFourthSecondTitle: 0
+  minRangeFourthThirdTitle: 0
+  maxRangeFourthThirdTitle: 0
+  minRangeFiveFirstTitle: 0
+  maxRangeFiveFirstTitle: 0
+  minRangeFiveSecondTitle: 0
+  maxRangeFiveSecondTitle: 0
+  minRangeFiveThirdTitle: 0
+  maxRangeFiveThirdTitle: 0
+  minRangeSixFirstTitle: 0
+  maxRangeSixFirstTitle: 0
+  minRangeSixSecondTitle: 0
+  maxRangeSixSecondTitle: 0
+  minRangeSixThirdTitle: 0
+  maxRangeSixThirdTitle: 0
+  minRangeSevenFirstTitle: 0
+  maxRangeSevenFirstTitle: 0
+  minRangeSevenSecondTitle: 0
+  maxRangeSevenSecondTitle: 0
+  minRangeSevenThirdTitle: 0
+  maxRangeSevenThirdTitle: 0
   headline: {fileID: 2069632852}
   day1Descriptions:
   - People from Vitulia support their young heroes at the front fulfilling all the
