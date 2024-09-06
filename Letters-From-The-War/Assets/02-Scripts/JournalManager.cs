@@ -6,6 +6,10 @@ public class JournalManager : MonoBehaviour
     #region FIELDS
     private GameManager gameManager;
     public TextMeshProUGUI headlineText;
+    private const int FIRST_TITLE = 0;
+    private const int SECOND_TITLE = 1;
+    private const int THIRD_TITLE = 2;
+    private const int FOURTH_TITLE = 3;
 
     #region CLASS_DATA
     [System.Serializable]
@@ -24,9 +28,13 @@ public class JournalManager : MonoBehaviour
     [System.Serializable]
     public class DayDescriptions
     {
+        [TextArea(3, 10)]
         public string descriptionFirstRange;
+        [TextArea(3, 10)]
         public string descriptionSecondRange;
+        [TextArea(3, 10)]
         public string descriptionThirdRange;
+        [TextArea(3, 10)]
         public string descriptionFourthRange;
     }
 
@@ -74,57 +82,45 @@ public class JournalManager : MonoBehaviour
     private void Start()
     {
         ShowTextDescriptions();
-        Debug.Log(gameManager.day);
         gameManager.day++;
-
-        Debug.Log("day after increment : " + gameManager.day);
     }
 
     private void ShowTextDescriptions()
     {
-        if (gameManager.day >= 1 && gameManager.day < dayData.Length)
-        {
-            Debug.Log("day dentro ShowText() prima di diminuirlo : " + gameManager.day);
-            DayData currentDay = dayData[gameManager.day];
-            int knowledgeIndex = GetKnowledgeIndex(gameManager.day, gameManager.knowledge);
+        DayData currentDay = dayData[gameManager.day - 1];
+        int knowledgeIndex = GetKnowledgeIndex(gameManager.day, gameManager.knowledge);
 
-            Debug.Log("day dentro ShowText() : " + gameManager.day);
-            switch (knowledgeIndex)
-            {
-                case 0:
-                    headlineText.text = currentDay.descriptions.descriptionFirstRange;
-                    break;
-                case 1:
-                    headlineText.text = currentDay.descriptions.descriptionSecondRange;
-                    break;
-                case 2:
-                    headlineText.text = currentDay.descriptions.descriptionThirdRange;
-                    break;
-                case 3:
-                    headlineText.text = currentDay.descriptions.descriptionFourthRange;
-                    break;
-                default:
-                    Debug.LogError($"Invalid knowledge index: {knowledgeIndex}");
-                    break;
-            }
+        switch (knowledgeIndex)
+        {
+            case FIRST_TITLE:
+                headlineText.text = currentDay.descriptions.descriptionFirstRange;
+                break;
+            case SECOND_TITLE:
+                headlineText.text = currentDay.descriptions.descriptionSecondRange;
+                break;
+            case THIRD_TITLE:
+                headlineText.text = currentDay.descriptions.descriptionThirdRange;
+                break;
+            case FOURTH_TITLE:
+                headlineText.text = currentDay.descriptions.descriptionFourthRange;
+                break;
+            default:
+                Debug.LogError($"Invalid knowledge index: {knowledgeIndex}");
+                break;
         }
+
     }
 
     private int GetKnowledgeIndex(int day, int knowledge)
     {
-        if (day < 1 || day >= dayData.Length)
-        {
-            return 0;
-        }
+        DayRange range = dayData[day].range;
 
-        DayRange range = dayData[day-1].range;
+        if (knowledge >= range.minRangeFirstTitle && knowledge <= range.maxRangeFirstTitle) return FIRST_TITLE;
+        if (knowledge >= range.minRangeSecondTitle && knowledge <= range.maxRangeSecondTitle) return SECOND_TITLE;
+        if (knowledge >= range.minRangeThirdTitle && knowledge <= range.maxRangeThirdTitle) return THIRD_TITLE;
+        if (knowledge >= range.minRangeFourthTitle && knowledge <= range.maxRangeFourthTitle) return FOURTH_TITLE;
 
-        if (knowledge >= range.minRangeFirstTitle && knowledge <= range.maxRangeFirstTitle) return 0;
-        if (knowledge > range.minRangeSecondTitle && knowledge <= range.maxRangeSecondTitle) return 1;
-        if (knowledge > range.minRangeThirdTitle && knowledge <= range.maxRangeThirdTitle) return 2;
-        if (knowledge > range.minRangeFourthTitle && knowledge <= range.maxRangeFourthTitle) return 3;
-
-        return 0;
+        return FIRST_TITLE;
     }
     #endregion
 }

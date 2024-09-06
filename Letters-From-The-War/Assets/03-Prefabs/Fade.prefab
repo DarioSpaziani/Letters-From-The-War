@@ -89,9 +89,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5f71119e70932043baaa5c2d92edcca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedEffect: 1
+  speedEffect: 0.1
+  timeDelayScene: 0.1
+  timeFadePingPong: 1
+  ping_pong_fade: 0
   isFadeEnded: 0
-  timeDelayScene: 1
 --- !u!1 &7039296545482860564
 GameObject:
   m_ObjectHideFlags: 0

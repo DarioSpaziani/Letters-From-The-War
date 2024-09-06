@@ -410,6 +410,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1415395486 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8611652700985829821, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+  m_PrefabInstance: {fileID: 2063872165}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2063872165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -780,7 +785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: dayZero.zeroMalusDaily.currentDialogue.Array.data[9]
-      value: 'ou have to help your country and bring faith to your fellow compatriots. '
+      value: 'You have to help your country and bring faith to your fellow compatriots. '
       objectReference: {fileID: 0}
     - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: dayThree.zeroMalusDaily.currentDialogue.Array.data[0]
@@ -813,6 +818,26 @@ PrefabInstance:
     - target: {fileID: 3090055428516522921, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091104777311344150, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091104777311344150, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091104777311344150, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1415395486}
+    - target: {fileID: 6091104777311344150, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6091104777311344150, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: BossDialogue, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_Pivot.x

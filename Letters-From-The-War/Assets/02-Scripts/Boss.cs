@@ -73,6 +73,30 @@ public class Boss : MonoBehaviour
 
     private void Start()
     {
+        switch (gameManager.malusDaily)
+        {
+            case 1:
+
+                foreach(string warningSentence in warningOne)
+                {
+                    GetCurrentDialogueSet().currentDialogue.Add(warningSentence);
+                }
+                break;
+
+            case 2:
+                foreach (string warningSentence in warningTwo) 
+                { 
+                    GetCurrentDialogueSet().currentDialogue.Add(warningSentence);
+                }
+                break;
+
+            default:
+                break;
+        }
+        if (gameManager.malus >= fired)
+        {
+            GetCurrentDialogueSet().currentDialogue.Add(firedDialogue[currentIndex]);
+        }
         if (!gameManager.hasStarted)
         {
             StartCoroutine(fade.FadeReverse());
@@ -84,15 +108,14 @@ public class Boss : MonoBehaviour
     {
         if (!fade.isFadeEnded)
         {
-            DialogueSet currentDialogueSet = GetCurrentDialogueSet();
-            if (currentIndex < currentDialogueSet.currentDialogue.Count - 1)
+            if (currentIndex < GetCurrentDialogueSet().currentDialogue.Count - 1)
             {
                 currentIndex++;
                 UpdateDialogues();
             }
             else
             {
-                LoadNextScene();
+                LoadNextScene(); 
             }
         }
     }
@@ -102,6 +125,7 @@ public class Boss : MonoBehaviour
         DailyDialogue dailyDialogue = dailyDialogues[gameManager.day];
 
         int malusLevel = DetermineMalusLevel(gameManager.malusDaily);
+
         switch (malusLevel)
         {
             case 0: return dailyDialogue.zeroMalusDaily;
@@ -115,27 +139,6 @@ public class Boss : MonoBehaviour
     {
         DialogueSet currentDialogueSet = GetCurrentDialogueSet();
         dialogueText.text = currentDialogueSet.currentDialogue[currentIndex];
-
-        switch (gameManager.malusDaily)
-        {
-            case 1:
-
-                currentDialogueSet.currentDialogue.Add(warningOne[currentIndex]);
-                break;
-
-            case 2:
-
-                currentDialogueSet.currentDialogue.Add(warningTwo[currentIndex]);
-                break;
-
-            default:
-                break;
-        }
-
-        if(gameManager.malus >= fired)
-        {
-            currentDialogueSet.currentDialogue.Add(firedDialogue[currentIndex]);
-        }
 
         if (currentIndex == currentDialogueSet.currentDialogue.Count - 1)
         {
