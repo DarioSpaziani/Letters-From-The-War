@@ -507,15 +507,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 1992391529598090925}
   warningOne:
-  - 
+  - However, you made mistakes in the past;
+  - pay more attention when you work.
+  - 'We always keep an eye on you. '
   warningTwo:
-  - 
+  - However, you made big mistakes in the past.
+  - We will not warn you again.
+  - You have to be flawless.
   firedDialogue:
-  - 
+  - YOU - ARE - FIRED!
   dayZero:
     zeroMalusDaily:
       currentDialogue:
-      - 
+      - You look like such a qualified guy.
+      - In these suffering times we need people like you,
+      - ready to give it all for our great nation.
+      - Some families are unreasonably worried for our youths at the front.
+      - In order to come out of this war as a stronger nation
+      - the people have to support us.
+      - Some whiny baby, accidentally drafted in the army,
+      - overstates the conditions of the conflicts.
+      - As a member of the censorship organization,
+      - 'You have to help your country and bring faith to your fellow compatriots. '
     oneMalusDaily:
       currentDialogue:
       - 
@@ -525,7 +538,12 @@ MonoBehaviour:
   dayOne:
     zeroMalusDaily:
       currentDialogue:
-      - 
+      - This is your first day here
+      - and we already expect great things from you!
+      - Some soldiers tend to express feelings
+      - that are too moving for their families.
+      - Do you understand?
+      - 'Emotional people endanger themselves and others. '
     oneMalusDaily:
       currentDialogue:
       - 
@@ -535,20 +553,56 @@ MonoBehaviour:
   dayTwo:
     zeroMalusDaily:
       currentDialogue:
-      - 
+      - As we expected you did a wonderful job yesterday.
+      - Just go on like this.
+      - You already have today's work waiting for you at your desk.
+      - 'Remember: these letters come from low rank soldiers.'
+      - They usually do not understand how a war is conducted
+      - 'and they may have wrong opinions about who is on the winning side. '
     oneMalusDaily:
       currentDialogue:
-      - 
+      - We expected more from you,
+      - but I know it was only your first day.
+      - You already have today's work waiting for you at your desk.
+      - 'Remember: these letters come from low rank soldiers.'
+      - They usually do not understand how a war is conducted
+      - 'and they may have wrong opinions about who is on the winning side. '
     twoMalusDaily:
       currentDialogue:
-      - 
+      - You had a rough beginning yesterday.
+      - I hope you have already learnt from your mistakes.
+      - You already have today's work waiting for you at your desk.
+      - 'Remember: these letters come from low rank soldiers.'
+      - They usually do not understand how a war is conducted
+      - 'and they may have wrong opinions about who is on the winning side. '
   dayThree:
     zeroMalusDaily:
-      currentDialogue: []
+      currentDialogue:
+      - You already know
+      - that your work is essential for this nation.
+      - I am glad to see that you are making an effort to
+      - help your compatriots understand how the war is really going on.
+      - "We need people\u2019s support."
+      - We are a strong nation
+      - 'because of the strong people that make it up.  '
     oneMalusDaily:
-      currentDialogue: []
+      currentDialogue:
+      - Your work is fine I have to say.
+      - However we are in such a delicate situation
+      - "that we can\u2019t take the liberty"
+      - to let even one wrong information to spread
+      - "We need people\u2019s support."
+      - We are a strong nation
+      - 'because of the strong people that make it up. '
     twoMalusDaily:
-      currentDialogue: []
+      currentDialogue:
+      - I have to remind you
+      - that your work is essential for this nation.
+      - Some people are doubting the government's abilities
+      - to continue this war.
+      - "We need people\u2019s support."
+      - We are a strong nation
+      - 'because of the strong people that make it up. '
   dayFour:
     zeroMalusDaily:
       currentDialogue: []
@@ -668,22 +722,6 @@ PrefabInstance:
     - target: {fileID: 4237450976111584802, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
       propertyPath: m_Name
       value: Fade
-      objectReference: {fileID: 0}
-    - target: {fileID: 4237450976111584802, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4998082865887386390, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
-      propertyPath: ping_pong_fade
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4998082865887386390, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
-      propertyPath: timeFadePingPong
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8686589167798989206, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
-      propertyPath: m_Color.a
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

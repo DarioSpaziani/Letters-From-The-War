@@ -157,7 +157,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
 --- !u!114 &668511249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,11 +416,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &1415395486 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8611652700985829821, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-  m_PrefabInstance: {fileID: 2063872165}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2063872165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -429,422 +424,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 668511251}
     m_Modifications:
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dialogueText
-      value: 
-      objectReference: {fileID: 2063872167}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: warningOne.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: warningTwo.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: firedDialogue.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: warningOne.Array.data[0]
-      value: However, you made mistakes in the past;
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: warningOne.Array.data[1]
-      value: pay more attention when you work.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: warningOne.Array.data[2]
-      value: 'We always keep an eye on you. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: warningTwo.Array.data[0]
-      value: However, you made big mistakes in the past.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: warningTwo.Array.data[1]
-      value: We will not warn you again.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: warningTwo.Array.data[2]
-      value: You have to be flawless.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: firedDialogue.Array.data[0]
-      value: YOU - ARE - FIRED!
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: warningOneMalusTop.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: warningThreeMalusTop.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: warningOneMalusTop.Array.data[0]
-      value: warning one malus 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: warningThreeMalusBottom.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: warningThreeMalusTop.Array.data[0]
-      value: la giornata scorsa hai fatto troppi errori
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: warningThreeMalusBottom.Array.data[0]
-      value: stai attento o verrai licenziato
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.oneMalusDaily.topDialogues.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.twoMalusDaily.topDialogues.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.zeroMalusDaily.topDialogues.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.oneMalusDaily.bottomDialogues.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.oneMalusDaily.currentDialogue.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.oneMalusDaily.topDialogues.Array.data[0]
-      value: giorno 2 one malus
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.oneMalusDaily.topDialogues.Array.data[1]
-      value: giorno 2 one malus1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.twoMalusDaily.bottomDialogues.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.twoMalusDaily.currentDialogue.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.twoMalusDaily.topDialogues.Array.data[0]
-      value: giorno 2 two malus
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.twoMalusDaily.topDialogues.Array.data[1]
-      value: giorno 2 two malus1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayOne.zeroMalusDaily.currentDialogue.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.zeroMalusDaily.bottomDialogues.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.zeroMalusDaily.currentDialogue.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.zeroMalusDaily.topDialogues.Array.data[0]
-      value: giorno 2 zero malus
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.zeroMalusDaily.topDialogues.Array.data[1]
-      value: giorno 2 zero malus1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayThree.oneMalusDaily.currentDialogue.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayThree.twoMalusDaily.currentDialogue.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayZero.zeroMalusDaily.currentDialogue.Array.size
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayThree.zeroMalusDaily.currentDialogue.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.oneMalusDaily.bottomDialogues.Array.data[0]
-      value: giorno 2 one malus
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.oneMalusDaily.bottomDialogues.Array.data[1]
-      value: giorno 2 one malus1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.oneMalusDaily.currentDialogue.Array.data[0]
-      value: We expected more from you,
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.oneMalusDaily.currentDialogue.Array.data[1]
-      value: but I know it was only your first day.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.oneMalusDaily.currentDialogue.Array.data[2]
-      value: You already have today's work waiting for you at your desk.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.oneMalusDaily.currentDialogue.Array.data[3]
-      value: 'Remember: these letters come from low rank soldiers.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.oneMalusDaily.currentDialogue.Array.data[4]
-      value: They usually do not understand how a war is conducted
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.oneMalusDaily.currentDialogue.Array.data[5]
-      value: 'and they may have wrong opinions about who is on the winning side. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.twoMalusDaily.bottomDialogues.Array.data[0]
-      value: giorno 2 two malus
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.twoMalusDaily.bottomDialogues.Array.data[1]
-      value: giorno 2 two malus1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.twoMalusDaily.currentDialogue.Array.data[0]
-      value: You had a rough beginning yesterday.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.twoMalusDaily.currentDialogue.Array.data[1]
-      value: I hope you have already learnt from your mistakes.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.twoMalusDaily.currentDialogue.Array.data[2]
-      value: You already have today's work waiting for you at your desk.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.twoMalusDaily.currentDialogue.Array.data[3]
-      value: 'Remember: these letters come from low rank soldiers.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.twoMalusDaily.currentDialogue.Array.data[4]
-      value: They usually do not understand how a war is conducted
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.twoMalusDaily.currentDialogue.Array.data[5]
-      value: 'and they may have wrong opinions about who is on the winning side. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayOne.zeroMalusDaily.currentDialogue.Array.data[0]
-      value: This is your first day here
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayOne.zeroMalusDaily.currentDialogue.Array.data[1]
-      value: and we already expect great things from you!
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayOne.zeroMalusDaily.currentDialogue.Array.data[2]
-      value: Some soldiers tend to express feelings
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayOne.zeroMalusDaily.currentDialogue.Array.data[3]
-      value: that are too moving for their families.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayOne.zeroMalusDaily.currentDialogue.Array.data[4]
-      value: Do you understand?
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayOne.zeroMalusDaily.currentDialogue.Array.data[5]
-      value: 'Emotional people endanger themselves and others. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.zeroMalusDaily.bottomDialogues.Array.data[0]
-      value: giorno 2 zero malus
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.zeroMalusDaily.bottomDialogues.Array.data[1]
-      value: giorno 2 zero malus1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.zeroMalusDaily.currentDialogue.Array.data[0]
-      value: As we expected you did a wonderful job yesterday.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.zeroMalusDaily.currentDialogue.Array.data[1]
-      value: Just go on like this.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.zeroMalusDaily.currentDialogue.Array.data[2]
-      value: You already have today's work waiting for you at your desk.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.zeroMalusDaily.currentDialogue.Array.data[3]
-      value: 'Remember: these letters come from low rank soldiers.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.zeroMalusDaily.currentDialogue.Array.data[4]
-      value: They usually do not understand how a war is conducted
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayTwo.zeroMalusDaily.currentDialogue.Array.data[5]
-      value: 'and they may have wrong opinions about who is on the winning side. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayThree.oneMalusDaily.currentDialogue.Array.data[0]
-      value: Your work is fine I have to say.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayThree.oneMalusDaily.currentDialogue.Array.data[1]
-      value: However we are in such a delicate situation
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayThree.oneMalusDaily.currentDialogue.Array.data[2]
-      value: "that we can\u2019t take the liberty"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayThree.oneMalusDaily.currentDialogue.Array.data[3]
-      value: to let even one wrong information to spread
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayThree.oneMalusDaily.currentDialogue.Array.data[4]
-      value: "We need people\u2019s support."
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayThree.oneMalusDaily.currentDialogue.Array.data[5]
-      value: We are a strong nation
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayThree.oneMalusDaily.currentDialogue.Array.data[6]
-      value: 'because of the strong people that make it up. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayThree.twoMalusDaily.currentDialogue.Array.data[0]
-      value: I have to remind you
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayThree.twoMalusDaily.currentDialogue.Array.data[1]
-      value: that your work is essential for this nation.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayThree.twoMalusDaily.currentDialogue.Array.data[2]
-      value: Some people are doubting the government's abilities
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayThree.twoMalusDaily.currentDialogue.Array.data[3]
-      value: to continue this war.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayThree.twoMalusDaily.currentDialogue.Array.data[4]
-      value: "We need people\u2019s support."
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayThree.twoMalusDaily.currentDialogue.Array.data[5]
-      value: We are a strong nation
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayThree.twoMalusDaily.currentDialogue.Array.data[6]
-      value: 'because of the strong people that make it up. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayZero.zeroMalusDaily.currentDialogue.Array.data[0]
-      value: You look like such a qualified guy.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayZero.zeroMalusDaily.currentDialogue.Array.data[1]
-      value: In these suffering times we need people like you,
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayZero.zeroMalusDaily.currentDialogue.Array.data[2]
-      value: ready to give it all for our great nation.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayZero.zeroMalusDaily.currentDialogue.Array.data[3]
-      value: Some families are unreasonably worried for our youths at the front.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayZero.zeroMalusDaily.currentDialogue.Array.data[4]
-      value: In order to come out of this war as a stronger nation
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayZero.zeroMalusDaily.currentDialogue.Array.data[5]
-      value: the people have to support us.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayZero.zeroMalusDaily.currentDialogue.Array.data[6]
-      value: Some whiny baby, accidentally drafted in the army,
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayZero.zeroMalusDaily.currentDialogue.Array.data[7]
-      value: overstates the conditions of the conflicts.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayZero.zeroMalusDaily.currentDialogue.Array.data[8]
-      value: As a member of the censorship organization,
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayZero.zeroMalusDaily.currentDialogue.Array.data[9]
-      value: 'You have to help your country and bring faith to your fellow compatriots. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayThree.zeroMalusDaily.currentDialogue.Array.data[0]
-      value: You already know
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayThree.zeroMalusDaily.currentDialogue.Array.data[1]
-      value: that your work is essential for this nation.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayThree.zeroMalusDaily.currentDialogue.Array.data[2]
-      value: I am glad to see that you are making an effort to
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayThree.zeroMalusDaily.currentDialogue.Array.data[3]
-      value: help your compatriots understand how the war is really going on.
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayThree.zeroMalusDaily.currentDialogue.Array.data[4]
-      value: "We need people\u2019s support."
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayThree.zeroMalusDaily.currentDialogue.Array.data[5]
-      value: We are a strong nation
-      objectReference: {fileID: 0}
-    - target: {fileID: 2512865916877227270, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: dayThree.zeroMalusDaily.currentDialogue.Array.data[6]
-      value: 'because of the strong people that make it up.  '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3090055428516522921, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6091104777311344150, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6091104777311344150, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6091104777311344150, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 1415395486}
-    - target: {fileID: 6091104777311344150, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6091104777311344150, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: BossDialogue, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -855,27 +434,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_LocalPosition.x
@@ -930,8 +509,7 @@ PrefabInstance:
       value: Boss
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 8778524398066948190, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
@@ -940,17 +518,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7067910186441393878, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
   m_PrefabInstance: {fileID: 2063872165}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2063872167 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1992391529598090925, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
-  m_PrefabInstance: {fileID: 2063872165}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2076556601
 GameObject:
   m_ObjectHideFlags: 0

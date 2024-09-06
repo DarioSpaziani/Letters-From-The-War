@@ -663,23 +663,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 462
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 87.99994
-      objectReference: {fileID: 0}
-    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.3076932
-      objectReference: {fileID: 0}
-    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.3076932
-      objectReference: {fileID: 0}
-    - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.3076932
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
       propertyPath: m_LocalPosition.x
@@ -711,11 +699,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -49.999847
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 50.000015
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -732,10 +720,6 @@ PrefabInstance:
     - target: {fileID: 4237450976111584802, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
       propertyPath: m_Name
       value: Fade
-      objectReference: {fileID: 0}
-    - target: {fileID: 8686589167798989206, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
-      propertyPath: m_Color.a
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1147,100 +1131,112 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90034d1dd237a78418c51287f334f25c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minRangeOneFirstTitle: 0
-  maxRangeOneFirstTitle: 0
-  minRangeOneSecondTitle: 0
-  maxRangeOneSecondTitle: 0
-  minRangeOneThirdTitle: 0
-  maxRangeOneThirdTitle: 0
-  minRangeTwoFirstTitle: 0
-  maxRangeTwoFirstTitle: 0
-  minRangeTwoSecondTitle: 0
-  maxRangeTwoSecondTitle: 0
-  minRangeTwoThirdTitle: 0
-  maxRangeTwoThirdTitle: 0
-  minRangeThirdFirstTitle: 0
-  maxRangeThirdFirstTitle: 0
-  minRangeThirdSecondTitle: 0
-  maxRangeThirdSecondTitle: 0
-  minRangeThirdThirdTitle: 0
-  maxRangeThirdThirdTitle: 0
-  minRangeFourthFirstTitle: 0
-  maxRangeFourthFirstTitle: 0
-  minRangeFourthSecondTitle: 0
-  maxRangeFourthSecondTitle: 0
-  minRangeFourthThirdTitle: 0
-  maxRangeFourthThirdTitle: 0
-  minRangeFiveFirstTitle: 0
-  maxRangeFiveFirstTitle: 0
-  minRangeFiveSecondTitle: 0
-  maxRangeFiveSecondTitle: 0
-  minRangeFiveThirdTitle: 0
-  maxRangeFiveThirdTitle: 0
-  minRangeSixFirstTitle: 0
-  maxRangeSixFirstTitle: 0
-  minRangeSixSecondTitle: 0
-  maxRangeSixSecondTitle: 0
-  minRangeSixThirdTitle: 0
-  maxRangeSixThirdTitle: 0
-  minRangeSevenFirstTitle: 0
-  maxRangeSevenFirstTitle: 0
-  minRangeSevenSecondTitle: 0
-  maxRangeSevenSecondTitle: 0
-  minRangeSevenThirdTitle: 0
-  maxRangeSevenThirdTitle: 0
-  headline: {fileID: 2069632852}
-  day1Descriptions:
-  - People from Vitulia support their young heroes at the front fulfilling all the
-    hard obligations. We are truly a great nation
-  - Although an anti-vitualian movement is spreading disinformation to weaken our
-    nation, Vitulia has the support of all its citizens!
-  - Small minorities spreading disinformation silenced for the benefit of the truth
-    and of our citizens
-  - aaaaaaaaaaaaaaaaaaaaaaa
-  day2Descriptions:
-  - We are winning the war! Thanks to the hard work of its men and women, Vitualia
-    is proving its value to the other nations
-  - Anti nationalistic fringe boycotts vitualian efforts by spreading false information
-  - Anti nationalistic fringe boycotts vitualian efforts by accusing the government
-    of wasting resources in the war
-  - bbbbbbbbbbbbbbbbbb
-  day3Descriptions:
-  - Soldiers at the front are happy to know that thanks to them we will come out
-    stronger from the war
-  - Anti-war protesters on the streets. The police peacefully escorted them away
-  - Anti-war protesters on the streets. The government will not bear any more liars
-    and will act accordingly
-  - "Government forces suppress the anti-war protestants. A people\u2019s spokesman
-    states \u201CWe will come again to reveal the truth about the war\u201D"
-  day4Descriptions:
-  - 'Vitualian people interviewed: the pride for our youths and the happiness to
-    see them soon'
-  - 'Vitualian people interviewed: the worry for the situation our youths are living
-    at the front'
-  - 'Vitualian people interviewed: despair in the words of some parents for the future
-    of their sons at the front'
-  - 'Rumors of a possible insurrection denied by the authorities: a mean to drag
-    the people down'
-  day5Descriptions:
-  - Radical turn! The war is ending soon!
-  - Citizens hope to see their relatives soon. It has been over a year the war has
-    started
-  - "After over a year the war has started some citizens seem to have lost faith
-    in seeing their relatives again. The government reassures: \u201CIt will be over
-    soon with your help and support\u201D"
-  - People gathered under the Parliament to ask about their relatives at the front.
-    Reassured by the government
-  day6Descriptions:
-  - ffffffffffffff1111111111111
-  - ffffffffffff22222222
-  - ffffffff3333333
-  - ffffffffffffff4444444
-  day7Descriptions:
-  - ggggggggggg11111111
-  - ggggggggggg222222222
-  - ggggggggggggg33333333
-  - gggggggggggggg444444444
+  headlineText: {fileID: 0}
+  dayOne:
+    range:
+      minRangeFirstTitle: 0
+      maxRangeFirstTitle: 0
+      minRangeSecondTitle: 0
+      maxRangeSecondTitle: 0
+      minRangeThirdTitle: 0
+      maxRangeThirdTitle: 0
+      minRangeFourthTitle: 0
+      maxRangeFourthTitle: 0
+    descriptions:
+      descriptionFirstRange: 
+      descriptionSecondRange: 
+      descriptionThirdRange: 
+      descriptionFourthRange: 
+  dayTwo:
+    range:
+      minRangeFirstTitle: 0
+      maxRangeFirstTitle: 0
+      minRangeSecondTitle: 0
+      maxRangeSecondTitle: 0
+      minRangeThirdTitle: 0
+      maxRangeThirdTitle: 0
+      minRangeFourthTitle: 0
+      maxRangeFourthTitle: 0
+    descriptions:
+      descriptionFirstRange: 
+      descriptionSecondRange: 
+      descriptionThirdRange: 
+      descriptionFourthRange: 
+  dayThree:
+    range:
+      minRangeFirstTitle: 0
+      maxRangeFirstTitle: 0
+      minRangeSecondTitle: 0
+      maxRangeSecondTitle: 0
+      minRangeThirdTitle: 0
+      maxRangeThirdTitle: 0
+      minRangeFourthTitle: 0
+      maxRangeFourthTitle: 0
+    descriptions:
+      descriptionFirstRange: 
+      descriptionSecondRange: 
+      descriptionThirdRange: 
+      descriptionFourthRange: 
+  dayFour:
+    range:
+      minRangeFirstTitle: 0
+      maxRangeFirstTitle: 0
+      minRangeSecondTitle: 0
+      maxRangeSecondTitle: 0
+      minRangeThirdTitle: 0
+      maxRangeThirdTitle: 0
+      minRangeFourthTitle: 0
+      maxRangeFourthTitle: 0
+    descriptions:
+      descriptionFirstRange: 
+      descriptionSecondRange: 
+      descriptionThirdRange: 
+      descriptionFourthRange: 
+  dayFive:
+    range:
+      minRangeFirstTitle: 0
+      maxRangeFirstTitle: 0
+      minRangeSecondTitle: 0
+      maxRangeSecondTitle: 0
+      minRangeThirdTitle: 0
+      maxRangeThirdTitle: 0
+      minRangeFourthTitle: 0
+      maxRangeFourthTitle: 0
+    descriptions:
+      descriptionFirstRange: 
+      descriptionSecondRange: 
+      descriptionThirdRange: 
+      descriptionFourthRange: 
+  daySix:
+    range:
+      minRangeFirstTitle: 0
+      maxRangeFirstTitle: 0
+      minRangeSecondTitle: 0
+      maxRangeSecondTitle: 0
+      minRangeThirdTitle: 0
+      maxRangeThirdTitle: 0
+      minRangeFourthTitle: 0
+      maxRangeFourthTitle: 0
+    descriptions:
+      descriptionFirstRange: 
+      descriptionSecondRange: 
+      descriptionThirdRange: 
+      descriptionFourthRange: 
+  daySeven:
+    range:
+      minRangeFirstTitle: 0
+      maxRangeFirstTitle: 0
+      minRangeSecondTitle: 0
+      maxRangeSecondTitle: 0
+      minRangeThirdTitle: 0
+      maxRangeThirdTitle: 0
+      minRangeFourthTitle: 0
+      maxRangeFourthTitle: 0
+    descriptions:
+      descriptionFirstRange: 
+      descriptionSecondRange: 
+      descriptionThirdRange: 
+      descriptionFourthRange: 
 --- !u!1 &2119561701
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,13 +7,13 @@ public class Send : MonoBehaviour
     #region FIELDS
     private Fade fade;
     private GameManager gameManager;
-    public TextMeshProUGUI SendText;
+    //public TextMeshProUGUI SendText;
     #endregion
 
     #region UNITY_CALLS
     private void Awake()
     {
-        SendText.text = "SEND";
+        //SendText.text = "SEND";
         gameManager = FindObjectOfType<GameManager>();
         fade = FindObjectOfType<Fade>();
     }
