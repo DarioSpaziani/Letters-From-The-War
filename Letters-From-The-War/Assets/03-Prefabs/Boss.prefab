@@ -235,8 +235,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Testo di prova 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5838ba8fa13be20428b21d0ed0e04a5a, type: 2}
+  m_sharedMaterial: {fileID: -6399719821592090223, guid: 5838ba8fa13be20428b21d0ed0e04a5a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -334,6 +334,7 @@ RectTransform:
   m_Children:
   - {fileID: 8392048488624552825}
   - {fileID: 7844681425888482398}
+  - {fileID: 916266082326238097}
   m_Father: {fileID: 6914402343033969554}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -484,7 +485,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 916266082326238097}
   - {fileID: 6914402343033969554}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -505,130 +505,85 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9ab3d8376253654fb889c61705dd980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue1: {fileID: 1992391529598090925}
-  dialogue2: {fileID: 0}
-  buttonSkip: {fileID: 0}
-  warningOneMalusTop: []
-  warningOneMalusBottom: []
-  warningTwoMalusTop:
-  - aooo calmino eh
-  warningTwoMalusBottom:
-  - ti teniamo d'occhio
-  firedDialogueTop:
-  - ti abbiamo dato tante possibilita'
-  firedDialogueBottom:
-  - sei licenziato!
+  dialogueText: {fileID: 1992391529598090925}
+  warningOne:
+  - 
+  warningTwo:
+  - 
+  firedDialogue:
+  - 
   dayZero:
     zeroMalusDaily:
-      topDialogues:
-      - colloquio
-      - colloquio1
-      - colloquio2
-      bottomDialogues:
-      - colloquio
-      - colloquio1
-      - colloquio2
-    oneMalusDaily:
-      topDialogues:
+      currentDialogue:
       - 
-      bottomDialogues:
+    oneMalusDaily:
+      currentDialogue:
       - 
     twoMalusDaily:
-      topDialogues:
-      - 
-      bottomDialogues:
+      currentDialogue:
       - 
   dayOne:
     zeroMalusDaily:
-      topDialogues:
-      - giorno1 zero malus
-      - giorno 1 zero malus 2
-      - giorno 1 zero malus 3
-      bottomDialogues:
-      - giorno 1 zero malus
-      - giorno 1 zero malus 2
-      - giorno 1 zero malus 3
+      currentDialogue:
+      - 
     oneMalusDaily:
-      topDialogues:
-      - giorno1 uno malus
-      - giorno1 uno malus1
-      bottomDialogues:
-      - giorno1 uno malus
-      - giorno1 uno malus1
+      currentDialogue:
+      - 
     twoMalusDaily:
-      topDialogues:
-      - giorno1 due malus
-      - giorno1 due malus 1
-      bottomDialogues:
-      - 'giorno1 due malus '
-      - giorno1 due malus 1
+      currentDialogue:
+      - 
   dayTwo:
     zeroMalusDaily:
-      topDialogues: []
-      bottomDialogues: []
+      currentDialogue:
+      - 
     oneMalusDaily:
-      topDialogues: []
-      bottomDialogues: []
+      currentDialogue:
+      - 
     twoMalusDaily:
-      topDialogues: []
-      bottomDialogues: []
+      currentDialogue:
+      - 
   dayThree:
     zeroMalusDaily:
-      topDialogues: []
-      bottomDialogues: []
+      currentDialogue: []
     oneMalusDaily:
-      topDialogues: []
-      bottomDialogues: []
+      currentDialogue: []
     twoMalusDaily:
-      topDialogues: []
-      bottomDialogues: []
+      currentDialogue: []
   dayFour:
     zeroMalusDaily:
-      topDialogues: []
-      bottomDialogues: []
+      currentDialogue: []
     oneMalusDaily:
-      topDialogues: []
-      bottomDialogues: []
+      currentDialogue: []
     twoMalusDaily:
-      topDialogues: []
-      bottomDialogues: []
+      currentDialogue: []
   dayFive:
     zeroMalusDaily:
-      topDialogues: []
-      bottomDialogues: []
+      currentDialogue: []
     oneMalusDaily:
-      topDialogues: []
-      bottomDialogues: []
+      currentDialogue: []
     twoMalusDaily:
-      topDialogues: []
-      bottomDialogues: []
+      currentDialogue: []
   daySix:
     zeroMalusDaily:
-      topDialogues: []
-      bottomDialogues: []
+      currentDialogue: []
     oneMalusDaily:
-      topDialogues: []
-      bottomDialogues: []
+      currentDialogue: []
     twoMalusDaily:
-      topDialogues: []
-      bottomDialogues: []
+      currentDialogue: []
   daySeven:
     zeroMalusDaily:
-      topDialogues: []
-      bottomDialogues: []
+      currentDialogue: []
     oneMalusDaily:
-      topDialogues: []
-      bottomDialogues: []
+      currentDialogue: []
     twoMalusDaily:
-      topDialogues: []
-      bottomDialogues: []
+      currentDialogue: []
 --- !u!1001 &1165418813089238411
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 7067910186441393878}
+    m_TransformParent: {fileID: 6429623603301443425}
     m_Modifications:
     - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
       propertyPath: m_Pivot.x
@@ -680,15 +635,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2061343619972242970, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
       propertyPath: m_AnchoredPosition.x

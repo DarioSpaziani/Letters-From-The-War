@@ -11,7 +11,7 @@ public class Boss : MonoBehaviour
     private Fade fade;
 
     public TextMeshProUGUI dialogueText;
-    public TextMeshProUGUI buttonSkip;
+    //public TextMeshProUGUI buttonSkip;
 
     [ShowInInspector] private int fired = 4;
     private int currentIndex = 0;
@@ -140,10 +140,10 @@ public class Boss : MonoBehaviour
         DialogueSet currentDialogueSet = GetCurrentDialogueSet();
         dialogueText.text = currentDialogueSet.currentDialogue[currentIndex];
 
-        if (currentIndex == currentDialogueSet.currentDialogue.Count - 1)
-        {
-            buttonSkip.text = "Next Scene";
-        }
+        // if (currentIndex == currentDialogueSet.currentDialogue.Count - 1)
+        // {
+        //     buttonSkip.text = "Next Scene";
+        // }
     }
     
     private int DetermineMalusLevel(int malusDaily)
