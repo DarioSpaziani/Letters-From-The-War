@@ -59,7 +59,6 @@ public class GameManager : MonoBehaviour
             comprensibility = maxLevelComprensibilityTwo;
         }
     }
-
     
     public void Knowledge()
     {

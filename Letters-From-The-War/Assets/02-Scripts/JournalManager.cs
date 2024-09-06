@@ -60,7 +60,7 @@ public class JournalManager : MonoBehaviour
     [Header("Day Seven")]
     public DayData daySeven;
 
-    private DayData[] dayData = new DayData[6]; // 0-7 (8 elementi)
+    private DayData[] dayData = new DayData[6]; // 0-6 (7 elementi)
     #endregion
     #endregion
 
@@ -73,23 +73,22 @@ public class JournalManager : MonoBehaviour
 
     private void Start()
     {
-        UpdateJournalDisplay();
-        gameManager.day++;
-    } 
-
-    public void UpdateJournalDisplay() 
-    {
         ShowTextDescriptions();
-    } 
-    
+        Debug.Log(gameManager.day);
+        gameManager.day++;
+
+        Debug.Log("day after increment : " + gameManager.day);
+    }
 
     private void ShowTextDescriptions()
     {
         if (gameManager.day >= 1 && gameManager.day < dayData.Length)
         {
-            DayData currentDay = dayData[gameManager.day - 1];
+            Debug.Log("day dentro ShowText() prima di diminuirlo : " + gameManager.day);
+            DayData currentDay = dayData[gameManager.day];
             int knowledgeIndex = GetKnowledgeIndex(gameManager.day, gameManager.knowledge);
 
+            Debug.Log("day dentro ShowText() : " + gameManager.day);
             switch (knowledgeIndex)
             {
                 case 0:
@@ -118,7 +117,7 @@ public class JournalManager : MonoBehaviour
             return 0;
         }
 
-        DayRange range = dayData[day].range;
+        DayRange range = dayData[day-1].range;
 
         if (knowledge >= range.minRangeFirstTitle && knowledge <= range.maxRangeFirstTitle) return 0;
         if (knowledge > range.minRangeSecondTitle && knowledge <= range.maxRangeSecondTitle) return 1;

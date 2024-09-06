@@ -15,6 +15,7 @@ public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     void Start()
     {
         image = GetComponent<Image>();
+        SetWordData(wordData);
     }
 
     void Update()
@@ -42,5 +43,10 @@ public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public void OnPointerEnter(PointerEventData pointerEventData) => isPointerOver = true;
 
     public void OnPointerExit(PointerEventData pointerEventData) => isPointerOver = false;
+
+    public void SetWordData(WordData data)
+    {
+        wordData = data;
+    }
     #endregion
 }

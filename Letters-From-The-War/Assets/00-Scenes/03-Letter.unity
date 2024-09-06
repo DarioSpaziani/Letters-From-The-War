@@ -571,7 +571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letters:
-  - content: 
+  - content: Giorno zero
   - content: "Dear Daddy,\n\nI hope you are not alarmed, you should not be. Differently
       from last month, these days the front is calm, the weather is nice and we have
       food and water. Sometimes I still have irrational panic because of the unexpected
@@ -623,6 +623,11 @@ MonoBehaviour:
       Just do as I said and we will rejoin after the war.\r\n\nI miss you, Andy\r"
   - content: Sono tutti scappati. Disertori
   letterText: {fileID: 8160541887462107025}
+  wordPrefab: {fileID: 7622884890438576327, guid: 538ad14f9de6a614abc4258dc436ef05, type: 3}
+  spaceBetweenWord: 10
+  lineHeight: 30
+  maxLineWidth: 300
+  wordsInLetter: []
 --- !u!1 &860722962650144515
 GameObject:
   m_ObjectHideFlags: 0
