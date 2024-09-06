@@ -2,33 +2,36 @@ using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Boss : MonoBehaviour
 {
+    #region FIELDS
+    #region VARIABLES
     private GameManager gameManager;
     private Fade fade;
 
-    public TextMeshProUGUI dialogue1;
-    public TextMeshProUGUI dialogue2;
-    public TextMeshProUGUI buttonSkip;
+    public TextMeshProUGUI dialogueText;
+    //public TextMeshProUGUI buttonSkip;
 
+    [ShowInInspector] private int fired = 4;
+    private int currentIndex = 0;
+    #endregion
+
+    #region SENTENCES
     [Header("WARNING SENTENCES")]
-    public List<string> warningOneMalusTop;
-    public List<string> warningOneMalusBottom;
-    public List<string> warningTwoMalusTop;
-    public List<string> warningTwoMalusBottom;
+    public List<string> warningOne;
+    public List<string> warningTwo;
 
 
     [Header("FIRED SENTENCES")]
-    public List<string> firedDialogueTop;
-    public List<string> firedDialogueBottom;
+    public List<string> firedDialogue;
+    #endregion
 
+    #region DIALOGUES DATA
     [System.Serializable]
     public class DialogueSet
     {
-        public List<string> topDialogues;
-        public List<string> bottomDialogues;
+        public List<string> currentDialogue;
     }
 
     [System.Serializable]
@@ -49,17 +52,17 @@ public class Boss : MonoBehaviour
     public DaySeven daySeven;
 
     private List<DailyDialogue> dailyDialogues;
+    #endregion
+    #endregion
 
-    [ShowInInspector] private int fired = 4;
-
-    private int currentIndex = 0;
-
+    #region UNITY_CALLS
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
         fade = FindObjectOfType<Fade>();
         InitializeDailyDialogues();
     }
+    
     private void InitializeDailyDialogues()
     {
         dailyDialogues = new List<DailyDialogue>
@@ -70,9 +73,30 @@ public class Boss : MonoBehaviour
 
     private void Start()
     {
+        switch (gameManager.malusDaily)
+        {
+            case 1:
 
-        Debug.Log("day : " + gameManager.day);
-        Debug.Log("malusDaily : " + gameManager.malusDaily);
+                foreach(string warningSentence in warningOne)
+                {
+                    GetCurrentDialogueSet().currentDialogue.Add(warningSentence);
+                }
+                break;
+
+            case 2:
+                foreach (string warningSentence in warningTwo) 
+                { 
+                    GetCurrentDialogueSet().currentDialogue.Add(warningSentence);
+                }
+                break;
+
+            default:
+                break;
+        }
+        if (gameManager.malus >= fired)
+        {
+            GetCurrentDialogueSet().currentDialogue.Add(firedDialogue[currentIndex]);
+        }
         if (!gameManager.hasStarted)
         {
             StartCoroutine(fade.FadeReverse());
@@ -84,15 +108,14 @@ public class Boss : MonoBehaviour
     {
         if (!fade.isFadeEnded)
         {
-            DialogueSet currentDialogueSet = GetCurrentDialogueSet();
-            if (currentIndex < currentDialogueSet.topDialogues.Count - 1)
+            if (currentIndex < GetCurrentDialogueSet().currentDialogue.Count - 1)
             {
                 currentIndex++;
                 UpdateDialogues();
             }
             else
             {
-                LoadNextScene();
+                LoadNextScene(); 
             }
         }
     }
@@ -102,6 +125,7 @@ public class Boss : MonoBehaviour
         DailyDialogue dailyDialogue = dailyDialogues[gameManager.day];
 
         int malusLevel = DetermineMalusLevel(gameManager.malusDaily);
+
         switch (malusLevel)
         {
             case 0: return dailyDialogue.zeroMalusDaily;
@@ -114,37 +138,12 @@ public class Boss : MonoBehaviour
     private void UpdateDialogues()
     {
         DialogueSet currentDialogueSet = GetCurrentDialogueSet();
-        dialogue1.text = currentDialogueSet.topDialogues[currentIndex];
-        dialogue2.text = currentDialogueSet.bottomDialogues[currentIndex];
+        dialogueText.text = currentDialogueSet.currentDialogue[currentIndex];
 
-        switch (gameManager.malusDaily)
-        {
-            case 1:
-
-                currentDialogueSet.topDialogues.Add(warningTwoMalusTop[currentIndex]);
-                currentDialogueSet.bottomDialogues.Add(warningTwoMalusBottom[currentIndex]);
-                break;
-
-            case 2:
-
-                currentDialogueSet.topDialogues.Add(warningTwoMalusTop[currentIndex]);
-                currentDialogueSet.bottomDialogues.Add(warningTwoMalusBottom[currentIndex]);
-                break;
-
-            default:
-                break;
-        }
-
-        if(gameManager.malus >= fired)
-        {
-            currentDialogueSet.topDialogues.Add(firedDialogueTop[currentIndex]);
-            currentDialogueSet.bottomDialogues.Add(firedDialogueBottom[currentIndex]);
-        }
-
-        if (currentIndex == currentDialogueSet.topDialogues.Count - 1)
-        {
-            buttonSkip.text = "Next Scene";
-        }
+        // if (currentIndex == currentDialogueSet.currentDialogue.Count - 1)
+        // {
+        //     buttonSkip.text = "Next Scene";
+        // }
     }
     
     private int DetermineMalusLevel(int malusDaily)
@@ -161,13 +160,14 @@ public class Boss : MonoBehaviour
         {
             gameManager.day++;
             gameManager.hasStarted = false;
-            SceneManager.LoadScene("02-BossInterview");
+            fade.StartCoroutine(fade.CheckFadeAndLoadScene("02-BossInterview"));
         }
         else
         {
             fade.FadeEffect();
             gameManager.malusDaily = 0;
-            SceneManager.LoadScene("03-Letter");
+            fade.StartCoroutine(fade.CheckFadeAndLoadScene("03-Letter"));
         }
     }
+    #endregion
 }
