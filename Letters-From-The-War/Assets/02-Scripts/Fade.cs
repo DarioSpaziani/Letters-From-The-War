@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class Fade : MonoBehaviour
 {
     #region FIELDS
+
+    [SerializeField] private Typewriter _typewriter;
     private Image fadeImage;
     private Intro intro;
     private GameManager gameManager;
@@ -54,6 +56,7 @@ public class Fade : MonoBehaviour
         fadeImage.canvasRenderer.SetAlpha(1f);
         isFadeEnded = false;
         dayText.text = "DAY : " + gameManager.day;
+        _typewriter.StartTypewriter();
 
         yield return new WaitForSeconds(timeFadePingPong);
 
