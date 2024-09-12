@@ -541,18 +541,13 @@ MonoBehaviour:
   dayOne:
     zeroMalusDaily:
       currentDialogue:
-      - This is your first day here
-      - and we already expect great things from you!
-      - Some soldiers tend to express feelings
-      - that are too moving for their families.
-      - Do you understand?
-      - 'Emotional people endanger themselves and others. '
+      - This is your first day here and we already expect great things from you!
+      - Some soldiers tend to express feelings that are too moving for their families
+      - Do you understand? Emotional people endanger themselves and others
     oneMalusDaily:
-      currentDialogue:
-      - 
+      currentDialogue: []
     twoMalusDaily:
-      currentDialogue:
-      - 
+      currentDialogue: []
   dayTwo:
     zeroMalusDaily:
       currentDialogue:
@@ -728,7 +723,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4237450976111584802, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998082865887386390, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: daysString.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998082865887386390, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: daysString.Array.data[1]
+      value: 'Day 1 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998082865887386390, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: daysString.Array.data[2]
+      value: Day 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998082865887386390, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: daysString.Array.data[3]
+      value: Day 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998082865887386390, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: daysString.Array.data[4]
+      value: Day 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998082865887386390, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: daysString.Array.data[5]
+      value: Day 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998082865887386390, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: daysString.Array.data[6]
+      value: Day 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998082865887386390, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: daysString.Array.data[7]
+      value: Day 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
