@@ -7,17 +7,10 @@ public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     #region FIELDS
     private Image image;
-    public enum WordSelector
-    {
-        GREEN,
-        YELLOW,
-        RED
-    }
-    [SerializeField]
-    private WordSelector wordSelectorType;
-    [HideInInspector]
+
+    //[HideInInspector]
     public WordData wordData;
-    private WordData[] wordDataArray;
+    //private WordData[] wordDataArray;
     public bool obscured = false;
     private bool isPointerOver = false;
     #endregion
@@ -26,13 +19,13 @@ public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     void Start()
     {
         image = GetComponent<Image>();
-        AssignWordData();
+        //AssignWordData();
     }
 
-    void AssignWordData()
-    {
-        wordData = wordDataArray.FirstOrDefault(wd => wd.name == wordSelectorType.ToString());
-    }
+    //void AssignWordData()
+    //{
+    //    wordData = wordDataArray.FirstOrDefault(wd => wd.name == wordSelectorType.ToString());
+    //}
 
     void Update()
     {
