@@ -507,34 +507,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 1992391529598090925}
   warningOne:
-  - However, you made mistakes in the past;
-  - pay more attention when you work.
-  - 'We always keep an eye on you. '
+  - However, you made mistakes in the past
+  - Pay more attention when you work
+  - We always keep an eye on you
   warningTwo:
-  - However, you made big mistakes in the past.
-  - We will not warn you again.
-  - You have to be flawless.
+  - However, you made big mistakes in the past
+  - We will not warn you again
+  - You have to be flawless
   firedDialogue:
-  - YOU - ARE - FIRED!
+  - I know you are in a difficult situation, but our country needs strong men and
+    women to make it through this war
+  - "We can\u2019t rely on weak people only because they are in need"
+  - Everyone here and at the front is in need and we have to make our sacrifices
+    and do our job to come out stronger as a community
+  - I had them gather your things. You can leave!
   dayZero:
     zeroMalusDaily:
       currentDialogue:
-      - You look like such a qualified guy.
-      - In these suffering times we need people like you,
-      - ready to give it all for our great nation.
-      - Some families are unreasonably worried for our youths at the front.
-      - In order to come out of this war as a stronger nation
-      - the people have to support us.
-      - Some whiny baby, accidentally drafted in the army,
-      - overstates the conditions of the conflicts.
-      - As a member of the censorship organization,
-      - 'You have to help your country and bring faith to your fellow compatriots. '
+      - You look like such a qualified guy
+      - In these suffering times we need people like you, ready to give it all for
+        our great nation
+      - Some families are unreasonably worried for our youths at the front
+      - In order to come out of this war as a stronger nation the people have to
+        support us
+      - Some whiny baby, accidentally drafted in the army, overstates the conditions
+        of the conflicts
+      - As a member of the censorship organization, you have to help your country
+        and bring faith to your fellow compatriots
     oneMalusDaily:
-      currentDialogue:
-      - 
+      currentDialogue: []
     twoMalusDaily:
-      currentDialogue:
-      - 
+      currentDialogue: []
   dayOne:
     zeroMalusDaily:
       currentDialogue:
@@ -722,6 +725,10 @@ PrefabInstance:
     - target: {fileID: 4237450976111584802, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
       propertyPath: m_Name
       value: Fade
+      objectReference: {fileID: 0}
+    - target: {fileID: 4237450976111584802, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
