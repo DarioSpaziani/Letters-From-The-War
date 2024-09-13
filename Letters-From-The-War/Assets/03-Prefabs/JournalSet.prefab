@@ -71,8 +71,8 @@ MonoBehaviour:
       maxRangeSecondTitle: 2
       minRangeThirdTitle: 3
       maxRangeThirdTitle: 4
-      minRangeFourthTitle: 3
-      maxRangeFourthTitle: 4
+      minRangeFourthTitle: 5
+      maxRangeFourthTitle: 6
     descriptions:
       descriptionFirstRange: We are winning the war! Thanks to the hard work of its
         men and women, Vitualia is proving its value to the other nations
@@ -92,16 +92,12 @@ MonoBehaviour:
       minRangeFourthTitle: 5
       maxRangeFourthTitle: 6
     descriptions:
-      descriptionFirstRange: 'Soldiers at the front are happy to know that thanks
+      descriptionFirstRange: Soldiers at the front are happy to know that thanks
         to them we will come out stronger from the war
-
-'
       descriptionSecondRange: Anti-war protesters on the streets. The police peacefully
         escorted them away
-      descriptionThirdRange: 'Anti-war protesters on the streets. The government
-        will not bear any more liars and will act accordingly
-
-'
+      descriptionThirdRange: Anti-war protesters on the streets. The government will
+        not bear any more liars and will act accordingly
       descriptionFourthRange: "Government forces suppress the anti-war protestants.
         A people\u2019s spokesman states \u201CWe will come again to reveal the truth
         about the war\u201D"
