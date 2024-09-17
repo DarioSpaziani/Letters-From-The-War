@@ -160,7 +160,7 @@ public class Boss : MonoBehaviour
         {
             gameManager.day++;
             gameManager.hasStarted = false;
-            fade.StartCoroutine(fade.CheckFadeAndLoadScene("02-BossInterview"));
+            fade.StartCoroutine(fade.CheckFadeAndLoadScene("02-Boss"));
         }
         else
         {
