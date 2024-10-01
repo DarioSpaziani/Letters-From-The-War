@@ -1,0 +1,185 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8050846263620276834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2310926192262064817}
+  - component: {fileID: 8843427253569452556}
+  m_Layer: 0
+  m_Name: JournalSet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2310926192262064817
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8050846263620276834}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8843427253569452556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8050846263620276834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90034d1dd237a78418c51287f334f25c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headlineText: {fileID: 0}
+  dayOne:
+    range:
+      minRangeFirstTitle: 0
+      maxRangeFirstTitle: 0
+      minRangeSecondTitle: 1
+      maxRangeSecondTitle: 1
+      minRangeThirdTitle: 2
+      maxRangeThirdTitle: 2
+      minRangeFourthTitle: 3
+      maxRangeFourthTitle: 3
+    descriptions:
+      descriptionFirstRange: People from Vitulia support their young heroes at the
+        front fulfilling all the hard obligations. We are truly a great nation
+      descriptionSecondRange: Although an anti-vitualian movement is spreading disinformation
+        to weaken our nation, Vitulia has the support of all its citizens!
+      descriptionThirdRange: Small minorities spreading disinformation silenced for
+        the benefit of the truth and of our citizens
+      descriptionFourthRange: 
+  dayTwo:
+    range:
+      minRangeFirstTitle: 0
+      maxRangeFirstTitle: 0
+      minRangeSecondTitle: 1
+      maxRangeSecondTitle: 2
+      minRangeThirdTitle: 3
+      maxRangeThirdTitle: 4
+      minRangeFourthTitle: 3
+      maxRangeFourthTitle: 4
+    descriptions:
+      descriptionFirstRange: We are winning the war! Thanks to the hard work of its
+        men and women, Vitualia is proving its value to the other nations
+      descriptionSecondRange: Anti nationalistic fringe boycotts vitualian efforts
+        by spreading false information
+      descriptionThirdRange: Anti nationalistic fringe boycotts vitualian efforts
+        by accusing the government of wasting resources in the war
+      descriptionFourthRange: 
+  dayThree:
+    range:
+      minRangeFirstTitle: 0
+      maxRangeFirstTitle: 0
+      minRangeSecondTitle: 1
+      maxRangeSecondTitle: 1
+      minRangeThirdTitle: 2
+      maxRangeThirdTitle: 4
+      minRangeFourthTitle: 5
+      maxRangeFourthTitle: 6
+    descriptions:
+      descriptionFirstRange: 'Soldiers at the front are happy to know that thanks
+        to them we will come out stronger from the war
+
+'
+      descriptionSecondRange: Anti-war protesters on the streets. The police peacefully
+        escorted them away
+      descriptionThirdRange: 'Anti-war protesters on the streets. The government
+        will not bear any more liars and will act accordingly
+
+'
+      descriptionFourthRange: "Government forces suppress the anti-war protestants.
+        A people\u2019s spokesman states \u201CWe will come again to reveal the truth
+        about the war\u201D"
+  dayFour:
+    range:
+      minRangeFirstTitle: 0
+      maxRangeFirstTitle: 0
+      minRangeSecondTitle: 1
+      maxRangeSecondTitle: 2
+      minRangeThirdTitle: 3
+      maxRangeThirdTitle: 5
+      minRangeFourthTitle: 6
+      maxRangeFourthTitle: 8
+    descriptions:
+      descriptionFirstRange: 'Vitualian people interviewed: the pride for our youths
+        and the happiness to see them soon'
+      descriptionSecondRange: 'Vitualian people interviewed: the worry for the situation
+        our youths are living at the front'
+      descriptionThirdRange: 'Vitualian people interviewed: despair in the words
+        of some parents for the future of their sons at the front'
+      descriptionFourthRange: 'Rumors of a possible insurrection denied by the authorities:
+        a mean to drag the people down'
+  dayFive:
+    range:
+      minRangeFirstTitle: 0
+      maxRangeFirstTitle: 0
+      minRangeSecondTitle: 1
+      maxRangeSecondTitle: 3
+      minRangeThirdTitle: 4
+      maxRangeThirdTitle: 7
+      minRangeFourthTitle: 8
+      maxRangeFourthTitle: 10
+    descriptions:
+      descriptionFirstRange: Radical turn! The war is ending soon!
+      descriptionSecondRange: Citizens hope to see their relatives soon. It has been
+        over a year the war has started
+      descriptionThirdRange: "After over a year the war has started some citizens
+        seem to have lost faith in seeing their relatives again. The government reassures:
+        \u201CIt will be over soon with your help and support\u201D"
+      descriptionFourthRange: People gathered under the Parliament to ask about their
+        relatives at the front. Reassured by the government
+  daySix:
+    range:
+      minRangeFirstTitle: 0
+      maxRangeFirstTitle: 0
+      minRangeSecondTitle: 1
+      maxRangeSecondTitle: 3
+      minRangeThirdTitle: 4
+      maxRangeThirdTitle: 10
+      minRangeFourthTitle: 11
+      maxRangeFourthTitle: 12
+    descriptions:
+      descriptionFirstRange: Vitualian government is asking for economic support
+        from the citizens to bring back our soldiers even sooner
+      descriptionSecondRange: Vitualian government is asking for economic support
+        from the citizens. People wonder how is the really going on
+      descriptionThirdRange: Citizens want to leave the country scared of the war.
+        Government reassures and asks for support
+      descriptionFourthRange: Citizens leaving the country and taking to the streets.
+        The government is lying and now people want the truth
+  daySeven:
+    range:
+      minRangeFirstTitle: 0
+      maxRangeFirstTitle: 0
+      minRangeSecondTitle: 1
+      maxRangeSecondTitle: 3
+      minRangeThirdTitle: 4
+      maxRangeThirdTitle: 10
+      minRangeFourthTitle: 11
+      maxRangeFourthTitle: 14
+    descriptions:
+      descriptionFirstRange: Enemy soldiers occupied the streets of our main cities!
+        All the citizens are in disbelief
+      descriptionSecondRange: Enemy soldiers crossed the borders and are in our main
+        cities! Some citizens are locking in the house and other are trying to leave
+        the country
+      descriptionThirdRange: Enemy soldiers crossed the borders and are in our main
+        cities! Citizens are leaving the houses to reach them and ask for help
+      descriptionFourthRange: Riotous people from the opposition are joining enemy
+        soldiers on the streets against our government to help the citizens. Our
+        heads of State are held captive

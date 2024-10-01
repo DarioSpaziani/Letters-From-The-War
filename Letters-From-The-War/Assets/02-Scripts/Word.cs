@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -6,7 +7,10 @@ public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     #region FIELDS
     private Image image;
+
+    //[HideInInspector]
     public WordData wordData;
+    //private WordData[] wordDataArray;
     public bool obscured = false;
     private bool isPointerOver = false;
     #endregion
@@ -15,8 +19,13 @@ public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     void Start()
     {
         image = GetComponent<Image>();
-        SetWordData(wordData);
+        //AssignWordData();
     }
+
+    //void AssignWordData()
+    //{
+    //    wordData = wordDataArray.FirstOrDefault(wd => wd.name == wordSelectorType.ToString());
+    //}
 
     void Update()
     {
@@ -44,9 +53,5 @@ public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public void OnPointerExit(PointerEventData pointerEventData) => isPointerOver = false;
 
-    public void SetWordData(WordData data)
-    {
-        wordData = data;
-    }
     #endregion
 }
