@@ -380,7 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ffdb8c4e988b4244a6aeb73d5921f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _loopMusic: {fileID: 8300000, guid: 451c9b4c367e1df469d9841166aa2c6c, type: 3}
+  _loopMusic: {fileID: 8300000, guid: 4713ac70defce3b46a483ce755a56586, type: 3}
   _musicVolume: 50
 --- !u!1001 &98365916470057272
 PrefabInstance:

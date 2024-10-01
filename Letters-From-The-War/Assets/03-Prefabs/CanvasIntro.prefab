@@ -271,7 +271,7 @@ MonoBehaviour:
   _typingSound: {fileID: 8300000, guid: 2e620e8675970b546baf92e3568f5b65, type: 3}
   _soundSpeed: 100
   _typingVolume: 100
-  _typingSpeed: 4
+  _typingSpeed: 2
   _toggleOnStart: 1
 --- !u!1 &3627227342128333551
 GameObject:
