@@ -113,7 +113,6 @@ public class LetterCreator : MonoBehaviour
 
         // Assumiamo che Word abbia un metodo SetData per impostare WordData
         WordData wordData = CreateOrLoadWordData(wordText);
-        wordScript.SetWordData(wordData);
     }
 
     WordData CreateOrLoadWordData(string word)

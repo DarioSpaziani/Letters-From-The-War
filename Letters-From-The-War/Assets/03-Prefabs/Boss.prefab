@@ -507,130 +507,183 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 1992391529598090925}
   warningOne:
-  - However, you made mistakes in the past;
-  - pay more attention when you work.
-  - 'We always keep an eye on you. '
+  - However, you made mistakes in the past
+  - Pay more attention when you work
+  - We always keep an eye on you
   warningTwo:
-  - However, you made big mistakes in the past.
-  - We will not warn you again.
-  - You have to be flawless.
+  - However, you made big mistakes in the past
+  - We will not warn you again
+  - You have to be flawless
   firedDialogue:
-  - YOU - ARE - FIRED!
+  - I know you are in a difficult situation, but our country needs strong men and
+    women to make it through this war
+  - "We can\u2019t rely on weak people only because they are in need"
+  - Everyone here and at the front is in need and we have to make our sacrifices
+    and do our job to come out stronger as a community
+  - I had them gather your things. You can leave!
   dayZero:
     zeroMalusDaily:
       currentDialogue:
-      - You look like such a qualified guy.
-      - In these suffering times we need people like you,
-      - ready to give it all for our great nation.
-      - Some families are unreasonably worried for our youths at the front.
-      - In order to come out of this war as a stronger nation
-      - the people have to support us.
-      - Some whiny baby, accidentally drafted in the army,
-      - overstates the conditions of the conflicts.
-      - As a member of the censorship organization,
-      - 'You have to help your country and bring faith to your fellow compatriots. '
+      - You look like such a qualified guy
+      - In these suffering times we need people like you, ready to give it all for
+        our great nation
+      - Some families are unreasonably worried for our youths at the front
+      - In order to come out of this war as a stronger nation the people have to
+        support us
+      - Some whiny baby, accidentally drafted in the army, overstates the conditions
+        of the conflicts
+      - As a member of the censorship organization, you have to help your country
+        and bring faith to your fellow compatriots
     oneMalusDaily:
-      currentDialogue:
-      - 
+      currentDialogue: []
     twoMalusDaily:
-      currentDialogue:
-      - 
+      currentDialogue: []
   dayOne:
     zeroMalusDaily:
       currentDialogue:
-      - This is your first day here
-      - and we already expect great things from you!
-      - Some soldiers tend to express feelings
-      - that are too moving for their families.
-      - Do you understand?
-      - 'Emotional people endanger themselves and others. '
+      - This is your first day here and we already expect great things from you!
+      - Some soldiers tend to express feelings that are too moving for their families
+      - Do you understand? Emotional people endanger themselves and others
     oneMalusDaily:
-      currentDialogue:
-      - 
+      currentDialogue: []
     twoMalusDaily:
-      currentDialogue:
-      - 
+      currentDialogue: []
   dayTwo:
     zeroMalusDaily:
       currentDialogue:
-      - As we expected you did a wonderful job yesterday.
-      - Just go on like this.
-      - You already have today's work waiting for you at your desk.
-      - 'Remember: these letters come from low rank soldiers.'
-      - They usually do not understand how a war is conducted
-      - 'and they may have wrong opinions about who is on the winning side. '
+      - As we expected you did a wonderful job in the last days
+      - Just go on like this. You already have today's work waiting for you at your
+        desk
+      - 'Remember: these letters come from low rank soldiers'
+      - They usually do not understand how a war is conducted and they may have wrong
+        opinions about who is on the winning side
     oneMalusDaily:
       currentDialogue:
-      - We expected more from you,
-      - but I know it was only your first day.
-      - You already have today's work waiting for you at your desk.
-      - 'Remember: these letters come from low rank soldiers.'
-      - They usually do not understand how a war is conducted
-      - 'and they may have wrong opinions about who is on the winning side. '
+      - We expected more from you, but I know it was only your first days
+      - You already have today's work waiting for you at your desk
+      - 'Remember: these letters come from low rank soldiers'
+      - They usually do not understand how a war is conducted and they may have wrong
+        opinions about who is on the winning side
     twoMalusDaily:
       currentDialogue:
-      - You had a rough beginning yesterday.
-      - I hope you have already learnt from your mistakes.
-      - You already have today's work waiting for you at your desk.
-      - 'Remember: these letters come from low rank soldiers.'
-      - They usually do not understand how a war is conducted
-      - 'and they may have wrong opinions about who is on the winning side. '
+      - You had a rough beginning in the last days. I hope you have already learnt
+        from your mistakes
+      - You already have today's work waiting for you at your desk
+      - 'Remember: these letters come from low rank soldiers'
+      - They usually do not understand how a war is conducted and they may have wrong
+        opinions about who is on the winning side
   dayThree:
     zeroMalusDaily:
       currentDialogue:
-      - You already know
-      - that your work is essential for this nation.
-      - I am glad to see that you are making an effort to
-      - help your compatriots understand how the war is really going on.
-      - "We need people\u2019s support."
-      - We are a strong nation
-      - 'because of the strong people that make it up.  '
+      - You already know that your work is essential for this nation
+      - I am glad to see that you are making an effort to help your compatriots understand
+        how the war is really going on
+      - "We need people\u2019s support"
+      - We are a strong nation because of the strong people that make it up
     oneMalusDaily:
       currentDialogue:
-      - Your work is fine I have to say.
-      - However we are in such a delicate situation
-      - "that we can\u2019t take the liberty"
-      - to let even one wrong information to spread
-      - "We need people\u2019s support."
-      - We are a strong nation
-      - 'because of the strong people that make it up. '
+      - Your work is fine I have to say
+      - "However we are in such a delicate situation that we can\u2019t take the
+        liberty to let even one wrong information to spread"
+      - "We need people\u2019s support"
+      - We are a strong nation because of the strong people that make it up
     twoMalusDaily:
       currentDialogue:
-      - I have to remind you
-      - that your work is essential for this nation.
-      - Some people are doubting the government's abilities
-      - to continue this war.
-      - "We need people\u2019s support."
-      - We are a strong nation
-      - 'because of the strong people that make it up. '
+      - I have to remind you that your work is essential for this nation
+      - Some people are doubting the government's abilities to continue this war
+      - "We need people\u2019s support"
+      - We are a strong nation because of the strong people that make it up
   dayFour:
     zeroMalusDaily:
-      currentDialogue: []
+      currentDialogue:
+      - The censorship department is really helping the government
+      - They know they can rely on us and that, when we will win the war, it will
+        be thanks to us too
+      - "You have today\u2019s work in your office"
+      - 'Pay attention: the community must have a certain esteem of the authority'
     oneMalusDaily:
-      currentDialogue: []
+      currentDialogue:
+      - We received a reprimand from the government
+      - They rely on us because winning the war is not just a matter of soldiers,
+        but of control over the people at home too
+      - "You have today\u2019s work in your office"
+      - 'Pay attention: the community must have|a certain esteem of the authority'
     twoMalusDaily:
-      currentDialogue: []
+      currentDialogue:
+      - People from the high-ups really had to work a lot to solve the problems you
+        created
+      - The government relies on us. We should be a resource and not the opposite
+      - "You have today\u2019s work in your office"
+      - 'Pay attention: the community must have a certain esteem of the authority'
   dayFive:
     zeroMalusDaily:
-      currentDialogue: []
+      currentDialogue:
+      - When people get mad, governments collapse
+      - The strength of who has the power lies in the control of the emotions of
+        the people under him
+      - That is our role here and last time you behaved really well
+      - "Today\u2019s work is in your office. Just go on like that"
     oneMalusDaily:
-      currentDialogue: []
+      currentDialogue:
+      - When people get mad, governments collapse
+      - The strength of who has the power lies in the control of the emotions of
+        the people under him
+      - That is our role here and last time you could have done a bit more
+      - "Today\u2019s work is in your office. Just do not make our people mad"
     twoMalusDaily:
-      currentDialogue: []
+      currentDialogue:
+      - When people get mad, governments collapse
+      - The strength of who has the power lies in the control of the emotions of
+        the people under him
+      - That is our role here and last time you did a terrible job
+      - "Today\u2019s work is in your office. Just do not make the same mistakes"
   daySix:
     zeroMalusDaily:
-      currentDialogue: []
+      currentDialogue:
+      - Rumors from the high-ups hint at the possibility of a close ending for the
+        war
+      - If this is happening we have to thank you too
+      - We have been the bastion that protected people from themselves
+      - These are the last efforts and you may be relocated to a new office
+      - No information about army movements should leak
     oneMalusDaily:
-      currentDialogue: []
+      currentDialogue:
+      - Rumors from the high-ups hint at the possibility of a close ending for the
+        war
+      - If this is happening it is thanks to us all
+      - We have been the bastion that protected people from themselves
+      - These are the last efforts and we may receive a commendation
+      - No information about army movements should leak
     twoMalusDaily:
-      currentDialogue: []
+      currentDialogue:
+      - Rumors from the high-ups hint at the possibility of a close ending for the
+        war
+      - This could happen despite your oversights
+      - We have been the bastion that protected people from themselves
+      - These are the last efforts we have to make. Do not ruin everything now
+      - No information about army movements should leak
   daySeven:
     zeroMalusDaily:
-      currentDialogue: []
+      currentDialogue:
+      - I have to tell you that this may be our last days here at work
+      - I want to thank everyone that worked here because we did a wonderful job
+      - Sadly I got reports about soldiers misbehaving at the front
+      - "Citizens should not suffer because of our soldiers\u2019 mistakes. Do your
+        job!"
     oneMalusDaily:
-      currentDialogue: []
+      currentDialogue:
+      - I have to tell you that this may be our last days here at work
+      - We did a good job here, but it was not enough
+      - The guilty parties are the soldiers misbehaving at the front
+      - "Citizens should not suffer because of our soldiers\u2019 mistakes. Do your
+        job!"
     twoMalusDaily:
-      currentDialogue: []
+      currentDialogue:
+      - I have to tell you that this may be our last days here at work
+      - What we did was sadly not enough
+      - Between some people here and the soldiers misbehaving at the front we did
+        a terrible job protecting this country
+      - Citizens should not suffer because of our mistakes. Do your job!
 --- !u!1001 &1165418813089238411
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -722,6 +775,42 @@ PrefabInstance:
     - target: {fileID: 4237450976111584802, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
       propertyPath: m_Name
       value: Fade
+      objectReference: {fileID: 0}
+    - target: {fileID: 4237450976111584802, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998082865887386390, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: daysString.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998082865887386390, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: daysString.Array.data[1]
+      value: 'Day 1 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998082865887386390, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: daysString.Array.data[2]
+      value: Day 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998082865887386390, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: daysString.Array.data[3]
+      value: Day 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998082865887386390, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: daysString.Array.data[4]
+      value: Day 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998082865887386390, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: daysString.Array.data[5]
+      value: Day 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998082865887386390, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: daysString.Array.data[6]
+      value: Day 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998082865887386390, guid: 52b35b980922dfc42a32e0cae7e5a894, type: 3}
+      propertyPath: daysString.Array.data[7]
+      value: Day 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

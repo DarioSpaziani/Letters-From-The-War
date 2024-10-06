@@ -1,15 +1,24 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class FillerList : MonoBehaviour
 {
     #region FIELDS
     private GameManager gameManager;
+    public List<GameObject> letters = new List<GameObject>();
     #endregion
 
     #region UNITY_CALLS
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
+
+        for(int i = 0; i < letters.Count; i++)
+        {
+            letters[i].SetActive(false);
+        }
+        letters[gameManager.day - 1].SetActive(true);
+
     }
 
     void Start()

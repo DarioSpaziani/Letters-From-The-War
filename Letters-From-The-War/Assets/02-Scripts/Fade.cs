@@ -12,33 +12,27 @@ public class Fade : MonoBehaviour
     private Intro intro;
     private GameManager gameManager;
     private TextMeshProUGUI dayText;
-    private TextMeshProUGUI yearText;
     private Color fadeColor;
     public float speedEffect = 1f;
     public float timeDelayScene = 1f;
     public float timeFadePingPong = 1f;
     public bool ping_pong_fade = false;
     public bool isFadeEnded;
-    public List<string> daysText;
-    public List<string> yearsText;
+    public List<string> daysString;
     #endregion
 
     #region UNITY_CALLS
     void Awake()
     {
-        GameObject child = transform.GetChild(0).gameObject;
-        GameObject child1 = transform.GetChild(1).gameObject;
         gameManager = FindObjectOfType<GameManager>();
         fadeImage = GetComponent<Image>();
         fadeImage.canvasRenderer.SetAlpha(0);
-        dayText = child.GetComponentInChildren<TextMeshProUGUI>();
-        yearText = child1.GetComponentInChildren<TextMeshProUGUI>();
+        dayText = GetComponentInChildren<TextMeshProUGUI>();
     }
 
     private void Start() 
     {
         dayText.text = ""; 
-        yearText.text = ""; 
     }
 
     public void Update()
@@ -61,13 +55,11 @@ public class Fade : MonoBehaviour
     {
         fadeImage.canvasRenderer.SetAlpha(1f);
         isFadeEnded = false;
-        dayText.text = daysText[gameManager.day-1];
-        yearText.text = yearsText[gameManager.day-1];
+        dayText.text = daysString[gameManager.day];
 
         yield return new WaitForSeconds(timeFadePingPong);
 
         dayText.text = "";
-        yearText.text = "";
         fadeImage.CrossFadeAlpha(0.0f, speedEffect, false);
         isFadeEnded = true;
     }
