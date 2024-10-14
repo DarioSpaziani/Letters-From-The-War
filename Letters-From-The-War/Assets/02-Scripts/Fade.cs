@@ -8,6 +8,8 @@ using UnityEngine.UI;
 public class Fade : MonoBehaviour
 {
     #region FIELDS
+
+    [SerializeField] private Typewriter _typewriter;
     private Image fadeImage;
     private Intro intro;
     private GameManager gameManager;
