@@ -30,6 +30,6 @@ public class Intro : MonoBehaviour
         }
     }
 
-    public void SkipIntro() => fade.StartCoroutine(fade.CheckFadeAndLoadScene("02-BossInterview"));
+    public void SkipIntro() => fade.StartCoroutine(fade.CheckFadeAndLoadScene("02-Boss"));
     #endregion
 }

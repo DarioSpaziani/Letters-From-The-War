@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,8 +8,6 @@ using UnityEngine.UI;
 public class Fade : MonoBehaviour
 {
     #region FIELDS
-
-    [SerializeField] private Typewriter _typewriter;
     private Image fadeImage;
     private Intro intro;
     private GameManager gameManager;
@@ -19,6 +18,7 @@ public class Fade : MonoBehaviour
     public float timeFadePingPong = 1f;
     public bool ping_pong_fade = false;
     public bool isFadeEnded;
+    public List<string> daysString;
     #endregion
 
     #region UNITY_CALLS
@@ -55,8 +55,7 @@ public class Fade : MonoBehaviour
     {
         fadeImage.canvasRenderer.SetAlpha(1f);
         isFadeEnded = false;
-        dayText.text = "DAY : " + gameManager.day;
-        _typewriter.StartTypewriter();
+        dayText.text = daysString[gameManager.day];
 
         yield return new WaitForSeconds(timeFadePingPong);
 

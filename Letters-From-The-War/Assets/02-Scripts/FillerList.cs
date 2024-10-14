@@ -1,11 +1,25 @@
+using Sirenix.OdinInspector;
 using System.Collections.Generic;
+using System.Linq;
+using TMPro;
 using UnityEngine;
 
 public class FillerList : MonoBehaviour
 {
     #region FIELDS
+    [System.Serializable]
+    public class Letter
+    {
+        [TextArea(3, 10)]
+        public string content;
+    }
+
+    [ShowInInspector] public List<Letter> lettersTexts = new List<Letter>();
+
     private GameManager gameManager;
-    public List<GameObject> letters = new List<GameObject>();
+    public List<GameObject> lettersGO = new List<GameObject>();
+    public List<GameObject> wordsInGame = new List<GameObject>();
+    
     #endregion
 
     #region UNITY_CALLS
@@ -13,31 +27,66 @@ public class FillerList : MonoBehaviour
     {
         gameManager = FindObjectOfType<GameManager>();
 
-        for(int i = 0; i < letters.Count; i++)
+        for(int i = 0; i < lettersGO.Count; i++)
         {
-            letters[i].SetActive(false);
+            lettersGO[i].SetActive(false);
         }
-        letters[gameManager.day - 1].SetActive(true);
+        lettersGO[gameManager.day - 1].SetActive(true);
 
+        
     }
 
     void Start()
     {
         Word[] words = FindObjectsOfType<Word>();
 
-        foreach (var w in words)
+        foreach (var word in words)
         {
-            if (w.wordData.category == WordData.wordCategory.GREEN)
+            if (word.wordData.category == WordData.wordCategory.GREEN)
             {
-                gameManager.listGreenWords.Add(w);
+                gameManager.listGreenWords.Add(word);
             }
-            else if (w.wordData.category == WordData.wordCategory.YELLOW)
+            else if (word.wordData.category == WordData.wordCategory.YELLOW)
             {
-                gameManager.listYellowWords.Add(w);
+                gameManager.listYellowWords.Add(word);
             }
-            else if (w.wordData.category == WordData.wordCategory.RED)
+            else if (word.wordData.category == WordData.wordCategory.RED)
             {
-                gameManager.listRedWords.Add(w);
+                gameManager.listRedWords.Add(word);
+            }
+        }
+
+        FillerWordsText();
+    }
+
+    public void FillerWordsText()
+    {
+        string[] wordsTexts = lettersTexts[gameManager.day-1].content.Split(new char[] { ' ', '\n' }, System.StringSplitOptions.RemoveEmptyEntries);
+        Word[] allWordComponents = FindObjectsOfType<Word>();
+        
+        foreach(var wordComponent in allWordComponents)
+        {
+            GameObject wordObject = wordComponent.gameObject;
+            if (wordObject.name.StartsWith("Word") && !wordsInGame.Contains(wordObject))
+            {
+                wordsInGame.Add(wordObject);
+                if (wordsInGame.Count >= 600)
+                    break;
+            }
+        }
+
+        int minLength = Mathf.Min(wordsTexts.Length, wordsInGame.Count);
+        for (int i = 0; i < minLength; i++)
+        {
+            int reverseIndex = wordsInGame.Count - 1 - i;
+            if (reverseIndex >= 0 && reverseIndex < wordsInGame.Count)
+            {
+                GameObject wordObject = wordsInGame[i]; 
+                TextMeshProUGUI textWord = wordObject.GetComponentInChildren<TextMeshProUGUI>();
+                if (textWord != null)
+                {
+                    textWord.text = wordsTexts[reverseIndex];
+                }
             }
         }
     }
