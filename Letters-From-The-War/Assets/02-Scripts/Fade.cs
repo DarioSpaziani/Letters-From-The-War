@@ -57,7 +57,9 @@ public class Fade : MonoBehaviour
     {
         fadeImage.canvasRenderer.SetAlpha(1f);
         isFadeEnded = false;
-        dayText.text = daysString[gameManager.day];
+        dayText.text = daysString[gameManager.day]; 
+        _typewriter.StartTypewriter();
+
 
         yield return new WaitForSeconds(timeFadePingPong);
 
