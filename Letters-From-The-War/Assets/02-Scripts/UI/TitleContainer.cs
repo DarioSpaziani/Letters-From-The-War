@@ -45,6 +45,7 @@ public class TitleContainer : MonoBehaviour
         yield return new WaitForSeconds(_lettersAnimation.GetCurrentAnimatorStateInfo(0).speed);
         _menuItemsContainer.SetActive(true);
         _fireAnimation.SetActive(true);
+        _lettersAnimation.enabled = false;
     }
 
     #endregion

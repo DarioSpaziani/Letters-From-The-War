@@ -1,11 +1,8 @@
-using System;
 using System.Collections;
 using Sirenix.OdinInspector;
-using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class MainMenuItem : MonoBehaviour, IPointerEnterHandler
 {
@@ -18,7 +15,10 @@ public class MainMenuItem : MonoBehaviour, IPointerEnterHandler
     [SerializeField] private AudioClip _sfx;
     [SerializeField] [ProgressBar(0,100, 1f, 0f, 0f)]private int _sfxVolume = 100;
 
+    //Non si gestirebbe così sta roba, servirebbe un manager, ma noi siamo spiriti liberi \(°^°)/
     [Header("UI FX")] 
+    [SerializeField] private GameObject _lettersFTWImage;
+    [SerializeField] private GameObject _creditsScreen;
     [SerializeField] private GameObject _timbre;
     [SerializeField] private float _waitAfterTimbre;
     
@@ -34,12 +34,17 @@ public class MainMenuItem : MonoBehaviour, IPointerEnterHandler
 
     public void NewGame() => StartCoroutine(SpawnTimbre(0));
 
-    public void ContinueGame(){}
+    public void ShowCredits() => StartCoroutine(SpawnTimbre(1));
 
-    public void ShowCredits() {}
+    public void Quit() => StartCoroutine(SpawnTimbre(2));
 
-    public void Quit() => StartCoroutine(SpawnTimbre(3));
-
+    public void BackToMenu()
+    {
+        transform.parent.gameObject.SetActive(true);
+        _creditsScreen.SetActive(false);
+        _lettersFTWImage.SetActive(true);
+    }
+    
     private IEnumerator SpawnTimbre(int command)
     {
         _timbre.SetActive(true);
@@ -49,7 +54,13 @@ public class MainMenuItem : MonoBehaviour, IPointerEnterHandler
             case 0:
                 SceneManager.LoadScene("01-Intro");
                 break;
-            case 3:
+            case 1:
+                _lettersFTWImage.SetActive(false);
+                _timbre.SetActive(false);
+                _creditsScreen.SetActive(true);
+                transform.parent.gameObject.SetActive(false);
+                break;
+            case 2:
                 Application.Quit();
                 break;
         }
