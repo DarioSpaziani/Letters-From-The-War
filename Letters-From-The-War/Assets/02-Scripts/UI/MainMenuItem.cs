@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Sirenix.OdinInspector;
 using TMPro;
 using UnityEngine;
@@ -16,6 +17,10 @@ public class MainMenuItem : MonoBehaviour, IPointerEnterHandler
     [Header("SFX Parametes")]
     [SerializeField] private AudioClip _sfx;
     [SerializeField] [ProgressBar(0,100, 1f, 0f, 0f)]private int _sfxVolume = 100;
+
+    [Header("UI FX")] 
+    [SerializeField] private GameObject _timbre;
+    [SerializeField] private float _waitAfterTimbre;
     
     #endregion
 
@@ -27,15 +32,27 @@ public class MainMenuItem : MonoBehaviour, IPointerEnterHandler
         _audioManager._oneShotAudioSource.volume = _sfxVolume;
     }
 
-    public void NewGame() => SceneManager.LoadScene("01-Intro");
+    public void NewGame() => StartCoroutine(SpawnTimbre(0));
 
     public void ContinueGame(){}
 
     public void ShowCredits() {}
 
-    public void Quit() 
+    public void Quit() => StartCoroutine(SpawnTimbre(3));
+
+    private IEnumerator SpawnTimbre(int command)
     {
-        Application.Quit();
+        _timbre.SetActive(true);
+        yield return new WaitForSeconds(1 / _timbre.GetComponent<Animator>().speed + _waitAfterTimbre);
+        switch (command)
+        {
+            case 0:
+                SceneManager.LoadScene("01-Intro");
+                break;
+            case 3:
+                Application.Quit();
+                break;
+        }
     }
     
     #region Pointer Events Management

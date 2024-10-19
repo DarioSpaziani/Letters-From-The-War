@@ -7,13 +7,13 @@ public class TitleContainer : MonoBehaviour
 
     [Header("Title Screen")] [SerializeField]
     private GameObject _pressAnyKeyObject;
-
     [SerializeField] private GameObject _lettersFTWObject;
     [SerializeField] private Animator _lettersAnimation;
 
     [Header("Main Menu Screen")] [SerializeField]
     private GameObject _menuItemsContainer;
-
+    [SerializeField] private GameObject _fireAnimation;
+    
     #endregion
 
     #region UNITY_CALLS
@@ -21,6 +21,8 @@ public class TitleContainer : MonoBehaviour
     private void Start()
     {
         MainMenuManager._titleContainer = this;
+        _menuItemsContainer.SetActive(false);
+        _fireAnimation.SetActive(false);
     }
 
     private void Update()
@@ -42,6 +44,7 @@ public class TitleContainer : MonoBehaviour
     {
         yield return new WaitForSeconds(_lettersAnimation.GetCurrentAnimatorStateInfo(0).speed);
         _menuItemsContainer.SetActive(true);
+        _fireAnimation.SetActive(true);
     }
 
     #endregion
