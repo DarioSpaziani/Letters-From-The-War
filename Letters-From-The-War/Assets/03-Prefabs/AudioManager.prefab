@@ -56,8 +56,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _loopAudioSource: {fileID: 7852010783959172370}
-  _loopMusic: {fileID: 0}
+  _musicVolume: 50
   _oneShotAudioSource: {fileID: 2615071493020695273}
+  _sfxVolume: 100
 --- !u!1 &1842301615766522795
 GameObject:
   m_ObjectHideFlags: 0
