@@ -44,69 +44,93 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b581008b6ecbab147b4e8289eb5868c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lettersTexts:
-  - content: 'Dear Daddy,
-
-      I hope you are not alarmed, you should not be. Differently
-      from last month, these days the front is calm, the weather is nice and we have
-      food and water. Sometimes I still have irrational panic because of the unexpected
-      death of William. They even told us that we will have a small truce this summer
-      for the Assumption. I would just like to come back home and hug you.
-
-
-
-      Yours,
-      Albert'
-  - content: "Dear Mary,\r\nLife at the east front is safe, but worrying. We are
-      currently not fighting because we are out of resources, but we move back each
-      day to flee from the Russian army and I fear they are moving forward our borders.
-      Peter has some spare coffee; we drink that together to ease the nerves. When
-      I drink something hot looking at the sun setting, it always reminds me of us
-      just a few years ago. I miss those times before the war; now I can\u2019t spend
-      a day without thinking that if we fail, we will bring the enemy's army to our
-      front door. I can\u2019t wait to see you again.\r\n\r\nI am yours ever, J.\r"
-  - content: "Dear sister,\r\nReally thanks for your letter. I am happy to know that
-      you and mom are well despite everything. You even remembered to water my rosemary;
-      I hope its scent could remind you a little bit of myself. If I will be back
-      I will thank you for taking care of my stuff. A few days ago, during a retreat,
-      we ran into a minefield. I don\u2019t even have to tell you that it was not
-      signaled. It was a massacre: ten of us couldn\u2019t make it out alive and
-      the other five got injured because of an explosion. Now I got treated and I
-      feel better. Sergeant Hyam told us that it won\u2019t happen again and that
-      we are safe now\u2026 I hope he is right. I love you and tell mom I can\u2019t
-      wait to see her again.\r\n\r\nTake care, Liam\r"
-  - content: "Dear Mr Jones,\r\nThanks awfully for your letter. I am glad Professor
-      Parker could continue his research without the help of his students. I am just
-      sad that I could not continue with my academic career because of this war.
-      Professor Parker's company was charming with all that knowledge he could exchange
-      so easily nevertheless so wisely; compared to that, the conceited individual
-      that goes by the rank and name of Corporal Giles is an obnoxious presence.
-      We spent the last weeks walking through the French territory to come back home.
-      We are all tired because we do not eat enough food and have time to sleep;
-      all that unbearable corporal does is scream in the face of the privates who
-      can\u2019t keep pace. I just want to come back home, to my studies and my old
-      life.\r\n\r\nA big hug, Tom\r"
-  - content: "Dear father,\r\nI expect you are wondering why I have not written,
-      but it was a difficult time. I am really thankful for your kind words; I needed
-      to hear something like that. We have been under fire for three months now and
-      we are in awful conditions compared to when we left. I heard rumors that at
-      the other front, where Daniel is, they are doing a little bit better than us;
-      they are retreating, but at least they are alive. Here we lost almost every
-      man: we were almost three hundred defending the position and now we are way
-      less than two hundred. About a half. I do not think we will resist for much
-      longer. This may be my last letter to you.\r\n\r\nLove you, Sam\r"
-  - content: "Dearest Lea,\r\nI am writing to you in despair. I do not know which
-      information is coming from the front but we could not stop the enemy\u2019s
-      army. I hope this letter will reach you before them. You have to leave the
-      country with mom and pa. I am out of danger and I will reach a safe place soon.
-      Just do as I said and we will rejoin after the war.\r\n\r\nI miss you, Andy\r"
-  - content: "Darling,\r\nYesterday I had to visit all the units again, to get statements
-      for my monthly report. Every time I checked, we had lost a sheer amount of
-      soldiers. Nevertheless, we did not have enough ammunition and food to try and
-      move somewhere. They really had low morale last time and I did not expect something
-      like this to happen; when I arrived at the camp, everyone was gone, even the
-      officers! Deserters! I will be home in a few days. Here I am done with my job.
-      I wish you and our kids all the best. We will hug soon.\r\n\r\nYours, Mark\r"
+  startLettersTexts:
+  - content: Dear Daddy,
+  - content: Dear Mary,
+  - content: Dear sister,
+  - content: Dear Mr Jones,
+  - content: Dear father,
+  - content: Dearest Lea,
+  - content: 'Darling, '
+  bodyLettersTexts:
+  - content: I hope you are not alarmed, you should not be. Differently from last
+      month, these days the front is calm, the weather is nice and we have food and
+      water. Sometimes I still have irrational panic because of the unexpected death
+      of William. They even told us that we will have a small truce this summer for
+      the Assumption. I would just like to come back home and hug you.
+  - content: "Life at the east front is safe, but worrying. We are currently not
+      fighting because we are out of resources, but we move back each day to flee
+      from the Russian army and I fear they are moving forward our borders. Peter
+      has some spare coffee; we drink that together to ease the nerves. When I drink
+      something hot looking at the sun setting, it always reminds me of us just a
+      few years ago. I miss those times before the war; now I can\u2019t spend a
+      day without thinking that if we fail, we will bring the enemy's army to our
+      front door. I can\u2019t wait to see you again."
+  - content: "Really thanks for your letter. I am happy to know that you and mom
+      are well despite everything. You even remembered to water my rosemary; I hope
+      its scent could remind you a little bit of myself. If I will be back I will
+      thank you for taking care of my stuff. A few days ago, during a retreat, we
+      ran into a minefield. I don\u2019t even have to tell you that it was not signaled.
+      It was a massacre: ten of us couldn\u2019t make it out alive and the other
+      five got injured because of an explosion. Now I got treated and I feel better.
+      Sergeant Hyam told us that it won\u2019t happen again and that we are safe
+      now\u2026 I hope he is right. I love you and tell mom I can\u2019t wait to
+      see her again."
+  - content: "Thanks awfully for your letter. I am glad Professor Parker could continue
+      his research without the help of his students. I am just sad that I could not
+      continue with my academic career because of this war. Professor Parker's company
+      was charming with all that knowledge he could exchange so easily nevertheless
+      so wisely; compared to that, the conceited individual that goes by the rank
+      and name of Corporal Giles is an obnoxious presence. We spent the last weeks
+      walking through the French territory to come back home. We are all tired because
+      we do not eat enough food and have time to sleep; all that unbearable corporal
+      does is scream in the face of the privates who can\u2019t keep pace. I just
+      want to come back home, to my studies and my old life."
+  - content: 'I expect you are wondering why I have not written, but it was a difficult
+      time. I am really thankful for your kind words; I needed to hear something
+      like that. We have been under fire for three months now and we are in awful
+      conditions compared to when we left. I heard rumors that at the other front,
+      where Daniel is, they are doing a little bit better than us; they are retreating,
+      but at least they are alive. Here we lost almost every man: we were almost
+      three hundred defending the position and now we are way less than two hundred.
+      About a half. I do not think we will resist for much longer. This may be my
+      last letter to you.'
+  - content: "I am writing to you in despair. I do not know which information is
+      coming from the front but we could not stop the enemy\u2019s army. I hope this
+      letter will reach you before them. You have to leave the country with mom and
+      pa. I am out of danger and I will reach a safe place soon. Just do as I said
+      and we will rejoin after the war.\r\n"
+  - content: Yesterday I had to visit all the units again, to get statements for
+      my monthly report. Every time I checked, we had lost a sheer amount of soldiers.
+      Nevertheless, we did not have enough ammunition and food to try and move somewhere.
+      They really had low morale last time and I did not expect something like this
+      to happen; when I arrived at the camp, everyone was gone, even the officers!
+      Deserters! I will be home in a few days. Here I am done with my job. I wish
+      you and our kids all the best. We will hug soon.
+  endLettersTexts:
+  - content: 'Yours, Albert '
+  - content: 'I am yours ever, J. '
+  - content: 'Take care, Liam '
+  - content: 'A big hug, Tom '
+  - content: 'Love you, Sam '
+  - content: 'I miss you, Andy '
+  - content: 'Yours, Mark '
+  startLetter:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  endLetter:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   lettersGO:
   - {fileID: 0}
   - {fileID: 0}

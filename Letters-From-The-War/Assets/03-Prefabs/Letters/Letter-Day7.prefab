@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3519490898091418100, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}
       propertyPath: m_Name
-      value: Letter-Day1 Variant 5
+      value: Letter-Day7
       objectReference: {fileID: 0}
     - target: {fileID: 6755943094299197285, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}
       propertyPath: m_Pivot.x
@@ -93,7 +93,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5989169597748417735, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}

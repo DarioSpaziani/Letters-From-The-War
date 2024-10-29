@@ -7,14 +7,30 @@ using UnityEngine;
 public class FillerList : MonoBehaviour
 {
     #region FIELDS
+
     [System.Serializable]
-    public class Letter
+    public class StartLetter
+    {
+        public string content;
+    }
+    [System.Serializable]
+    public class BodyLetter
     {
         [TextArea(3, 10)]
         public string content;
     }
+    [System.Serializable]
+    public class EndLetter
+    {
+        public string content;
+    }
 
-    [ShowInInspector] public List<Letter> lettersTexts = new List<Letter>();
+    [ShowInInspector] public List<StartLetter> startLettersTexts = new List<StartLetter>();
+    [ShowInInspector] public List<BodyLetter> bodyLettersTexts = new List<BodyLetter>();
+    [ShowInInspector] public List<EndLetter> endLettersTexts = new List<EndLetter>();
+
+    public List<GameObject> startLetter = new List<GameObject>();
+    public List<GameObject> endLetter = new List<GameObject>();
 
     private GameManager gameManager;
     public List<GameObject> lettersGO = new List<GameObject>();
@@ -31,13 +47,21 @@ public class FillerList : MonoBehaviour
         {
             lettersGO[i].SetActive(false);
         }
-        lettersGO[gameManager.day - 1].SetActive(true);
 
-        
+        lettersGO[gameManager.day - 1].SetActive(true);
+                
     }
 
     void Start()
     {
+        for (int i = 0; i < startLetter.Count; i++)
+        {
+            TextMeshProUGUI startLettersText = startLetter[i].GetComponentInChildren<TextMeshProUGUI>();
+            startLettersText.text = startLettersTexts[i].content;
+
+            TextMeshProUGUI endLettersText = endLetter[i].GetComponentInChildren<TextMeshProUGUI>();
+            endLettersText.text = endLettersTexts[i].content;
+        }
         Word[] words = FindObjectsOfType<Word>();
 
         foreach (var word in words)
@@ -61,17 +85,26 @@ public class FillerList : MonoBehaviour
 
     public void FillerWordsText()
     {
-        string[] wordsTexts = lettersTexts[gameManager.day-1].content.Split(new char[] { ' ', '\n' }, System.StringSplitOptions.RemoveEmptyEntries);
+        string[] wordsTexts = bodyLettersTexts[gameManager.day-1].content.Split(new char[] { ' ', '\n' }, System.StringSplitOptions.RemoveEmptyEntries);
+
         Word[] allWordComponents = FindObjectsOfType<Word>();
         
         foreach(var wordComponent in allWordComponents)
         {
             GameObject wordObject = wordComponent.gameObject;
+            if(wordObject.name.StartsWith("Start") && !wordsInGame.Contains(wordObject))
+            {
+                wordsInGame.Add(wordObject);
+            }
             if (wordObject.name.StartsWith("Word") && !wordsInGame.Contains(wordObject))
             {
                 wordsInGame.Add(wordObject);
-                if (wordsInGame.Count >= 600)
+                if (wordsInGame.Count >= 1000)
                     break;
+            }
+            if (wordObject.name.StartsWith("End") && !wordsInGame.Contains(wordObject))
+            {
+                wordsInGame.Add(wordObject);
             }
         }
 
@@ -82,11 +115,24 @@ public class FillerList : MonoBehaviour
             if (reverseIndex >= 0 && reverseIndex < wordsInGame.Count)
             {
                 GameObject wordObject = wordsInGame[i]; 
+
                 TextMeshProUGUI textWord = wordObject.GetComponentInChildren<TextMeshProUGUI>();
+
                 if (textWord != null)
                 {
-                    textWord.text = wordsTexts[reverseIndex];
+                    textWord.text = wordsTexts[i];
                 }
+            }
+        }
+
+        for (int i = minLength; i < wordsInGame.Count; i++)
+        {
+            GameObject wordObject = wordsInGame[i];
+            TextMeshProUGUI textWord = wordObject.GetComponentInChildren<TextMeshProUGUI>();
+
+            if (textWord != null)
+            {
+                textWord.text = ""; 
             }
         }
     }
