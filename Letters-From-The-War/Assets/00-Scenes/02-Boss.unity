@@ -520,6 +520,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss
       objectReference: {fileID: 0}
+    - target: {fileID: 8872417473477255829, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: ping_pong_fade
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

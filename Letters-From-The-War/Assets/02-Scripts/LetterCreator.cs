@@ -20,6 +20,9 @@ public class LetterCreator : MonoBehaviour
     private GameManager gameManager;
     private WordData wordData;
     public GameObject wordPrefab;
+    public GameObject StartLetter;
+    public GameObject BodyLetter;
+    public GameObject EndLetter;
 
     public float spaceBetweenWords = 10f;
     public float lineHeight = 30f;
@@ -44,11 +47,14 @@ public class LetterCreator : MonoBehaviour
     void DisplayLetter()
     {
         ClearExistingWords();
+
         if(currentDay < letters.Count)
         {
             letterText.text = FormatLetter(letters[currentDay].content);
         }
+
         string[] parts = Regex.Split(letters[currentDay].content, @"(\r?\n|\r){2,}");
+
         Vector3 currentPosition = transform.position;
 
         foreach (string paragraph in parts)
@@ -61,6 +67,7 @@ public class LetterCreator : MonoBehaviour
                 SetupWordObject(wordObject, word);
 
                 RectTransform rectTransform = wordObject.GetComponent<RectTransform>();
+
                 currentPosition.x += rectTransform.rect.width + spaceBetweenWords;
 
                 if (currentPosition.x > transform.position.x + maxLineWidth)
@@ -72,14 +79,13 @@ public class LetterCreator : MonoBehaviour
                 wordObjects.Add(wordObject);
             }
 
-            // Vai a capo dopo ogni paragrafo
             currentPosition.x = transform.position.x;
             currentPosition.y -= lineHeight * 2;
         }
     }
     private string FormatLetter(string content)
     {
-        // Dividi la lettera in tre parti: inizio, corpo e fine
+        // Divide la lettera in tre parti: inizio, corpo e fine
         string[] parts = Regex.Split(content, @"(\r?\n|\r){2,}");
 
         if (parts.Length >= 3)
@@ -88,15 +94,14 @@ public class LetterCreator : MonoBehaviour
             string end = parts[parts.Length - 1].Trim();
             string body = string.Join("\n", parts, 1, parts.Length - 2).Trim();
 
-            // Formatta la lettera con spaziature appropriate
             return $"{start}\n\n{body}\n\n{end}";
         }
         else
         {
-            // Se la lettera non ha la struttura attesa, restituisci il contenuto originale
             return content.Trim();
         }
     }
+
     void SetupWordObject(GameObject wordObject, string wordText)
     {
         TextMeshProUGUI tmpText = wordObject.GetComponent<TextMeshProUGUI>();
@@ -106,19 +111,17 @@ public class LetterCreator : MonoBehaviour
         }
 
         Word wordScript = wordObject.GetComponent<Word>();
+
         if (wordScript == null)
         {
             wordScript = wordObject.AddComponent<Word>();
         }
 
-        // Assumiamo che Word abbia un metodo SetData per impostare WordData
         WordData wordData = CreateOrLoadWordData(wordText);
     }
 
     WordData CreateOrLoadWordData(string word)
     {
-        // Implementa qui la logica per caricare o creare WordData
-        // Esempio semplificato:
         WordData wordData = ScriptableObject.CreateInstance<WordData>();
         return wordData;
     }

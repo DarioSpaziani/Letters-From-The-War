@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -13,7 +14,7 @@ public class Fade : MonoBehaviour
     private Image fadeImage;
     private Intro intro;
     private GameManager gameManager;
-    private TextMeshProUGUI dayText;
+    [ShowInInspector]private TextMeshProUGUI dayText;
     private Color fadeColor;
     public float speedEffect = 1f;
     public float timeDelayScene = 1f;
@@ -24,8 +25,13 @@ public class Fade : MonoBehaviour
     #endregion
 
     #region UNITY_CALLS
+
     void Awake()
     {
+        //if(_typewriter == null)
+        //{
+        //    return;
+        //}
         gameManager = FindObjectOfType<GameManager>();
         fadeImage = GetComponent<Image>();
         fadeImage.canvasRenderer.SetAlpha(0);
@@ -58,8 +64,7 @@ public class Fade : MonoBehaviour
         fadeImage.canvasRenderer.SetAlpha(1f);
         isFadeEnded = false;
         dayText.text = daysString[gameManager.day]; 
-        _typewriter.StartTypewriter();
-
+        //_typewriter.StartTypewriter();
 
         yield return new WaitForSeconds(timeFadePingPong);
 
