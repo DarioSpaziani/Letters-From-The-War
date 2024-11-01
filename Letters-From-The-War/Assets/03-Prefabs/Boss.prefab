@@ -72,7 +72,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -181, y: 135}
-  m_SizeDelta: {x: 300, y: 150}
+  m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &28707824985631457
 CanvasRenderer:
@@ -102,9 +102,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a400a407d40b9ba4e84f78a559aacb47, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 287c0b01e32832042ab6c9b70ae3dac1, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -131,7 +131,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -141,10 +141,10 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 21300000, guid: d3963cf32a75eb743ad4d1f963a9f927, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 010d2447216ce2947acadffc4803c59e, type: 3}
+    m_SelectedSprite: {fileID: 21300000, guid: d3963cf32a75eb743ad4d1f963a9f927, type: 3}
+    m_DisabledSprite: {fileID: 21300000, guid: 287c0b01e32832042ab6c9b70ae3dac1, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -446,7 +446,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ee32b8ba00d51244fa5fe3f26bc486ff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5200ef80467f6c346978e9606a8f8cf5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -775,6 +775,10 @@ PrefabInstance:
     - target: {fileID: 1984786059336354110, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
       propertyPath: m_Name
       value: Fade
+      objectReference: {fileID: 0}
+    - target: {fileID: 1984786059336354110, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -424,6 +424,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 668511251}
     m_Modifications:
+    - target: {fileID: 1346811317168834133, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1992391529598090925, guid: c516f550a8287b94796a53eaad5bf209, type: 3}
       propertyPath: m_margin.w
       value: 51.385452
