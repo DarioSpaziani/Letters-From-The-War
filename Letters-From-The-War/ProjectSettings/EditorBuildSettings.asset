@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/00-Scenes/04-Journal.unity
     guid: 93dbae5df3d02a5429986b50bf327838
+  - enabled: 1
+    path: Assets/00-Scenes/05-GameOver.unity
+    guid: 6b24f70d0462f2d4da8e48cc24484e69
+  - enabled: 1
+    path: Assets/00-Scenes/06-End.unity
+    guid: a62701263c9929c4290d03f08ebbc145
   m_configObjects: {}

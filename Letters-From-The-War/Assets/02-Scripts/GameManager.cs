@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class GameManager : MonoBehaviour
     public WordData greenWord;
     public WordData yellowWord;
     public WordData redWord;
+    public Fade fade;
 
     public int minLevelComprensibilityOne = 0;
     public int maxLevelComprensibilityOne = 6;
@@ -44,7 +46,10 @@ public class GameManager : MonoBehaviour
     {
         DontDestroyOnLoad(this);
     }
-
+    private void Start()
+    {
+        fade = FindObjectOfType<Fade>();
+    }
     public void Update()
     {
         comprensibility = Mathf.Clamp(comprensibility, minLevelComprensibilityOne, maxLevelComprensibilityTwo);
@@ -85,5 +90,6 @@ public class GameManager : MonoBehaviour
             malusDaily += 1;
         } 
     }
+
     #endregion
 }

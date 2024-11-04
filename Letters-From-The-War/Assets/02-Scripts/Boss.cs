@@ -11,7 +11,6 @@ public class Boss : MonoBehaviour
     private Fade fade;
 
     public TextMeshProUGUI dialogueText;
-    //public TextMeshProUGUI buttonSkip;
 
     [ShowInInspector] private int fired = 4;
     private int currentIndex = 0;
@@ -139,11 +138,6 @@ public class Boss : MonoBehaviour
     {
         DialogueSet currentDialogueSet = GetCurrentDialogueSet();
         dialogueText.text = currentDialogueSet.currentDialogue[currentIndex];
-
-        // if (currentIndex == currentDialogueSet.currentDialogue.Count - 1)
-        // {
-        //     buttonSkip.text = "Next Scene";
-        // }
     }
     
     private int DetermineMalusLevel(int malusDaily)
@@ -151,7 +145,7 @@ public class Boss : MonoBehaviour
         if (malusDaily == 0) return 0;
         if (malusDaily == 1) return 1;
         if (malusDaily == 2) return 2;
-        return 4; // Licenziamento
+        return fired; // Licenziamento
     }
 
     private void LoadNextScene()
@@ -162,11 +156,16 @@ public class Boss : MonoBehaviour
             gameManager.hasStarted = false;
             fade.StartCoroutine(fade.CheckFadeAndLoadScene("02-Boss"));
         }
-        else
+        else if(DetermineMalusLevel(gameManager.malusDaily) < fired)
         {
             fade.FadeEffect();
             gameManager.malusDaily = 0;
             fade.StartCoroutine(fade.CheckFadeAndLoadScene("03-Letter"));
+        }
+        else if(DetermineMalusLevel(gameManager.malusDaily) >= fired)
+        {
+            fade.FadeEffect();
+            fade.StartCoroutine(fade.CheckFadeAndLoadScene("05-GameOver"));
         }
     }
     #endregion

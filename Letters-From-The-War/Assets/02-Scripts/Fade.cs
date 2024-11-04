@@ -79,6 +79,7 @@ public class Fade : MonoBehaviour
         yield return new WaitUntil(() => isFadeEnded);
         yield return new WaitForSeconds(timeDelayScene);
         SceneManager.LoadScene(sceneName);
+       
     }
     #endregion
 }

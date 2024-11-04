@@ -6,11 +6,13 @@ public class Intro : MonoBehaviour
     #region FIELDS
     public TextMeshProUGUI textMPRO;
     private Fade fade;
+    private GameManager gameManager;
     #endregion
 
     #region UNITY_CALLS
     void Start()
     {
+        gameManager = FindObjectOfType<GameManager>();
         fade = FindObjectOfType<Fade>();
         if(textMPRO == null)
         {
@@ -30,6 +32,13 @@ public class Intro : MonoBehaviour
         }
     }
 
-    public void SkipIntro() => fade.StartCoroutine(fade.CheckFadeAndLoadScene("02-Boss"));
+    public void SkipIntro()
+    {
+        fade.StartCoroutine(fade.CheckFadeAndLoadScene("02-Boss"));
+        if(gameManager.day >= 7)
+        {
+            fade.StartCoroutine(fade.CheckFadeAndLoadScene("06-End"));
+        }
+    } 
     #endregion
 }
