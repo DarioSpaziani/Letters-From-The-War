@@ -34,7 +34,10 @@ public class Intro : MonoBehaviour
 
     public void SkipIntro()
     {
-        fade.StartCoroutine(fade.CheckFadeAndLoadScene("02-Boss"));
+        if (!fade.isFadeEnded)
+        {
+            fade.StartCoroutine(fade.CheckFadeAndLoadScene("02-Boss"));
+        }
         if(gameManager.day >= 7)
         {
             fade.StartCoroutine(fade.CheckFadeAndLoadScene("06-End"));

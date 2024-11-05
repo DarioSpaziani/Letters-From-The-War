@@ -94,7 +94,8 @@ public class Boss : MonoBehaviour
         }
         if (gameManager.malus >= fired)
         {
-            GetCurrentDialogueSet().currentDialogue.Add(firedDialogue[currentIndex]);
+            foreach(string firedSentences in firedDialogue)
+                GetCurrentDialogueSet().currentDialogue.Add(firedSentences);
         }
         if (!gameManager.hasStarted)
         {
@@ -158,14 +159,12 @@ public class Boss : MonoBehaviour
         }
         else if(DetermineMalusLevel(gameManager.malusDaily) < fired)
         {
-            fade.FadeEffect();
             gameManager.malusDaily = 0;
             fade.StartCoroutine(fade.CheckFadeAndLoadScene("03-Letter"));
         }
         else if(DetermineMalusLevel(gameManager.malusDaily) >= fired)
         {
-            fade.FadeEffect();
-            fade.StartCoroutine(fade.CheckFadeAndLoadScene("05-GameOver"));
+            fade.StartCoroutine(fade.CheckFadeAndLoadScene("05-End"));
         }
     }
     #endregion

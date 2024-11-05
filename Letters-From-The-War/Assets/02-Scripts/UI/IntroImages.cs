@@ -20,6 +20,14 @@ public class IntroImages : MonoBehaviour
         StartCoroutine(SlideImages());
     }
 
+#if (UNITY_EDITOR)
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape)) 
+            _canvasIntro.SkipIntro();
+
+    }
+#endif
     private IEnumerator SlideImages()
     {
         foreach (Sprite sprite in _imagesList)

@@ -3,17 +3,16 @@ using UnityEngine;
 
 public class Send : MonoBehaviour
 {
-    //TO DO animazione lettera inviata
     #region FIELDS
     private Fade fade;
     private GameManager gameManager;
-    //public TextMeshProUGUI SendText;
+    public bool isSended;
     #endregion
 
     #region UNITY_CALLS
     private void Awake()
     {
-        //SendText.text = "SEND";
+        isSended = true;
         gameManager = FindObjectOfType<GameManager>();
         fade = FindObjectOfType<Fade>();
     }
@@ -69,21 +68,27 @@ public class Send : MonoBehaviour
         #endregion
     }
 
+    public void LoadJournal()
+    {
+        isSended = false;
+        fade.StartCoroutine(fade.CheckFadeAndLoadScene("04-Journal"));
+    }
+
     public void SeeJournal()
     {
-        gameManager.Knowledge();
-        gameManager.Malus();
+        if (isSended)
+        {
+            gameManager.Knowledge();
+            gameManager.Malus();
 
-        gameManager.listGreenWords.Clear();
-        gameManager.listYellowWords.Clear();
-        gameManager.listRedWords.Clear();
+            gameManager.listGreenWords.Clear();
+            gameManager.listYellowWords.Clear();
+            gameManager.listRedWords.Clear();
 
-        gameManager.comprensibility = 0;
-        gameManager.dailyPerformance = 0;
-
-        fade.FadeEffect();
-
-        fade.StartCoroutine(fade.CheckFadeAndLoadScene("04-Journal"));
+            gameManager.comprensibility = 0;
+            gameManager.dailyPerformance = 0;
+        }
+        LoadJournal();
     }
     #endregion
 }
