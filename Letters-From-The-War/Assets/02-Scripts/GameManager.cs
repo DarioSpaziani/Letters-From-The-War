@@ -46,8 +46,6 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(this);
     }
 
-
-
     public void Update()
     {
         comprensibility = Mathf.Clamp(comprensibility, minLevelComprensibilityOne, maxLevelComprensibilityTwo);

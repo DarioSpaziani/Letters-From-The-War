@@ -194,6 +194,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fade
       objectReference: {fileID: 0}
+    - target: {fileID: 8222056733630246398, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
+      propertyPath: speedEffect
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222056733630246398, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
+      propertyPath: timeDelayScene
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222056733630246398, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
+      propertyPath: timeFadePingPong
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

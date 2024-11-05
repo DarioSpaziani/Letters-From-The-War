@@ -157,14 +157,15 @@ public class Boss : MonoBehaviour
             gameManager.hasStarted = false;
             fade.StartCoroutine(fade.CheckFadeAndLoadScene("02-Boss"));
         }
-        else if(DetermineMalusLevel(gameManager.malusDaily) < fired)
+        else if(DetermineMalusLevel(gameManager.malus) >= fired)
+        {
+            Debug.LogWarning("LICENZIATO");
+            fade.StartCoroutine(fade.CheckFadeAndLoadScene("05-End"));
+        }
+        else 
         {
             gameManager.malusDaily = 0;
             fade.StartCoroutine(fade.CheckFadeAndLoadScene("03-Letter"));
-        }
-        else if(DetermineMalusLevel(gameManager.malusDaily) >= fired)
-        {
-            fade.StartCoroutine(fade.CheckFadeAndLoadScene("05-End"));
         }
     }
     #endregion

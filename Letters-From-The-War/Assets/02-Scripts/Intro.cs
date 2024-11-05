@@ -40,7 +40,7 @@ public class Intro : MonoBehaviour
         }
         if(gameManager.day >= 7)
         {
-            fade.StartCoroutine(fade.CheckFadeAndLoadScene("06-End"));
+            fade.StartCoroutine(fade.CheckFadeAndLoadScene("05-End"));
         }
     } 
     #endregion
