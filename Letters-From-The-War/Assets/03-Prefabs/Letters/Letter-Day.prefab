@@ -21137,9 +21137,9 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 69.96, y: 37.8}
+  m_CellSize: {x: 70, y: 38}
   m_Spacing: {x: 0, y: 0}
-  m_Constraint: 2
+  m_Constraint: 0
   m_ConstraintCount: 18
 --- !u!1 &7480414725074418506
 GameObject:
@@ -27345,7 +27345,7 @@ GameObject:
   - component: {fileID: 2736540621446113444}
   - component: {fileID: 6261065447087890991}
   m_Layer: 5
-  m_Name: LeftLetter
+  m_Name: Letter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27370,7 +27370,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -581, y: 6}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 650, y: 850}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2736540621446113444

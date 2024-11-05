@@ -745,6 +745,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -7288272611064048663, guid: 5625f26f5c7a3c249a373709505d67a7, type: 2}
     - target: {fileID: 1100751917325263574, guid: daa1825de7bb30447b375de04e469f46, type: 3}
+      propertyPath: m_characterSpacing
+      value: -23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100751917325263574, guid: daa1825de7bb30447b375de04e469f46, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
