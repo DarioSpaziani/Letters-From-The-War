@@ -202,6 +202,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OptionsMenuCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 249650076883810096, guid: 9724eb8981a6c1c4c9038e858b28a704, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 386331283744934920, guid: 9724eb8981a6c1c4c9038e858b28a704, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -698,3 +702,4 @@ SceneRoots:
   - {fileID: 1538391705}
   - {fileID: 98365916470057272}
   - {fileID: 1445290083}
+  - {fileID: 1665750607}
