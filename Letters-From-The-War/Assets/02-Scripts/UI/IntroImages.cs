@@ -23,7 +23,7 @@ public class IntroImages : MonoBehaviour
 #if (UNITY_EDITOR)
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape)) 
+        if(Input.GetKeyDown(KeyCode.Space)) 
             _canvasIntro.SkipIntro();
 
     }
