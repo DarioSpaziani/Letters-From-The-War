@@ -28,14 +28,12 @@ public class Fade : MonoBehaviour
 
     void Awake()
     {
-        //if(_typewriter == null)
-        //{
-        //    return;
-        //}
         gameManager = FindObjectOfType<GameManager>();
         fadeImage = GetComponent<Image>();
         fadeImage.canvasRenderer.SetAlpha(0);
         dayText = GetComponentInChildren<TextMeshProUGUI>();
+        //_typewriter = FindObjectOfType<Typewriter>();
+
     }
 
     private void Start() 

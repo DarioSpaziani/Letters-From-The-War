@@ -24,13 +24,13 @@ public class Send : MonoBehaviour
         {
             if (gameManager.listGreenWords[i].obscured == true)
             {
-                gameManager.comprensibility = gameManager.greenWord.comprensibilityWordObscured;
-                gameManager.dailyPerformance = gameManager.greenWord.dailyPerfomanceWordObscured;
+                gameManager.comprensibility -= gameManager.greenWord.comprensibilityWordObscured;
+                gameManager.dailyPerformance -= gameManager.greenWord.dailyPerfomanceWordObscured;
             }
             if (gameManager.listGreenWords[i].obscured == false)
             {
-                gameManager.comprensibility = gameManager.greenWord.comprensibilityWordNotObscured;
-                gameManager.dailyPerformance = gameManager.greenWord.dailyPerfomanceWordNotObscured;
+                gameManager.comprensibility += gameManager.greenWord.comprensibilityWordNotObscured;
+                gameManager.dailyPerformance += gameManager.greenWord.dailyPerfomanceWordNotObscured;
             }
         }
         #endregion
@@ -40,13 +40,13 @@ public class Send : MonoBehaviour
         {
             if (gameManager.listYellowWords[i].obscured == true)
             {
-                gameManager.comprensibility = gameManager.yellowWord.comprensibilityWordObscured;
-                gameManager.dailyPerformance = gameManager.yellowWord.dailyPerfomanceWordObscured;
+                gameManager.comprensibility -= gameManager.yellowWord.comprensibilityWordObscured;
+                gameManager.dailyPerformance += gameManager.yellowWord.dailyPerfomanceWordObscured;
             }
             if (gameManager.listYellowWords[i].obscured == false)
             {
-                gameManager.comprensibility = gameManager.yellowWord.comprensibilityWordNotObscured;
-                gameManager.dailyPerformance = gameManager.yellowWord.dailyPerfomanceWordNotObscured;
+                gameManager.comprensibility += gameManager.yellowWord.comprensibilityWordNotObscured;
+                gameManager.dailyPerformance -= gameManager.yellowWord.dailyPerfomanceWordNotObscured;
             }
         }
         #endregion
@@ -56,15 +56,17 @@ public class Send : MonoBehaviour
         {
             if (gameManager.listRedWords[i].obscured == true)
             {
-                gameManager.comprensibility = gameManager.redWord.comprensibilityWordObscured;
-                gameManager.dailyPerformance = gameManager.redWord.dailyPerfomanceWordObscured;
+                gameManager.comprensibility -= gameManager.redWord.comprensibilityWordObscured;
+                gameManager.dailyPerformance += gameManager.redWord.dailyPerfomanceWordObscured;
             }
             if (gameManager.listRedWords[i].obscured == false)
             {
-                gameManager.comprensibility = gameManager.redWord.comprensibilityWordObscured;
-                gameManager.dailyPerformance = gameManager.redWord.comprensibilityWordNotObscured;
+                gameManager.comprensibility += gameManager.redWord.comprensibilityWordObscured;
+                gameManager.dailyPerformance -= gameManager.redWord.comprensibilityWordNotObscured;
             }
         }
+        Debug.Log("comprensibility : " + gameManager.comprensibility);
+        Debug.Log("daily perf: " + gameManager.dailyPerformance);
         #endregion
     }
 
@@ -78,6 +80,7 @@ public class Send : MonoBehaviour
     {
         if (isSended)
         {
+            CheckWords();
             gameManager.Knowledge();
             gameManager.Malus();
 

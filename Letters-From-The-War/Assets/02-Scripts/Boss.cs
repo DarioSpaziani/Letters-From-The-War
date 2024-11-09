@@ -8,7 +8,7 @@ public class Boss : MonoBehaviour
     #region FIELDS
     #region VARIABLES
     private GameManager gameManager;
-    private Fade fade;
+    [ShowInInspector] private Fade fade;
 
     public TextMeshProUGUI dialogueText;
 
