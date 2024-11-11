@@ -68,7 +68,19 @@ PrefabInstance:
       propertyPath: m_characterSpacing
       value: -23
       objectReference: {fileID: 0}
+    - target: {fileID: 878703445713961441, guid: daa1825de7bb30447b375de04e469f46, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 878703445713961441, guid: daa1825de7bb30447b375de04e469f46, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1007815588952201470, guid: daa1825de7bb30447b375de04e469f46, type: 3}
+      propertyPath: m_characterSpacing
+      value: -23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100751917325263574, guid: daa1825de7bb30447b375de04e469f46, type: 3}
       propertyPath: m_characterSpacing
       value: -23
       objectReference: {fileID: 0}
@@ -322,7 +334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4143861696189224590, guid: daa1825de7bb30447b375de04e469f46, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4143861696189224590, guid: daa1825de7bb30447b375de04e469f46, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -512,6 +524,10 @@ PrefabInstance:
       propertyPath: m_characterSpacing
       value: -23
       objectReference: {fileID: 0}
+    - target: {fileID: 7819501216738696293, guid: daa1825de7bb30447b375de04e469f46, type: 3}
+      propertyPath: m_characterSpacing
+      value: -23
+      objectReference: {fileID: 0}
     - target: {fileID: 7887072257100472607, guid: daa1825de7bb30447b375de04e469f46, type: 3}
       propertyPath: m_characterSpacing
       value: -23
@@ -599,6 +615,10 @@ PrefabInstance:
     - target: {fileID: 8892639369305377491, guid: daa1825de7bb30447b375de04e469f46, type: 3}
       propertyPath: m_characterSpacing
       value: -23
+      objectReference: {fileID: 0}
+    - target: {fileID: 9093392081676088629, guid: daa1825de7bb30447b375de04e469f46, type: 3}
+      propertyPath: m_Name
+      value: Letter
       objectReference: {fileID: 0}
     - target: {fileID: 9135140406807504836, guid: daa1825de7bb30447b375de04e469f46, type: 3}
       propertyPath: m_characterSpacing

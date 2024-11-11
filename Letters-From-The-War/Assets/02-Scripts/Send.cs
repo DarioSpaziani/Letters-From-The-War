@@ -3,17 +3,16 @@ using UnityEngine;
 
 public class Send : MonoBehaviour
 {
-    //TO DO animazione lettera inviata
     #region FIELDS
     private Fade fade;
     private GameManager gameManager;
-    //public TextMeshProUGUI SendText;
+    public bool isSended;
     #endregion
 
     #region UNITY_CALLS
     private void Awake()
     {
-        //SendText.text = "SEND";
+        isSended = true;
         gameManager = FindObjectOfType<GameManager>();
         fade = FindObjectOfType<Fade>();
     }
@@ -25,13 +24,13 @@ public class Send : MonoBehaviour
         {
             if (gameManager.listGreenWords[i].obscured == true)
             {
-                gameManager.comprensibility = gameManager.greenWord.comprensibilityWordObscured;
-                gameManager.dailyPerformance = gameManager.greenWord.dailyPerfomanceWordObscured;
+                gameManager.comprensibility -= gameManager.greenWord.comprensibilityWordObscured;
+                gameManager.dailyPerformance -= gameManager.greenWord.dailyPerfomanceWordObscured;
             }
             if (gameManager.listGreenWords[i].obscured == false)
             {
-                gameManager.comprensibility = gameManager.greenWord.comprensibilityWordNotObscured;
-                gameManager.dailyPerformance = gameManager.greenWord.dailyPerfomanceWordNotObscured;
+                gameManager.comprensibility += gameManager.greenWord.comprensibilityWordNotObscured;
+                gameManager.dailyPerformance += gameManager.greenWord.dailyPerfomanceWordNotObscured;
             }
         }
         #endregion
@@ -41,13 +40,13 @@ public class Send : MonoBehaviour
         {
             if (gameManager.listYellowWords[i].obscured == true)
             {
-                gameManager.comprensibility = gameManager.yellowWord.comprensibilityWordObscured;
-                gameManager.dailyPerformance = gameManager.yellowWord.dailyPerfomanceWordObscured;
+                gameManager.comprensibility -= gameManager.yellowWord.comprensibilityWordObscured;
+                gameManager.dailyPerformance += gameManager.yellowWord.dailyPerfomanceWordObscured;
             }
             if (gameManager.listYellowWords[i].obscured == false)
             {
-                gameManager.comprensibility = gameManager.yellowWord.comprensibilityWordNotObscured;
-                gameManager.dailyPerformance = gameManager.yellowWord.dailyPerfomanceWordNotObscured;
+                gameManager.comprensibility += gameManager.yellowWord.comprensibilityWordNotObscured;
+                gameManager.dailyPerformance -= gameManager.yellowWord.dailyPerfomanceWordNotObscured;
             }
         }
         #endregion
@@ -57,33 +56,42 @@ public class Send : MonoBehaviour
         {
             if (gameManager.listRedWords[i].obscured == true)
             {
-                gameManager.comprensibility = gameManager.redWord.comprensibilityWordObscured;
-                gameManager.dailyPerformance = gameManager.redWord.dailyPerfomanceWordObscured;
+                gameManager.comprensibility -= gameManager.redWord.comprensibilityWordObscured;
+                gameManager.dailyPerformance += gameManager.redWord.dailyPerfomanceWordObscured;
             }
             if (gameManager.listRedWords[i].obscured == false)
             {
-                gameManager.comprensibility = gameManager.redWord.comprensibilityWordObscured;
-                gameManager.dailyPerformance = gameManager.redWord.comprensibilityWordNotObscured;
+                gameManager.comprensibility += gameManager.redWord.comprensibilityWordObscured;
+                gameManager.dailyPerformance -= gameManager.redWord.comprensibilityWordNotObscured;
             }
         }
+        Debug.Log("comprensibility : " + gameManager.comprensibility);
+        Debug.Log("daily perf: " + gameManager.dailyPerformance);
         #endregion
+    }
+
+    public void LoadJournal()
+    {
+        isSended = false;
+        fade.StartCoroutine(fade.CheckFadeAndLoadScene("04-Journal"));
     }
 
     public void SeeJournal()
     {
-        gameManager.Knowledge();
-        gameManager.Malus();
+        if (isSended)
+        {
+            CheckWords();
+            gameManager.Knowledge();
+            gameManager.Malus();
 
-        gameManager.listGreenWords.Clear();
-        gameManager.listYellowWords.Clear();
-        gameManager.listRedWords.Clear();
+            gameManager.listGreenWords.Clear();
+            gameManager.listYellowWords.Clear();
+            gameManager.listRedWords.Clear();
 
-        gameManager.comprensibility = 0;
-        gameManager.dailyPerformance = 0;
-
-        fade.FadeEffect();
-
-        fade.StartCoroutine(fade.CheckFadeAndLoadScene("04-Journal"));
+            gameManager.comprensibility = 0;
+            gameManager.dailyPerformance = 0;
+        }
+        LoadJournal();
     }
     #endregion
 }

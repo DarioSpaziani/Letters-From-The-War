@@ -8,7 +8,7 @@ public class Boss : MonoBehaviour
     #region FIELDS
     #region VARIABLES
     private GameManager gameManager;
-    private Fade fade;
+    [ShowInInspector] private Fade fade;
 
     public TextMeshProUGUI dialogueText;
 
@@ -94,7 +94,8 @@ public class Boss : MonoBehaviour
         }
         if (gameManager.malus >= fired)
         {
-            GetCurrentDialogueSet().currentDialogue.Add(firedDialogue[currentIndex]);
+            foreach(string firedSentences in firedDialogue)
+                GetCurrentDialogueSet().currentDialogue.Add(firedSentences);
         }
         if (!gameManager.hasStarted)
         {
@@ -156,16 +157,15 @@ public class Boss : MonoBehaviour
             gameManager.hasStarted = false;
             fade.StartCoroutine(fade.CheckFadeAndLoadScene("02-Boss"));
         }
-        else if(DetermineMalusLevel(gameManager.malusDaily) < fired)
+        else if(DetermineMalusLevel(gameManager.malus) >= fired)
         {
-            fade.FadeEffect();
+            Debug.LogWarning("LICENZIATO");
+            fade.StartCoroutine(fade.CheckFadeAndLoadScene("05-End"));
+        }
+        else 
+        {
             gameManager.malusDaily = 0;
             fade.StartCoroutine(fade.CheckFadeAndLoadScene("03-Letter"));
-        }
-        else if(DetermineMalusLevel(gameManager.malusDaily) >= fired)
-        {
-            fade.FadeEffect();
-            fade.StartCoroutine(fade.CheckFadeAndLoadScene("05-GameOver"));
         }
     }
     #endregion

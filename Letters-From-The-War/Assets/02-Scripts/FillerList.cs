@@ -100,7 +100,10 @@ public class FillerList : MonoBehaviour
             {
                 wordsInGame.Add(wordObject);
                 if (wordsInGame.Count >= 1000)
+                {
+                    wordObject.SetActive(true);
                     break;
+                }
             }
             if (wordObject.name.StartsWith("End") && !wordsInGame.Contains(wordObject))
             {
@@ -133,8 +136,8 @@ public class FillerList : MonoBehaviour
             if (textWord != null)
             {
                 textWord.text = "";
+                wordObject.SetActive(false);
             }
-            
         }
     }
     #endregion

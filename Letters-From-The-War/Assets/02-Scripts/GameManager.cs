@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
     public WordData greenWord;
     public WordData yellowWord;
     public WordData redWord;
-    public Fade fade;
 
     public int minLevelComprensibilityOne = 0;
     public int maxLevelComprensibilityOne = 6;
@@ -20,21 +19,13 @@ public class GameManager : MonoBehaviour
     public int minLevelDailyPerfTwo = 6;
     public int maxLevelDailyPerfTwo = 10;
 
-    [Range(0, 20)]
-    public float comprensibility = 0;
-
-    [Range(0, 20)]
-    public float dailyPerformance = 0;
-
-    [Range(0, 20)]
-    public int malus = 0;
-
-    [Range(0, 20)]
-    public int knowledge = 0;
-
+    [HideInInspector] public float comprensibility = 0;
+    [HideInInspector] public float dailyPerformance = 0;
+    [HideInInspector] public int malus = 0;
+    [HideInInspector] public int knowledge = 0;
     [HideInInspector] public int malusDaily = 0;
     [HideInInspector] public int day = 0;
-    public bool hasStarted = true;
+    [HideInInspector] public bool hasStarted = true;
 
     public List<Word> listGreenWords = new List<Word>();
     public List<Word> listYellowWords = new List<Word>();
@@ -46,10 +37,7 @@ public class GameManager : MonoBehaviour
     {
         DontDestroyOnLoad(this);
     }
-    private void Start()
-    {
-        fade = FindObjectOfType<Fade>();
-    }
+
     public void Update()
     {
         comprensibility = Mathf.Clamp(comprensibility, minLevelComprensibilityOne, maxLevelComprensibilityTwo);

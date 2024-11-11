@@ -31,6 +31,14 @@ public class IntroImages : MonoBehaviour
         StartCoroutine(SlideImages());
     }
 
+#if (UNITY_EDITOR)
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Space)) 
+            _canvasIntro.SkipIntro();
+
+    }
+#endif
     private IEnumerator SlideImages()
     {
         foreach (Slide slide in _imagesList)
