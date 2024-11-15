@@ -12,7 +12,7 @@ public class Send : MonoBehaviour
     #region UNITY_CALLS
     private void Awake()
     {
-        isSended = true;
+        isSended = false;
         gameManager = FindObjectOfType<GameManager>();
         fade = FindObjectOfType<Fade>();
     }
@@ -78,9 +78,11 @@ public class Send : MonoBehaviour
 
     public void SeeJournal()
     {
+        CheckWords();
+        isSended = true;
+        
         if (isSended)
         {
-            CheckWords();
             gameManager.Knowledge();
             gameManager.Malus();
 

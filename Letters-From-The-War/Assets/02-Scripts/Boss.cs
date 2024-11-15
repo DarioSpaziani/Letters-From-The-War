@@ -97,7 +97,7 @@ public class Boss : MonoBehaviour
             foreach(string firedSentences in firedDialogue)
                 GetCurrentDialogueSet().currentDialogue.Add(firedSentences);
         }
-        if (!gameManager.hasStarted)
+        else
         {
             StartCoroutine(fade.FadeReverse());
         }
@@ -106,7 +106,7 @@ public class Boss : MonoBehaviour
 
     public void CycleDialogue()
     {
-        if (!fade.isFadeEnded)
+        if (fade.isFadeEnded)
         {
             if (currentIndex < GetCurrentDialogueSet().currentDialogue.Count - 1)
             {

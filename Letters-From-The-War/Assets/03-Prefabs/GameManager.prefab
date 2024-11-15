@@ -59,8 +59,9 @@ MonoBehaviour:
   dailyPerformance: 0
   malus: 0
   knowledge: 0
+  malusDaily: 0
+  day: 0
+  hasStarted: 1
   listGreenWords: []
   listYellowWords: []
   listRedWords: []
-  hasStarted: 1
-  day: 0

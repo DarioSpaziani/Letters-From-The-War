@@ -21,8 +21,8 @@ public class GameManager : MonoBehaviour
 
     [HideInInspector] public float comprensibility = 0;
     [HideInInspector] public float dailyPerformance = 0;
-    [HideInInspector] public int malus = 0;
-    [HideInInspector] public int knowledge = 0;
+    public int malus = 0;
+    public int knowledge = 0;
     [HideInInspector] public int malusDaily = 0;
     [HideInInspector] public int day = 0;
     [HideInInspector] public bool hasStarted = true;
@@ -38,45 +38,55 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(this);
     }
 
-    public void Update()
-    {
-        comprensibility = Mathf.Clamp(comprensibility, minLevelComprensibilityOne, maxLevelComprensibilityTwo);
-        dailyPerformance = Mathf.Clamp(dailyPerformance, minLevelDailyPerfOne, maxLevelDailyPerfTwo);
+    //public void Update()
+    //{
+    //    comprensibility = Mathf.Clamp(comprensibility, minLevelComprensibilityOne, maxLevelComprensibilityTwo);
+    //    dailyPerformance = Mathf.Clamp(dailyPerformance, minLevelDailyPerfOne, maxLevelDailyPerfTwo);
 
-        if(comprensibility < minLevelComprensibilityOne)
-        {
-            comprensibility = minLevelComprensibilityOne;
-        }
-        if (comprensibility > maxLevelComprensibilityTwo)
-        {
-            comprensibility = maxLevelComprensibilityTwo;
-        }
-    }
+    //    if(comprensibility < minLevelComprensibilityOne)
+    //    {
+    //        comprensibility = minLevelComprensibilityOne;
+    //    }
+    //    if (comprensibility > maxLevelComprensibilityTwo)
+    //    {
+    //        comprensibility = maxLevelComprensibilityTwo;
+    //    }
+    //}
     
-    public void Knowledge()
+    public int Knowledge()
     {
         if (comprensibility >= minLevelComprensibilityOne && comprensibility <= maxLevelComprensibilityOne)
         {
-            knowledge += 1;
+            return knowledge += 1;
         }
-        if (comprensibility >= minLevelComprensibilityTwo && comprensibility <= minLevelComprensibilityTwo)
+        if (comprensibility >= minLevelComprensibilityTwo && comprensibility >= maxLevelComprensibilityTwo)
         {
-            knowledge += 2;
+            return knowledge += 2;
+        }
+        else
+        {
+            Debug.Log("Knowledge unchanged");
+            return knowledge;
         }
     }
 
-    public void Malus()
+    public int Malus()
     {
-        if(dailyPerformance >= minLevelDailyPerfOne && dailyPerformance <= maxLevelDailyPerfOne)
+        if(dailyPerformance <= minLevelDailyPerfOne && dailyPerformance <= maxLevelDailyPerfOne)
         {
-            malus += 2;
             malusDaily += 2;
+            return malus += 2;
         }
-        if(dailyPerformance >= minLevelDailyPerfTwo && dailyPerformance <= maxLevelDailyPerfTwo)
+        if(dailyPerformance >= minLevelDailyPerfTwo && dailyPerformance >= maxLevelDailyPerfTwo)
         {
-            malus += 1; 
             malusDaily += 1;
-        } 
+            return malus += 1; 
+        }
+        else
+        {
+            Debug.Log("Malus unchanged");
+            return malus;
+        }
     }
 
     #endregion

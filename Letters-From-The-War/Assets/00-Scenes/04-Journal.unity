@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 243877692}
   - component: {fileID: 243877691}
   - component: {fileID: 243877690}
+  - component: {fileID: 243877694}
   m_Layer: 5
   m_Name: CanvasJournal
   m_TagString: Untagged
@@ -225,6 +226,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &243877694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243877689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f0059f2e9906e44a4c896664a691e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &318339758
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,7 +926,6 @@ GameObject:
   - component: {fileID: 2117478739}
   - component: {fileID: 2117478738}
   - component: {fileID: 2117478737}
-  - component: {fileID: 2117478736}
   m_Layer: 5
   m_Name: NextScene
   m_TagString: Untagged
@@ -940,19 +952,6 @@ RectTransform:
   m_AnchoredPosition: {x: -181, y: 135}
   m_SizeDelta: {x: 300, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2117478736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2117478734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86fb60e6e0c45e14abdde10dea05b3f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textMPRO: {fileID: 0}
 --- !u!114 &2117478737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -997,9 +996,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2117478736}
-        m_TargetAssemblyTypeName: Intro, Assembly-CSharp
-        m_MethodName: SkipIntro
+      - m_Target: {fileID: 243877694}
+        m_TargetAssemblyTypeName: LoadJournalScene, Assembly-CSharp
+        m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1186,3 +1185,4 @@ SceneRoots:
   - {fileID: 2119561704}
   - {fileID: 2936774857327995306}
   - {fileID: 1825564942}
+  - {fileID: 544134086}

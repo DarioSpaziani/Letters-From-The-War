@@ -419,6 +419,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 79312559513240931, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: speedEffect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 79312559513240931, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: timeDelayScene
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 79312559513240931, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: timeFadePingPong
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 79312559513240931, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: daysString.Array.data[0]
+      value: YOU APPLY...
+      objectReference: {fileID: 0}
+    - target: {fileID: 2590113135401845774, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2590113135401845774, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2590113135401845774, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3422248107785761189, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
       propertyPath: m_Name
       value: CanvasFade
@@ -506,6 +534,10 @@ PrefabInstance:
     - target: {fileID: 4005093517925457298, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7532335473696711075, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8155384501745903335}
   - component: {fileID: 6436816772102027893}
   - component: {fileID: 4408015680621469428}
+  - component: {fileID: 7574839665853208441}
   m_Layer: 5
   m_Name: CanvasFade
   m_TagString: Untagged
@@ -57,10 +58,10 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!114 &6436816772102027893
 MonoBehaviour:
@@ -102,6 +103,33 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 55
+--- !u!114 &7574839665853208441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3422248107785761189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5f71119e70932043baaa5c2d92edcca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _typewriter: {fileID: 882048128690959947}
+  fadeImage: {fileID: 2590113135401845774}
+  speedEffect: 1
+  timeDelayScene: 1
+  timeFadePingPong: 1
+  isFadeEnded: 0
+  daysString:
+  - YOU APPLY...
+  - 09/07/1941
+  - 20/07/1941
+  - 31/07/1941
+  - 14/08/1941
+  - 25/08/1941
+  - 01/09/1941
+  - 09/09/1941
 --- !u!1001 &8287568152324221085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -194,23 +222,72 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fade
       objectReference: {fileID: 0}
+    - target: {fileID: 6846843553463055287, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222056733630246398, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
+      propertyPath: fadeImage
+      value: 
+      objectReference: {fileID: 2590113135401845774}
+    - target: {fileID: 8222056733630246398, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
+      propertyPath: _typewriter
+      value: 
+      objectReference: {fileID: 882048128690959947}
     - target: {fileID: 8222056733630246398, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
       propertyPath: speedEffect
-      value: 0.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8222056733630246398, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
       propertyPath: timeDelayScene
-      value: 0.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8222056733630246398, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
       propertyPath: timeFadePingPong
-      value: 0.1
+      value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8222056733630246398, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4301165333964794164, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 882048128690959947}
   m_SourcePrefab: {fileID: 100100000, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
+--- !u!114 &2590113135401845774 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5832924025681308819, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
+  m_PrefabInstance: {fileID: 8287568152324221085}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &5238693820200255913 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4301165333964794164, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
+  m_PrefabInstance: {fileID: 8287568152324221085}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &882048128690959947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5238693820200255913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 389dc39890b9a80408feb3c28dbc11c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _typingSound: {fileID: 0}
+  _soundSpeed: 100
+  _typingVolume: 50
+  _typingSpeed: 4
+  _toggleOnStart: 1
 --- !u!224 &8868668504523544105 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 581118659266756276, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
