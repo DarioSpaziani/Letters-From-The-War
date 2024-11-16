@@ -2,17 +2,17 @@ using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Boss : MonoBehaviour
 {
     #region FIELDS
     #region VARIABLES
     private GameManager gameManager;
-    [ShowInInspector] private Fade fade;
-
-    public TextMeshProUGUI dialogueText;
-
-    [ShowInInspector] private int fired = 4;
+    [SerializeField] private Fade fade;
+    [SerializeField] private TextMeshProUGUI dialogueText;
+    [SerializeField] private int fired = 4;
+    [SerializeField] private Button nextScene;
     private int currentIndex = 0;
     #endregion
 
@@ -57,6 +57,8 @@ public class Boss : MonoBehaviour
     #region UNITY_CALLS
     private void Awake()
     {
+        nextScene = GetComponentInChildren<Button>();
+        nextScene.interactable = true;
         gameManager = FindObjectOfType<GameManager>();
         fade = FindObjectOfType<Fade>();
         InitializeDailyDialogues();
@@ -146,27 +148,35 @@ public class Boss : MonoBehaviour
         if (malusDaily == 0) return 0;
         if (malusDaily == 1) return 1;
         if (malusDaily == 2) return 2;
+        if (malusDaily == 3) return 3;
         return fired; // Licenziamento
     }
 
     private void LoadNextScene()
     {
-        if (gameManager.hasStarted)
+        if (fade.isFadeEnded)
         {
-            gameManager.day++;
-            gameManager.hasStarted = false;
-            fade.StartCoroutine(fade.CheckFadeAndLoadScene("02-Boss"));
+            if (gameManager.hasStarted)
+            {
+                nextScene.interactable = false;
+                gameManager.day++;
+                gameManager.hasStarted = false;
+                fade.CheckFadeAndLoad("02-Boss");
+            }
+            else if (DetermineMalusLevel(gameManager.malus) >= fired)
+            {
+                nextScene.interactable = false;
+                Debug.LogWarning("LICENZIATO");
+                fade.CheckFadeAndLoad("05-End");
+            }
+            else
+            {
+                nextScene.interactable = false;
+                gameManager.malusDaily = 0;
+                fade.CheckFadeAndLoad("03-Letter");
+            }
         }
-        else if(DetermineMalusLevel(gameManager.malus) >= fired)
-        {
-            Debug.LogWarning("LICENZIATO");
-            fade.StartCoroutine(fade.CheckFadeAndLoadScene("05-End"));
-        }
-        else 
-        {
-            gameManager.malusDaily = 0;
-            fade.StartCoroutine(fade.CheckFadeAndLoadScene("03-Letter"));
-        }
+
     }
     #endregion
 }

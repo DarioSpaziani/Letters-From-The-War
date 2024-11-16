@@ -10,17 +10,19 @@ public class Fade : MonoBehaviour
 {
     #region FIELDS
 
-    [SerializeField] private Typewriter _typewriter;
-    public Image fadeImage;
+    [SerializeField] private Typewriter typewriter;
     [SerializeField] private Intro intro;
+    [SerializeField] private TextMeshProUGUI dayText;
     private GameManager gameManager;
-    [ShowInInspector] private TextMeshProUGUI dayText;
+    public Image _fadeImage;
+    public List<string> daysString;
     private Color fadeColor;
     public float speedEffect = 1f;
-    public float timeDelayScene = 1f;
+    public float timeDelayLoadScene = 1f;
     public float timeFadePingPong = 1f;
+    public float timeFadeReverse = 1f;
+    public float timeFadeEffect = 1f;
     public bool isFadeEnded;
-    public List<string> daysString;
 
     #endregion
 
@@ -28,12 +30,13 @@ public class Fade : MonoBehaviour
 
     void Awake()
     {
+        isFadeEnded = true;
         gameManager = FindObjectOfType<GameManager>();
-        fadeImage.canvasRenderer.SetAlpha(0);
+        _fadeImage.canvasRenderer.SetAlpha(0);
         dayText = GetComponentInChildren<TextMeshProUGUI>();
     }
 
-    public void FadeImages()
+    public void ButtonFadeImages()
     {
         if (isFadeEnded)
         {
@@ -41,43 +44,79 @@ public class Fade : MonoBehaviour
         }
     }
 
-    public void FadeEffect() => fadeImage.CrossFadeAlpha(1.0f, speedEffect, false);
+    public void FadeEffect()
+    {
+        isFadeEnded = false;
+        _fadeImage.CrossFadeAlpha(1.0f, speedEffect, false);
+        isFadeEnded = true;
+    }
+
+    public IEnumerator FadeEffectCo()
+    {
+        isFadeEnded = false;
+        _fadeImage.CrossFadeAlpha(0.0f,speedEffect, false);
+        while(_fadeImage.canvasRenderer.GetAlpha() > 0.9f)
+        {
+            yield return null;
+        }
+        yield return new WaitForSeconds(timeFadeEffect);
+        isFadeEnded = true;
+    }
+
+    public void FadeReverseEffect()
+    {
+        if (isFadeEnded)
+            StartCoroutine(FadeReverse());
+    }
 
     public IEnumerator FadeReverse()
     {
-        fadeImage.canvasRenderer.SetAlpha(1f);
         isFadeEnded = false;
-        dayText.text = daysString[gameManager.day]; 
+        _fadeImage.canvasRenderer.SetAlpha(1f);
+        dayText.text = daysString[gameManager.day];
 
-        yield return new WaitForSeconds(timeFadePingPong);
+        yield return new WaitForSeconds(timeFadeReverse);
 
         dayText.text = "";
-        fadeImage.CrossFadeAlpha(0.0f, speedEffect, false);
+        _fadeImage.CrossFadeAlpha(0.0f, speedEffect, false);
         isFadeEnded = true;
+    }
+
+    public void FadePingPongEffect()
+    {
+        if(isFadeEnded) StartCoroutine (FadePingPong());
     }
 
     public IEnumerator FadePingPong()
     {
         isFadeEnded = false;
-        fadeImage.canvasRenderer.SetAlpha(0f);
-        fadeImage.CrossFadeAlpha(1.0f, speedEffect, false);
+        _fadeImage.canvasRenderer.SetAlpha(0f);
+        _fadeImage.CrossFadeAlpha(1.0f, speedEffect, false);
 
-        while (Mathf.Abs(fadeImage.canvasRenderer.GetAlpha() - 1.0f) > 0.01f)
+        while (Mathf.Abs(_fadeImage.canvasRenderer.GetAlpha() - 1.0f) > 0.01f)
         {
             yield return null;
         }
         yield return new WaitForSeconds(timeFadePingPong);
 
         intro.counter++;
-        fadeImage.CrossFadeAlpha(0.0f, speedEffect, false);
+        _fadeImage.CrossFadeAlpha(0.0f, speedEffect, false);
         isFadeEnded = true;
+    }
+
+    public void CheckFadeAndLoad(string sceneName)
+    {
+        if (isFadeEnded)
+        {
+            StartCoroutine(CheckFadeAndLoadScene(sceneName));
+        }
     }
 
     public IEnumerator CheckFadeAndLoadScene(string sceneName)
     {
         FadeEffect();
         yield return new WaitUntil(() => isFadeEnded);
-        yield return new WaitForSeconds(timeDelayScene);
+        yield return new WaitForSeconds(timeDelayLoadScene);
         SceneManager.LoadScene(sceneName);
     }
     #endregion

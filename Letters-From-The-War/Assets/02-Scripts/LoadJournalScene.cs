@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LoadJournalScene : MonoBehaviour
 {
     private GameManager gameManager;
     private Fade fade;
+    private Button nextScene;
 
     private void Awake()
     {
+        nextScene = GetComponentInChildren<Button>();
+        nextScene.interactable = true;
         gameManager = FindObjectOfType<GameManager>();
         fade = FindObjectOfType<Fade>();
     }
@@ -16,11 +20,13 @@ public class LoadJournalScene : MonoBehaviour
     {
         if(gameManager.day >= 7)
         {
-            StartCoroutine(fade.CheckFadeAndLoadScene("06-End"));
+            nextScene.interactable = false;
+            fade.CheckFadeAndLoad("06-End");
         }
         else
         {
-            StartCoroutine(fade.CheckFadeAndLoadScene("02-Boss"));
+            nextScene.interactable = false;
+            fade.CheckFadeAndLoad("02-Boss");
         }
     }
 }

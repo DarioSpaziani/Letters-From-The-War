@@ -57,8 +57,8 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_VertexColorAlwaysGammaSpace: 1
+  m_AdditionalShaderChannelsFlag: 1
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 2
@@ -115,12 +115,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5f71119e70932043baaa5c2d92edcca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _typewriter: {fileID: 882048128690959947}
-  fadeImage: {fileID: 2590113135401845774}
-  speedEffect: 1
-  timeDelayScene: 1
-  timeFadePingPong: 1
-  isFadeEnded: 0
+  typewriter: {fileID: 882048128690959947}
+  intro: {fileID: 0}
+  dayText: {fileID: 3172650408580913962}
+  _fadeImage: {fileID: 2590113135401845774}
   daysString:
   - YOU APPLY...
   - 09/07/1941
@@ -130,6 +128,12 @@ MonoBehaviour:
   - 25/08/1941
   - 01/09/1941
   - 09/09/1941
+  speedEffect: 1
+  timeDelayLoadScene: 1
+  timeFadePingPong: 1
+  timeFadeReverse: 1
+  timeFadeEffect: 1
+  isFadeEnded: 0
 --- !u!1001 &8287568152324221085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -264,6 +268,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3172650408580913962 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6846843553463055287, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
+  m_PrefabInstance: {fileID: 8287568152324221085}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5238693820200255913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5238693820200255913 stripped

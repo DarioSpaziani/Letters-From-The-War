@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     #region FIELDS
+    public static GameManager Instance;
+
     public WordData greenWord;
     public WordData yellowWord;
     public WordData redWord;
@@ -35,24 +37,29 @@ public class GameManager : MonoBehaviour
     #region UNITY_CALLS
     private void Awake()
     {
+        if (Instance != null)
+        {
+            Destroy(this);
+        }
+        Instance = this;
         DontDestroyOnLoad(this);
     }
 
-    //public void Update()
-    //{
-    //    comprensibility = Mathf.Clamp(comprensibility, minLevelComprensibilityOne, maxLevelComprensibilityTwo);
-    //    dailyPerformance = Mathf.Clamp(dailyPerformance, minLevelDailyPerfOne, maxLevelDailyPerfTwo);
+    public void Update()
+    {
+        comprensibility = Mathf.Clamp(comprensibility, minLevelComprensibilityOne, maxLevelComprensibilityTwo);
+        dailyPerformance = Mathf.Clamp(dailyPerformance, minLevelDailyPerfOne, maxLevelDailyPerfTwo);
 
-    //    if(comprensibility < minLevelComprensibilityOne)
-    //    {
-    //        comprensibility = minLevelComprensibilityOne;
-    //    }
-    //    if (comprensibility > maxLevelComprensibilityTwo)
-    //    {
-    //        comprensibility = maxLevelComprensibilityTwo;
-    //    }
-    //}
-    
+        if (comprensibility < minLevelComprensibilityOne)
+        {
+            comprensibility = minLevelComprensibilityOne;
+        }
+        if (comprensibility > maxLevelComprensibilityTwo)
+        {
+            comprensibility = maxLevelComprensibilityTwo;
+        }
+    }
+
     public int Knowledge()
     {
         if (comprensibility >= minLevelComprensibilityOne && comprensibility <= maxLevelComprensibilityOne)

@@ -21624,10 +21624,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasFade
       objectReference: {fileID: 0}
-    - target: {fileID: 3422248107785761189, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4005093517925457298, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -21820,7 +21816,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cc052c6ef5e21943a396035eebd6016, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isSended: 0
 --- !u!114 &4756129234664462358
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -202,10 +202,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: OptionsMenuCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 249650076883810096, guid: 9724eb8981a6c1c4c9038e858b28a704, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 386331283744934920, guid: 9724eb8981a6c1c4c9038e858b28a704, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -285,14 +281,6 @@ PrefabInstance:
     - target: {fileID: 386331283744934920, guid: 9724eb8981a6c1c4c9038e858b28a704, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4685221683048695851, guid: 9724eb8981a6c1c4c9038e858b28a704, type: 3}
-      propertyPath: m_VertexColorAlwaysGammaSpace
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4685221683048695851, guid: 9724eb8981a6c1c4c9038e858b28a704, type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -401,17 +389,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 79312559513240931, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
-      propertyPath: timeFadePingPong
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 3422248107785761189, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
       propertyPath: m_Name
       value: CanvasFade
-      objectReference: {fileID: 0}
-    - target: {fileID: 3422248107785761189, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4005093517925457298, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
       propertyPath: m_Pivot.x
@@ -497,14 +477,6 @@ PrefabInstance:
       propertyPath: intro
       value: 
       objectReference: {fileID: 98365916470057274}
-    - target: {fileID: 8155384501745903335, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
-      propertyPath: m_VertexColorAlwaysGammaSpace
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8155384501745903335, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -639,6 +611,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3845647470789523805, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1460
+      objectReference: {fileID: 0}
+    - target: {fileID: 3845647470789523805, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -137
+      objectReference: {fileID: 0}
     - target: {fileID: 4009219295111975141, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -649,7 +629,7 @@ PrefabInstance:
       objectReference: {fileID: 1665750608}
     - target: {fileID: 4009219295111975141, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: FadeImages
+      value: ButtonFadeImages
       objectReference: {fileID: 0}
     - target: {fileID: 4009219295111975141, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

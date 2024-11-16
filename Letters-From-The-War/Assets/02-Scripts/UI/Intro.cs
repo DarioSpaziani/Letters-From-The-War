@@ -69,10 +69,7 @@ public class Intro : MonoBehaviour
 
     public void SkipIntro()
     {
-        if (!_fade.isFadeEnded)
-        {
-            SceneManager.LoadScene("02-Boss");
-        }
+        _fade.CheckFadeAndLoad("02-Boss");
     }
     #endregion
 }

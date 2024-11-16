@@ -1,11 +1,13 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class JournalManager : MonoBehaviour
 {
     #region FIELDS
     private GameManager gameManager;
     public TextMeshProUGUI headlineText;
+    private Button nextScene;
     private const int FIRST_TITLE = 0;
     private const int SECOND_TITLE = 1;
     private const int THIRD_TITLE = 2;

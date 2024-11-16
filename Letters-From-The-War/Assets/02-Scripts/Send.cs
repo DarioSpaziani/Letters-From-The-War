@@ -1,18 +1,20 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Send : MonoBehaviour
 {
     #region FIELDS
     private Fade fade;
     private GameManager gameManager;
-    public bool isSended;
+    private Button sendButton;
     #endregion
 
     #region UNITY_CALLS
     private void Awake()
     {
-        isSended = false;
+        sendButton = GetComponent<Button>();
+        sendButton.interactable = true;
         gameManager = FindObjectOfType<GameManager>();
         fade = FindObjectOfType<Fade>();
     }
@@ -72,27 +74,24 @@ public class Send : MonoBehaviour
 
     public void LoadJournal()
     {
-        isSended = false;
         fade.StartCoroutine(fade.CheckFadeAndLoadScene("04-Journal"));
     }
 
     public void SeeJournal()
     {
         CheckWords();
-        isSended = true;
-        
-        if (isSended)
-        {
-            gameManager.Knowledge();
-            gameManager.Malus();
+        sendButton.interactable = false;
 
-            gameManager.listGreenWords.Clear();
-            gameManager.listYellowWords.Clear();
-            gameManager.listRedWords.Clear();
+        gameManager.Knowledge();
+        gameManager.Malus();
 
-            gameManager.comprensibility = 0;
-            gameManager.dailyPerformance = 0;
-        }
+        gameManager.listGreenWords.Clear();
+        gameManager.listYellowWords.Clear();
+        gameManager.listRedWords.Clear();
+
+        gameManager.comprensibility = 0;
+        gameManager.dailyPerformance = 0;
+
         LoadJournal();
     }
     #endregion
