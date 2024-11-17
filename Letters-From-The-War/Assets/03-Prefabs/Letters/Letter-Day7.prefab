@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 4510325730994751, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}
       propertyPath: wordData
       value: 
-      objectReference: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
+      objectReference: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
     - target: {fileID: 347971483264698185, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}
       propertyPath: wordData
       value: 
@@ -31,11 +31,19 @@ PrefabInstance:
     - target: {fileID: 990613423199704086, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}
       propertyPath: wordData
       value: 
+      objectReference: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
+    - target: {fileID: 1053154672107036155, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}
+      propertyPath: wordData
+      value: 
       objectReference: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
     - target: {fileID: 1100832793035263698, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}
       propertyPath: wordData
       value: 
       objectReference: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
+    - target: {fileID: 1113002690331775680, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}
+      propertyPath: wordData
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
     - target: {fileID: 1142057831381111759, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}
       propertyPath: wordData
       value: 
@@ -51,7 +59,7 @@ PrefabInstance:
     - target: {fileID: 1435943058030231673, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}
       propertyPath: wordData
       value: 
-      objectReference: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
+      objectReference: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
     - target: {fileID: 1450146650803145022, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}
       propertyPath: wordData
       value: 
@@ -75,7 +83,7 @@ PrefabInstance:
     - target: {fileID: 2743723652268015366, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}
       propertyPath: wordData
       value: 
-      objectReference: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
+      objectReference: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
     - target: {fileID: 2914821813162115999, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}
       propertyPath: wordData
       value: 
@@ -91,11 +99,11 @@ PrefabInstance:
     - target: {fileID: 4168837889241642647, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}
       propertyPath: wordData
       value: 
-      objectReference: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
+      objectReference: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
     - target: {fileID: 4395381767540979988, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}
       propertyPath: wordData
       value: 
-      objectReference: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
+      objectReference: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
     - target: {fileID: 4524701382011770197, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}
       propertyPath: wordData
       value: 
@@ -103,11 +111,11 @@ PrefabInstance:
     - target: {fileID: 4696497765319628443, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}
       propertyPath: wordData
       value: 
-      objectReference: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
+      objectReference: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
     - target: {fileID: 4861314114998752754, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}
       propertyPath: wordData
       value: 
-      objectReference: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
+      objectReference: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
     - target: {fileID: 4929030221515369507, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}
       propertyPath: wordData
       value: 
@@ -155,7 +163,7 @@ PrefabInstance:
     - target: {fileID: 6626475631605321022, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}
       propertyPath: wordData
       value: 
-      objectReference: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
+      objectReference: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
     - target: {fileID: 6755943094299197285, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -263,7 +271,7 @@ PrefabInstance:
     - target: {fileID: 7345530882969673516, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}
       propertyPath: wordData
       value: 
-      objectReference: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
+      objectReference: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
     - target: {fileID: 7409498849550137600, guid: 07ea78bbd9d37d34cbd0b9ac271a52c2, type: 3}
       propertyPath: wordData
       value: 

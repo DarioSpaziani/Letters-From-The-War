@@ -20,6 +20,10 @@ PrefabInstance:
       propertyPath: m_characterSpacing
       value: -23
       objectReference: {fileID: 0}
+    - target: {fileID: 84845950217999174, guid: daa1825de7bb30447b375de04e469f46, type: 3}
+      propertyPath: wordData
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
     - target: {fileID: 126102613869038293, guid: daa1825de7bb30447b375de04e469f46, type: 3}
       propertyPath: m_characterSpacing
       value: -23
@@ -40,10 +44,18 @@ PrefabInstance:
       propertyPath: m_characterSpacing
       value: -23
       objectReference: {fileID: 0}
+    - target: {fileID: 380048764367783190, guid: daa1825de7bb30447b375de04e469f46, type: 3}
+      propertyPath: wordData
+      value: 
+      objectReference: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
     - target: {fileID: 388750568019553446, guid: daa1825de7bb30447b375de04e469f46, type: 3}
       propertyPath: m_characterSpacing
       value: -23
       objectReference: {fileID: 0}
+    - target: {fileID: 422625005223897460, guid: daa1825de7bb30447b375de04e469f46, type: 3}
+      propertyPath: wordData
+      value: 
+      objectReference: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
     - target: {fileID: 430479481685502396, guid: daa1825de7bb30447b375de04e469f46, type: 3}
       propertyPath: m_characterSpacing
       value: -23
@@ -60,6 +72,10 @@ PrefabInstance:
       propertyPath: m_characterSpacing
       value: -23
       objectReference: {fileID: 0}
+    - target: {fileID: 645364613844095217, guid: daa1825de7bb30447b375de04e469f46, type: 3}
+      propertyPath: wordData
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
     - target: {fileID: 747663338024233211, guid: daa1825de7bb30447b375de04e469f46, type: 3}
       propertyPath: m_characterSpacing
       value: -23
@@ -96,6 +112,10 @@ PrefabInstance:
       propertyPath: m_characterSpacing
       value: -23
       objectReference: {fileID: 0}
+    - target: {fileID: 1438293760952152992, guid: daa1825de7bb30447b375de04e469f46, type: 3}
+      propertyPath: wordData
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
     - target: {fileID: 1488645147300172139, guid: daa1825de7bb30447b375de04e469f46, type: 3}
       propertyPath: m_fontSize
       value: 20
@@ -128,6 +148,10 @@ PrefabInstance:
       propertyPath: m_characterSpacing
       value: -23
       objectReference: {fileID: 0}
+    - target: {fileID: 1794099591873392687, guid: daa1825de7bb30447b375de04e469f46, type: 3}
+      propertyPath: wordData
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
     - target: {fileID: 1795966807178340269, guid: daa1825de7bb30447b375de04e469f46, type: 3}
       propertyPath: m_characterSpacing
       value: -23
@@ -172,6 +196,10 @@ PrefabInstance:
       propertyPath: m_characterSpacing
       value: -23
       objectReference: {fileID: 0}
+    - target: {fileID: 2696906203892219760, guid: daa1825de7bb30447b375de04e469f46, type: 3}
+      propertyPath: wordData
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
     - target: {fileID: 2703867413131935070, guid: daa1825de7bb30447b375de04e469f46, type: 3}
       propertyPath: m_characterSpacing
       value: -23
@@ -184,6 +212,10 @@ PrefabInstance:
       propertyPath: m_characterSpacing
       value: -23
       objectReference: {fileID: 0}
+    - target: {fileID: 2825658419985775641, guid: daa1825de7bb30447b375de04e469f46, type: 3}
+      propertyPath: wordData
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
     - target: {fileID: 2947465286008054678, guid: daa1825de7bb30447b375de04e469f46, type: 3}
       propertyPath: m_characterSpacing
       value: -23
@@ -412,6 +444,10 @@ PrefabInstance:
       propertyPath: m_characterSpacing
       value: -23
       objectReference: {fileID: 0}
+    - target: {fileID: 5801437008762291154, guid: daa1825de7bb30447b375de04e469f46, type: 3}
+      propertyPath: wordData
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
     - target: {fileID: 6095521361201301535, guid: daa1825de7bb30447b375de04e469f46, type: 3}
       propertyPath: m_Name
       value: Letter-Day1
@@ -504,10 +540,18 @@ PrefabInstance:
       propertyPath: m_characterSpacing
       value: -23
       objectReference: {fileID: 0}
+    - target: {fileID: 7530839982545008595, guid: daa1825de7bb30447b375de04e469f46, type: 3}
+      propertyPath: wordData
+      value: 
+      objectReference: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
     - target: {fileID: 7587637299455336392, guid: daa1825de7bb30447b375de04e469f46, type: 3}
       propertyPath: m_characterSpacing
       value: -23
       objectReference: {fileID: 0}
+    - target: {fileID: 7602313504767604774, guid: daa1825de7bb30447b375de04e469f46, type: 3}
+      propertyPath: wordData
+      value: 
+      objectReference: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
     - target: {fileID: 7815720406719461479, guid: daa1825de7bb30447b375de04e469f46, type: 3}
       propertyPath: m_characterSpacing
       value: -23
@@ -576,6 +620,10 @@ PrefabInstance:
       propertyPath: m_characterSpacing
       value: -23
       objectReference: {fileID: 0}
+    - target: {fileID: 8623659537394870674, guid: daa1825de7bb30447b375de04e469f46, type: 3}
+      propertyPath: wordData
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
     - target: {fileID: 8632760760840678377, guid: daa1825de7bb30447b375de04e469f46, type: 3}
       propertyPath: m_characterSpacing
       value: -23

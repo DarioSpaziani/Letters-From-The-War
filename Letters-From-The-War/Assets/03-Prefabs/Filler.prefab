@@ -53,11 +53,11 @@ MonoBehaviour:
   - content: Dearest Lea,
   - content: 'Darling, '
   bodyLettersTexts:
-  - content: I hope you are not alarmed, you should not be. Differently from last
-      month, these days the front is calm, the weather is nice and we have food and
-      water. Sometimes I still have irrational panic because of the unexpected death
-      of William. They even told us that we will have a small truce this summer for
-      the Assumption. I would just like to come back home and hug you.
+  - content: I hope you are not alarmed, you should not be. Differently from the
+      previous months, these days the front is calm, the weather is nice and we have
+      food and water. Sometimes I have irrational panic after William died unexpectedly.
+      They even told us that we will have a small truce this summer for the Assumption.
+      I would just like to come back home and hug you all.
   - content: "Life at the east front is safe, but worrying. We are currently not
       fighting because we are out of resources, but we move back each day to flee
       from the Russian army and I fear they are moving forward our borders. Peter
@@ -76,16 +76,16 @@ MonoBehaviour:
       Sergeant Hyam told us that it won\u2019t happen again and that we are safe
       now\u2026 I hope he is right. I love you and tell mom I can\u2019t wait to
       see her again."
-  - content: "Thanks awfully for your letter. I am glad Professor Parker could continue
+  - content: Thanks awfully for your letter. I am glad Professor Parker could continue
       his research without the help of his students. I am just sad that I could not
-      continue with my academic career because of this war. Professor Parker's company
+      continue my academic career because of this war. Professor Parker's company
       was charming with all that knowledge he could exchange so easily nevertheless
-      so wisely; compared to that, the conceited individual that goes by the rank
-      and name of Corporal Giles is an obnoxious presence. We spent the last weeks
-      walking through the French territory to come back home. We are all tired because
-      we do not eat enough food and have time to sleep; all that unbearable corporal
-      does is scream in the face of the privates who can\u2019t keep pace. I just
-      want to come back home, to my studies and my old life."
+      so wisely; compared to that, the individual that goes by the name of Corporal
+      Giles is an obnoxious presence. We spent the last weeks walking through the
+      French territory to come back home. We are all tired because we do not eat
+      nor sleep enough; all that unbearable corporal does is scream in the face of
+      the privates that have the misfortune not to keep pace. I just want to go back
+      to my studies and my old life.
   - content: 'I expect you are wondering why I have not written, but it was a difficult
       time. I am really thankful for your kind words; I needed to hear something
       like that. We have been under fire for three months now and we are in awful
@@ -96,17 +96,17 @@ MonoBehaviour:
       About a half. I do not think we will resist for much longer. This may be my
       last letter to you.'
   - content: "I am writing to you in despair. I do not know which information is
-      coming from the front but we could not stop the enemy\u2019s army. I hope this
-      letter will reach you before them. You have to leave the country with mom and
-      pa. I am out of danger and I will reach a safe place soon. Just do as I said
-      and we will rejoin after the war."
+      coming from the front but we really had no chance against the enemy\u2019s
+      army. I hope this letter will reach you before them. You have to leave the
+      country right now. I am out of danger and I will reach a safe place soon. Just
+      do as I said and we will rejoin after the war."
   - content: Yesterday I had to visit all the units again, to get statements for
       my monthly report. Every time I checked, we had lost a sheer amount of soldiers.
-      Nevertheless, we did not have enough ammunition and food to try and move somewhere.
-      They really had low morale last time and I did not expect something like this
-      to happen; when I arrived at the camp, everyone was gone, even the officers!
-      Deserters! I will be home in a few days. Here I am done with my job. I wish
-      you and our kids all the best. We will hug soon.
+      Nevertheless, we did not have enough ammunition and food to move somewhere.
+      They really had low morale, but I did not expect something like this; as soon
+      as I arrived at the camp, everyone was gone, even the officers! Deserters!
+      I will be home in a few days. Here I am done with my job. I wish you and our
+      kids all the best. We will hug soon.
   endLettersTexts:
   - content: 'Yours, Albert '
   - content: 'I am yours ever, J. '
