@@ -156,6 +156,10 @@ PrefabInstance:
       propertyPath: wordData
       value: 
       objectReference: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
+    - target: {fileID: 1326189811330968297, guid: c0b7b6a8dbfd24045b7b2fc945f2c892, type: 3}
+      propertyPath: wordData
+      value: 
+      objectReference: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
     - target: {fileID: 1547882496289902078, guid: c0b7b6a8dbfd24045b7b2fc945f2c892, type: 3}
       propertyPath: wordData
       value: 
@@ -425,6 +429,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
     - target: {fileID: 7949576734977402379, guid: c0b7b6a8dbfd24045b7b2fc945f2c892, type: 3}
+      propertyPath: wordData
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
+    - target: {fileID: 8001310946761220177, guid: c0b7b6a8dbfd24045b7b2fc945f2c892, type: 3}
       propertyPath: wordData
       value: 
       objectReference: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}

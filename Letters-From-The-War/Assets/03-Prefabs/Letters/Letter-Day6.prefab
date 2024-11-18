@@ -23,7 +23,7 @@ PrefabInstance:
     - target: {fileID: 1876924950524594819, guid: 46e7190152e59a14f8f6c628f8def110, type: 3}
       propertyPath: wordData
       value: 
-      objectReference: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
+      objectReference: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
     - target: {fileID: 1966037151896372407, guid: 46e7190152e59a14f8f6c628f8def110, type: 3}
       propertyPath: wordData
       value: 
@@ -35,7 +35,7 @@ PrefabInstance:
     - target: {fileID: 2009605820696364472, guid: 46e7190152e59a14f8f6c628f8def110, type: 3}
       propertyPath: wordData
       value: 
-      objectReference: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
+      objectReference: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
     - target: {fileID: 2329313040232185153, guid: 46e7190152e59a14f8f6c628f8def110, type: 3}
       propertyPath: wordData
       value: 
