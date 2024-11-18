@@ -631,6 +631,18 @@ PrefabInstance:
       propertyPath: _fade
       value: 
       objectReference: {fileID: 1665750608}
+    - target: {fileID: 1691626980561457875, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
+      propertyPath: _imagesList.Array.data[1].image
+      value: 
+      objectReference: {fileID: 21300000, guid: d56e5cebec7ff2741b7c3b8b0ec52727, type: 3}
+    - target: {fileID: 1691626980561457875, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
+      propertyPath: _imagesList.Array.data[2].image
+      value: 
+      objectReference: {fileID: 21300000, guid: 8f1cac5c7a8d10c4fb4e4f53afeaf0a0, type: 3}
+    - target: {fileID: 1691626980561457875, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
+      propertyPath: _imagesList.Array.data[3].image
+      value: 
+      objectReference: {fileID: 21300000, guid: 5d954b556be2020439431a959515301f, type: 3}
     - target: {fileID: 2761833928468764879, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
       propertyPath: m_Name
       value: IntroCanvas

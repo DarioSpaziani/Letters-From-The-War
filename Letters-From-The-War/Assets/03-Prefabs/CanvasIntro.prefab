@@ -311,13 +311,13 @@ MonoBehaviour:
   _imagesList:
   - image: {fileID: 21300000, guid: bba1c72f963ad8843b7c8a968a2f2ff7, type: 3}
     text: July 1941. The Second World War decimates people in every nation
-  - image: {fileID: 21300000, guid: 5d954b556be2020439431a959515301f, type: 3}
+  - image: {fileID: 21300000, guid: d56e5cebec7ff2741b7c3b8b0ec52727, type: 3}
     text: The regimes are trying to persuade the people that the war is in their
       favor, but wars is never in favor of anyone.
-  - image: {fileID: 21300000, guid: d56e5cebec7ff2741b7c3b8b0ec52727, type: 3}
+  - image: {fileID: 21300000, guid: 8f1cac5c7a8d10c4fb4e4f53afeaf0a0, type: 3}
     text: You are a poor young guy living in a small town of Vitulia, who could not
       be enlisted because of an old injury that makes you limp.
-  - image: {fileID: 21300000, guid: 8f1cac5c7a8d10c4fb4e4f53afeaf0a0, type: 3}
+  - image: {fileID: 21300000, guid: 5d954b556be2020439431a959515301f, type: 3}
     text: Luckily you recently saw a job post for the Vitulian Censorship Nation
       Authority.
   _showedImage: {fileID: 5483389671838814006}
