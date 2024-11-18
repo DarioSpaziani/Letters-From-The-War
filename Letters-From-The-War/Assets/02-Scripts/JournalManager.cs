@@ -7,7 +7,7 @@ public class JournalManager : MonoBehaviour
     #region FIELDS
     private GameManager gameManager;
     public TextMeshProUGUI headlineText;
-    private Button nextScene;
+    private Button NextScene;
     private const int FIRST_TITLE = 0;
     private const int SECOND_TITLE = 1;
     private const int THIRD_TITLE = 2;
@@ -84,7 +84,6 @@ public class JournalManager : MonoBehaviour
     private void Start()
     {
         ShowTextDescriptions();
-        gameManager.day++;
     }
 
     private void ShowTextDescriptions()
@@ -117,10 +116,10 @@ public class JournalManager : MonoBehaviour
     {
         DayRange range = dayData[day].range;
 
-        if (knowledge >= range.minRangeFirstTitle && knowledge <= range.maxRangeFirstTitle) return FIRST_TITLE;
-        if (knowledge >= range.minRangeSecondTitle && knowledge <= range.maxRangeSecondTitle) return SECOND_TITLE;
-        if (knowledge >= range.minRangeThirdTitle && knowledge <= range.maxRangeThirdTitle) return THIRD_TITLE;
-        if (knowledge >= range.minRangeFourthTitle && knowledge <= range.maxRangeFourthTitle) return FOURTH_TITLE;
+        if (knowledge <= range.maxRangeFirstTitle) return FIRST_TITLE;
+        if (knowledge <= range.maxRangeSecondTitle) return SECOND_TITLE;
+        if (knowledge <= range.maxRangeThirdTitle) return THIRD_TITLE;
+        if (knowledge <= range.maxRangeFourthTitle) return FOURTH_TITLE;
 
         return FIRST_TITLE;
     }

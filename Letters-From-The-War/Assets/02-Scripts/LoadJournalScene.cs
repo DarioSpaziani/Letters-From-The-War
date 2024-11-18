@@ -25,6 +25,7 @@ public class LoadJournalScene : MonoBehaviour
         }
         else
         {
+            gameManager.day++;
             nextScene.interactable = false;
             fade.CheckFadeAndLoad("02-Boss");
         }

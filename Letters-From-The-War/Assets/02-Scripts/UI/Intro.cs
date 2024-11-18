@@ -55,6 +55,12 @@ public class Intro : MonoBehaviour
 
     public void Update()
     {
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SkipIntro();
+        }
+#endif
         if (CheckEnd())
         {
             SkipIntro();
@@ -78,5 +84,5 @@ public class Intro : MonoBehaviour
     {
         SceneManager.LoadScene("02-Boss");
     }
-    #endregion
+#endregion
 }

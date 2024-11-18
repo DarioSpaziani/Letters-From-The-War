@@ -54,14 +54,16 @@ public class Fade : MonoBehaviour
         }
     } 
 
+    public void FadeEffectFunc()
+    {
+        if(isFadeEnded) StartCoroutine(FadeEffect());
+    }
+
     public IEnumerator FadeEffect()
     {
         isFadeEnded = false;
-        _fadeImage.CrossFadeAlpha(0.0f,speedEffect, false);
-        while(_fadeImage.canvasRenderer.GetAlpha() > 0.9f)
-        {
-            yield return null;
-        }
+        _fadeImage.canvasRenderer.SetAlpha(0f);
+        _fadeImage.CrossFadeAlpha(1.0f,speedEffect, false);
         yield return new WaitForSeconds(timeFadeEffect);
         isFadeEnded = true;
     }
@@ -117,7 +119,7 @@ public class Fade : MonoBehaviour
 
     public IEnumerator CheckFadeAndLoadScene(string sceneName)
     {
-        StartCoroutine(FadeEffect());
+        FadeEffectFunc();
         yield return new WaitUntil(() => isFadeEnded);
         yield return new WaitForSeconds(timeDelayLoadScene);
         SceneManager.LoadScene(sceneName);
