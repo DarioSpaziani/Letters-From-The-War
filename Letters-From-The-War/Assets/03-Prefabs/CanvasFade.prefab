@@ -175,6 +175,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 581118659266756276, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 581118659266756276, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 581118659266756276, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -298,7 +306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 389dc39890b9a80408feb3c28dbc11c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _typingSound: {fileID: 0}
+  _typingSound: {fileID: 8300000, guid: 2e620e8675970b546baf92e3568f5b65, type: 3}
   _soundSpeed: 100
   _typingVolume: 50
   _typingSpeed: 4

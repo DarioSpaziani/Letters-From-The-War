@@ -29,13 +29,14 @@ public class Intro : MonoBehaviour
     [SerializeField] private Fade _fade;
     private GameManager _gameManager;
     public bool isIntroEnded = false;
+    [SerializeField] private Typewriter _typewriter;
 
     #endregion
 
     #region UNITY CALLS
 
     private void Start()
-    {
+    { 
         _gameManager = FindObjectOfType<GameManager>();
         isIntroEnded = false;
         _fade.isFadeEnded = true;
@@ -44,32 +45,38 @@ public class Intro : MonoBehaviour
         _showedText.text = _imagesList[counter].text;
     }
 
-    private void CycleSlide()
+    public void CycleSlide()
     {
         Slide currentSlide = _imagesList[counter];
         _showedImage.sprite = _imagesList[counter].image;
         _showedText.text = _imagesList[counter].text;
+        //_typewriter.StartTypewriter();
     }
 
     public void Update()
     {
-        if (counter >= _imagesList.Count)
+        if (CheckEnd())
         {
             SkipIntro();
         }
-        if (counter >= _imagesList.Count)
+        if (counter > _imagesList.Count -1)
         {
             isIntroEnded = true;
         }
-        if (counter <= _imagesList.Count - 1)
+    }
+
+    public bool CheckEnd()
+    {
+        if (counter > _imagesList.Count - 1)
         {
-            CycleSlide();
+            return true;
         }
+        return false;
     }
 
     public void SkipIntro()
     {
-        _fade.CheckFadeAndLoad("02-Boss");
+        SceneManager.LoadScene("02-Boss");
     }
     #endregion
 }

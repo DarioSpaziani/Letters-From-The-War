@@ -1,6 +1,7 @@
 using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -38,20 +39,22 @@ public class Fade : MonoBehaviour
 
     public void ButtonFadeImages()
     {
-        if (isFadeEnded)
+        if (isFadeEnded && !intro.isIntroEnded)
         {
+            intro.counter++;
             StartCoroutine(FadePingPong());
         }
     }
 
-    public void FadeEffect()
+    public void ButtonFadeScene()
     {
-        isFadeEnded = false;
-        _fadeImage.CrossFadeAlpha(1.0f, speedEffect, false);
-        isFadeEnded = true;
-    }
+        if (intro.CheckEnd())
+        {
+            StartCoroutine(FadeEffect());
+        }
+    } 
 
-    public IEnumerator FadeEffectCo()
+    public IEnumerator FadeEffect()
     {
         isFadeEnded = false;
         _fadeImage.CrossFadeAlpha(0.0f,speedEffect, false);
@@ -97,9 +100,9 @@ public class Fade : MonoBehaviour
         {
             yield return null;
         }
+        intro.CycleSlide();
         yield return new WaitForSeconds(timeFadePingPong);
 
-        intro.counter++;
         _fadeImage.CrossFadeAlpha(0.0f, speedEffect, false);
         isFadeEnded = true;
     }
@@ -114,7 +117,7 @@ public class Fade : MonoBehaviour
 
     public IEnumerator CheckFadeAndLoadScene(string sceneName)
     {
-        FadeEffect();
+        StartCoroutine(FadeEffect());
         yield return new WaitUntil(() => isFadeEnded);
         yield return new WaitForSeconds(timeDelayLoadScene);
         SceneManager.LoadScene(sceneName);
