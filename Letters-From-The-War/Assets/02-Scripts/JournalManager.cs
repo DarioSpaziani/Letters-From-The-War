@@ -12,6 +12,7 @@ public class JournalManager : MonoBehaviour
     private const int SECOND_TITLE = 1;
     private const int THIRD_TITLE = 2;
     private const int FOURTH_TITLE = 3;
+    public int knowledgeIndex;
 
     #region CLASS_DATA
     [System.Serializable]
@@ -50,6 +51,9 @@ public class JournalManager : MonoBehaviour
 
     #region DAYS
     [Header("Day One")]
+    public DayData dayZero;
+
+    [Header("Day One")]
     public DayData dayOne;
 
     [Header("Day Two")]
@@ -70,7 +74,7 @@ public class JournalManager : MonoBehaviour
     [Header("Day Seven")]
     public DayData daySeven;
 
-    private DayData[] dayData = new DayData[6]; // 0-6 (7 elementi)
+    private DayData[] dayData = new DayData[7]; // 0-6 (7 elementi)
     #endregion
     #endregion
 
@@ -78,7 +82,8 @@ public class JournalManager : MonoBehaviour
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
-        dayData = new DayData[] { dayOne, dayTwo, dayThree, dayFour, dayFive, daySix, daySeven };
+        dayData = new DayData[] { dayZero, dayOne, dayTwo, dayThree, dayFour, dayFive, daySix, daySeven };
+        knowledgeIndex = GetKnowledgeIndex(gameManager.day, gameManager.knowledge);
     }
 
     private void Start()
@@ -88,8 +93,8 @@ public class JournalManager : MonoBehaviour
 
     private void ShowTextDescriptions()
     {
-        DayData currentDay = dayData[gameManager.day - 1];
-        int knowledgeIndex = GetKnowledgeIndex(gameManager.day, gameManager.knowledge);
+        DayData currentDay = dayData[gameManager.day];
+        
 
         switch (knowledgeIndex)
         {
