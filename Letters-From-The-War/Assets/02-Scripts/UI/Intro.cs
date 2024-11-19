@@ -7,15 +7,15 @@ using UnityEngine.UI;
 
 public class Intro : MonoBehaviour
 {
-    //TO DO fare fade che parte con immagine nera, quando è a 1 cambia immagine e testo e ritorna a 0
-
     #region SLIDE
+
     [Serializable]
     private struct Slide
     {
         public Sprite image;
         [TextArea(3, 10)] public string text;
     }
+    
     #endregion
 
     #region FIELDS
@@ -84,5 +84,6 @@ public class Intro : MonoBehaviour
     {
         SceneManager.LoadScene("02-Boss");
     }
-#endregion
+
+    #endregion
 }

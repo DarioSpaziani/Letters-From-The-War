@@ -713,7 +713,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4158272818727895090, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5483389671838814006, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
       propertyPath: m_Enabled
@@ -806,6 +806,10 @@ PrefabInstance:
     - target: {fileID: 5921622402413164633, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7654588871150505742, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7840531113322200273, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}

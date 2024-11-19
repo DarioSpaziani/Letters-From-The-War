@@ -1,4 +1,3 @@
-using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -7,16 +6,20 @@ using UnityEngine.UI;
 public class Boss : MonoBehaviour
 {
     #region FIELDS
+
     #region VARIABLES
+
     private GameManager gameManager;
     [SerializeField] private Fade fade;
     [SerializeField] private TextMeshProUGUI dialogueText;
-    [SerializeField] private int fired = 4;
+    [SerializeField] private const int fired = 4;
     [SerializeField] private Button nextScene;
     private int currentIndex = 0;
+
     #endregion
 
     #region SENTENCES
+
     [Header("WARNING SENTENCES")]
     public List<string> warningOne;
     public List<string> warningTwo;
@@ -24,9 +27,11 @@ public class Boss : MonoBehaviour
 
     [Header("FIRED SENTENCES")]
     public List<string> firedDialogue;
+
     #endregion
 
     #region DIALOGUES DATA
+
     [System.Serializable]
     public class DialogueSet
     {
@@ -51,10 +56,13 @@ public class Boss : MonoBehaviour
     public DaySeven daySeven;
 
     private List<DailyDialogue> dailyDialogues;
+
     #endregion
+
     #endregion
 
     #region UNITY_CALLS
+
     private void Awake()
     {
         nextScene = GetComponentInChildren<Button>();
@@ -74,35 +82,40 @@ public class Boss : MonoBehaviour
 
     private void Start()
     {
-        switch (gameManager.malusDaily)
+        StartCoroutine(fade.FadeReverse());
+        
+        if(gameManager.malus < fired)
         {
-            case 1:
+            switch (gameManager.malusDaily)
+            {
+                case 1:
 
-                foreach(string warningSentence in warningOne)
-                {
-                    GetCurrentDialogueSet().currentDialogue.Add(warningSentence);
-                }
-                break;
+                    foreach (string warningSentence in warningOne)
+                    {
+                        GetCurrentDialogueSet().currentDialogue.Add(warningSentence);
+                    }
+                    break;
 
-            case 2:
-                foreach (string warningSentence in warningTwo) 
-                { 
-                    GetCurrentDialogueSet().currentDialogue.Add(warningSentence);
-                }
-                break;
+                case 2:
+                    foreach (string warningSentence in warningTwo)
+                    {
+                        GetCurrentDialogueSet().currentDialogue.Add(warningSentence);
+                    }
+                    break;
 
-            default:
-                break;
-        }
-        if (gameManager.malus >= fired)
-        {
-            foreach(string firedSentences in firedDialogue)
-                GetCurrentDialogueSet().currentDialogue.Add(firedSentences);
+                default:
+                    break;
+            }
         }
         else
         {
-            StartCoroutine(fade.FadeReverse());
+            foreach (string firedSentences in firedDialogue)
+            {
+                GetCurrentDialogueSet().currentDialogue.Add(firedSentences);
+            }
         }
+
+
         UpdateDialogues();
     }
 
@@ -178,5 +191,6 @@ public class Boss : MonoBehaviour
         }
 
     }
+
     #endregion
 }

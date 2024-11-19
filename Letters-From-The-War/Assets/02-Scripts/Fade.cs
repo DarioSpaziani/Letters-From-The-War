@@ -1,7 +1,5 @@
-using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics.Tracing;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -94,6 +92,7 @@ public class Fade : MonoBehaviour
 
     public IEnumerator FadePingPong()
     {
+        typewriter.StartTypewriter();
         isFadeEnded = false;
         _fadeImage.canvasRenderer.SetAlpha(0f);
         _fadeImage.CrossFadeAlpha(1.0f, speedEffect, false);
@@ -124,5 +123,6 @@ public class Fade : MonoBehaviour
         yield return new WaitForSeconds(timeDelayLoadScene);
         SceneManager.LoadScene(sceneName);
     }
+
     #endregion
 }

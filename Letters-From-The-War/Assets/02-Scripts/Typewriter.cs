@@ -7,6 +7,7 @@ using UnityEngine;
 public class Typewriter : MonoBehaviour
 {
     #region FIELDS
+
     [Header("Sound")]
     [SerializeField] private AudioClip _typingSound;
     [SerializeField] [Range(1,100)] private int _soundSpeed = 100;
@@ -19,6 +20,7 @@ public class Typewriter : MonoBehaviour
 
     private TMP_Text _textField;
     private string _textToShow;
+
     #endregion
     
     #region UNITY_CALLS

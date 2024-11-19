@@ -78,5 +78,6 @@ public class MainMenuItem : MonoBehaviour, IPointerEnterHandler
     }
 
     #endregion
+
     #endregion
 }

@@ -1,13 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class LoadJournalScene : MonoBehaviour
 {
+    #region FIELDS
+
     private GameManager gameManager;
     private Fade fade;
     private Button nextScene;
+
+    #endregion
+
+    #region UNITY_CALLS
 
     private void Awake()
     {
@@ -30,4 +34,6 @@ public class LoadJournalScene : MonoBehaviour
             fade.CheckFadeAndLoad("02-Boss");
         }
     }
+
+    #endregion
 }

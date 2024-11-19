@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class JournalManager : MonoBehaviour
 {
     #region FIELDS
+
     private GameManager gameManager;
     public TextMeshProUGUI headlineText;
     private Button NextScene;
@@ -15,6 +16,7 @@ public class JournalManager : MonoBehaviour
     public int knowledgeIndex;
 
     #region CLASS_DATA
+
     [System.Serializable]
     public class DayRange
     {
@@ -47,9 +49,11 @@ public class JournalManager : MonoBehaviour
         public DayRange range;
         public DayDescriptions descriptions;
     }
+
     #endregion
 
     #region DAYS
+
     [Header("Day One")]
     public DayData dayZero;
 
@@ -75,7 +79,9 @@ public class JournalManager : MonoBehaviour
     public DayData daySeven;
 
     private DayData[] dayData = new DayData[7]; // 0-6 (7 elementi)
+
     #endregion
+
     #endregion
 
     #region UNITY_CALLS
@@ -128,5 +134,6 @@ public class JournalManager : MonoBehaviour
 
         return FIRST_TITLE;
     }
+
     #endregion
 }

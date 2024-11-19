@@ -3,8 +3,10 @@ using UnityEngine;
 public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 {
     #region FIELDS
+
     private static T instance;
     public static T Instance => instance;
+
     #endregion
 
     #region UNITY_CALLS
@@ -20,5 +22,6 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
     #endregion
 }

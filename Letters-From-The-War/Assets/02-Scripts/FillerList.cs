@@ -1,6 +1,5 @@
 using Sirenix.OdinInspector;
 using System.Collections.Generic;
-using System.Linq;
 using TMPro;
 using UnityEngine;
 
@@ -13,12 +12,14 @@ public class FillerList : MonoBehaviour
     {
         public string content;
     }
+
     [System.Serializable]
     public class BodyLetter
     {
         [TextArea(3, 10)]
         public string content;
     }
+
     [System.Serializable]
     public class EndLetter
     {
@@ -39,6 +40,7 @@ public class FillerList : MonoBehaviour
     #endregion
 
     #region UNITY_CALLS
+
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
@@ -140,6 +142,6 @@ public class FillerList : MonoBehaviour
             }
         }
     }
-    #endregion
 
+    #endregion
 }

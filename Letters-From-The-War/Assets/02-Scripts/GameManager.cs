@@ -4,6 +4,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     #region FIELDS
+
     public static GameManager Instance;
 
     public WordData greenWord;
@@ -31,9 +32,11 @@ public class GameManager : MonoBehaviour
     public List<Word> listGreenWords = new List<Word>();
     public List<Word> listYellowWords = new List<Word>();
     public List<Word> listRedWords = new List<Word>();
+
     #endregion
 
     #region UNITY_CALLS
+
     private void Awake()
     {
         if (Instance != null)
@@ -42,6 +45,7 @@ public class GameManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(this);
+
     }
 
     public void Update()

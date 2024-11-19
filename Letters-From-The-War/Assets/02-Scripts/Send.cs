@@ -1,16 +1,18 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Send : MonoBehaviour
 {
     #region FIELDS
+
     private Fade fade;
     private GameManager gameManager;
     private Button sendButton;
+
     #endregion
 
     #region UNITY_CALLS
+
     private void Awake()
     {
         sendButton = GetComponent<Button>();
@@ -94,5 +96,6 @@ public class Send : MonoBehaviour
 
         LoadJournal();
     }
+
     #endregion
 }

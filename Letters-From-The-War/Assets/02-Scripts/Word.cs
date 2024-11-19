@@ -6,14 +6,16 @@ using UnityEngine.UI;
 public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     #region FIELDS
-    private Image image;
 
+    private Image image;
     public WordData wordData;
     public bool obscured = false;
     private bool isPointerOver = false;
+
     #endregion
 
     #region UNITY_CALLS
+
     void Start()
     {
         image = GetComponent<Image>();
