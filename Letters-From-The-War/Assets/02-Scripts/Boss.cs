@@ -119,6 +119,33 @@ public class Boss : MonoBehaviour
         UpdateDialogues();
     }
 
+    private void Update()
+    {
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (gameManager.hasStarted)
+            {
+                nextScene.interactable = false;
+                gameManager.day++;
+                gameManager.hasStarted = false;
+                fade.CheckFadeAndLoad("02-Boss");
+            }
+            else if (DetermineMalusLevel(gameManager.malus) >= fired)
+            {
+                nextScene.interactable = false;
+                Debug.LogWarning("LICENZIATO");
+                fade.CheckFadeAndLoad("05-End");
+            }
+            else
+            {
+                nextScene.interactable = false;
+                gameManager.malusDaily = 0;
+                fade.CheckFadeAndLoad("03-Letter");
+            }
+        }
+#endif
+    }
     public void CycleDialogue()
     {
         if (fade.isFadeEnded)
