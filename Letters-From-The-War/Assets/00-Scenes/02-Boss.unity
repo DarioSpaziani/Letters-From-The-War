@@ -596,6 +596,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasBoss
       objectReference: {fileID: 0}
+    - target: {fileID: 8317982469389251023, guid: 1d6bffa36ab6992439b2a3533fd6662d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ee32b8ba00d51244fa5fe3f26bc486ff, type: 3}
     - target: {fileID: 9012803443703729658, guid: 1d6bffa36ab6992439b2a3533fd6662d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
