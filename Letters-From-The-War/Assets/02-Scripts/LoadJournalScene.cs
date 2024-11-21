@@ -25,7 +25,7 @@ public class LoadJournalScene : MonoBehaviour
         if(gameManager.day >= 7)
         {
             nextScene.interactable = false;
-            fade.CheckFadeAndLoad("06-End");
+            fade.CheckFadeAndLoad("05-End");
         }
         else
         {

@@ -13,7 +13,6 @@ public class JournalManager : MonoBehaviour
     private const int SECOND_TITLE = 1;
     private const int THIRD_TITLE = 2;
     private const int FOURTH_TITLE = 3;
-    public int knowledgeIndex;
 
     #region CLASS_DATA
 
@@ -54,8 +53,8 @@ public class JournalManager : MonoBehaviour
 
     #region DAYS
 
-    [Header("Day One")]
-    public DayData dayZero;
+    [Header("Day Zero")]
+    private DayData dayZero;
 
     [Header("Day One")]
     public DayData dayOne;
@@ -89,7 +88,6 @@ public class JournalManager : MonoBehaviour
     {
         gameManager = FindObjectOfType<GameManager>();
         dayData = new DayData[] { dayZero, dayOne, dayTwo, dayThree, dayFour, dayFive, daySix, daySeven };
-        knowledgeIndex = GetKnowledgeIndex(gameManager.day, gameManager.knowledge);
     }
 
     private void Start()
@@ -100,7 +98,8 @@ public class JournalManager : MonoBehaviour
     private void ShowTextDescriptions()
     {
         DayData currentDay = dayData[gameManager.day];
-        
+
+        int knowledgeIndex = GetKnowledgeIndex(gameManager.day,gameManager.knowledge);
 
         switch (knowledgeIndex)
         {

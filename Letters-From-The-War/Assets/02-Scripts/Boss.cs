@@ -144,6 +144,10 @@ public class Boss : MonoBehaviour
                 fade.CheckFadeAndLoad("03-Letter");
             }
         }
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            gameManager.day = 6;
+        }
 #endif
     }
     public void CycleDialogue()
