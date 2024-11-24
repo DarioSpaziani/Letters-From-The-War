@@ -13,6 +13,7 @@ public class MainMenuItem : MonoBehaviour, IPointerEnterHandler
     
     [Header("SFX Parametes")]
     [SerializeField] private AudioClip _sfx;
+    [SerializeField] private AudioClip _timbreSfx;
     [SerializeField] [ProgressBar(0,100, 1f, 0f, 0f)]private int _sfxVolume = 100;
 
     //Non si gestirebbe così sta roba, servirebbe un manager, ma noi siamo spiriti liberi \(°^°)/
@@ -48,6 +49,8 @@ public class MainMenuItem : MonoBehaviour, IPointerEnterHandler
     private IEnumerator SpawnTimbre(int command)
     {
         _timbre.SetActive(true);
+
+        _audioManager._oneShotAudioSource.PlayOneShot(_timbreSfx);
         yield return new WaitForSeconds(1 / _timbre.GetComponent<Animator>().speed + _waitAfterTimbre);
         switch (command)
         {

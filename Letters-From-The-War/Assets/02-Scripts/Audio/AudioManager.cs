@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class AudioManager : Singleton<AudioManager>
 {
+    #region FIELDS
+
     [Header("Background Music")] public AudioSource _loopAudioSource;
 
     [SerializeField] [ProgressBar(0, 100, 0, 1, 0)]
@@ -12,4 +14,6 @@ public class AudioManager : Singleton<AudioManager>
 
     [SerializeField] [ProgressBar(0, 100, 0, 1, 0)]
     private int _sfxVolume = 100;
+
+    #endregion
 }

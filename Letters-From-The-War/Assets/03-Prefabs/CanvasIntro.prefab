@@ -72,8 +72,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1620, y: 150}
+  m_AnchoredPosition: {x: -137, y: 0}
+  m_SizeDelta: {x: 1460, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5574427104205703158
 CanvasRenderer:
@@ -103,20 +103,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
-    adipisci velit..."
-
-'
+  m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5625f26f5c7a3c249a373709505d67a7, type: 2}
-  m_sharedMaterial: {fileID: -7288272611064048663, guid: 5625f26f5c7a3c249a373709505d67a7, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5838ba8fa13be20428b21d0ed0e04a5a, type: 2}
+  m_sharedMaterial: {fileID: -6399719821592090223, guid: 5838ba8fa13be20428b21d0ed0e04a5a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -141,7 +138,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -254,7 +251,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 99
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &6187042414417338150
 MonoBehaviour:
@@ -326,163 +323,6 @@ MonoBehaviour:
   _fade: {fileID: 0}
   isIntroEnded: 0
   _typewriter: {fileID: 4158272818727895090}
---- !u!1 &2992199409795327766
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 665955125204973409}
-  - component: {fileID: 7548577062774667137}
-  - component: {fileID: 6059148890532578380}
-  - component: {fileID: 4183062290515508114}
-  m_Layer: 5
-  m_Name: IntroText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &665955125204973409
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2992199409795327766}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 986357922695944989}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1474.829, y: 1080}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &7548577062774667137
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2992199409795327766}
-  m_CullTransparentMesh: 1
---- !u!114 &6059148890532578380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2992199409795327766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "July 1941. The Second World War decimates people in every nation. The
-    regimes are trying to persuade the people that the war is in their favor, but
-    wars are never in favor of anyone. You are a poor young guy living in a small
-    town of Vitulia, who could not be enlisted because of an old injury that makes
-    you limp. Luckily You recently saw a job post for the Vitulian Censorship National
-    Authority. You apply\u2026"
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5625f26f5c7a3c249a373709505d67a7, type: 2}
-  m_sharedMaterial: {fileID: -7288272611064048663, guid: 5625f26f5c7a3c249a373709505d67a7, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 24
-  m_wordSpacing: 12
-  m_lineSpacing: 12
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 285.67853, z: 0, w: 46.25287}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &4183062290515508114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2992199409795327766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 389dc39890b9a80408feb3c28dbc11c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _typingSound: {fileID: 8300000, guid: 2e620e8675970b546baf92e3568f5b65, type: 3}
-  _soundSpeed: 100
-  _typingVolume: 100
-  _typingSpeed: 2
-  _toggleOnStart: 1
 --- !u!1 &3566165862460740893
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,7 +359,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 150}
-  m_SizeDelta: {x: 0, y: 200}
+  m_SizeDelta: {x: -70, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4632122822047305219
 CanvasRenderer:
@@ -542,15 +382,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: d20e8311eb17cae479393bb7360f054c, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -587,7 +427,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 665955125204973409}
   - {fileID: 7219915273709495088}
   m_Father: {fileID: 5876414280604391799}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -623,7 +462,7 @@ RectTransform:
   m_GameObject: {fileID: 6995334942397843070}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.01, y: 1.01, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7219915273709495088}
@@ -705,11 +544,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1392614749480924811, guid: a8409ee831708aa4e9164e1a82c8da31, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 300
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 1392614749480924811, guid: a8409ee831708aa4e9164e1a82c8da31, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 1392614749480924811, guid: a8409ee831708aa4e9164e1a82c8da31, type: 3}
       propertyPath: m_LocalScale.x
@@ -753,11 +592,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1392614749480924811, guid: a8409ee831708aa4e9164e1a82c8da31, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 770
+      value: 824
       objectReference: {fileID: 0}
     - target: {fileID: 1392614749480924811, guid: a8409ee831708aa4e9164e1a82c8da31, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -382
+      value: -390.6
       objectReference: {fileID: 0}
     - target: {fileID: 1392614749480924811, guid: a8409ee831708aa4e9164e1a82c8da31, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -771,17 +610,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1443516437272463016, guid: a8409ee831708aa4e9164e1a82c8da31, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1443516437272463016, guid: a8409ee831708aa4e9164e1a82c8da31, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2e259376cc47d2e45b9e407320d98776, type: 3}
     - target: {fileID: 7401252262850096691, guid: a8409ee831708aa4e9164e1a82c8da31, type: 3}
       propertyPath: m_Name
       value: NextButton
       objectReference: {fileID: 0}
     - target: {fileID: 8451042824180102569, guid: a8409ee831708aa4e9164e1a82c8da31, type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451042824180102569, guid: a8409ee831708aa4e9164e1a82c8da31, type: 3}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451042824180102569, guid: a8409ee831708aa4e9164e1a82c8da31, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451042824180102569, guid: a8409ee831708aa4e9164e1a82c8da31, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451042824180102569, guid: a8409ee831708aa4e9164e1a82c8da31, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451042824180102569, guid: a8409ee831708aa4e9164e1a82c8da31, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: NextSlide
+      value: ButtonFadeImages
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451042824180102569, guid: a8409ee831708aa4e9164e1a82c8da31, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ButtonFadeScene
       objectReference: {fileID: 0}
     - target: {fileID: 8451042824180102569, guid: a8409ee831708aa4e9164e1a82c8da31, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: IntroImages, Assembly-CSharp
+      value: Fade, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451042824180102569, guid: a8409ee831708aa4e9164e1a82c8da31, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Fade, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8451042824180102569, guid: a8409ee831708aa4e9164e1a82c8da31, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

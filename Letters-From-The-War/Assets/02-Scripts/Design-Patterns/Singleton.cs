@@ -10,6 +10,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     #endregion
 
     #region UNITY_CALLS
+
     protected virtual void Awake()
     {
         if (instance == null)

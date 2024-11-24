@@ -573,11 +573,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 957517842195821962, guid: f6bac69535759ae4bb023ec0f6e3949b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1529.427
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 957517842195821962, guid: f6bac69535759ae4bb023ec0f6e3949b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1044.0813
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 957517842195821962, guid: f6bac69535759ae4bb023ec0f6e3949b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -611,6 +611,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2615071493020695273, guid: f6bac69535759ae4bb023ec0f6e3949b, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -628,6 +632,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3353350929565182903, guid: fc4663f134fb0fd4189ca6d599c34f25, type: 3}
+      propertyPath: _timbreSfx
+      value: 
+      objectReference: {fileID: 8300000, guid: ac80aa4b5585f9d4088ce31044bc4ed6, type: 3}
+    - target: {fileID: 5183328426321846307, guid: fc4663f134fb0fd4189ca6d599c34f25, type: 3}
+      propertyPath: _timbreSfx
+      value: 
+      objectReference: {fileID: 8300000, guid: ac80aa4b5585f9d4088ce31044bc4ed6, type: 3}
     - target: {fileID: 6728899303484736436, guid: fc4663f134fb0fd4189ca6d599c34f25, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -708,6 +720,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6824242481946507511, guid: fc4663f134fb0fd4189ca6d599c34f25, type: 3}
+      propertyPath: _timbreSfx
+      value: 
+      objectReference: {fileID: 8300000, guid: ac80aa4b5585f9d4088ce31044bc4ed6, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
