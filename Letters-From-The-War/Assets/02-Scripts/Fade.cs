@@ -14,6 +14,8 @@ public class Fade : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dayText;
     private GameManager gameManager;
     public Image _fadeImage;
+    public Image _dayTextSprite;
+    public List<Sprite> _spritesDays;
     public List<string> daysString;
     private Color fadeColor;
     public float speedEffect = 1f;
@@ -75,12 +77,15 @@ public class Fade : MonoBehaviour
     public IEnumerator FadeReverse()
     {
         isFadeEnded = false;
-        _fadeImage.canvasRenderer.SetAlpha(1f);
-        dayText.text = daysString[gameManager.day];
 
+        _dayTextSprite.CrossFadeColor(Color.black, 1f, false, false);
+        _fadeImage.canvasRenderer.SetAlpha(1f);
+        //dayText.text = daysString[gameManager.day];
+        _dayTextSprite.sprite = _spritesDays[gameManager.day];
         yield return new WaitForSeconds(timeFadeReverse);
 
-        dayText.text = "";
+        //dayText.text = "";
+        _dayTextSprite.CrossFadeColor(Color.white,1f,false,false);
         _fadeImage.CrossFadeAlpha(0.0f, speedEffect, false);
         isFadeEnded = true;
     }
@@ -92,7 +97,6 @@ public class Fade : MonoBehaviour
 
     public IEnumerator FadePingPong()
     {
-        typewriter.StartTypewriter();
         isFadeEnded = false;
         _fadeImage.canvasRenderer.SetAlpha(0f);
         _fadeImage.CrossFadeAlpha(1.0f, speedEffect, false);
@@ -103,7 +107,7 @@ public class Fade : MonoBehaviour
         }
         intro.CycleSlide();
         yield return new WaitForSeconds(timeFadePingPong);
-
+        typewriter.StartTypewriter();
         _fadeImage.CrossFadeAlpha(0.0f, speedEffect, false);
         isFadeEnded = true;
     }

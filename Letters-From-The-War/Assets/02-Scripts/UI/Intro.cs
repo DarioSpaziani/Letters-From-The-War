@@ -50,7 +50,7 @@ public class Intro : MonoBehaviour
         Slide currentSlide = _imagesList[counter];
         _showedImage.sprite = _imagesList[counter].image;
         _showedText.text = _imagesList[counter].text;
-        //_typewriter.StartTypewriter();
+        
     }
 
     public void Update()
