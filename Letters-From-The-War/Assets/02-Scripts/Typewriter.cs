@@ -17,6 +17,7 @@ public class Typewriter : MonoBehaviour
     [Header("Text")]
     [SerializeField] [Range(1,100)] private int _typingSpeed = 4;
     [SerializeField] private bool _toggleOnStart = true;
+    public bool endTypeWriting = false;
 
     private TMP_Text _textField;
     private string _textToShow;
@@ -27,6 +28,7 @@ public class Typewriter : MonoBehaviour
 
     private void Start()
     {
+        endTypeWriting = false ;
         AudioManager.Instance._oneShotAudioSource.volume = (float)_typingVolume/100;
         AudioManager.Instance._oneShotAudioSource.clip = _typingSound;
         
@@ -51,6 +53,7 @@ public class Typewriter : MonoBehaviour
 
     private IEnumerator ShowText()
     {
+        endTypeWriting = false;
         float soundTimer = 0;
         foreach (char character in _textToShow)
         {
@@ -64,6 +67,7 @@ public class Typewriter : MonoBehaviour
             yield return new WaitForSeconds(1 /((float)_typingSpeed*10));
             
         }
+        endTypeWriting = true;
     }
 
     private void HideText()

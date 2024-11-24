@@ -38,7 +38,7 @@ public class Fade : MonoBehaviour
 
     public void ButtonFadeImages()
     {
-        if (isFadeEnded && !intro.isIntroEnded)
+        if (isFadeEnded && !intro.isIntroEnded && typewriter.endTypeWriting)
         {
             intro.counter++;
             StartCoroutine(FadePingPong());
@@ -80,7 +80,6 @@ public class Fade : MonoBehaviour
         _dayTextSprite.sprite = _spritesDays[gameManager.day];
         yield return new WaitForSeconds(timeFadeDay);
         StartCoroutine(FadeDay());
-        typewriter.StartTypewriter();
         
         yield return new WaitForSeconds(timeFadeReverse);
 

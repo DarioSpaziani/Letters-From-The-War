@@ -202,6 +202,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OptionsMenuCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 249650076883810096, guid: 9724eb8981a6c1c4c9038e858b28a704, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 386331283744934920, guid: 9724eb8981a6c1c4c9038e858b28a704, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -389,6 +393,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3090551611575222632, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090551611575222632, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090551611575222632, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090551611575222632, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090551611575222632, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 484.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090551611575222632, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090551611575222632, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090551611575222632, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3422248107785761189, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
       propertyPath: m_Name
       value: CanvasFade
@@ -476,6 +512,14 @@ PrefabInstance:
     - target: {fileID: 4005093517925457298, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6112434529258101154, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 246cd80c5b0813044bf591350bd8fcd2, type: 3}
+    - target: {fileID: 6112434529258101154, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7532335473696711075, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
       propertyPath: m_IsActive
@@ -627,6 +671,10 @@ PrefabInstance:
       propertyPath: _fade
       value: 
       objectReference: {fileID: 1665750608}
+    - target: {fileID: 1691626980561457875, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
+      propertyPath: _imagesList.Array.data[0].text
+      value: July 1941. The Second World War decimates people in every nation
+      objectReference: {fileID: 0}
     - target: {fileID: 2761833928468764879, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
       propertyPath: m_Name
       value: IntroCanvas
@@ -718,6 +766,10 @@ PrefabInstance:
     - target: {fileID: 5876414280604391799, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7654588871150505742, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

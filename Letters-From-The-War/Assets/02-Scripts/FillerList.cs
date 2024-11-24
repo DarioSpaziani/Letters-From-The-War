@@ -2,6 +2,7 @@ using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FillerList : MonoBehaviour
 {
@@ -36,6 +37,7 @@ public class FillerList : MonoBehaviour
     private GameManager gameManager;
     public List<GameObject> lettersGO = new List<GameObject>();
     public List<GameObject> wordsInGame = new List<GameObject>();
+    [SerializeField] private GameObject imageTutorial;
 
     #endregion
 
@@ -51,6 +53,11 @@ public class FillerList : MonoBehaviour
         }
 
         lettersGO[gameManager.day - 1].SetActive(true);
+
+        if (gameManager.day > 1)
+        {
+            imageTutorial.SetActive(false);
+        }
 
     }
 

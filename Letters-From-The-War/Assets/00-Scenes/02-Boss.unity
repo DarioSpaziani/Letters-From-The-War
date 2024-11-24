@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OptionsMenuCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 249650076883810096, guid: 9724eb8981a6c1c4c9038e858b28a704, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 386331283744934920, guid: 9724eb8981a6c1c4c9038e858b28a704, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -419,18 +423,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 506101554205940435, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3172650408580913962, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
-      propertyPath: m_text
-      value: asdaibhjdfcaikljsbclaiwbjuclaJKCblsi
-      objectReference: {fileID: 0}
-    - target: {fileID: 3172650408580913962, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 16777215
-      objectReference: {fileID: 0}
     - target: {fileID: 3422248107785761189, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
       propertyPath: m_Name
       value: CanvasFade
@@ -519,10 +511,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8155384501745903335, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -609,12 +597,57 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 72b6a3c70f76c414e9e50432e34a830b, type: 3}
     - target: {fileID: 3501409226815353206, guid: 1d6bffa36ab6992439b2a3533fd6662d, type: 3}
+      propertyPath: m_text
+      value: As a member of the censorship organization, you have to help your country
+        and bring faith to your fellow compatriots
+      objectReference: {fileID: 0}
+    - target: {fileID: 3501409226815353206, guid: 1d6bffa36ab6992439b2a3533fd6662d, type: 3}
       propertyPath: m_margin.x
       value: 80.5069
       objectReference: {fileID: 0}
     - target: {fileID: 3501409226815353206, guid: 1d6bffa36ab6992439b2a3533fd6662d, type: 3}
       propertyPath: m_margin.z
       value: 110.85028
+      objectReference: {fileID: 0}
+    - target: {fileID: 3501409226815353206, guid: 1d6bffa36ab6992439b2a3533fd6662d, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: a0d6f3e7f70a5bc4d965a7fbff2505a0, type: 2}
+    - target: {fileID: 3501409226815353206, guid: 1d6bffa36ab6992439b2a3533fd6662d, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3501409226815353206, guid: 1d6bffa36ab6992439b2a3533fd6662d, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 3501409226815353206, guid: 1d6bffa36ab6992439b2a3533fd6662d, type: 3}
+      propertyPath: m_overflowMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3501409226815353206, guid: 1d6bffa36ab6992439b2a3533fd6662d, type: 3}
+      propertyPath: m_uvLineOffset
+      value: 13.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3501409226815353206, guid: 1d6bffa36ab6992439b2a3533fd6662d, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -2897756631557876377, guid: a0d6f3e7f70a5bc4d965a7fbff2505a0, type: 2}
+    - target: {fileID: 3501409226815353206, guid: 1d6bffa36ab6992439b2a3533fd6662d, type: 3}
+      propertyPath: m_verticalMapping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3501409226815353206, guid: 1d6bffa36ab6992439b2a3533fd6662d, type: 3}
+      propertyPath: m_characterSpacing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3501409226815353206, guid: 1d6bffa36ab6992439b2a3533fd6662d, type: 3}
+      propertyPath: m_horizontalMapping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3501409226815353206, guid: 1d6bffa36ab6992439b2a3533fd6662d, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6058913589690575633, guid: 1d6bffa36ab6992439b2a3533fd6662d, type: 3}
       propertyPath: m_Name

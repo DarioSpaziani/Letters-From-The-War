@@ -32,10 +32,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 8868668504523544105}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.16429214, y: 0.15662934}
-  m_AnchorMax: {x: 0.83300006, y: 0.83022565}
-  m_AnchoredPosition: {x: 3.0998535, y: 7.050049}
-  m_SizeDelta: {x: -1.5998535, y: -8.099915}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4649936107583496129
 CanvasRenderer:
@@ -192,7 +192,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typewriter: {fileID: 0}
   intro: {fileID: 0}
-  dayText: {fileID: 0}
   _fadeImage: {fileID: 2590113135401845774}
   _dayTextSprite: {fileID: 6112434529258101154}
   _spritesDays:
@@ -204,8 +203,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: effc67ac33827074c9fbc1c669d3041c, type: 3}
   - {fileID: 21300000, guid: 8b14b7daae1c2f64b865422b5f261c68, type: 3}
   - {fileID: 21300000, guid: 43c63c8c24abb964da3c213a437ffbe1, type: 3}
-  daysString:
-  - ABC
   speedEffect: 1
   timeDelayLoadScene: 1
   timeFadePingPong: 1
@@ -318,7 +315,27 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5832924025681308819, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5832924025681308819, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cfb7092f2b34efe478ed38d902eba983, type: 3}
+    - target: {fileID: 5832924025681308819, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
       propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5832924025681308819, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5832924025681308819, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5832924025681308819, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
+      propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6846843553463055287, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
