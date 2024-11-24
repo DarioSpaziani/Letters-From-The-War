@@ -11,17 +11,16 @@ public class Fade : MonoBehaviour
 
     [SerializeField] private Typewriter typewriter;
     [SerializeField] private Intro intro;
-    [SerializeField] private TextMeshProUGUI dayText;
+    [SerializeField] private Image _fadeImage;
+    [SerializeField] private Image _dayTextSprite;
+    [SerializeField] private List<Sprite> _spritesDays;
     private GameManager gameManager;
-    public Image _fadeImage;
-    public Image _dayTextSprite;
-    public List<Sprite> _spritesDays;
-    public List<string> daysString;
     private Color fadeColor;
     public float speedEffect = 1f;
     public float timeDelayLoadScene = 1f;
     public float timeFadePingPong = 1f;
     public float timeFadeReverse = 1f;
+    public float timeFadeDay = 1f;
     public float timeFadeEffect = 1f;
     public bool isFadeEnded;
 
@@ -31,10 +30,10 @@ public class Fade : MonoBehaviour
 
     void Awake()
     {
+        _dayTextSprite.canvasRenderer.SetAlpha(0);
         isFadeEnded = true;
         gameManager = FindObjectOfType<GameManager>();
         _fadeImage.canvasRenderer.SetAlpha(0);
-        dayText = GetComponentInChildren<TextMeshProUGUI>();
     }
 
     public void ButtonFadeImages()
@@ -77,16 +76,31 @@ public class Fade : MonoBehaviour
     public IEnumerator FadeReverse()
     {
         isFadeEnded = false;
-
-        _dayTextSprite.CrossFadeColor(Color.black, 1f, false, false);
         _fadeImage.canvasRenderer.SetAlpha(1f);
-        //dayText.text = daysString[gameManager.day];
         _dayTextSprite.sprite = _spritesDays[gameManager.day];
+        yield return new WaitForSeconds(timeFadeDay);
+        StartCoroutine(FadeDay());
+        typewriter.StartTypewriter();
+        
         yield return new WaitForSeconds(timeFadeReverse);
 
-        //dayText.text = "";
-        _dayTextSprite.CrossFadeColor(Color.white,1f,false,false);
         _fadeImage.CrossFadeAlpha(0.0f, speedEffect, false);
+        isFadeEnded = true;
+    }
+
+    public IEnumerator FadeDay()
+    {
+        isFadeEnded = false;
+        _dayTextSprite.canvasRenderer.SetAlpha(0f);
+        _dayTextSprite.CrossFadeAlpha(1.0f, speedEffect, false);
+
+        while (Mathf.Abs(_dayTextSprite.canvasRenderer.GetAlpha() - 1.0f) > 0.01f)
+        {
+            yield return null;
+        }
+        yield return new WaitForSeconds(timeFadeDay);
+
+        _dayTextSprite.CrossFadeAlpha(0.0f, speedEffect, false);
         isFadeEnded = true;
     }
 

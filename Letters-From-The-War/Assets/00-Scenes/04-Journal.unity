@@ -435,7 +435,7 @@ PrefabInstance:
     - target: {fileID: 7574839665853208441, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
       propertyPath: dayText
       value: 
-      objectReference: {fileID: 544134088}
+      objectReference: {fileID: 0}
     - target: {fileID: 7574839665853208441, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
       propertyPath: _fadeImage
       value: 
@@ -443,7 +443,7 @@ PrefabInstance:
     - target: {fileID: 7574839665853208441, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
       propertyPath: typewriter
       value: 
-      objectReference: {fileID: 544134089}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -458,28 +458,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &544134088 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3172650408580913962, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
-  m_PrefabInstance: {fileID: 544134086}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &544134089 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 882048128690959947, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
-  m_PrefabInstance: {fileID: 544134086}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 389dc39890b9a80408feb3c28dbc11c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &556607711
@@ -639,7 +617,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4035a265a19cc3747aa81179a4d098b8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ed056ffc863a97640827e2c801bc9a73, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
