@@ -203,7 +203,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: effc67ac33827074c9fbc1c669d3041c, type: 3}
   - {fileID: 21300000, guid: 8b14b7daae1c2f64b865422b5f261c68, type: 3}
   - {fileID: 21300000, guid: 43c63c8c24abb964da3c213a437ffbe1, type: 3}
-  speedEffect: 1
+  speedEffectText: 1
+  speedEffectGrandient: 5
   timeDelayLoadScene: 1
   timeFadePingPong: 1
   timeFadeReverse: 8
@@ -328,15 +329,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5832924025681308819, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5832924025681308819, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5832924025681308819, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6846843553463055287, guid: 0d4773c7002039e4ca7bc930fb90c8c3, type: 3}
       propertyPath: m_text

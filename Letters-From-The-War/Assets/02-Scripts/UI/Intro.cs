@@ -35,9 +35,18 @@ public class Intro : MonoBehaviour
 
     #region UNITY CALLS
 
+    private void Awake()
+    {
+        _gameManager = FindObjectOfType<GameManager>();
+        _gameManager.malus = 0;
+        _gameManager.knowledge = 0;
+        _gameManager.day = 0;
+        _gameManager.hasStarted = true;
+        _gameManager.malusDaily = 0;
+    }
+
     private void Start()
     { 
-        _gameManager = FindObjectOfType<GameManager>();
         isIntroEnded = false;
         _fade.isFadeEnded = true;
         counter = 0;

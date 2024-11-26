@@ -16,7 +16,8 @@ public class Fade : MonoBehaviour
     [SerializeField] private List<Sprite> _spritesDays;
     private GameManager gameManager;
     private Color fadeColor;
-    public float speedEffect = 1f;
+    public float speedEffectText = 1f;
+    public float speedEffectGradient = 1f;
     public float timeDelayLoadScene = 1f;
     public float timeFadePingPong = 1f;
     public float timeFadeReverse = 1f;
@@ -62,7 +63,7 @@ public class Fade : MonoBehaviour
     {
         isFadeEnded = false;
         _fadeImage.canvasRenderer.SetAlpha(0f);
-        _fadeImage.CrossFadeAlpha(1.0f,speedEffect, false);
+        _fadeImage.CrossFadeAlpha(1.0f,speedEffectGradient, false);
         yield return new WaitForSeconds(timeFadeEffect);
         isFadeEnded = true;
     }
@@ -77,13 +78,15 @@ public class Fade : MonoBehaviour
     {
         isFadeEnded = false;
         _fadeImage.canvasRenderer.SetAlpha(1f);
+        _fadeImage.CrossFadeColor(Color.black, speedEffectGradient, false, false);
+        _fadeImage.CrossFadeColor(Color.white, speedEffectGradient, false, false);
         _dayTextSprite.sprite = _spritesDays[gameManager.day];
         yield return new WaitForSeconds(timeFadeDay);
         StartCoroutine(FadeDay());
         
         yield return new WaitForSeconds(timeFadeReverse);
 
-        _fadeImage.CrossFadeAlpha(0.0f, speedEffect, false);
+        _fadeImage.CrossFadeAlpha(0.0f, speedEffectGradient, false);
         isFadeEnded = true;
     }
 
@@ -91,7 +94,7 @@ public class Fade : MonoBehaviour
     {
         isFadeEnded = false;
         _dayTextSprite.canvasRenderer.SetAlpha(0f);
-        _dayTextSprite.CrossFadeAlpha(1.0f, speedEffect, false);
+        _dayTextSprite.CrossFadeAlpha(1.0f, speedEffectGradient, false);
 
         while (Mathf.Abs(_dayTextSprite.canvasRenderer.GetAlpha() - 1.0f) > 0.01f)
         {
@@ -99,7 +102,7 @@ public class Fade : MonoBehaviour
         }
         yield return new WaitForSeconds(timeFadeDay);
 
-        _dayTextSprite.CrossFadeAlpha(0.0f, speedEffect, false);
+        _dayTextSprite.CrossFadeAlpha(0.0f, speedEffectGradient, false);
         isFadeEnded = true;
     }
 
@@ -112,7 +115,7 @@ public class Fade : MonoBehaviour
     {
         isFadeEnded = false;
         _fadeImage.canvasRenderer.SetAlpha(0f);
-        _fadeImage.CrossFadeAlpha(1.0f, speedEffect, false);
+        _fadeImage.CrossFadeAlpha(1.0f, speedEffectGradient, false);
 
         while (Mathf.Abs(_fadeImage.canvasRenderer.GetAlpha() - 1.0f) > 0.01f)
         {
@@ -121,7 +124,7 @@ public class Fade : MonoBehaviour
         intro.CycleSlide();
         yield return new WaitForSeconds(timeFadePingPong);
         typewriter.StartTypewriter();
-        _fadeImage.CrossFadeAlpha(0.0f, speedEffect, false);
+        _fadeImage.CrossFadeAlpha(0.0f, speedEffectGradient, false);
         isFadeEnded = true;
     }
 
