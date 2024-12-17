@@ -39,6 +39,13 @@ public class FillerList : MonoBehaviour
     public List<GameObject> wordsInGame = new List<GameObject>();
     [SerializeField] private GameObject imageTutorial;
 
+    public Vector2 startPoint;
+
+    public Vector2 limitPos = new Vector2(550, -30);
+    public float offsetX;
+    public float offsetY;
+
+
     #endregion
 
     #region UNITY_CALLS
@@ -58,11 +65,6 @@ public class FillerList : MonoBehaviour
         {
             imageTutorial.SetActive(false);
         }
-
-    }
-
-    void Start()
-    {
         for (int i = 0; i < startLetter.Count; i++)
         {
             TextMeshProUGUI startLettersText = startLetter[i].GetComponentInChildren<TextMeshProUGUI>();
@@ -88,12 +90,19 @@ public class FillerList : MonoBehaviour
                 gameManager.listRedWords.Add(word);
             }
         }
-
         FillerWordsText();
+
+
+    }
+
+    void Start()
+    {
+        Invoke("GridWords",.2f);
     }
 
     public void FillerWordsText()
     {
+
         string[] wordsTexts = bodyLettersTexts[gameManager.day - 1].content.Split(new char[] { ' ', '\n' }, System.StringSplitOptions.RemoveEmptyEntries);
 
         Word[] allWordComponents = FindObjectsOfType<Word>();
@@ -148,6 +157,45 @@ public class FillerList : MonoBehaviour
                 wordObject.SetActive(false);
             }
         }
+
+    }
+
+    public void GridWords()
+    {
+        //RectTransform firstWord = wordsInGame[0].GetComponent<RectTransform>();
+
+        //firstWord.anchoredPosition = startPoint;
+
+        Vector2 currentPos = startPoint;
+
+        //currentPos.x += CalculateLengthWord(wordsInGame[0]) + offsetX;
+
+
+        for (int i = 0; i < wordsInGame.Count; i++)
+        {
+            RectTransform rect = wordsInGame[i].GetComponent<RectTransform>();
+            
+            rect.anchoredPosition = currentPos;
+
+            currentPos.x += CalculateLengthWord(wordsInGame[i]) + offsetX;
+            
+            if (rect.anchoredPosition.x + CalculateLengthWord(wordsInGame[i + 1]) >= 500)
+            {
+                currentPos.x = startPoint.x;
+
+                currentPos.y -= offsetY;
+            }
+
+            //Debug.Log("word n : " + wordsInGame[i] + "pos : " + currentPos.x);
+
+        }
+    }
+
+    private float CalculateLengthWord(GameObject word)
+    {
+        RectTransform rt = word.GetComponent<RectTransform>();
+ 
+        return rt.rect.width;
     }
 
     #endregion
