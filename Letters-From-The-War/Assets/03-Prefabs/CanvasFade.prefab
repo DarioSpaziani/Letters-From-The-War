@@ -205,10 +205,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 43c63c8c24abb964da3c213a437ffbe1, type: 3}
   speedEffectText: 1
   speedEffectGradient: 1
-  timeDelayLoadScene: 0.1
+  timeDelayLoadScene: 1
   timeFadePingPong: 1
-  timeFadeReverse: 0.1
-  timeFadeDay: 0.1
+  timeFadeReverse: 8
+  timeFadeDay: 3
   timeFadeEffect: 1
   isFadeEnded: 0
 --- !u!1001 &8287568152324221085

@@ -162,17 +162,25 @@ public class FillerList : MonoBehaviour
 
     public void GridWords()
     {
+        //mette le parole nel punto selezionato
         Vector2 currentPos = startPoint;
+
 
         for (int i = 0; i < wordsInGame.Count; i++)
         {
+            //prende la componente RectTransform per posizionare le parole sul canvas
             RectTransform rect = wordsInGame[i].GetComponent<RectTransform>();
-            
+                        
+            //in base all'ancora posiziona le parole in quel punto
             rect.anchoredPosition = currentPos;
 
+            //dopo la prima parola calcola la lunghezza della parola più la spazio
             currentPos.x += CalculateLengthWord(wordsInGame[i]) + offsetX;
+
+            //controlla quando finisce l'elenco per evitare errore ArgumentOutOfRangeException
             if(i + 1 < wordsInGame.Count)
             {
+                //posiziona le parole dopo aver calcolato lunghezza parola e offset 
                 if (rect.anchoredPosition.x + CalculateLengthWord(wordsInGame[i + 1]) >= limitPos)
                 {
                     currentPos.x = startPoint.x;
