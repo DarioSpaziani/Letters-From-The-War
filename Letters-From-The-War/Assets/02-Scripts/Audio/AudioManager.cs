@@ -1,19 +1,66 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
-public class AudioManager : Singleton<AudioManager>
+public class AudioManager : MonoBehaviour
 {
     #region FIELDS
 
-    [Header("Background Music")] public AudioSource _loopAudioSource;
+    private static AudioManager Instance;
 
-    [SerializeField] [ProgressBar(0, 100, 0, 1, 0)]
-    private int _musicVolume = 50;
+    [Header("Background Music")] 
+    public AudioSource audioSource;
+    public AudioSource sfxAudioSource;
+    public float timerModifyVolume;
 
-    [Header("SFX")] public AudioSource _oneShotAudioSource;
+    public AudioClip menuSound, gameLoopSound;
+    public AudioClip menuItemHover, stampSound, typeSound;
 
-    [SerializeField] [ProgressBar(0, 100, 0, 1, 0)]
-    private int _sfxVolume = 100;
+
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+
+    }
+
+    public void PlayMenuSound()
+    {
+        audioSource.clip = menuSound;
+        audioSource.Play();
+    }
+
+    public void PlayGameSound()
+    {
+        audioSource.clip = gameLoopSound;
+        audioSource.Play();
+    }
+
+    public void PlayMenuHoverSound()
+    {
+        sfxAudioSource.clip = menuItemHover;
+        sfxAudioSource.PlayOneShot(menuItemHover);
+    }    
+    
+    public void PlayStampSound()
+    {
+        sfxAudioSource.clip = stampSound;
+        sfxAudioSource.PlayOneShot(stampSound);
+    }    
+    
+    public void PlayTypeWriterSound()
+    {
+        sfxAudioSource.clip = typeSound;
+        sfxAudioSource.PlayOneShot(typeSound);
+    }
 
     #endregion
 }

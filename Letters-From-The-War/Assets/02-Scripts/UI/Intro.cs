@@ -30,6 +30,7 @@ public class Intro : MonoBehaviour
     private GameManager _gameManager;
     public bool isIntroEnded = false;
     [SerializeField] private Typewriter _typewriter;
+    [SerializeField] private AudioManager _audioManager;
 
     #endregion
 
@@ -37,6 +38,7 @@ public class Intro : MonoBehaviour
 
     private void Awake()
     {
+
         _gameManager = FindObjectOfType<GameManager>();
         _gameManager.malus = 0;
         _gameManager.knowledge = 0;
@@ -46,7 +48,9 @@ public class Intro : MonoBehaviour
     }
 
     private void Start()
-    { 
+    {
+        _audioManager = FindObjectOfType<AudioManager>();
+        _audioManager.PlayGameSound();
         isIntroEnded = false;
         _fade.isFadeEnded = true;
         counter = 0;

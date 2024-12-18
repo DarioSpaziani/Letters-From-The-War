@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
     public int knowledge = 0;
     [HideInInspector] public int malusDaily = 0;
     [HideInInspector] public int day = 0;
-    [HideInInspector] public bool hasStarted = true;
+    [HideInInspector] public bool hasStarted = false;
 
     public List<Word> listGreenWords = new List<Word>();
     public List<Word> listYellowWords = new List<Word>();
@@ -42,20 +42,26 @@ public class GameManager : MonoBehaviour
     {
         if (Instance != null)
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
-        Instance = this;
-        DontDestroyOnLoad(this);
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
 
     }
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.U))
         {
             day = 1;
             SceneManager.LoadScene("03-Letter");
         }
+#endif
+
         comprensibility = Mathf.Clamp(comprensibility, minLevelComprensibilityOne, maxLevelComprensibilityTwo);
         dailyPerformance = Mathf.Clamp(dailyPerformance, minLevelDailyPerfOne, maxLevelDailyPerfTwo);
 

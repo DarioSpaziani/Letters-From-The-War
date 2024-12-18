@@ -21,23 +21,26 @@ public class Typewriter : MonoBehaviour
 
     private TMP_Text _textField;
     private string _textToShow;
+    private AudioManager _audioManager;
 
     #endregion
-    
+
     #region UNITY_CALLS
+
+    private void Awake()
+    {
+        _audioManager = FindObjectOfType<AudioManager>();
+    }
 
     private void Start()
     {
         endTypeWriting = false ;
-        AudioManager.Instance._oneShotAudioSource.volume = (float)_typingVolume/100;
-        AudioManager.Instance._oneShotAudioSource.clip = _typingSound;
+        _audioManager.PlayMenuHoverSound();
         
         _textField = GetComponent<TMP_Text>();
-        
-        if (_toggleOnStart)
-        {
+
             StartTypewriter();
-        }
+        
     }
 
     /// <summary>
@@ -61,7 +64,7 @@ public class Typewriter : MonoBehaviour
             if (soundTimer >= 1 / (float)_soundSpeed)
             {
                 soundTimer = 0;
-                AudioManager.Instance._oneShotAudioSource.Play();
+                _audioManager.PlayTypeWriterSound();
             }
             _textField.text += character;
             yield return new WaitForSeconds(1 /((float)_typingSpeed*10));

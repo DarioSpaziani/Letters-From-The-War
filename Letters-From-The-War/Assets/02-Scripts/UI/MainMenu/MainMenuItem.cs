@@ -12,8 +12,8 @@ public class MainMenuItem : MonoBehaviour, IPointerEnterHandler
     [SerializeField] private bool _isEnabled = true;
     
     [Header("SFX Parametes")]
-    [SerializeField] private AudioClip _sfx;
-    [SerializeField] private AudioClip _timbreSfx;
+    //[SerializeField] private AudioClip _sfx;
+    //[SerializeField] private AudioClip _timbreSfx;
     [SerializeField] [ProgressBar(0,100, 1f, 0f, 0f)]private int _sfxVolume = 100;
 
     //Non si gestirebbe così sta roba, servirebbe un manager, ma noi siamo spiriti liberi \(°^°)/
@@ -27,10 +27,9 @@ public class MainMenuItem : MonoBehaviour, IPointerEnterHandler
 
     #region UNITY_CALLS
 
-    private void Start()
+    private void Awake()
     {
-        _audioManager = AudioManager.Instance;
-        _audioManager._oneShotAudioSource.volume = _sfxVolume;
+        _audioManager = FindObjectOfType<AudioManager>();
     }
 
     public void NewGame() => StartCoroutine(SpawnTimbre(0));
@@ -50,7 +49,7 @@ public class MainMenuItem : MonoBehaviour, IPointerEnterHandler
     {
         _timbre.SetActive(true);
 
-        _audioManager._oneShotAudioSource.PlayOneShot(_timbreSfx);
+        _audioManager.PlayStampSound();
         yield return new WaitForSeconds(1 / _timbre.GetComponent<Animator>().speed + _waitAfterTimbre);
         switch (command)
         {
@@ -76,7 +75,7 @@ public class MainMenuItem : MonoBehaviour, IPointerEnterHandler
     {
         if (_isEnabled)
         {
-            _audioManager._oneShotAudioSource.PlayOneShot(_sfx);
+            _audioManager.PlayMenuHoverSound();
         }
     }
 
