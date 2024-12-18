@@ -533,6 +533,34 @@ PrefabInstance:
       propertyPath: typewriter
       value: 
       objectReference: {fileID: 98365916470057273}
+    - target: {fileID: 7574839665853208441, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: timeFadeDay
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7574839665853208441, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: timeFadeEffect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7574839665853208441, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: speedEffectText
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7574839665853208441, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: timeFadeReverse
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7574839665853208441, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: timeFadePingPong
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7574839665853208441, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: timeDelayLoadScene
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7574839665853208441, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
+      propertyPath: speedEffectGradient
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8868668504523544105, guid: f100ea1f981f8214a828330cf7ff1f29, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.01

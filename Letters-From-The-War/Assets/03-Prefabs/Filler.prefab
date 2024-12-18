@@ -142,6 +142,6 @@ MonoBehaviour:
   wordsInGame: []
   imageTutorial: {fileID: 0}
   startPoint: {x: 0, y: 0}
-  limitPos: {x: 550, y: -30}
+  limitPos: 500
   offsetX: 10
   offsetY: 35

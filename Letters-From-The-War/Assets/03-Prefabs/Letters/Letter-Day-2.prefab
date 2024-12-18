@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2444404734815533010, guid: 125d662faf5109841a48b1a4efbec3b2, type: 3}
       propertyPath: m_Name
-      value: Letter-Day Variant 1
+      value: Letter-Day-2
       objectReference: {fileID: 0}
     - target: {fileID: 5546769014114953539, guid: 125d662faf5109841a48b1a4efbec3b2, type: 3}
       propertyPath: m_Pivot.x

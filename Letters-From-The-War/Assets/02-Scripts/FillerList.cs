@@ -41,7 +41,7 @@ public class FillerList : MonoBehaviour
 
     public Vector2 startPoint;
 
-    public Vector2 limitPos = new Vector2(550, -30);
+    public float limitPos = 500;
     public float offsetX;
     public float offsetY;
 
@@ -162,14 +162,7 @@ public class FillerList : MonoBehaviour
 
     public void GridWords()
     {
-        //RectTransform firstWord = wordsInGame[0].GetComponent<RectTransform>();
-
-        //firstWord.anchoredPosition = startPoint;
-
         Vector2 currentPos = startPoint;
-
-        //currentPos.x += CalculateLengthWord(wordsInGame[0]) + offsetX;
-
 
         for (int i = 0; i < wordsInGame.Count; i++)
         {
@@ -178,16 +171,15 @@ public class FillerList : MonoBehaviour
             rect.anchoredPosition = currentPos;
 
             currentPos.x += CalculateLengthWord(wordsInGame[i]) + offsetX;
-            
-            if (rect.anchoredPosition.x + CalculateLengthWord(wordsInGame[i + 1]) >= 500)
+            if(i + 1 < wordsInGame.Count)
             {
-                currentPos.x = startPoint.x;
+                if (rect.anchoredPosition.x + CalculateLengthWord(wordsInGame[i + 1]) >= limitPos)
+                {
+                    currentPos.x = startPoint.x;
 
-                currentPos.y -= offsetY;
+                    currentPos.y -= offsetY;
+                }
             }
-
-            //Debug.Log("word n : " + wordsInGame[i] + "pos : " + currentPos.x);
-
         }
     }
 

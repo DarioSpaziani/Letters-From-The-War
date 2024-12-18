@@ -90,7 +90,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6263010919965094821, guid: 52590357eb8654d438e16f54608c8bdf, type: 3}
       propertyPath: m_Name
-      value: Letter-Day Variant 3
+      value: Letter-Day-4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
