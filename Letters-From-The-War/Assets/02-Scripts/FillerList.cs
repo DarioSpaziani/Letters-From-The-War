@@ -170,7 +170,8 @@ public class FillerList : MonoBehaviour
         {
             //prende la componente RectTransform per posizionare le parole sul canvas
             RectTransform rect = wordsInGame[i].GetComponent<RectTransform>();
-                        
+            //Image censoredImage = wordsInGame[i].GetComponent<Image>();
+
             //in base all'ancora posiziona le parole in quel punto
             rect.anchoredPosition = currentPos;
 
@@ -183,6 +184,11 @@ public class FillerList : MonoBehaviour
                 //posiziona le parole dopo aver calcolato lunghezza parola e offset 
                 if (rect.anchoredPosition.x + CalculateLengthWord(wordsInGame[i + 1]) >= limitPos)
                 {
+                    //RectTransform nextRect = wordsInGame[i + 1].GetComponent<RectTransform>();
+                    //float newWidth = nextRect.anchoredPosition.x - rect.anchoredPosition.x;
+                    //Vector2 originalSize = censoredImage.rectTransform.sizeDelta;
+                    //censoredImage.rectTransform.sizeDelta = new Vector2(newWidth, originalSize.y);
+
                     currentPos.x = startPoint.x;
 
                     currentPos.y -= offsetY;
