@@ -185,7 +185,7 @@ public class FillerList : MonoBehaviour
             rect.anchoredPosition = currentPos;
 
             //dopo la prima parola calcola la lunghezza della parola più la spazio
-            currentPos.x += CalculateLengthWord(wordsInGame[i]) + offsetX;
+            currentPos.x += CalculateLengthWord(wordsInGame[i]) + offsetX -0.1f;
 
             //TODO sarebbe da gestire meglio la posizione dell'immagine uguale allo spazio tra le parole
             Vector2 posFill = new Vector2(currentPos.x - offsetX, currentPos.y);
