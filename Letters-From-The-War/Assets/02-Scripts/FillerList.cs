@@ -6,6 +6,10 @@ using UnityEngine.UI;
 
 public class FillerList : MonoBehaviour
 {
+    //TODO vedere come esce se censurando la parola viene censurato anche lo spazio
+    //TODO se come detto sopra viene brutto
+    //prendere la parola che è stata censurata e se anche quella dopo è stata censurata allora oscurare spazio
+
     #region FIELDS
 
     [System.Serializable]
@@ -31,13 +35,15 @@ public class FillerList : MonoBehaviour
     [ShowInInspector] public List<BodyLetter> bodyLettersTexts = new List<BodyLetter>();
     [ShowInInspector] public List<EndLetter> endLettersTexts = new List<EndLetter>();
 
-    public List<GameObject> startLetter = new List<GameObject>();
-    public List<GameObject> endLetter = new List<GameObject>();
+    [ShowInInspector] public List<GameObject> startLetter = new List<GameObject>();
+    [ShowInInspector] public List<GameObject> bodyLetter = new List<GameObject>();
+    [ShowInInspector] public List<GameObject> endLetter = new List<GameObject>();
+
+    [ShowInInspector] public List<GameObject> lettersGO = new List<GameObject>();
+    [ShowInInspector] public List<GameObject> wordsInGame = new List<GameObject>();
+    [SerializeField] private GameObject imageTutorial;
 
     private GameManager gameManager;
-    public List<GameObject> lettersGO = new List<GameObject>();
-    public List<GameObject> wordsInGame = new List<GameObject>();
-    [SerializeField] private GameObject imageTutorial;
 
     public Vector2 startPoint;
 
@@ -97,7 +103,7 @@ public class FillerList : MonoBehaviour
 
     void Start()
     {
-        Invoke("GridWords",.2f);
+        Invoke("GridWords", .5f);
     }
 
     public void FillerWordsText()
@@ -133,6 +139,7 @@ public class FillerList : MonoBehaviour
         wordsInGame.Reverse();
 
         int minLength = Mathf.Min(wordsTexts.Length, wordsInGame.Count);
+
         for (int i = 0; i < minLength; i++)
         {
             GameObject wordObject = wordsInGame[i];
@@ -164,7 +171,7 @@ public class FillerList : MonoBehaviour
     {
         //mette le parole nel punto selezionato
         Vector2 currentPos = startPoint;
-
+        int a = 0;
 
         for (int i = 0; i < wordsInGame.Count; i++)
         {
@@ -178,19 +185,19 @@ public class FillerList : MonoBehaviour
             //dopo la prima parola calcola la lunghezza della parola più la spazio
             currentPos.x += CalculateLengthWord(wordsInGame[i]) + offsetX;
 
+            //TODO sarebbe da gestire meglio la posizione dell'immagine uguale allo spazio tra le parole
+            Vector2 posFill = new Vector2(currentPos.x - offsetX, currentPos.y);
+
+            FillCensorImage(wordsInGame[i], posFill, a);
+            a++;
+
             //controlla quando finisce l'elenco per evitare errore ArgumentOutOfRangeException
-            if(i + 1 < wordsInGame.Count)
+            if (i + 1 < wordsInGame.Count)
             {
                 //posiziona le parole dopo aver calcolato lunghezza parola e offset 
                 if (rect.anchoredPosition.x + CalculateLengthWord(wordsInGame[i + 1]) >= limitPos)
                 {
-                    //RectTransform nextRect = wordsInGame[i + 1].GetComponent<RectTransform>();
-                    //float newWidth = nextRect.anchoredPosition.x - rect.anchoredPosition.x;
-                    //Vector2 originalSize = censoredImage.rectTransform.sizeDelta;
-                    //censoredImage.rectTransform.sizeDelta = new Vector2(newWidth, originalSize.y);
-
                     currentPos.x = startPoint.x;
-
                     currentPos.y -= offsetY;
                 }
             }
@@ -200,8 +207,31 @@ public class FillerList : MonoBehaviour
     private float CalculateLengthWord(GameObject word)
     {
         RectTransform rt = word.GetComponent<RectTransform>();
- 
+
         return rt.rect.width;
+    }
+
+    private void FillCensorImage(GameObject preWord, Vector2 pos, int a)
+    {
+        float width = offsetX + .1f;
+        RectTransform heightOriginal = preWord.GetComponent<RectTransform>();
+        Vector2 originalSize = heightOriginal.sizeDelta;
+        GameObject censorGO = new GameObject($"CensorGO({a})");
+        Image censorImage = censorGO.AddComponent<Image>();
+        censorImage.color = new Color(0, 0, 0, 0);
+
+
+        RectTransform censorRect = censorImage.GetComponent<RectTransform>();
+        censorRect.SetParent(bodyLetter[gameManager.day -1].transform);
+        censorRect.anchorMin = new Vector2(0f, 1f);
+        censorRect.anchorMax = new Vector2(0f, 1f);
+
+        censorRect.pivot = new Vector2(0f, 0.5f);
+
+        censorRect.anchoredPosition = pos;
+
+        censorRect.sizeDelta = new Vector2(width, originalSize.y);
+
     }
 
     #endregion

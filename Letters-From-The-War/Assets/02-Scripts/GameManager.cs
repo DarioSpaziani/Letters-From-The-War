@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
 #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.U))
         {
-            day = 1;
+            day += 1;
             SceneManager.LoadScene("03-Letter");
         }
 #endif

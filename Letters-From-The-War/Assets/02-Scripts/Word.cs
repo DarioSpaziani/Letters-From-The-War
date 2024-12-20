@@ -11,7 +11,7 @@ public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public WordData wordData;
     public bool obscured = false;
     private bool isPointerOver = false;
-
+    [SerializeField] private GameObject imageAdjacent;
     #endregion
 
     #region UNITY_CALLS
