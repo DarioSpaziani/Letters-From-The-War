@@ -872,6 +872,10 @@ PrefabInstance:
       propertyPath: _timbreSfx
       value: 
       objectReference: {fileID: 8300000, guid: ac80aa4b5585f9d4088ce31044bc4ed6, type: 3}
+    - target: {fileID: 7109594789836541779, guid: fc4663f134fb0fd4189ca6d599c34f25, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a753ad54ec9b92b458fb64aed22d7d8e, type: 3}
     - target: {fileID: 7701671009257487382, guid: fc4663f134fb0fd4189ca6d599c34f25, type: 3}
       propertyPath: m_PreserveAspect
       value: 1

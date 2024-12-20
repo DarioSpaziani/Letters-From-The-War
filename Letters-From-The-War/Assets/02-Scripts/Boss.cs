@@ -84,6 +84,21 @@ public class Boss : MonoBehaviour
     {
         StartCoroutine(fade.FadeReverse());
         
+        if(gameManager.malus >= fired)
+        {
+            foreach(string firedSentences in firedDialogue)
+            {
+
+                GetCurrentDialogueSet().currentDialogue.Clear();
+
+                // Aggiungi i dialoghi di licenziamento
+                GetCurrentDialogueSet().currentDialogue.AddRange(firedDialogue);
+
+                // Aggiorna il testo dopo aver modificato i dialoghi
+                UpdateDialogues();
+            }
+        }
+
         if(gameManager.malus < fired)
         {
             switch (gameManager.malusDaily)
@@ -106,17 +121,10 @@ public class Boss : MonoBehaviour
                 default:
                     break;
             }
-        }
-        else
-        {
-            foreach (string firedSentences in firedDialogue)
-            {
-                GetCurrentDialogueSet().currentDialogue.Add(firedSentences);
-            }
+
+            UpdateDialogues();
         }
 
-
-        UpdateDialogues();
     }
 
     private void Update()
@@ -134,7 +142,6 @@ public class Boss : MonoBehaviour
             else if (DetermineMalusLevel(gameManager.malus) >= fired)
             {
                 nextScene.interactable = false;
-                Debug.LogWarning("LICENZIATO");
                 fade.CheckFadeAndLoad("05-End");
             }
             else
@@ -150,6 +157,7 @@ public class Boss : MonoBehaviour
         }
 #endif
     }
+
     public void CycleDialogue()
     {
         if (fade.isFadeEnded)
