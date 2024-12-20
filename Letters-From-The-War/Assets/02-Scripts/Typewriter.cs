@@ -22,6 +22,7 @@ public class Typewriter : MonoBehaviour
     private TMP_Text _textField;
     private string _textToShow;
     private AudioManager _audioManager;
+    public float timer = 1f;
 
     #endregion
 
@@ -39,8 +40,16 @@ public class Typewriter : MonoBehaviour
         
         _textField = GetComponent<TMP_Text>();
 
-            StartTypewriter();
+        Invoke("StartTypewriter", 0.1f);
         
+    }
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            timer = 0f;
+        }
     }
 
     /// <summary>
@@ -58,17 +67,18 @@ public class Typewriter : MonoBehaviour
     {
         endTypeWriting = false;
         float soundTimer = 0;
+
         foreach (char character in _textToShow)
         {
-            soundTimer += Time.deltaTime; 
+
+            soundTimer += Time.deltaTime;
             if (soundTimer >= 1 / (float)_soundSpeed)
             {
                 soundTimer = 0;
                 _audioManager.PlayTypeWriterSound();
             }
             _textField.text += character;
-            yield return new WaitForSeconds(1 /((float)_typingSpeed*10));
-            
+            yield return new WaitForSeconds(timer / ((float)_typingSpeed * 10));
         }
         endTypeWriting = true;
     }

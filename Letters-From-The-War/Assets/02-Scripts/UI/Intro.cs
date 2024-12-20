@@ -60,6 +60,7 @@ public class Intro : MonoBehaviour
 
     public void CycleSlide()
     {
+        _typewriter.timer = 1f;
         Slide currentSlide = _imagesList[counter];
         _showedImage.sprite = _imagesList[counter].image;
         _showedText.text = _imagesList[counter].text;
