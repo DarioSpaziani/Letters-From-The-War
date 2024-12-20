@@ -41,6 +41,8 @@ public class FillerList : MonoBehaviour
 
     [ShowInInspector] public List<GameObject> lettersGO = new List<GameObject>();
     [ShowInInspector] public List<GameObject> wordsInGame = new List<GameObject>();
+    [ShowInInspector] public List<GameObject> imagesInGame = new List<GameObject>();
+
     [SerializeField] private GameObject imageTutorial;
 
     private GameManager gameManager;
@@ -217,6 +219,7 @@ public class FillerList : MonoBehaviour
         RectTransform heightOriginal = preWord.GetComponent<RectTransform>();
         Vector2 originalSize = heightOriginal.sizeDelta;
         GameObject censorGO = new GameObject($"CensorGO({a})");
+        imagesInGame.Add(censorGO );
         Image censorImage = censorGO.AddComponent<Image>();
         censorImage.color = new Color(0, 0, 0, 0);
 
@@ -232,6 +235,26 @@ public class FillerList : MonoBehaviour
 
         censorRect.sizeDelta = new Vector2(width, originalSize.y);
 
+    }
+
+    public void SyncObscuredStates()
+    {
+        for (int i = 0; i < wordsInGame.Count; i++)
+        {
+            Word word = wordsInGame[i].GetComponent<Word>();
+            Image image = imagesInGame[i].GetComponent<Image>();
+
+            if (word.obscured)
+            {
+
+                image.color = new Color(0, 0, 0, 1);
+            }
+            else
+            {
+
+                image.color = new Color(0, 0, 0, 0);
+            }
+        }
     }
 
     #endregion

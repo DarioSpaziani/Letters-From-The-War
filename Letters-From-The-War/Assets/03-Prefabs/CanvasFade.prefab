@@ -207,8 +207,8 @@ MonoBehaviour:
   speedEffectGradient: 1
   timeDelayLoadScene: 1
   timeFadePingPong: 1
-  timeFadeReverse: 0.1
-  timeFadeDay: 0.3
+  timeFadeReverse: 8
+  timeFadeDay: 3
   timeFadeEffect: 1
   isFadeEnded: 0
 --- !u!1001 &8287568152324221085

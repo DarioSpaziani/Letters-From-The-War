@@ -11,7 +11,7 @@ public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public WordData wordData;
     public bool obscured = false;
     private bool isPointerOver = false;
-    [SerializeField] private GameObject imageAdjacent;
+    private FillerList filler;
     #endregion
 
     #region UNITY_CALLS
@@ -19,6 +19,7 @@ public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     void Start()
     {
         image = GetComponent<Image>();
+        filler = FindObjectOfType<FillerList>();
     }
 
     void Update()
@@ -29,6 +30,7 @@ public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
             {
                 image.color = new Color(0, 0, 0, 1);
                 obscured = true;
+                filler.SyncObscuredStates();
             }
         }
 
@@ -37,7 +39,8 @@ public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
             if (isPointerOver)
             {
                 image.color = new Color(0, 0, 0, 0);
-                obscured = true;
+                obscured = false;
+                filler.SyncObscuredStates();
             }
         }
     }
