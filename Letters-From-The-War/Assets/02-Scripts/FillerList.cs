@@ -46,6 +46,7 @@ public class FillerList : MonoBehaviour
     [SerializeField] private GameObject imageTutorial;
 
     private GameManager gameManager;
+    private Fade fade;
 
     public Vector2 startPoint;
 
@@ -61,6 +62,7 @@ public class FillerList : MonoBehaviour
     private void Awake()
     {
         gameManager = FindObjectOfType<GameManager>();
+        fade = FindObjectOfType<Fade>();
 
         for (int i = 0; i < lettersGO.Count; i++)
         {
@@ -81,6 +83,7 @@ public class FillerList : MonoBehaviour
             TextMeshProUGUI endLettersText = endLetter[i].GetComponentInChildren<TextMeshProUGUI>();
             endLettersText.text = endLettersTexts[i].content;
         }
+
         Word[] words = FindObjectsOfType<Word>();
 
         foreach (var word in words)
@@ -99,12 +102,11 @@ public class FillerList : MonoBehaviour
             }
         }
         FillerWordsText();
-
-
     }
 
     void Start()
     {
+        StartCoroutine(fade.FadeReverseLetter());
         Invoke("GridWords", .5f);
     }
 

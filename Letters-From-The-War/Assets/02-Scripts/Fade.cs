@@ -21,6 +21,7 @@ public class Fade : MonoBehaviour
     public float timeDelayLoadScene = 1f;
     public float timeFadePingPong = 1f;
     public float timeFadeReverse = 1f;
+    public float timeFadeReverseLetter = 1f;
     public float timeFadeDay = 1f;
     public float timeFadeEffect = 1f;
     public bool isFadeEnded;
@@ -72,8 +73,8 @@ public class Fade : MonoBehaviour
     {
         if (isFadeEnded)
             StartCoroutine(FadeReverse());
-    }
-
+    }    
+    
     public IEnumerator FadeReverse()
     {
         isFadeEnded = false;
@@ -85,6 +86,25 @@ public class Fade : MonoBehaviour
         StartCoroutine(FadeDay());
         
         yield return new WaitForSeconds(timeFadeReverse);
+
+        _fadeImage.CrossFadeAlpha(0.0f, speedEffectGradient, false);
+        isFadeEnded = true;
+    }
+
+    public void FadeReverseLetterEffect()
+    {
+        if (isFadeEnded)
+            StartCoroutine(FadeReverseLetter());
+    }
+
+    public IEnumerator FadeReverseLetter()
+    {
+        isFadeEnded = false;
+        _fadeImage.canvasRenderer.SetAlpha(1f);
+        _fadeImage.CrossFadeColor(Color.black, speedEffectGradient, false, false);
+        _fadeImage.CrossFadeColor(Color.white, speedEffectGradient, false, false);
+                
+        yield return new WaitForSeconds(timeFadeReverseLetter);
 
         _fadeImage.CrossFadeAlpha(0.0f, speedEffectGradient, false);
         isFadeEnded = true;
