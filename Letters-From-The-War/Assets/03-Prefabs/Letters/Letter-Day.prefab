@@ -93,7 +93,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &8656879315659233288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,12 +225,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -360,12 +359,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -495,7 +494,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &5068849212200383903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -628,12 +626,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -762,12 +760,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -896,12 +894,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -1031,7 +1029,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &4504748137136568249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1164,12 +1161,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -1299,7 +1296,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &3924599810429499531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1433,7 +1429,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &5744434216330907232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1566,12 +1561,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -1701,7 +1696,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &4256021705268393227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1835,7 +1829,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &341508645404999716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1968,12 +1961,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -2102,12 +2095,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -2237,7 +2230,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &9183306205105921721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2370,12 +2362,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -2504,12 +2496,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -2638,12 +2630,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -2773,7 +2765,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &1115391209277479079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2907,7 +2898,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &2214174838951323260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3040,12 +3030,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -3175,7 +3165,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &8085571977715379989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3309,7 +3298,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &7830754814351952862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3442,12 +3430,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -3576,12 +3564,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -3710,12 +3698,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -3844,12 +3832,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -3979,7 +3967,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &7462255685994450946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4020,42 +4007,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
---- !u!1 &1429389567789366569
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9002172160017385170}
-  m_Layer: 5
-  m_Name: End
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &9002172160017385170
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1429389567789366569}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8462766908952190892}
-  m_Father: {fileID: 878703445713961441}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.061000004}
-  m_AnchoredPosition: {x: -189.09998, y: -2.0999756}
-  m_SizeDelta: {x: -400, y: -12.5}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1505425021398504371
 GameObject:
   m_ObjectHideFlags: 0
@@ -4148,12 +4099,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -4283,7 +4234,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &4230802410170026494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4417,7 +4367,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &3729392177486475971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4551,7 +4500,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &5611024654445688164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4685,7 +4633,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &2590338814091617912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4819,7 +4766,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &6642987080892168050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4952,12 +4898,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -5086,12 +5032,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -5220,12 +5166,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -5354,12 +5300,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -5488,12 +5434,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -5622,12 +5568,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -5756,12 +5702,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -5890,12 +5836,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -6025,7 +5971,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &6068124292601725550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6158,12 +6103,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -6293,7 +6238,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &244361624476862257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6427,7 +6371,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &1907766510365419833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6560,12 +6503,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -6694,12 +6637,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -6829,7 +6772,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &825779307177939744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6962,12 +6904,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -7096,12 +7038,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -7230,12 +7172,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -7364,12 +7306,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -7499,7 +7441,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &8353074932542294801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7533,6 +7474,139 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2498741530365546805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 2
+  m_VerticalFit: 2
+--- !u!1 &2600258050951485741
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1976821253243743959}
+  - component: {fileID: 4886482140207953339}
+  - component: {fileID: 850565114333702223}
+  - component: {fileID: 5444421188811805598}
+  - component: {fileID: 5987504191356389419}
+  - component: {fileID: 8683555518858539793}
+  m_Layer: 5
+  m_Name: Dear
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1976821253243743959
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2600258050951485741}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4890734484553246920}
+  m_Father: {fileID: 2680406645109398594}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0.5}
+--- !u!222 &4886482140207953339
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2600258050951485741}
+  m_CullTransparentMesh: 1
+--- !u!114 &850565114333702223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2600258050951485741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 100
+--- !u!114 &5444421188811805598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2600258050951485741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de05582951e30be49adacf27c9cc104b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
+  obscured: 0
+--- !u!114 &5987504191356389419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2600258050951485741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 1
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
+--- !u!114 &8683555518858539793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2600258050951485741}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
@@ -7632,12 +7706,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -7767,7 +7841,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &2181237397998998510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7901,7 +7974,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &4002306822700278642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8034,12 +8106,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -8168,12 +8240,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -8302,12 +8374,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -8437,7 +8509,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &8577141115497817670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8570,12 +8641,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -8705,7 +8776,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &8965210411033805754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8839,7 +8909,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &8267513052699833079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8973,7 +9042,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &4538921250752520832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9014,6 +9082,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
+--- !u!1 &3192199617621354491
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2680406645109398594}
+  m_Layer: 5
+  m_Name: End
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2680406645109398594
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3192199617621354491}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1976821253243743959}
+  m_Father: {fileID: 878703445713961441}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.062352944}
+  m_AnchoredPosition: {x: 3.335205, y: 0}
+  m_SizeDelta: {x: -6.6704, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &3269717810773090096
 GameObject:
   m_ObjectHideFlags: 0
@@ -9106,12 +9210,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -9240,12 +9344,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -9375,7 +9479,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &497624507696159454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9508,12 +9611,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -9643,7 +9746,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &2154058123612090269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9776,12 +9878,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -9910,12 +10012,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -10045,7 +10147,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &666454019511915816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10178,12 +10279,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -10312,12 +10413,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -10446,12 +10547,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -10581,7 +10682,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &3287928905110351826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10715,7 +10815,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &3765410987664182845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10849,7 +10948,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &2374522165984186339
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10983,7 +11081,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &6411620085417517296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11117,7 +11214,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &4504427339956799854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11250,12 +11346,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -11385,7 +11481,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &3395675135577028665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11519,7 +11614,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &6486336220303512245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11653,7 +11747,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &6952824593640685907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11787,7 +11880,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &4696580201023006294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11921,7 +12013,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &7327387446758249576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12055,7 +12146,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &9018664512136734550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12189,7 +12279,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &6858624966156876835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12322,12 +12411,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -12456,12 +12545,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -12590,12 +12679,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -12725,7 +12814,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &7860181012156250769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12859,7 +12947,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &7715992530285648636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12993,7 +13080,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &3551154140643940149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13126,12 +13212,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -13261,7 +13347,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &4175712006261709574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13395,7 +13480,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &3172417586834381010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13528,12 +13612,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -13663,7 +13747,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &1279176731635061180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13797,7 +13880,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &8234701623302716389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13931,7 +14013,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &448277114257649438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14065,7 +14146,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &5634685491106755047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14198,12 +14278,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -14332,12 +14412,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -14466,12 +14546,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -14602,12 +14682,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -14737,7 +14817,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &4424991060578292036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14870,12 +14949,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -15004,12 +15083,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -15139,7 +15218,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &780775311655876374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15272,12 +15350,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -15406,12 +15484,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -15541,7 +15619,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &7660961799685143685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15675,7 +15752,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &4519943524043740328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15709,140 +15785,6 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4702970200683927973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalFit: 2
-  m_VerticalFit: 2
---- !u!1 &4752312861575790020
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8462766908952190892}
-  - component: {fileID: 5646195585426120427}
-  - component: {fileID: 3485203022533469558}
-  - component: {fileID: 493272083798813807}
-  - component: {fileID: 8189430409258957395}
-  - component: {fileID: 1064386532271047687}
-  m_Layer: 5
-  m_Name: Yours
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &8462766908952190892
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4752312861575790020}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 766187086114736086}
-  m_Father: {fileID: 9002172160017385170}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 95.635, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &5646195585426120427
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4752312861575790020}
-  m_CullTransparentMesh: 1
---- !u!114 &3485203022533469558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4752312861575790020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 100
---- !u!114 &493272083798813807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4752312861575790020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de05582951e30be49adacf27c9cc104b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
-  obscured: 0
-  imageAdjacent: {fileID: 0}
---- !u!114 &8189430409258957395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4752312861575790020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 0
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 1
-  m_ChildControlHeight: 1
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
---- !u!114 &1064386532271047687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4752312861575790020}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
@@ -15942,12 +15884,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -16076,12 +16018,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -16211,7 +16153,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &174918712405693167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16345,7 +16286,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &2010165789667089176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16386,6 +16326,140 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
+--- !u!1 &4905396404199445555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4890734484553246920}
+  - component: {fileID: 2702244143631494388}
+  - component: {fileID: 9036361558194829177}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4890734484553246920
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4905396404199445555}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1976821253243743959}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2702244143631494388
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4905396404199445555}
+  m_CullTransparentMesh: 1
+--- !u!114 &9036361558194829177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4905396404199445555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Dear Mr. Jones
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 024ab01ce4e99a541adc06e75c6bed92, type: 2}
+  m_sharedMaterial: {fileID: -782905301948111943, guid: 024ab01ce4e99a541adc06e75c6bed92, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 40
+  m_fontSizeBase: 10
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 4
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -0.27812195, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &4912417198511266260
 GameObject:
   m_ObjectHideFlags: 0
@@ -16478,12 +16552,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -16613,7 +16687,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &3373922530747477363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16747,7 +16820,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &439942219898597492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16880,12 +16952,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -17015,7 +17087,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &1896883379134971538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17149,7 +17220,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &5474547149643546530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17282,12 +17352,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -17416,12 +17486,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -17551,7 +17621,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &2646733353999173024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17684,12 +17753,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -17819,7 +17888,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &3256981028546665965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17953,7 +18021,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &7628479849188976524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18086,12 +18153,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -18220,12 +18287,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -18355,7 +18422,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &581109865158660984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18489,7 +18555,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &6412492678591095898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18623,7 +18688,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &2093697521790466377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18756,12 +18820,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -18890,12 +18954,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -19025,7 +19089,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &1389599880863316808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19159,7 +19222,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &3335117667602239965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19292,12 +19354,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -19427,7 +19489,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &217380773294303047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19597,7 +19658,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &6878548347591541013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19731,7 +19791,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &1431306641011261126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19864,12 +19923,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -19998,12 +20057,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 30
-  m_fontSizeMax: 30
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
@@ -20132,12 +20191,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -20266,12 +20325,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -20401,7 +20460,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &4330127819900890002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20534,12 +20592,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -20669,7 +20727,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &2068940501844164649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20803,7 +20860,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &7201589531200906162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20936,12 +20992,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -21071,7 +21127,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &931832368502042162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21205,7 +21260,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &8889996470451254684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21338,12 +21392,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -21473,7 +21527,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &4668682568163040446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21606,12 +21659,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -21740,12 +21793,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -21874,12 +21927,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -22009,7 +22062,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &710355265105544483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22143,7 +22195,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &8646369075036739204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22277,7 +22328,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &3699566014128687086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22410,12 +22460,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -22545,7 +22595,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &7051899234738800487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22679,7 +22728,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &6942356021160425070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22813,7 +22861,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &7646304289424721844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22947,7 +22994,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &2592798345998776209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23081,7 +23127,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &9180861907460984330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23215,7 +23260,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &1507929096707138378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23348,12 +23392,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -23482,12 +23526,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -23616,12 +23660,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -23751,7 +23795,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &1264688695235166735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23884,12 +23927,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -24019,7 +24062,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &2081239748193104041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24153,7 +24195,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &747179192120862166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24287,7 +24328,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &5665952107453828356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24421,7 +24461,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &7169283866260234629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24555,7 +24594,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &6892297278329882285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24688,12 +24726,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -24822,12 +24860,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -24957,7 +24995,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &2326642171641367141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25150,8 +25187,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -44.9}
-  m_SizeDelta: {x: 650, y: 700}
+  m_AnchoredPosition: {x: 0, y: -40.19999}
+  m_SizeDelta: {x: 650, y: 690.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7480414725074418506
 GameObject:
@@ -25246,7 +25283,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &3943229535489551694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25379,12 +25415,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -25514,7 +25550,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &9052671825572916117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25648,7 +25683,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &470531516518787559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25781,12 +25815,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -25915,12 +25949,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -26049,12 +26083,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -26183,12 +26217,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -26318,7 +26352,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &6953259793553131695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26452,7 +26485,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: f27a8945597a6dc42bdd3437789972fd, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &2604786730739019832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26585,12 +26617,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -26720,7 +26752,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &6744092463701209327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26853,12 +26884,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -26987,12 +27018,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -27122,7 +27153,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &3852235800690600781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27255,12 +27285,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -27389,12 +27419,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -27523,12 +27553,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -27658,7 +27688,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &3157818875414502438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27792,7 +27821,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &5638147053677708360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27926,7 +27954,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &5200920276851220984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28060,7 +28087,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &389953966123577255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28193,12 +28219,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -28328,7 +28354,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &506337516016930527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28461,12 +28486,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -28595,12 +28620,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -28729,12 +28754,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -28864,7 +28889,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &1382083496743053615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28997,12 +29021,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -29131,12 +29155,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -29265,12 +29289,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -29399,12 +29423,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -29533,12 +29557,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -29667,12 +29691,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -29801,12 +29825,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -29936,7 +29960,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &1750281082715352326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30069,12 +30092,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -30204,7 +30227,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &4181728197436280140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30337,12 +30359,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -30356,140 +30378,6 @@ MonoBehaviour:
   m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 4
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!1 &8486824966077425037
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 766187086114736086}
-  - component: {fileID: 2613887755146552920}
-  - component: {fileID: 7106918273090535926}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &766187086114736086
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8486824966077425037}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8462766908952190892}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &2613887755146552920
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8486824966077425037}
-  m_CullTransparentMesh: 1
---- !u!114 &7106918273090535926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8486824966077425037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: 'I am yours ever, J. '
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 024ab01ce4e99a541adc06e75c6bed92, type: 2}
-  m_sharedMaterial: {fileID: -782905301948111943, guid: 024ab01ce4e99a541adc06e75c6bed92, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 1
-  m_fontSizeMin: 30
-  m_fontSizeMax: 30
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
@@ -30605,12 +30493,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -30740,7 +30628,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &4764408641679122423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30910,7 +30797,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &8181355547355701763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31043,12 +30929,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -31178,7 +31064,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &2635224931444666765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31312,7 +31197,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &3157793423448890458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31445,12 +31329,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -31581,7 +31465,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &5880100717386634097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31758,12 +31641,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -31893,7 +31776,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &6683282553190048363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32027,7 +31909,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &1914637253143155451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32160,12 +32041,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -32294,12 +32175,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -32428,12 +32309,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -32502,7 +32383,7 @@ RectTransform:
   m_Children:
   - {fileID: 938141765452857996}
   - {fileID: 4166290505692729514}
-  - {fileID: 9002172160017385170}
+  - {fileID: 2680406645109398594}
   m_Father: {fileID: 4143861696189224590}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -32640,12 +32521,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
+  m_fontSize: 40
   m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 35
-  m_fontSizeMax: 35
+  m_fontSizeMin: 40
+  m_fontSizeMax: 40
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -32775,7 +32656,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &4503710280559190100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32909,7 +32789,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 3f093fbe61b281e418b5b6f183649676, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &7908899273424844352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33043,7 +32922,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wordData: {fileID: 11400000, guid: 0e962e0e4a5d5c845b0cfddce54e49de, type: 2}
   obscured: 0
-  imageAdjacent: {fileID: 0}
 --- !u!114 &6950031103015982783
 MonoBehaviour:
   m_ObjectHideFlags: 0
