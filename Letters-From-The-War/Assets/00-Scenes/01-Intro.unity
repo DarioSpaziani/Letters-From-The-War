@@ -686,7 +686,7 @@ PrefabInstance:
       objectReference: {fileID: 1665750608}
     - target: {fileID: 1691626980561457875, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
       propertyPath: _imagesList.Array.data[0].text
-      value: July 1941. The Second World War decimates people in every nation
+      value: July 1941. The Second World War decimates people in every nation.
       objectReference: {fileID: 0}
     - target: {fileID: 2761833928468764879, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
       propertyPath: m_Name
