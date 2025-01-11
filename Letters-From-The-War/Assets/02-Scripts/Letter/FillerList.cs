@@ -59,6 +59,8 @@ public class FillerList : MonoBehaviour
     public Vector2 startPoint;
     public Vector2 startPoint2;
 
+    public Sprite spriteImageCensoring;
+
     public float limitPos = 500;
     public float limitPos2;
     public float offsetX;
@@ -252,6 +254,9 @@ public class FillerList : MonoBehaviour
         imagesInGame.Add(censorGO );
 
         Image censorImage = censorGO.AddComponent<Image>();
+        censorImage.sprite = spriteImageCensoring;
+        censorImage.type = Image.Type.Sliced;
+        censorImage.pixelsPerUnitMultiplier = 100;
         censorImage.color = new Color(0, 0, 0, 0);
 
         RectTransform censorRect = censorImage.GetComponent<RectTransform>();
