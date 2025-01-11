@@ -6,11 +6,10 @@ using UnityEngine.UI;
 
 public class FillerList : MonoBehaviour
 {
-    //TODO vedere come esce se censurando la parola viene censurato anche lo spazio
-    //TODO se come detto sopra viene brutto
-    //prendere la parola che è stata censurata e se anche quella dopo è stata censurata allora oscurare spazio
-
+    //OPTIMIZE: invece che limitPos usare la larghezza della rectTransform della lettera
     #region FIELDS
+
+    #region CLASSES
 
     [System.Serializable]
     public class StartLetter
@@ -31,9 +30,14 @@ public class FillerList : MonoBehaviour
         public string content;
     }
 
+    #endregion
+
+    #region LISTS
     [ShowInInspector] public List<StartLetter> startLettersTexts = new List<StartLetter>();
     [ShowInInspector] public List<BodyLetter> bodyLettersTexts = new List<BodyLetter>();
     [ShowInInspector] public List<EndLetter> endLettersTexts = new List<EndLetter>();
+    
+    [ShowInInspector] public List<string> endFirstLetterWord = new List<string>();
 
     [ShowInInspector] public List<GameObject> startLetter = new List<GameObject>();
     [ShowInInspector] public List<GameObject> bodyLetter = new List<GameObject>();
@@ -43,17 +47,25 @@ public class FillerList : MonoBehaviour
     [ShowInInspector] public List<GameObject> wordsInGame = new List<GameObject>();
     [ShowInInspector] public List<GameObject> imagesInGame = new List<GameObject>();
 
+    #endregion
+
+    #region VARIABLES
+
     [SerializeField] private GameObject imageTutorial;
 
     private GameManager gameManager;
     private Fade fade;
 
     public Vector2 startPoint;
+    public Vector2 startPoint2;
 
     public float limitPos = 500;
+    public float limitPos2;
     public float offsetX;
     public float offsetY;
 
+
+    #endregion
 
     #endregion
 
@@ -173,21 +185,26 @@ public class FillerList : MonoBehaviour
 
     public void GridWords()
     {
-        //mette le parole nel punto selezionato
+        // Inizializza la posizione corrente con il punto di partenza originale
         Vector2 currentPos = startPoint;
         int a = 0;
+        bool isSecondGrid = false; // Flag per indicare se siamo nella seconda griglia
 
         for (int i = 0; i < wordsInGame.Count; i++)
         {
+            TextMeshProUGUI textComponent = wordsInGame[i].GetComponentInChildren<TextMeshProUGUI>();
+            string wordText = textComponent != null ? textComponent.text : string.Empty;
+            int currentDay = gameManager.day;
+            
             //prende la componente RectTransform per posizionare le parole sul canvas
             RectTransform rect = wordsInGame[i].GetComponent<RectTransform>();
-            //Image censoredImage = wordsInGame[i].GetComponent<Image>();
 
             //in base all'ancora posiziona le parole in quel punto
             rect.anchoredPosition = currentPos;
-
-            //dopo la prima parola calcola la lunghezza della parola più la spazio
+            
+            //dopo la prima parola calcola la lunghezza della parola piï¿½ la spazio
             currentPos.x += CalculateLengthWord(wordsInGame[i]) + offsetX -0.1f;
+            
 
             //TODO sarebbe da gestire meglio la posizione dell'immagine uguale allo spazio tra le parole
             Vector2 posFill = new Vector2(currentPos.x - offsetX, currentPos.y);
@@ -195,15 +212,25 @@ public class FillerList : MonoBehaviour
             FillCensorImage(wordsInGame[i], posFill, a);
             a++;
 
-            //controlla quando finisce l'elenco per evitare errore ArgumentOutOfRangeException
-            if (i + 1 < wordsInGame.Count)
+            if (!isSecondGrid && (currentDay == 2 || currentDay == 3 || currentDay == 4 || currentDay == 5) && endFirstLetterWord.Contains(wordText))
             {
-                //posiziona le parole dopo aver calcolato lunghezza parola e offset 
-                if (rect.anchoredPosition.x + CalculateLengthWord(wordsInGame[i + 1]) >= limitPos)
+                currentPos = startPoint2;
+                isSecondGrid = true;
+            }
+
+
+            //controlla quando finisce l'elenco per evitare errore ArgumentOutOfRangeException
+            if (i + 1 < wordsInGame.Count && rect.anchoredPosition.x + CalculateLengthWord(wordsInGame[i + 1]) >= limitPos)
+            {
+                float currentLimitPos = isSecondGrid ? limitPos2 : limitPos;
+                 
+                // Se la posizione supera il limite, torna all'inizio della riga
+                if (rect.anchoredPosition.x + CalculateLengthWord(wordsInGame[i + 1]) >= currentLimitPos)
                 {
-                    currentPos.x = startPoint.x;
+                    currentPos.x = isSecondGrid ? startPoint2.x : startPoint.x;
                     currentPos.y -= offsetY;
                 }
+                
             }
         }
     }
@@ -221,12 +248,14 @@ public class FillerList : MonoBehaviour
         RectTransform heightOriginal = preWord.GetComponent<RectTransform>();
         Vector2 originalSize = heightOriginal.sizeDelta;
         GameObject censorGO = new GameObject($"CensorGO({a})");
+
         imagesInGame.Add(censorGO );
+
         Image censorImage = censorGO.AddComponent<Image>();
         censorImage.color = new Color(0, 0, 0, 0);
 
-
         RectTransform censorRect = censorImage.GetComponent<RectTransform>();
+
         censorRect.SetParent(bodyLetter[gameManager.day -1].transform);
         censorRect.anchorMin = new Vector2(0f, 1f);
         censorRect.anchorMax = new Vector2(0f, 1f);
@@ -236,7 +265,6 @@ public class FillerList : MonoBehaviour
         censorRect.anchoredPosition = pos;
 
         censorRect.sizeDelta = new Vector2(width, originalSize.y);
-
     }
 
     public void SyncObscuredStates()

@@ -5,14 +5,17 @@ using UnityEngine.UI;
 
 public class Tutorial : MonoBehaviour
 {
-    public float speedImage;
+    #region FIELDS
+
+    [SerializeField] private float speedImage;
+    [SerializeField] private float timerWait;
     public Image imageTutorial;
-    public float timerWait;
+    
+    #endregion
+
+    #region UNITY_CALLS
+    
     void Start()
-    {
-        FadeEffectTutorial();
-    }
-    public void FadeEffectTutorial()
     {
         StartCoroutine(FadeTutorial());
     }
@@ -23,4 +26,6 @@ public class Tutorial : MonoBehaviour
         yield return new WaitForSeconds(timerWait);
         imageTutorial.CrossFadeAlpha(1.0f, speedImage, false);
     }
+
+    #endregion
 }

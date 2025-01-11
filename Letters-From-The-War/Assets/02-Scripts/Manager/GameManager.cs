@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -27,7 +28,7 @@ public class GameManager : MonoBehaviour
     public int malus = 0;
     public int knowledge = 0;
     [HideInInspector] public int malusDaily = 0;
-    [HideInInspector] public int day = 0;
+    [ShowInInspector] public int day = 0;
     [HideInInspector] public bool hasStarted = false;
 
     public List<Word> listGreenWords = new List<Word>();

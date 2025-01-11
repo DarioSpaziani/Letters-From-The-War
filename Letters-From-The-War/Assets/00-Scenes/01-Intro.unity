@@ -693,6 +693,10 @@ PrefabInstance:
       value: IntroCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 4009219295111975141, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
+      propertyPath: m_SpriteState.m_SelectedSprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009219295111975141, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1665750608}
