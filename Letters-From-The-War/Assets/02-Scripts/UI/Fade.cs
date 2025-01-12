@@ -25,6 +25,7 @@ public class Fade : MonoBehaviour
     public float timeFadeDay = 1f;
     public float timeFadeEffect = 1f;
     public bool isFadeEnded;
+    public Button continueSlide;
 
     #endregion
 
@@ -141,7 +142,8 @@ public class Fade : MonoBehaviour
         {
             yield return null;
         }
-        intro.CycleSlide();
+        intro.CycleSlide(); 
+        GameObject myEventSystem = GameObject.Find("EventSystem"); myEventSystem.GetComponent<UnityEngine.EventSystems.EventSystem>().SetSelectedGameObject(null);
         yield return new WaitForSeconds(timeFadePingPong);
         typewriter.StartTypewriter();
         _fadeImage.CrossFadeAlpha(0.0f, speedEffectGradient, false);
