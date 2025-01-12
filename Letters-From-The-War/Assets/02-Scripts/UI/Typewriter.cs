@@ -36,7 +36,7 @@ public class Typewriter : MonoBehaviour
     private void Start()
     {
         endTypeWriting = false ;
-        _audioManager.PlayMenuHoverSound();
+        _audioManager.PlayTypeWriterSound();
         
         _textField = GetComponent<TMP_Text>();
 
