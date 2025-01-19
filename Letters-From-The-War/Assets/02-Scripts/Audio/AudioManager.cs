@@ -13,10 +13,16 @@ public class AudioManager : MonoBehaviour
     public AudioSource audioSource;
     public AudioSource sfxAudioSource;
     public float timerModifyVolume;
+    [Range(0,1)] public float sfxVolumeMenuHover;
+    [Range(0,1)] public float sfxVolumeStamp;
+    [Range(0,1)] public float sfxVolumeType;
 
     public AudioClip menuSound, gameLoopSound;
     public AudioClip menuItemHover, stampSound, typeSound;
 
+    #endregion
+
+    #region UNITY_CALLS
 
     private void Awake()
     {
@@ -46,18 +52,21 @@ public class AudioManager : MonoBehaviour
 
     public void PlayMenuHoverSound()
     {
+        sfxAudioSource.volume = sfxVolumeMenuHover;
         sfxAudioSource.clip = menuItemHover;
         sfxAudioSource.PlayOneShot(menuItemHover);
     }    
     
     public void PlayStampSound()
     {
+        sfxAudioSource.volume = sfxVolumeStamp;
         sfxAudioSource.clip = stampSound;
         sfxAudioSource.PlayOneShot(stampSound);
     }    
     
     public void PlayTypeWriterSound()
     {
+        sfxAudioSource.volume = sfxVolumeType;
         sfxAudioSource.clip = typeSound;
         sfxAudioSource.PlayOneShot(typeSound);
     }
