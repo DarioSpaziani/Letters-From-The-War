@@ -100,7 +100,7 @@ public class GameManager : MonoBehaviour
             malusDaily += 2;
             return malus += 2;
         }
-        if(dailyPerformance >= minLevelDailyPerfTwo && dailyPerformance >= maxLevelDailyPerfTwo)
+        if(dailyPerformance >= minLevelDailyPerfTwo && dailyPerformance <= maxLevelDailyPerfTwo)
         {
             malusDaily += 1;
             return malus += 1; 
