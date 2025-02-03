@@ -142,9 +142,12 @@ public class Fade : MonoBehaviour
         {
             yield return null;
         }
+
         intro.CycleSlide(); 
         GameObject myEventSystem = GameObject.Find("EventSystem"); myEventSystem.GetComponent<UnityEngine.EventSystems.EventSystem>().SetSelectedGameObject(null);
+
         yield return new WaitForSeconds(timeFadePingPong);
+
         typewriter.StartTypewriter();
         _fadeImage.CrossFadeAlpha(0.0f, speedEffectGradient, false);
         isFadeEnded = true;

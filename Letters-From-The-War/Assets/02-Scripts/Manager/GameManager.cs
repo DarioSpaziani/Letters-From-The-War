@@ -50,7 +50,6 @@ public class GameManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(this.gameObject);
         }
-
     }
 
     public void Update()
@@ -88,7 +87,6 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Knowledge unchanged");
             return knowledge;
         }
     }
@@ -107,7 +105,6 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Malus unchanged");
             return malus;
         }
     }

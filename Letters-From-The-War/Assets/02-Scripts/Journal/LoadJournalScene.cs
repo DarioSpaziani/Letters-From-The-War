@@ -20,6 +20,12 @@ public class LoadJournalScene : MonoBehaviour
         gameManager = FindObjectOfType<GameManager>();
         fade = FindObjectOfType<Fade>();
     }
+
+    private void Start()
+    {
+        fade.StartCoroutine(fade.FadeReverseLetter());
+    }
+
     public void LoadScene()
     {
         if(gameManager.day >= 7)
