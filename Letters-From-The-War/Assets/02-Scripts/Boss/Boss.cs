@@ -13,7 +13,7 @@ public class Boss : MonoBehaviour
     [SerializeField] private Fade fade;
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private const int fired = 4;
-    [SerializeField] private Button nextScene;
+    [SerializeField] private Button continueButton;
     private int currentIndex = 0;
 
     #endregion
@@ -65,8 +65,8 @@ public class Boss : MonoBehaviour
 
     private void Awake()
     {
-        nextScene = GetComponentInChildren<Button>();
-        nextScene.interactable = true;
+        continueButton = GetComponentInChildren<Button>();
+        continueButton.interactable = true;
         gameManager = FindObjectOfType<GameManager>();
         fade = FindObjectOfType<Fade>();
         InitializeDailyDialogues();
@@ -134,19 +134,19 @@ public class Boss : MonoBehaviour
         {
             if (gameManager.hasStarted)
             {
-                nextScene.interactable = false;
+                continueButton.interactable = false;
                 gameManager.day++;
                 gameManager.hasStarted = false;
                 fade.CheckFadeAndLoad("02-Boss");
             }
             else if (DetermineMalusLevel(gameManager.malus) >= fired)
             {
-                nextScene.interactable = false;
+                continueButton.interactable = false;
                 fade.CheckFadeAndLoad("05-End");
             }
             else
             {
-                nextScene.interactable = false;
+                continueButton.interactable = false;
                 gameManager.malusDaily = 0;
                 fade.CheckFadeAndLoad("03-Letter");
             }
@@ -162,6 +162,7 @@ public class Boss : MonoBehaviour
     {
         if (fade.isFadeEnded)
         {
+            Debug.Log("Fade terminato");
             if (currentIndex < GetCurrentDialogueSet().currentDialogue.Count - 1)
             {
                 currentIndex++;
@@ -210,20 +211,20 @@ public class Boss : MonoBehaviour
         {
             if (gameManager.hasStarted)
             {
-                nextScene.interactable = false;
+                continueButton.interactable = false;
                 gameManager.day++;
                 gameManager.hasStarted = false;
                 fade.CheckFadeAndLoad("02-Boss");
             }
             else if (DetermineMalusLevel(gameManager.malus) >= fired)
             {
-                nextScene.interactable = false;
+                continueButton.interactable = false;
                 Debug.LogWarning("LICENZIATO");
                 fade.CheckFadeAndLoad("05-End");
             }
             else
             {
-                nextScene.interactable = false;
+                continueButton.interactable = false;
                 gameManager.malusDaily = 0;
                 fade.CheckFadeAndLoad("03-Letter");
             }
