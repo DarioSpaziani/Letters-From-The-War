@@ -50,7 +50,6 @@ public class GameManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(this.gameObject);
         }
-
     }
 
     public void Update()
@@ -88,7 +87,6 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Knowledge unchanged");
             return knowledge;
         }
     }
@@ -100,14 +98,13 @@ public class GameManager : MonoBehaviour
             malusDaily += 2;
             return malus += 2;
         }
-        if(dailyPerformance >= minLevelDailyPerfTwo && dailyPerformance >= maxLevelDailyPerfTwo)
+        if(dailyPerformance >= minLevelDailyPerfTwo && dailyPerformance <= maxLevelDailyPerfTwo)
         {
             malusDaily += 1;
             return malus += 1; 
         }
         else
         {
-            Debug.Log("Malus unchanged");
             return malus;
         }
     }

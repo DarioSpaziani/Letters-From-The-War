@@ -244,7 +244,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9087670698874079933, guid: 0ac8a03460f706842aa436fd6d9bb14f, type: 3}
       propertyPath: malus
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -713,6 +713,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2615071493020695273, guid: f6bac69535759ae4bb023ec0f6e3949b, type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7852010783959172370, guid: f6bac69535759ae4bb023ec0f6e3949b, type: 3}
+      propertyPath: m_Volume
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8977120351345756952, guid: f6bac69535759ae4bb023ec0f6e3949b, type: 3}

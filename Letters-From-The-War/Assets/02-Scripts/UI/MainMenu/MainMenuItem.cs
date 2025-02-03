@@ -11,11 +11,6 @@ public class MainMenuItem : MonoBehaviour, IPointerEnterHandler
     [Header("Flags")]
     [SerializeField] private bool _isEnabled = true;
     
-    [Header("SFX Parametes")]
-    //[SerializeField] private AudioClip _sfx;
-    //[SerializeField] private AudioClip _timbreSfx;
-    [SerializeField] [ProgressBar(0,100, 1f, 0f, 0f)]private int _sfxVolume = 100;
-
     //Non si gestirebbe così sta roba, servirebbe un manager, ma noi siamo spiriti liberi \(°^°)/
     [Header("UI FX")] 
     [SerializeField] private GameObject _lettersFTWImage;
