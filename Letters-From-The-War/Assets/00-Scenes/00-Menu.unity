@@ -717,7 +717,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7852010783959172370, guid: f6bac69535759ae4bb023ec0f6e3949b, type: 3}
       propertyPath: m_Volume
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8977120351345756952, guid: f6bac69535759ae4bb023ec0f6e3949b, type: 3}
       propertyPath: mixer
@@ -804,6 +804,10 @@ PrefabInstance:
       propertyPath: _timbreSfx
       value: 
       objectReference: {fileID: 8300000, guid: ac80aa4b5585f9d4088ce31044bc4ed6, type: 3}
+    - target: {fileID: 4253749427162681744, guid: fc4663f134fb0fd4189ca6d599c34f25, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 229808c02be1e0c429d7d8988066e394, type: 3}
     - target: {fileID: 5097072307160107100, guid: fc4663f134fb0fd4189ca6d599c34f25, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -904,6 +908,22 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: a753ad54ec9b92b458fb64aed22d7d8e, type: 3}
+    - target: {fileID: 7248297824367700561, guid: fc4663f134fb0fd4189ca6d599c34f25, type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7d334034a3c6b414fbf0d3df3cc839c6, type: 3}
+    - target: {fileID: 7248297824367700561, guid: fc4663f134fb0fd4189ca6d599c34f25, type: 3}
+      propertyPath: m_SpriteState.m_DisabledSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 229808c02be1e0c429d7d8988066e394, type: 3}
+    - target: {fileID: 7248297824367700561, guid: fc4663f134fb0fd4189ca6d599c34f25, type: 3}
+      propertyPath: m_SpriteState.m_SelectedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7d334034a3c6b414fbf0d3df3cc839c6, type: 3}
+    - target: {fileID: 7248297824367700561, guid: fc4663f134fb0fd4189ca6d599c34f25, type: 3}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7d334034a3c6b414fbf0d3df3cc839c6, type: 3}
     - target: {fileID: 7701671009257487382, guid: fc4663f134fb0fd4189ca6d599c34f25, type: 3}
       propertyPath: m_PreserveAspect
       value: 1
