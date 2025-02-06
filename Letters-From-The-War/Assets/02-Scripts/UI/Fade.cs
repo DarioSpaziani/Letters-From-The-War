@@ -113,7 +113,6 @@ public class Fade : MonoBehaviour
 
     public IEnumerator FadeDay()
     {
-        isFadeEnded = false;
         _dayTextSprite.canvasRenderer.SetAlpha(0f);
         _dayTextSprite.CrossFadeAlpha(1.0f, speedEffectGradient, false);
 
@@ -124,7 +123,6 @@ public class Fade : MonoBehaviour
         yield return new WaitForSeconds(timeFadeDay);
 
         _dayTextSprite.CrossFadeAlpha(0.0f, speedEffectGradient, false);
-        isFadeEnded = true;
     }
 
     public void FadePingPongEffect()
@@ -142,9 +140,12 @@ public class Fade : MonoBehaviour
         {
             yield return null;
         }
+
         intro.CycleSlide(); 
         GameObject myEventSystem = GameObject.Find("EventSystem"); myEventSystem.GetComponent<UnityEngine.EventSystems.EventSystem>().SetSelectedGameObject(null);
+
         yield return new WaitForSeconds(timeFadePingPong);
+
         typewriter.StartTypewriter();
         _fadeImage.CrossFadeAlpha(0.0f, speedEffectGradient, false);
         isFadeEnded = true;

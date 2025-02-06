@@ -157,7 +157,7 @@ MonoBehaviour:
   imageTutorial: {fileID: 0}
   startPoint: {x: 20, y: 0}
   startPoint2: {x: 820, y: 0}
-  spriteImageCensoring: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  spriteImageCensoring: {fileID: 0}
   limitPos: 500
   limitPos2: 1300
   offsetX: 10

@@ -11,12 +11,9 @@ public class Typewriter : MonoBehaviour
     [Header("Sound")]
     [SerializeField] private AudioClip _typingSound;
     [SerializeField] [Range(1,100)] private int _soundSpeed = 100;
-    [SerializeField] [ProgressBar(0, 100, 1f, 0f, 0f)]
-    private int _typingVolume = 50;
     
     [Header("Text")]
     [SerializeField] [Range(1,100)] private int _typingSpeed = 4;
-    [SerializeField] private bool _toggleOnStart = true;
     public bool endTypeWriting = false;
 
     private TMP_Text _textField;

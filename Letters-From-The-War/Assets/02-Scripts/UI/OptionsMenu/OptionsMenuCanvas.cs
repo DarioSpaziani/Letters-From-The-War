@@ -8,6 +8,7 @@ public class OptionsMenuCanvas : MonoBehaviour
     
     public static OptionsMenuCanvas Instance;
     private static bool isMenuEnabled;
+    private GameManager _gameManager;
     
     #endregion
     
@@ -20,6 +21,8 @@ public class OptionsMenuCanvas : MonoBehaviour
             Destroy(this);
         }
         Instance = this;
+
+        _gameManager = FindObjectOfType<GameManager>();
     }
 
     private void Start()
@@ -47,8 +50,15 @@ public class OptionsMenuCanvas : MonoBehaviour
 
     public void ToMainMenu()
     {
+        _gameManager = FindObjectOfType<GameManager>();
+        _gameManager.malus = 0;
+        _gameManager.knowledge = 0;
+        _gameManager.day = 0;
+        _gameManager.hasStarted = true;
+        _gameManager.malusDaily = 0;
         SceneManager.LoadScene("00-Menu");
         Time.timeScale = 1;
+
     }
     
     #endregion

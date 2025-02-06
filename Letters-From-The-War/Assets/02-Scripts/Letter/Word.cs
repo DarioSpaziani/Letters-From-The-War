@@ -12,6 +12,7 @@ public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public bool obscured = false;
     private bool isPointerOver = false;
     private FillerList filler;
+
     #endregion
 
     #region UNITY_CALLS
