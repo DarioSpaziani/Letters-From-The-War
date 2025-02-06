@@ -23,21 +23,24 @@ public class LoadJournalScene : MonoBehaviour
 
     private void Start()
     {
-        fade.StartCoroutine(fade.FadeReverseLetter());
+        StartCoroutine(fade.FadeReverseLetter());
     }
 
     public void LoadScene()
     {
-        if(gameManager.day >= 7)
+        if (fade.isFadeEnded)
         {
-            nextScene.interactable = false;
-            fade.CheckFadeAndLoad("05-End");
-        }
-        else
-        {
-            gameManager.day++;
-            nextScene.interactable = false;
-            fade.CheckFadeAndLoad("02-Boss");
+            if (gameManager.day >= 7)
+            {
+                nextScene.interactable = false;
+                fade.CheckFadeAndLoad("05-End");
+            }
+            else
+            {
+                nextScene.interactable = false;
+                gameManager.day++;
+                fade.CheckFadeAndLoad("02-Boss");
+            }
         }
     }
 

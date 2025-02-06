@@ -76,7 +76,7 @@ public class Send : MonoBehaviour
 
     public void LoadJournal()
     {
-        fade.StartCoroutine(fade.CheckFadeAndLoadScene("04-Journal"));
+        StartCoroutine(fade.CheckFadeAndLoadScene("04-Journal"));
     }
 
     public void SeeJournal()
