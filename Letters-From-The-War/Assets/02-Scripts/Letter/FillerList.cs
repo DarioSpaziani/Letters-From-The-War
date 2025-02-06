@@ -1,6 +1,9 @@
 using Sirenix.OdinInspector;
+using Sirenix.Utilities;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -33,6 +36,7 @@ public class FillerList : MonoBehaviour
     #endregion
 
     #region LISTS
+
     [ShowInInspector] public List<StartLetter> startLettersTexts = new List<StartLetter>();
     [ShowInInspector] public List<BodyLetter> bodyLettersTexts = new List<BodyLetter>();
     [ShowInInspector] public List<EndLetter> endLettersTexts = new List<EndLetter>();
@@ -66,6 +70,7 @@ public class FillerList : MonoBehaviour
     public float offsetX;
     public float offsetY;
 
+    private Word[] words;
 
     #endregion
 
@@ -89,6 +94,7 @@ public class FillerList : MonoBehaviour
         {
             imageTutorial.SetActive(false);
         }
+
         for (int i = 0; i < startLetter.Count; i++)
         {
             TextMeshProUGUI startLettersText = startLetter[i].GetComponentInChildren<TextMeshProUGUI>();
@@ -96,9 +102,40 @@ public class FillerList : MonoBehaviour
 
             TextMeshProUGUI endLettersText = endLetter[i].GetComponentInChildren<TextMeshProUGUI>();
             endLettersText.text = endLettersTexts[i].content;
+        }        
+    }
+
+    private int GetNumberFromName(string objectName)
+    {
+        int startIndex = objectName.IndexOf("(");
+        int endIndex = objectName.IndexOf(")");
+
+        if (startIndex != -1 && endIndex != -1 && endIndex > startIndex)
+        {
+            string numberString = objectName.Substring(startIndex + 1, endIndex - (startIndex + 1));
+            if (int.TryParse(numberString, out int result))
+            {
+                return result;
+            }
         }
 
+        // Se non troviamo le parentesi o non si riesce a convertire
+        // restituiamo un valore di default (o possiamo lanciare un’eccezione)
+        return -1;
+    }
+
+    private void WordsList()
+    {
         Word[] words = FindObjectsOfType<Word>();
+
+        // Ora l’array `words` è ordinato in base al numero tra parentesi
+
+        System.Array.Sort(words, (w1, w2) =>
+        {
+            int n1 = GetNumberFromName(w1.name);
+            int n2 = GetNumberFromName(w2.name);
+            return n1.CompareTo(n2);
+        });
 
         foreach (var word in words)
         {
@@ -115,21 +152,28 @@ public class FillerList : MonoBehaviour
                 gameManager.listRedWords.Add(word);
             }
         }
-        FillerWordsText();
     }
 
     void Start()
     {
         StartCoroutine(fade.FadeReverseLetter());
-        Invoke("GridWords", .5f);
+        WordsList();
+        Invoke("FillerWordsText", 0.2f);
+        Invoke("GridWords", 0.5f);
     }
 
     public void FillerWordsText()
     {
-
         string[] wordsTexts = bodyLettersTexts[gameManager.day - 1].content.Split(new char[] { ' ', '\n' }, System.StringSplitOptions.RemoveEmptyEntries);
 
         Word[] allWordComponents = FindObjectsOfType<Word>();
+
+        System.Array.Sort(allWordComponents, (w1, w2) =>
+        {
+            int n1 = GetNumberFromName(w1.name);
+            int n2 = GetNumberFromName(w2.name);
+            return n1.CompareTo(n2);
+        });
 
         foreach (var wordComponent in allWordComponents)
         {
@@ -151,11 +195,9 @@ public class FillerList : MonoBehaviour
             {
                 wordsInGame.Add(wordObject);
             }
-
         }
 
-        wordsInGame.Reverse();
-
+        //TODO cambiare check fine lettera
         int minLength = Mathf.Min(wordsTexts.Length, wordsInGame.Count);
 
         for (int i = 0; i < minLength; i++)
@@ -168,6 +210,10 @@ public class FillerList : MonoBehaviour
             {
                 textWord.text = wordsTexts[i];
             }
+            else
+            {
+                wordObject.SetActive(false);
+            }
         }
 
         for (int i = minLength; i < wordsInGame.Count; i++)
@@ -175,14 +221,12 @@ public class FillerList : MonoBehaviour
             GameObject wordObject = wordsInGame[i];
             TextMeshProUGUI textWord = wordObject.GetComponentInChildren<TextMeshProUGUI>();
 
-
             if (textWord != null)
             {
                 textWord.text = "";
                 wordObject.SetActive(false);
             }
         }
-
     }
 
     public void GridWords()
@@ -207,7 +251,6 @@ public class FillerList : MonoBehaviour
             //dopo la prima parola calcola la lunghezza della parola pi� la spazio
             currentPos.x += CalculateLengthWord(wordsInGame[i]) + offsetX -0.1f;
             
-
             //TODO sarebbe da gestire meglio la posizione dell'immagine uguale allo spazio tra le parole
             Vector2 posFill = new Vector2(currentPos.x - offsetX, currentPos.y);
 
@@ -220,7 +263,6 @@ public class FillerList : MonoBehaviour
                 isSecondGrid = true;
             }
 
-
             //controlla quando finisce l'elenco per evitare errore ArgumentOutOfRangeException
             if (i + 1 < wordsInGame.Count && rect.anchoredPosition.x + CalculateLengthWord(wordsInGame[i + 1]) >= limitPos)
             {
@@ -232,7 +274,6 @@ public class FillerList : MonoBehaviour
                     currentPos.x = isSecondGrid ? startPoint2.x : startPoint.x;
                     currentPos.y -= offsetY;
                 }
-                
             }
         }
     }
@@ -244,24 +285,32 @@ public class FillerList : MonoBehaviour
         return rt.rect.width;
     }
 
-    private void FillCensorImage(GameObject preWord, Vector2 pos, int a)
+    private void FillCensorImage(GameObject currentWord, Vector2 pos, int a)
     {
-        float width = offsetX + .1f;
-        RectTransform heightOriginal = preWord.GetComponent<RectTransform>();
-        Vector2 originalSize = heightOriginal.sizeDelta;
         GameObject censorGO = new GameObject($"CensorGO({a})");
-
-        imagesInGame.Add(censorGO );
-
+        imagesInGame.Add(censorGO);
         Image censorImage = censorGO.AddComponent<Image>();
+        RectTransform censorRect = censorImage.GetComponent<RectTransform>();
+
+
+        float sumAnchorsWidthX = censorRect.anchorMin.x + censorRect.anchorMax.x;
+        float sumAnchorsWidthY = censorRect.anchorMin.y + censorRect.anchorMax.y;
+
+        float sizeDeltaX = currentWord.GetComponent<RectTransform>().sizeDelta.x - sumAnchorsWidthX;
+        float sizeDeltaY = currentWord.GetComponent<RectTransform>().sizeDelta.y - sumAnchorsWidthY;
+
+        float width = offsetX + .1f;
+        RectTransform heightOriginal = currentWord.GetComponent<RectTransform>();
+        float originalSize = heightOriginal.rect.height;
+
+
         censorImage.sprite = spriteImageCensoring;
         censorImage.type = Image.Type.Sliced;
         censorImage.pixelsPerUnitMultiplier = 100;
         censorImage.color = new Color(0, 0, 0, 0);
 
-        RectTransform censorRect = censorImage.GetComponent<RectTransform>();
 
-        censorRect.SetParent(bodyLetter[gameManager.day -1].transform);
+        censorRect.SetParent(bodyLetter[gameManager.day - 1].transform);
         censorRect.anchorMin = new Vector2(0f, 1f);
         censorRect.anchorMax = new Vector2(0f, 1f);
 
@@ -269,7 +318,7 @@ public class FillerList : MonoBehaviour
 
         censorRect.anchoredPosition = pos;
 
-        censorRect.sizeDelta = new Vector2(width, originalSize.y);
+        censorRect.sizeDelta = new Vector2(width, sizeDeltaY);
     }
 
     public void SyncObscuredStates()
