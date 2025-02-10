@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: GreenWord
   m_EditorClassIdentifier: 
   category: 0
-  comprensibilityWordObscured: 0
-  comprensibilityWordNotObscured: 0.2
-  dailyPerfomanceWordObscured: 0
-  dailyPerfomanceWordNotObscured: 0.2
+  comprensibilityWordObscured: 1.25
+  comprensibilityWordNotObscured: 0
+  dailyPerfomanceWordObscured: 1.25
+  dailyPerfomanceWordNotObscured: 0
