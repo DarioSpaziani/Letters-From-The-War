@@ -14,6 +14,11 @@ public class JournalManager : MonoBehaviour
     private const int THIRD_TITLE = 2;
     private const int FOURTH_TITLE = 3;
 
+    private const int FIRST_IMG = 0;
+    private const int SECOND_IMG = 1;
+    private const int THIRD_IMG = 2;
+    private const int FOURTH_IMG = 3;
+
     #region CLASS_DATA
 
     [System.Serializable]
@@ -93,6 +98,12 @@ public class JournalManager : MonoBehaviour
     private void Start()
     {
         ShowTextDescriptions();
+        ShowIMGJournal();
+    }
+
+    private void ShowIMGJournal()
+    {
+
     }
 
     private void ShowTextDescriptions()
@@ -132,6 +143,16 @@ public class JournalManager : MonoBehaviour
         if (knowledge <= range.maxRangeFourthTitle) return FOURTH_TITLE;
 
         return FIRST_TITLE;
+    }
+
+    private int GetMalusIndex(int malus)
+    {
+        if (malus == 0) return FIRST_IMG;
+        if (malus == 1) return SECOND_IMG;
+        if (malus == 2) return THIRD_IMG;
+        if (malus == 3) return FOURTH_IMG;
+
+        return FIRST_IMG;
     }
 
     #endregion

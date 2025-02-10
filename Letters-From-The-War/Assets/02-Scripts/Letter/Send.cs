@@ -86,6 +86,8 @@ public class Send : MonoBehaviour
 
         gameManager.Knowledge();
         gameManager.Malus();
+        Debug.Log($"Comprensibility: {gameManager.comprensibility}");
+        Debug.Log($"Daily Performance: {gameManager.dailyPerformance}");
 
         gameManager.listGreenWords.Clear();
         gameManager.listYellowWords.Clear();
@@ -93,7 +95,6 @@ public class Send : MonoBehaviour
 
         gameManager.comprensibility = 0;
         gameManager.dailyPerformance = 0;
-
         LoadJournal();
     }
 

@@ -102,7 +102,8 @@ public class FillerList : MonoBehaviour
 
             TextMeshProUGUI endLettersText = endLetter[i].GetComponentInChildren<TextMeshProUGUI>();
             endLettersText.text = endLettersTexts[i].content;
-        }        
+        }
+
     }
 
     private int GetNumberFromName(string objectName)
@@ -156,10 +157,22 @@ public class FillerList : MonoBehaviour
 
     void Start()
     {
+
         StartCoroutine(fade.FadeReverseLetter());
         WordsList();
         Invoke("FillerWordsText", 0.2f);
         Invoke("GridWords", 0.5f);
+    }
+
+    private void Update()
+    {
+        for (int i = 0; i < wordsInGame.Count; i++)
+        {
+            if (wordsInGame[i].activeInHierarchy == false)
+            {
+                gameManager.listGreenWords.Remove(wordsInGame[i].GetComponent<Word>());
+            }
+        }
     }
 
     public void FillerWordsText()

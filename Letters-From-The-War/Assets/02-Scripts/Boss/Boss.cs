@@ -162,7 +162,6 @@ public class Boss : MonoBehaviour
     {
         if (fade.isFadeEnded)
         {
-            Debug.Log("Fade terminato");
             if (currentIndex < GetCurrentDialogueSet().currentDialogue.Count - 1)
             {
                 currentIndex++;
