@@ -21,6 +21,25 @@ public class Send : MonoBehaviour
         fade = FindObjectOfType<Fade>();
     }
 
+    private void Update()
+    {
+#if (UNITY_EDITOR)
+    if (Input.GetKeyDown(KeyCode.S))
+        {
+            for(int i = 0; i < gameManager.listYellowWords.Count; i++)
+            {
+                gameManager.listYellowWords[i].obscured = true;
+            }
+
+            for(int i = 0; i < gameManager.listRedWords.Count; i++)
+            {
+                gameManager.listRedWords[i].obscured = true;
+            }
+
+        }
+#endif
+    }
+
     public void CheckWords()
     {
         #region GREEN WORDS CHECK
@@ -35,7 +54,6 @@ public class Send : MonoBehaviour
             {
                 gameManager.comprensibility += gameManager.greenWord.comprensibilityWordNotObscured;
                 gameManager.dailyPerformance += gameManager.greenWord.dailyPerfomanceWordNotObscured;
-                
             }
         }
         #endregion
@@ -98,5 +116,5 @@ public class Send : MonoBehaviour
         LoadJournal();
     }
 
-    #endregion
+#endregion
 }

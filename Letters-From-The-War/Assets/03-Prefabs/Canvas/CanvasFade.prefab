@@ -207,7 +207,7 @@ MonoBehaviour:
   speedEffectGradient: 1
   timeDelayLoadScene: 1
   timeFadePingPong: 1
-  timeFadeReverse: 8
+  timeFadeReverse: 6
   timeFadeReverseLetter: 1
   timeFadeDay: 3
   timeFadeEffect: 1

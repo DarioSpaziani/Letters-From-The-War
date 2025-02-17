@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,9 +7,7 @@ public class JournalManager : MonoBehaviour
 {
     #region FIELDS
 
-    private GameManager gameManager;
-    public TextMeshProUGUI headlineText;
-    private Button NextScene;
+
     private const int FIRST_TITLE = 0;
     private const int SECOND_TITLE = 1;
     private const int THIRD_TITLE = 2;
@@ -18,6 +17,15 @@ public class JournalManager : MonoBehaviour
     private const int SECOND_IMG = 1;
     private const int THIRD_IMG = 2;
     private const int FOURTH_IMG = 3;
+
+    public List<Sprite> worldImages = new List<Sprite>();
+    public GameObject worldImage;
+    public Image journalImage;
+    public Sprite journalNoImage;
+    public Sprite journalForImage;
+    private GameManager gameManager;
+    public TextMeshProUGUI headlineText;
+    private Button NextScene;
 
     #region CLASS_DATA
 
@@ -98,12 +106,23 @@ public class JournalManager : MonoBehaviour
     private void Start()
     {
         ShowTextDescriptions();
-        ShowIMGJournal();
+        if(gameManager.day == 7)
+        {
+            worldImage.SetActive(true);
+            journalImage.sprite = journalForImage;
+            worldImage.GetComponent<Image>().sprite = worldImages[GetKnowledgeIndex(gameManager.day, gameManager.knowledge)];
+            ShowIMGJournal();
+        }
+        else
+        {
+            journalImage.sprite = journalNoImage;
+            worldImage.SetActive(false);
+        }
     }
 
     private void ShowIMGJournal()
     {
-
+        Debug.Log("ShowIMGJournal");
     }
 
     private void ShowTextDescriptions()
@@ -144,16 +163,5 @@ public class JournalManager : MonoBehaviour
 
         return FIRST_TITLE;
     }
-
-    private int GetMalusIndex(int malus)
-    {
-        if (malus == 0) return FIRST_IMG;
-        if (malus == 1) return SECOND_IMG;
-        if (malus == 2) return THIRD_IMG;
-        if (malus == 3) return FOURTH_IMG;
-
-        return FIRST_IMG;
-    }
-
     #endregion
 }
