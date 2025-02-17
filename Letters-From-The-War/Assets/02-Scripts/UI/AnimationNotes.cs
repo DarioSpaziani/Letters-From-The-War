@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -5,13 +6,34 @@ public class AnimationNotes : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 {
     public bool isOpen;
     public bool isHover;
+    public bool isStarted;
     public Animator animatorNotes;
+    private Fade fade;
+
+    private void Awake()
+    {
+        fade = FindObjectOfType<Fade>();    
+        animatorNotes.enabled = false;
+    }
 
     private void Start()
     {
         isHover = false;
         isOpen = false;
+        isStarted = false;
+
+        StartCoroutine(StartAnimNotes());
     }
+
+    public IEnumerator StartAnimNotes()
+    {
+        yield return new WaitForSeconds(fade.timeFadeReverseLetter);
+        animatorNotes.enabled = true;
+        Debug.Log("StartAnimNotes");
+        animatorNotes.SetBool("isStarted", true);
+    }
+
+
     public void OnPointerDown(PointerEventData eventData)
     {
         if (!isOpen)
@@ -32,6 +54,7 @@ public class AnimationNotes : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     {
         Debug.Log("Pointer Enter");
         animatorNotes.SetBool("isHover", true);
+        animatorNotes.SetBool("isStarted", false);
     }
 
     public void OnPointerExit(PointerEventData eventData)
