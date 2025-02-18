@@ -5708,6 +5708,42 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5028530211777188587, guid: 04a51f73ced61ab4499cfd6ea9ff1d6e, type: 3}
+      propertyPath: notes.Array.data[0].description
+      value: "The boss told me I should censor emotional content. Shouldn\u2019t
+        people know how their relatives feel?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5028530211777188587, guid: 04a51f73ced61ab4499cfd6ea9ff1d6e, type: 3}
+      propertyPath: notes.Array.data[1].description
+      value: "Censor: sensible details about war. Maybe I could censor something
+        but leave some of their considerations\u2026 but what if they are actually
+        wrong\u2026 I shouldn\u2019t alarm the citizens"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5028530211777188587, guid: 04a51f73ced61ab4499cfd6ea9ff1d6e, type: 3}
+      propertyPath: notes.Array.data[2].description
+      value: The most dangerous content is the one that makes people doubt the government's
+        abilities. Or is it dangerous not to have people doubt the government?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5028530211777188587, guid: 04a51f73ced61ab4499cfd6ea9ff1d6e, type: 3}
+      propertyPath: notes.Array.data[3].description
+      value: "The community must have a certain esteem of authority, said the boss.
+        Is this always true? Maybe I should get soldiers\u2019 way too\u2026 but
+        how?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5028530211777188587, guid: 04a51f73ced61ab4499cfd6ea9ff1d6e, type: 3}
+      propertyPath: notes.Array.data[4].description
+      value: "I should censor what makes people emotional\u2026 again\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5028530211777188587, guid: 04a51f73ced61ab4499cfd6ea9ff1d6e, type: 3}
+      propertyPath: notes.Array.data[5].description
+      value: "No leaks. All of these letters are really strange considering what
+        they told me. Life in the field can\u2019t be easy"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5028530211777188587, guid: 04a51f73ced61ab4499cfd6ea9ff1d6e, type: 3}
+      propertyPath: notes.Array.data[6].description
+      value: "As always I should censor sensible details about soldiers\u2019 behavior\u2026
+        Why do soldiers behave like this? Are these words from a high ranking officer?!"
+      objectReference: {fileID: 0}
     - target: {fileID: 5030320260372225695, guid: 04a51f73ced61ab4499cfd6ea9ff1d6e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -10118,15 +10154,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9203769367219852859, guid: 04a51f73ced61ab4499cfd6ea9ff1d6e, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.40784317
       objectReference: {fileID: 0}
     - target: {fileID: 9203769367219852859, guid: 04a51f73ced61ab4499cfd6ea9ff1d6e, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.46274513
       objectReference: {fileID: 0}
     - target: {fileID: 9203769367219852859, guid: 04a51f73ced61ab4499cfd6ea9ff1d6e, type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.6117647
       objectReference: {fileID: 0}
     - target: {fileID: 9217706936497050503, guid: 04a51f73ced61ab4499cfd6ea9ff1d6e, type: 3}
       propertyPath: m_SizeDelta.x
