@@ -162,3 +162,4 @@ MonoBehaviour:
   limitPos2: 1300
   offsetX: 10
   offsetY: 50
+  offsetImageY: -7

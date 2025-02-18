@@ -29,7 +29,6 @@ public class AnimationNotes : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     {
         yield return new WaitForSeconds(fade.timeFadeReverseLetter);
         animatorNotes.enabled = true;
-        Debug.Log("StartAnimNotes");
         animatorNotes.SetBool("isStarted", true);
     }
 
@@ -38,13 +37,11 @@ public class AnimationNotes : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     {
         if (!isOpen)
         {
-            Debug.Log("Pointer Down");
             animatorNotes.SetBool("isOpen", true);
             isOpen = true;
         }
         else
         {
-            Debug.Log("Pointer UP");
             animatorNotes.SetBool("isOpen", false);
             isOpen = false;
         }
@@ -52,14 +49,12 @@ public class AnimationNotes : MonoBehaviour, IPointerEnterHandler, IPointerExitH
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("Pointer Enter");
         animatorNotes.SetBool("isHover", true);
         animatorNotes.SetBool("isStarted", false);
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        Debug.Log("Pointer Exit");
         animatorNotes.SetBool("isHover", false);
     }
 }

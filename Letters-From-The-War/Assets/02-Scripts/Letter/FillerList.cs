@@ -69,6 +69,7 @@ public class FillerList : MonoBehaviour
     public float limitPos2;
     public float offsetX;
     public float offsetY;
+    public float offsetImageY;
 
     private Word[] words;
 
@@ -303,8 +304,21 @@ public class FillerList : MonoBehaviour
         GameObject censorGO = new GameObject($"CensorGO({a})");
         imagesInGame.Add(censorGO);
         Image censorImage = censorGO.AddComponent<Image>();
-        RectTransform censorRect = censorImage.GetComponent<RectTransform>();
+        RectTransform censorRect = censorGO.GetComponent<RectTransform>();
 
+        float width = offsetX + .1f;
+        
+        RectTransform heightOriginal = currentWord.GetComponent<RectTransform>();
+        float originalSize = heightOriginal.rect.height + offsetImageY;
+
+        censorImage.sprite = spriteImageCensoring;
+        censorImage.type = Image.Type.Sliced;
+        censorImage.pixelsPerUnitMultiplier = 100;
+        censorImage.color = new Color(0, 0, 0, 0);
+
+        censorRect.SetParent(bodyLetter[gameManager.day - 1].transform);
+        censorRect.anchorMin = new Vector2(0f, 1f);
+        censorRect.anchorMax = new Vector2(0f, 1f);
 
         float sumAnchorsWidthX = censorRect.anchorMin.x + censorRect.anchorMax.x;
         float sumAnchorsWidthY = censorRect.anchorMin.y + censorRect.anchorMax.y;
@@ -312,26 +326,11 @@ public class FillerList : MonoBehaviour
         float sizeDeltaX = currentWord.GetComponent<RectTransform>().sizeDelta.x - sumAnchorsWidthX;
         float sizeDeltaY = currentWord.GetComponent<RectTransform>().sizeDelta.y - sumAnchorsWidthY;
 
-        float width = offsetX + .1f;
-        RectTransform heightOriginal = currentWord.GetComponent<RectTransform>();
-        float originalSize = heightOriginal.rect.height;
-
-
-        censorImage.sprite = spriteImageCensoring;
-        censorImage.type = Image.Type.Sliced;
-        censorImage.pixelsPerUnitMultiplier = 100;
-        censorImage.color = new Color(0, 0, 0, 0);
-
-
-        censorRect.SetParent(bodyLetter[gameManager.day - 1].transform);
-        censorRect.anchorMin = new Vector2(0f, 1f);
-        censorRect.anchorMax = new Vector2(0f, 1f);
-
         censorRect.pivot = new Vector2(0f, 0.5f);
 
         censorRect.anchoredPosition = pos;
 
-        censorRect.sizeDelta = new Vector2(width, sizeDeltaY);
+        censorRect.sizeDelta = new Vector2(width, originalSize);
     }
 
     public void SyncObscuredStates()

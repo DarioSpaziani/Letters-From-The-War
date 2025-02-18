@@ -705,6 +705,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4009219295111975141, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009219295111975141, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009219295111975141, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1665750608}
@@ -712,6 +720,26 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1665750608}
+    - target: {fileID: 4009219295111975141, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 98365916470057277}
+    - target: {fileID: 4009219295111975141, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009219295111975141, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: OnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009219295111975141, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: ButtonUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009219295111975141, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4158272818727895090, guid: 04fba626a3f3d1d45a42623b5548c17e, type: 3}
       propertyPath: _typingVolume
       value: 100
@@ -859,6 +887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 98365916470057275}
+  audioManager: {fileID: 0}
   selectedButton: {fileID: 21300000, guid: d3963cf32a75eb743ad4d1f963a9f927, type: 3}
   deselctedButton: {fileID: 21300000, guid: 287c0b01e32832042ab6c9b70ae3dac1, type: 3}
 --- !u!1660057539 &9223372036854775807

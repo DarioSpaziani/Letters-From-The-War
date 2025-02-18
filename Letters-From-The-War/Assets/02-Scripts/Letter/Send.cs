@@ -35,7 +35,6 @@ public class Send : MonoBehaviour
             {
                 gameManager.listRedWords[i].obscured = true;
             }
-
         }
 #endif
     }
