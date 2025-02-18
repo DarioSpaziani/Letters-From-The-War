@@ -20,7 +20,7 @@ public class AudioManager : MonoBehaviour
     [Range(0,1)] public float sfxVolumeContinue;
 
     public AudioClip menuSound, gameLoopSound;
-    public AudioClip menuItemHover, stampSound, typeSound, sendSound;
+    public AudioClip menuItemHover, stampSound, typeSound, sendSound, continueSound;
 
     #endregion
 
@@ -83,8 +83,8 @@ public class AudioManager : MonoBehaviour
     public void PlayContinueSound()
     {
         sfxAudioSource.volume = sfxVolumeContinue;
-        sfxAudioSource.clip = typeSound;
-        sfxAudioSource.PlayOneShot(typeSound);
+        sfxAudioSource.clip = continueSound;
+        sfxAudioSource.PlayOneShot(continueSound);
     }
 
     #endregion
