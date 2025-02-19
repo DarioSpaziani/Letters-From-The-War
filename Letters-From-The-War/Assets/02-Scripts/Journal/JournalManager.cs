@@ -110,7 +110,7 @@ public class JournalManager : MonoBehaviour
         {
             worldImage.SetActive(true);
             journalImage.sprite = journalForImage;
-            worldImage.GetComponent<Image>().sprite = worldImages[GetKnowledgeIndex(gameManager.day, gameManager.knowledge)];
+            worldImage.GetComponent<Image>().sprite = worldImages[GetKnowledgeJournal(gameManager.knowledge)];
             ShowIMGJournal();
         }
         else
@@ -159,9 +159,19 @@ public class JournalManager : MonoBehaviour
         if (knowledge <= range.maxRangeFirstTitle) return FIRST_TITLE;
         if (knowledge <= range.maxRangeSecondTitle) return SECOND_TITLE;
         if (knowledge <= range.maxRangeThirdTitle) return THIRD_TITLE;
-        if (knowledge <= range.maxRangeFourthTitle) return FOURTH_TITLE;
+        if (knowledge >= range.maxRangeFourthTitle) return FOURTH_TITLE;
 
         return FIRST_TITLE;
+    }
+
+    private int GetKnowledgeJournal(int knowledge)
+    {
+        if (knowledge <= 0) return FIRST_IMG;
+        if (knowledge <= 1) return SECOND_IMG;
+        if (knowledge <= 2) return THIRD_IMG;
+        if (knowledge >= 3) return FOURTH_IMG;
+
+        return FIRST_IMG;
     }
     #endregion
 }

@@ -103,7 +103,6 @@ public class Send : MonoBehaviour
 
         gameManager.Knowledge();
         gameManager.Malus();
-        Debug.Log($"Comprensibility: {gameManager.comprensibility}");
         Debug.Log($"Daily Performance: {gameManager.dailyPerformance}");
 
         gameManager.listGreenWords.Clear();
