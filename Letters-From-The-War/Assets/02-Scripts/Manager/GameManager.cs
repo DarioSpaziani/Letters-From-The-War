@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
     public List<Word> listGreenWords = new List<Word>();
     public List<Word> listYellowWords = new List<Word>();
     public List<Word> listRedWords = new List<Word>();
+    public List<Word> allWords = new List<Word>();
 
     #endregion
 
@@ -59,6 +60,10 @@ public class GameManager : MonoBehaviour
         {
             day += 1;
             SceneManager.LoadScene("03-Letter");
+        }
+        if(Input.GetKeyDown(KeyCode.A))
+        {
+            malus = 0;
         }
 #endif
 

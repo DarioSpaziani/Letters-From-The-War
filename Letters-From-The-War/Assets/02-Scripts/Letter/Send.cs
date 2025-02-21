@@ -35,7 +35,12 @@ public class Send : MonoBehaviour
             {
                 gameManager.listRedWords[i].obscured = true;
             }
+            for (int i = 0; i < gameManager.listGreenWords.Count; i++)
+            {
+                gameManager.listGreenWords[i].obscured = true;
+            }
         }
+
 #endif
     }
 
@@ -100,9 +105,10 @@ public class Send : MonoBehaviour
     {
         CheckWords();
         sendButton.interactable = false;
-
+        
         gameManager.Knowledge();
         gameManager.Malus();
+                
         Debug.Log($"Daily Performance: {gameManager.dailyPerformance}");
 
         gameManager.listGreenWords.Clear();
@@ -111,6 +117,7 @@ public class Send : MonoBehaviour
 
         gameManager.comprensibility = 0;
         gameManager.dailyPerformance = 0;
+
         LoadJournal();
     }
 

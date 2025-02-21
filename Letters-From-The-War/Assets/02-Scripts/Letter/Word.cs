@@ -44,6 +44,16 @@ public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
                 filler.SyncObscuredStates();
             }
         }
+
+        if (obscured)
+        {
+            image.color = new Color(0, 0, 0, 1);
+        }
+        else
+        {
+
+            image.color = new Color(0, 0, 0, 0);
+        }
     }
 
     //expression-bodied syntax

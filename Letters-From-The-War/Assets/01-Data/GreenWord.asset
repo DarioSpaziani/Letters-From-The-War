@@ -15,5 +15,5 @@ MonoBehaviour:
   category: 0
   comprensibilityWordObscured: 0.2
   comprensibilityWordNotObscured: 0
-  dailyPerfomanceWordObscured: 1.5
+  dailyPerfomanceWordObscured: 1.25
   dailyPerfomanceWordNotObscured: 0
