@@ -647,6 +647,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 2e620e8675970b546baf92e3568f5b65, type: 3}
     - target: {fileID: 8977120351345756952, guid: f6bac69535759ae4bb023ec0f6e3949b, type: 3}
+      propertyPath: notesSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 63e234630b5713041a0bb10d065f4015, type: 3}
+    - target: {fileID: 8977120351345756952, guid: f6bac69535759ae4bb023ec0f6e3949b, type: 3}
       propertyPath: stampSound
       value: 
       objectReference: {fileID: 8300000, guid: ac80aa4b5585f9d4088ce31044bc4ed6, type: 3}
@@ -666,6 +670,10 @@ PrefabInstance:
       propertyPath: menuItemHover
       value: 
       objectReference: {fileID: 8300000, guid: 2e620e8675970b546baf92e3568f5b65, type: 3}
+    - target: {fileID: 8977120351345756952, guid: f6bac69535759ae4bb023ec0f6e3949b, type: 3}
+      propertyPath: sfxVolumeNote
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8977120351345756952, guid: f6bac69535759ae4bb023ec0f6e3949b, type: 3}
       propertyPath: sfxVolumeSend
       value: 1
