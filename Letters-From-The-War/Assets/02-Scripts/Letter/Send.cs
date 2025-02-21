@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class Send : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class Send : MonoBehaviour
     private Fade fade;
     private GameManager gameManager;
     private Button sendButton;
+    private bool allObscured;
+    public bool allGreenObs, allYellowObs, allRedObs;
 
     #endregion
 
@@ -23,25 +26,67 @@ public class Send : MonoBehaviour
 
     private void Update()
     {
-#if (UNITY_EDITOR)
-    if (Input.GetKeyDown(KeyCode.S))
+    #if (UNITY_EDITOR)
+        if (Input.GetKeyDown(KeyCode.S))
         {
+            for (int i = 0; i < gameManager.listGreenWords.Count; i++)
+            {
+                gameManager.listGreenWords[i].obscured = true;
+                allGreenObs = true;
+            }
+            
             for(int i = 0; i < gameManager.listYellowWords.Count; i++)
             {
                 gameManager.listYellowWords[i].obscured = true;
+                allYellowObs = true;
             }
 
             for(int i = 0; i < gameManager.listRedWords.Count; i++)
             {
                 gameManager.listRedWords[i].obscured = true;
-            }
-            for (int i = 0; i < gameManager.listGreenWords.Count; i++)
-            {
-                gameManager.listGreenWords[i].obscured = true;
+                allRedObs = true;
             }
         }
 
 #endif
+
+        if (gameManager.listGreenWords.All(word => word.obscured))
+        {
+            allGreenObs = true;
+        }
+        else
+        {
+            allGreenObs = false;
+        }
+
+        if (gameManager.listYellowWords.All(word => word.obscured))
+        {
+            allYellowObs = true;
+        }
+        else
+        {
+            allYellowObs = false;
+        }
+
+        if (gameManager.listRedWords.All(word => word.obscured))
+        {
+            allRedObs = true;
+        }
+        else
+        {
+            allRedObs = false;
+        }
+
+        if (allGreenObs && allYellowObs && allRedObs)
+        {
+            allObscured = true;
+            Debug.Log("Tutte le parole sono oscurate");
+        }
+        else
+        {   
+            Debug.Log("Non tutte le parole sono oscurate");
+            allObscured = false;
+        }
     }
 
     public void CheckWords()
@@ -107,8 +152,16 @@ public class Send : MonoBehaviour
         sendButton.interactable = false;
         
         gameManager.Knowledge();
-        gameManager.Malus();
-                
+
+        if(allObscured)
+        {
+            gameManager.malus += 2;
+        }
+        else
+        {
+            gameManager.Malus();
+        }
+
         Debug.Log($"Daily Performance: {gameManager.dailyPerformance}");
 
         gameManager.listGreenWords.Clear();

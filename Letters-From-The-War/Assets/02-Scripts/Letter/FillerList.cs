@@ -144,17 +144,14 @@ public class FillerList : MonoBehaviour
             if (word.wordData.category == WordData.wordCategory.GREEN)
             {
                 gameManager.listGreenWords.Add(word);
-                gameManager.allWords.Add(word);
             }
             else if (word.wordData.category == WordData.wordCategory.YELLOW)
             {
                 gameManager.listYellowWords.Add(word);
-                gameManager.allWords.Add(word);
             }
             else if (word.wordData.category == WordData.wordCategory.RED)
             {
                 gameManager.listRedWords.Add(word);
-                gameManager.allWords.Add(word);
             }
         }
     }

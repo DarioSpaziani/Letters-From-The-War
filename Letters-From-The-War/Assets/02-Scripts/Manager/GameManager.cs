@@ -34,7 +34,6 @@ public class GameManager : MonoBehaviour
     public List<Word> listGreenWords = new List<Word>();
     public List<Word> listYellowWords = new List<Word>();
     public List<Word> listRedWords = new List<Word>();
-    public List<Word> allWords = new List<Word>();
 
     #endregion
 
