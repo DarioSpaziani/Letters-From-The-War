@@ -103,15 +103,13 @@ public class Boss : MonoBehaviour
         {
             switch (gameManager.malusDaily)
             {
-                case 1:
-
+                case 2:
                     foreach (string warningSentence in warningOne)
                     {
                         GetCurrentDialogueSet().currentDialogue.Add(warningSentence);
                     }
                     break;
-
-                case 2:
+                case 3:
                     foreach (string warningSentence in warningTwo)
                     {
                         GetCurrentDialogueSet().currentDialogue.Add(warningSentence);

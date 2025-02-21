@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     public int minLevelDailyPerfOne = 0;
     public int maxLevelDailyPerfOne = 5;
     public int minLevelDailyPerfTwo = 6;
-    public int maxLevelDailyPerfTwo = 10;
+    public int maxLevelDailyPerfTwo = 15;
 
     [HideInInspector] public float comprensibility = 0;
     [HideInInspector] public float dailyPerformance = 0;
@@ -93,7 +93,12 @@ public class GameManager : MonoBehaviour
 
     public int Malus()
     {
-        if(dailyPerformance <= minLevelDailyPerfOne && dailyPerformance <= maxLevelDailyPerfOne)
+        if(dailyPerformance < minLevelDailyPerfOne) 
+        {
+            malusDaily += 2;
+            return malus += 2;
+        }
+        if (dailyPerformance >= minLevelDailyPerfOne && dailyPerformance <= maxLevelDailyPerfOne)
         {
             malusDaily += 2;
             return malus += 2;
