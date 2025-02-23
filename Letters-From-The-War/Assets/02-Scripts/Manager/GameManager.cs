@@ -9,28 +9,38 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance;
 
+    [Header("SO Words")]
     public WordData greenWord;
     public WordData yellowWord;
     public WordData redWord;
 
+    [Header("Comprensibility One")]
     public int minLevelComprensibilityOne = 0;
     public int maxLevelComprensibilityOne = 6;
+    [Header("Comprensibility Two")]
     public int minLevelComprensibilityTwo = 7;
     public int maxLevelComprensibilityTwo = 15;
 
+
+    [Header("Daily Perfomance One")]
     public int minLevelDailyPerfOne = 0;
     public int maxLevelDailyPerfOne = 5;
+    [Header("Daily Perfomance Two")]
     public int minLevelDailyPerfTwo = 6;
     public int maxLevelDailyPerfTwo = 15;
 
-    [HideInInspector] public float comprensibility = 0;
-    [HideInInspector] public float dailyPerformance = 0;
+
+    [Header("Daily Valutation")]
     public int malus = 0;
     public int knowledge = 0;
+
+    [HideInInspector] public float comprensibility = 0;
+    [HideInInspector] public float dailyPerformance = 0;
+    [HideInInspector] public bool hasStarted = false;
     [HideInInspector] public int malusDaily = 0;
     [ShowInInspector] public int day = 0;
-    [HideInInspector] public bool hasStarted = false;
 
+    [Header("Words")]
     public List<Word> listGreenWords = new List<Word>();
     public List<Word> listYellowWords = new List<Word>();
     public List<Word> listRedWords = new List<Word>();
