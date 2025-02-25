@@ -7,12 +7,12 @@ using UnityEngine.UI;
 public class ButtonUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public Button button;
-    public AudioManager audioManager;
+    public AudioManager _audioManager;
     public Sprite selectedButton,deselctedButton;
 
     private void Awake()
     {
-        audioManager = FindObjectOfType<AudioManager>();
+        _audioManager = FindObjectOfType<AudioManager>();
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -26,11 +26,11 @@ public class ButtonUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public void OnClick()
     {
-        audioManager.PlayContinueSound();
+        _audioManager.PlayContinueSound();
     }
 
     public void OnClickSend()
     {
-        audioManager.PlaySendSound();
+        _audioManager.PlaySendSound();
     }
 }

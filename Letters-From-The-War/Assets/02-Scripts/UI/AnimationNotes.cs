@@ -9,11 +9,11 @@ public class AnimationNotes : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     public bool isStarted;
     public Animator animatorNotes;
     private Fade fade;
-    private AudioManager audioManager;
+    private AudioManager _audioManager;
     private void Awake()
     {
         fade = FindObjectOfType<Fade>();
-        audioManager = FindObjectOfType<AudioManager>();
+        _audioManager = FindObjectOfType<AudioManager>();
         animatorNotes.enabled = false;
     }
 
@@ -31,7 +31,7 @@ public class AnimationNotes : MonoBehaviour, IPointerEnterHandler, IPointerExitH
         yield return new WaitForSeconds(fade.timeFadeReverseLetter);
         animatorNotes.enabled = true;
         animatorNotes.SetBool("isStarted", true);
-        audioManager.PlayNoteSound();
+        _audioManager.PlayNoteSound();
     }
 
 

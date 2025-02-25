@@ -156,6 +156,7 @@ public class Send : MonoBehaviour
         if(allObscured)
         {
             gameManager.malus += 2;
+            gameManager.malusDaily += 2;
         }
         else
         {
