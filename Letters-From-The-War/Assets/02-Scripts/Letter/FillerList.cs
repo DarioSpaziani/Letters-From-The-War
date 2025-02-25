@@ -310,7 +310,7 @@ public class FillerList : MonoBehaviour
         Image censorImage = censorGO.AddComponent<Image>();
         RectTransform censorRect = censorGO.GetComponent<RectTransform>();
 
-        float width = offsetX - .1f;
+        float width = offsetX;
         
         RectTransform heightOriginal = currentWord.GetComponent<RectTransform>();
 
