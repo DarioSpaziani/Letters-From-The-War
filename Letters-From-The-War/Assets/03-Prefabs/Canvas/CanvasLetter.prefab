@@ -435,13 +435,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   notes:
-  - description: giornata 1 /A
-  - description: giornata 2/B
-  - description: giornata 3/C
-  - description: giornata 4/D
-  - description: giornata 5/E
-  - description: giornata 6/F
-  - description: giornata 7/G
+  - description: "My overseer told me to censor emotional content. Shouldn\u2019t
+      people be allowed to know how their relatives feel?"
+  - description: "Censor: Sensitive details about the war. Maybe I could censor some
+      parts but still leave some of their thoughts\u2026 but what if they are actually
+      wrong?\u2026what if\u2026Nevermind, I mustn\u2019t alarm the citizens"
+  - description: The most dangerous content is the one that makes people doubt the
+      Government's abilities. Or is it dangerous not to allow people to question
+      the Government?
+  - description: "The community must have a certain level of esteem for the authority,
+      said the overseer. Is this always the case? Maybe I should convey the soldiers\u2019
+      point of view too\u2026 but how?"
+  - description: "I should censor what makes people emotional\u2026 again\u2026"
+  - description: "No leaks. All of these letters are quite strange considering what
+      they\u2019ve told me. Life in the field can\u2019t be easy"
+  - description: "As always I should censor sensitive details about soldiers\u2019
+      behavior\u2026 Why do they behave like this? Are these words from a high-ranking
+      officer?!"
   notesText: {fileID: 816538323428149786}
 --- !u!114 &4859567541017140900
 MonoBehaviour:
@@ -455,6 +465,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bb14574491d871409842d74e05de2f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isOpen: 0
+  isHover: 0
+  isStarted: 0
   animatorNotes: {fileID: 5340097534916409291}
 --- !u!1 &4885090498744629561
 GameObject:
@@ -677,6 +690,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cc052c6ef5e21943a396035eebd6016, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allGreenObs: 0
+  allYellowObs: 0
+  allRedObs: 0
 --- !u!114 &4942926010615063214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -690,6 +706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 7519333835575609287}
+  _audioManager: {fileID: 0}
   selectedButton: {fileID: 21300000, guid: 01053434604030f4fba1694dfa5e2e93, type: 3}
   deselctedButton: {fileID: 21300000, guid: 5a8afff67517e18439f1da5dbb79c33d, type: 3}
 --- !u!1 &7982754523272075474
