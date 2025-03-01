@@ -111,18 +111,12 @@ public class JournalManager : MonoBehaviour
             worldImage.SetActive(true);
             journalImage.sprite = journalForImage;
             worldImage.GetComponent<Image>().sprite = worldImages[GetKnowledgeJournal(gameManager.knowledge)];
-            ShowIMGJournal();
         }
         else
         {
             journalImage.sprite = journalNoImage;
             worldImage.SetActive(false);
         }
-    }
-
-    private void ShowIMGJournal()
-    {
-        Debug.Log("ShowIMGJournal");
     }
 
     private void ShowTextDescriptions()
@@ -166,12 +160,32 @@ public class JournalManager : MonoBehaviour
 
     private int GetKnowledgeJournal(int knowledge)
     {
-        if (knowledge <= 0) return FIRST_IMG;
-        if (knowledge <= 1) return SECOND_IMG;
-        if (knowledge <= 2) return THIRD_IMG;
-        if (knowledge >= 3) return FOURTH_IMG;
+        if (knowledge <= 0) {
+            gameManager.invasion = true;
+            gameManager.UnlockAchievement("ACH_INVASION", gameManager.invasion);
+            return FIRST_IMG; 
+        }
+        if (knowledge <= 1)
+        {
+            gameManager.exodus = true;
+            gameManager.UnlockAchievement("ACH_EXODUS", gameManager.exodus);
+            return SECOND_IMG;
+        }
+        if (knowledge <= 2)
+        {
+            gameManager.hope = true;
+            gameManager.UnlockAchievement("ACH_HOPE", gameManager.hope);
+            return THIRD_IMG;
+        }
+        if (knowledge >= 3)
+        {
+            gameManager.insurrection = true;
+            gameManager.UnlockAchievement("ACH_INSURRECTION", gameManager.insurrection);
+            return FOURTH_IMG;
+        }
 
         return FIRST_IMG;
     }
+
     #endregion
 }

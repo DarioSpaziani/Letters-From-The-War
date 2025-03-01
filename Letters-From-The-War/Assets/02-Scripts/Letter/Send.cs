@@ -48,7 +48,7 @@ public class Send : MonoBehaviour
             }
         }
 
-#endif
+    #endif
 
         if (gameManager.listGreenWords.All(word => word.obscured))
         {
@@ -163,6 +163,11 @@ public class Send : MonoBehaviour
             gameManager.Malus();
         }
 
+        if(gameManager.day == 1) { 
+            gameManager.firstAssignement = true;
+            gameManager.UnlockAchievement("ACH_ASSIGNMENT", gameManager.firstAssignement);
+        }
+
         Debug.Log($"Daily Performance: {gameManager.dailyPerformance}");
 
         gameManager.listGreenWords.Clear();
@@ -175,5 +180,5 @@ public class Send : MonoBehaviour
         LoadJournal();
     }
 
-#endregion
+    #endregion
 }
