@@ -216,6 +216,8 @@ public class Boss : MonoBehaviour
             else if (DetermineMalusLevel(gameManager.malus) >= fired)
             {
                 continueButton.interactable = false;
+                gameManager.getFired = true;
+                gameManager.UnlockAchievement("ACH_FIRED", gameManager.getFired);
                 Debug.LogWarning("LICENZIATO");
                 fade.CheckFadeAndLoad("05-End");
             }

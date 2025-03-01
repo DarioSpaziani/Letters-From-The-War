@@ -37,6 +37,12 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public float comprensibility = 0;
     [HideInInspector] public float dailyPerformance = 0;
     [HideInInspector] public bool hasStarted = false;
+    [HideInInspector] public bool firstAssignement = false;
+    [HideInInspector] public bool getFired = false;
+    [HideInInspector] public bool hope = false;
+    [HideInInspector] public bool invasion = false;
+    [HideInInspector] public bool exodus = false;
+    [HideInInspector] public bool insurrection = false;
     [HideInInspector] public int malusDaily = 0;
     [ShowInInspector] public int day = 0;
 
@@ -129,6 +135,15 @@ public class GameManager : MonoBehaviour
         else
         {
             return malus;
+        }
+    }
+
+    public void UnlockAchievement(string achievemntID, bool value)
+    {
+        if (value)
+        {
+            Steamworks.SteamUserStats.SetAchievement(achievemntID);
+            Debug.Log($"Achievement unlocked: {achievemntID}, from game manager");
         }
     }
 

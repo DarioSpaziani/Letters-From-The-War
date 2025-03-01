@@ -207,9 +207,9 @@ MonoBehaviour:
   speedEffectGradient: 1
   timeDelayLoadScene: 1
   timeFadePingPong: 1
-  timeFadeReverse: 0.1
+  timeFadeReverse: 4
   timeFadeReverseLetter: 1
-  timeFadeDay: 0.1
+  timeFadeDay: 2
   timeFadeEffect: 1
   isFadeEnded: 0
   continueSlide: {fileID: 0}
