@@ -143,7 +143,7 @@ public class GameManager : MonoBehaviour
         if (value)
         {
             Steamworks.SteamUserStats.SetAchievement(achievemntID);
-            Debug.Log($"Achievement unlocked: {achievemntID}, from game manager");
+            Debug.Log($"Achievement unlocked: {achievemntID}");
         }
     }
 
