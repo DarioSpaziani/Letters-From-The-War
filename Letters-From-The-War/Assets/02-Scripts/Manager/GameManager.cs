@@ -66,6 +66,7 @@ public class GameManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(this.gameObject);
         }
+
     }
 
     public void Update()
@@ -143,7 +144,8 @@ public class GameManager : MonoBehaviour
         if (value)
         {
             Steamworks.SteamUserStats.SetAchievement(achievemntID);
-            Debug.Log($"Achievement unlocked: {achievemntID}");
+            Steamworks.SteamUserStats.StoreStats();
+            Steamworks.SteamUserStats.GetAchievement(achievemntID, out value);
         }
     }
 

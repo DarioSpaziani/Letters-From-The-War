@@ -45,15 +45,15 @@ public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
             }
         }
 
-        if (obscured)
-        {
-            image.color = new Color(0, 0, 0, 1);
-        }
-        else
-        {
+        //if (obscured)
+        //{
+        //    image.color = new Color(0, 0, 0, 1);
+        //}
+        //else
+        //{
 
-            image.color = new Color(0, 0, 0, 0);
-        }
+        //    image.color = new Color(0, 0, 0, 0);
+        //}
     }
 
     //expression-bodied syntax

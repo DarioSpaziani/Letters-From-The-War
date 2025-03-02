@@ -80,11 +80,10 @@ public class Send : MonoBehaviour
         if (allGreenObs && allYellowObs && allRedObs)
         {
             allObscured = true;
-            Debug.Log("Tutte le parole sono oscurate");
+            //Debug.Log("Tutte le parole sono oscurate");
         }
         else
         {   
-            Debug.Log("Non tutte le parole sono oscurate");
             allObscured = false;
         }
     }
@@ -168,7 +167,7 @@ public class Send : MonoBehaviour
             gameManager.UnlockAchievement("ACH_ASSIGNMENT", gameManager.firstAssignement);
         }
 
-        Debug.Log($"Daily Performance: {gameManager.dailyPerformance}");
+        //Debug.Log($"Daily Performance: {gameManager.dailyPerformance}");
 
         gameManager.listGreenWords.Clear();
         gameManager.listYellowWords.Clear();

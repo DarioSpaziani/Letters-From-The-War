@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static JournalManager;
 
 public class JournalManager : MonoBehaviour
 {
@@ -160,24 +161,26 @@ public class JournalManager : MonoBehaviour
 
     private int GetKnowledgeJournal(int knowledge)
     {
-        if (knowledge <= 0) {
+        DayRange range = dayData[7].range;
+        if (knowledge <= 0) 
+        {
             gameManager.invasion = true;
             gameManager.UnlockAchievement("ACH_INVASION", gameManager.invasion);
             return FIRST_IMG; 
         }
-        if (knowledge <= 1)
+        if (knowledge <= 3)
         {
             gameManager.exodus = true;
             gameManager.UnlockAchievement("ACH_EXODUS", gameManager.exodus);
             return SECOND_IMG;
         }
-        if (knowledge <= 2)
+        if (knowledge <= 10)
         {
             gameManager.hope = true;
             gameManager.UnlockAchievement("ACH_HOPE", gameManager.hope);
             return THIRD_IMG;
         }
-        if (knowledge >= 3)
+        if (knowledge >=11)
         {
             gameManager.insurrection = true;
             gameManager.UnlockAchievement("ACH_INSURRECTION", gameManager.insurrection);
