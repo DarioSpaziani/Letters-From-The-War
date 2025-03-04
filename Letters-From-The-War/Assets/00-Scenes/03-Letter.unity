@@ -10762,6 +10762,25 @@ PrefabInstance:
       propertyPath: startLetter.Array.data[6]
       value: 
       objectReference: {fileID: 2048304076}
+    - target: {fileID: 3229589886923381303, guid: a07761467fa5b6b4e9f7d7ecb8aa9194, type: 3}
+      propertyPath: endFirstLetterWord.Array.data[1]
+      value: explosion.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229589886923381303, guid: a07761467fa5b6b4e9f7d7ecb8aa9194, type: 3}
+      propertyPath: endFirstLetterWord.Array.data[2]
+      value: home.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3229589886923381303, guid: a07761467fa5b6b4e9f7d7ecb8aa9194, type: 3}
+      propertyPath: bodyLettersTexts.Array.data[1].content
+      value: "Life on the Eastern Front is safe, but worrying. We are currently not
+        fighting because we are out of resources, but we move back each day to flee
+        from the Russian army and I fear they are moving forward our borders. Peter
+        has some spare coffee; we drink it together to ease our nerves. Whenever
+        I drink something warm while looking at the sunset, it always reminds me
+        of us just a few years ago. I miss those days before the war; Now I can\u2019t
+        go a single day without worrying that if we fail, we will bring the enemy's
+        army to our doorstep. I can\u2019t wait to see you again."
+      objectReference: {fileID: 0}
     - target: {fileID: 3243615923797472170, guid: a07761467fa5b6b4e9f7d7ecb8aa9194, type: 3}
       propertyPath: m_Name
       value: Filler

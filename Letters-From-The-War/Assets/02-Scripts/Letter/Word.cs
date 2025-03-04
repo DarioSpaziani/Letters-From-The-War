@@ -27,7 +27,7 @@ public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         if (Input.GetMouseButton(0))
         {
-            if (isPointerOver)
+            if (isPointerOver && !obscured)
             {
                 image.color = new Color(0, 0, 0, 1);
                 obscured = true;
@@ -37,23 +37,13 @@ public class Word : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
         if (Input.GetMouseButton(1))
         {
-            if (isPointerOver)
+            if (isPointerOver && obscured)
             {
                 image.color = new Color(0, 0, 0, 0);
                 obscured = false;
                 filler.SyncObscuredStates();
             }
         }
-
-        //if (obscured)
-        //{
-        //    image.color = new Color(0, 0, 0, 1);
-        //}
-        //else
-        //{
-
-        //    image.color = new Color(0, 0, 0, 0);
-        //}
     }
 
     //expression-bodied syntax
