@@ -9,7 +9,7 @@ using UnityEngine.UI;
 
 public class FillerList : MonoBehaviour
 {
-    //OPTIMIZE: invece che limitPos usare la larghezza della rectTransform della lettera
+    //OPTIMIZING IDEA: instead of var limitPos use the rectTransform of the second part of the letter or a point anchored
     #region FIELDS
 
     #region CLASSES
@@ -37,16 +37,20 @@ public class FillerList : MonoBehaviour
 
     #region LISTS
 
+    [Header("List Letter part content")]
     [ShowInInspector] public List<StartLetter> startLettersTexts = new List<StartLetter>();
     [ShowInInspector] public List<BodyLetter> bodyLettersTexts = new List<BodyLetter>();
     [ShowInInspector] public List<EndLetter> endLettersTexts = new List<EndLetter>();
     
+    [Header("Divider Letter")]
     [ShowInInspector] public List<string> endFirstLetterWord = new List<string>();
 
+    [Header("GameObjects letter part")]
     [ShowInInspector] public List<GameObject> startLetter = new List<GameObject>();
     [ShowInInspector] public List<GameObject> bodyLetter = new List<GameObject>();
     [ShowInInspector] public List<GameObject> endLetter = new List<GameObject>();
 
+    [Header("Lists letter GO")]
     [ShowInInspector] public List<GameObject> lettersGO = new List<GameObject>();
     [ShowInInspector] public List<GameObject> wordsInGame = new List<GameObject>();
     [ShowInInspector] public List<GameObject> imagesInGame = new List<GameObject>();
@@ -69,6 +73,7 @@ public class FillerList : MonoBehaviour
     public float limitPos2;
     public float offsetX;
     public float offsetY;
+    public float offsetImageY;
 
     private Word[] words;
 
@@ -246,7 +251,7 @@ public class FillerList : MonoBehaviour
     {
         // Inizializza la posizione corrente con il punto di partenza originale
         Vector2 currentPos = startPoint;
-        int a = 0;
+        int numberWord = 0;
         bool isSecondGrid = false; // Flag per indicare se siamo nella seconda griglia
 
         for (int i = 0; i < wordsInGame.Count; i++)
@@ -267,8 +272,8 @@ public class FillerList : MonoBehaviour
             //TODO sarebbe da gestire meglio la posizione dell'immagine uguale allo spazio tra le parole
             Vector2 posFill = new Vector2(currentPos.x - offsetX, currentPos.y);
 
-            FillCensorImage(wordsInGame[i], posFill, a);
-            a++;
+            FillCensorImage(wordsInGame[i], posFill, numberWord);
+            numberWord++;
 
             if (!isSecondGrid && (currentDay == 2 || currentDay == 3 || currentDay == 4 || currentDay == 5) && endFirstLetterWord.Contains(wordText))
             {
@@ -298,30 +303,21 @@ public class FillerList : MonoBehaviour
         return rt.rect.width;
     }
 
-    private void FillCensorImage(GameObject currentWord, Vector2 pos, int a)
+    private void FillCensorImage(GameObject currentWord, Vector2 pos, int numberWord)
     {
-        GameObject censorGO = new GameObject($"CensorGO({a})");
+        GameObject censorGO = new GameObject($"CensorGO({numberWord})");
         imagesInGame.Add(censorGO);
         Image censorImage = censorGO.AddComponent<Image>();
-        RectTransform censorRect = censorImage.GetComponent<RectTransform>();
+        RectTransform censorRect = censorGO.GetComponent<RectTransform>();
 
-
-        float sumAnchorsWidthX = censorRect.anchorMin.x + censorRect.anchorMax.x;
-        float sumAnchorsWidthY = censorRect.anchorMin.y + censorRect.anchorMax.y;
-
-        float sizeDeltaX = currentWord.GetComponent<RectTransform>().sizeDelta.x - sumAnchorsWidthX;
-        float sizeDeltaY = currentWord.GetComponent<RectTransform>().sizeDelta.y - sumAnchorsWidthY;
-
-        float width = offsetX + .1f;
+        float width = offsetX;
+        
         RectTransform heightOriginal = currentWord.GetComponent<RectTransform>();
-        float originalSize = heightOriginal.rect.height;
-
 
         censorImage.sprite = spriteImageCensoring;
         censorImage.type = Image.Type.Sliced;
         censorImage.pixelsPerUnitMultiplier = 100;
         censorImage.color = new Color(0, 0, 0, 0);
-
 
         censorRect.SetParent(bodyLetter[gameManager.day - 1].transform);
         censorRect.anchorMin = new Vector2(0f, 1f);
@@ -330,8 +326,10 @@ public class FillerList : MonoBehaviour
         censorRect.pivot = new Vector2(0f, 0.5f);
 
         censorRect.anchoredPosition = pos;
+        float currentHeight = heightOriginal.rect.height;
 
-        censorRect.sizeDelta = new Vector2(width, sizeDeltaY);
+        censorRect.sizeDelta = new Vector2(width, currentHeight);
+        censorRect.localScale = new Vector3(1, 1, 1);
     }
 
     public void SyncObscuredStates()

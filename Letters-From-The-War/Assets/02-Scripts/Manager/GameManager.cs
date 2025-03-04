@@ -9,28 +9,44 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance;
 
+    [Header("SO Words")]
     public WordData greenWord;
     public WordData yellowWord;
     public WordData redWord;
 
+    [Header("Comprensibility One")]
     public int minLevelComprensibilityOne = 0;
     public int maxLevelComprensibilityOne = 6;
+    [Header("Comprensibility Two")]
     public int minLevelComprensibilityTwo = 7;
     public int maxLevelComprensibilityTwo = 15;
 
+
+    [Header("Daily Perfomance One")]
     public int minLevelDailyPerfOne = 0;
     public int maxLevelDailyPerfOne = 5;
+    [Header("Daily Perfomance Two")]
     public int minLevelDailyPerfTwo = 6;
-    public int maxLevelDailyPerfTwo = 10;
+    public int maxLevelDailyPerfTwo = 15;
+
+
+    [Header("Daily Valutation")]
+    public int malus = 0;
+    public int knowledge = 0;
 
     [HideInInspector] public float comprensibility = 0;
     [HideInInspector] public float dailyPerformance = 0;
-    public int malus = 0;
-    public int knowledge = 0;
+    [HideInInspector] public bool hasStarted = false;
+    [HideInInspector] public bool firstAssignement = false;
+    [HideInInspector] public bool getFired = false;
+    [HideInInspector] public bool hope = false;
+    [HideInInspector] public bool invasion = false;
+    [HideInInspector] public bool exodus = false;
+    [HideInInspector] public bool insurrection = false;
     [HideInInspector] public int malusDaily = 0;
     [ShowInInspector] public int day = 0;
-    [HideInInspector] public bool hasStarted = false;
 
+    [Header("Words")]
     public List<Word> listGreenWords = new List<Word>();
     public List<Word> listYellowWords = new List<Word>();
     public List<Word> listRedWords = new List<Word>();
@@ -50,6 +66,7 @@ public class GameManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(this.gameObject);
         }
+
     }
 
     public void Update()
@@ -59,6 +76,10 @@ public class GameManager : MonoBehaviour
         {
             day += 1;
             SceneManager.LoadScene("03-Letter");
+        }
+        if(Input.GetKeyDown(KeyCode.A))
+        {
+            malus = 0;
         }
 #endif
 
@@ -93,7 +114,12 @@ public class GameManager : MonoBehaviour
 
     public int Malus()
     {
-        if(dailyPerformance <= minLevelDailyPerfOne && dailyPerformance <= maxLevelDailyPerfOne)
+        if(dailyPerformance < minLevelDailyPerfOne) 
+        {
+            malusDaily += 2;
+            return malus += 2;
+        }
+        if (dailyPerformance >= minLevelDailyPerfOne && dailyPerformance <= maxLevelDailyPerfOne)
         {
             malusDaily += 2;
             return malus += 2;
@@ -110,6 +136,16 @@ public class GameManager : MonoBehaviour
         else
         {
             return malus;
+        }
+    }
+
+    public void UnlockAchievement(string achievemntID, bool value)
+    {
+        if (value)
+        {
+            Steamworks.SteamUserStats.SetAchievement(achievemntID);
+            Steamworks.SteamUserStats.StoreStats();
+            Steamworks.SteamUserStats.GetAchievement(achievemntID, out value);
         }
     }
 

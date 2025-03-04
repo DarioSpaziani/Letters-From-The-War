@@ -204,6 +204,7 @@ GameObject:
   - component: {fileID: 5316131639912173926}
   - component: {fileID: 428676692296549831}
   - component: {fileID: 6009424214531530064}
+  - component: {fileID: 6573025548957403675}
   m_Layer: 5
   m_Name: MainMenuButton
   m_TagString: Untagged
@@ -324,6 +325,34 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6573025548957403675}
+        m_TargetAssemblyTypeName: ButtonUI, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6573025548957403675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4671542226471905329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e622160f062d514e8d4c74bcfa4e15f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 6009424214531530064}
+  audioManager: {fileID: 0}
+  selectedButton: {fileID: 21300000, guid: 175003693ff7599498d201b64b794be6, type: 3}
+  deselctedButton: {fileID: 21300000, guid: 147f606101bb03946abe8a64cd99698b, type: 3}
 --- !u!1 &6099895912548088122
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,6 +365,7 @@ GameObject:
   - component: {fileID: 8611799640028755206}
   - component: {fileID: 5283280469716994148}
   - component: {fileID: 3693650900189905031}
+  - component: {fileID: 6832335342806818879}
   m_Layer: 5
   m_Name: ContinueButton
   m_TagString: Untagged
@@ -456,3 +486,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6832335342806818879}
+        m_TargetAssemblyTypeName: ButtonUI, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &6832335342806818879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6099895912548088122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e622160f062d514e8d4c74bcfa4e15f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 3693650900189905031}
+  audioManager: {fileID: 0}
+  selectedButton: {fileID: 21300000, guid: d3963cf32a75eb743ad4d1f963a9f927, type: 3}
+  deselctedButton: {fileID: 21300000, guid: 287c0b01e32832042ab6c9b70ae3dac1, type: 3}

@@ -377,7 +377,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a753ad54ec9b92b458fb64aed22d7d8e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2b14e1dc6ed8a4d45977ecd448ee2e38, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -780,6 +780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 8451042822960407660}
+  _audioManager: {fileID: 0}
   selectedButton: {fileID: 21300000, guid: ecb6dd02e6b793744815c681bc4bbe45, type: 3}
   deselctedButton: {fileID: 21300000, guid: af9e20c223524334eb3437cc11953fd0, type: 3}
 --- !u!1660057539 &9223372036854775807

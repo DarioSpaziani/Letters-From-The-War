@@ -1,14 +1,14 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static JournalManager;
 
 public class JournalManager : MonoBehaviour
 {
     #region FIELDS
 
-    private GameManager gameManager;
-    public TextMeshProUGUI headlineText;
-    private Button NextScene;
+
     private const int FIRST_TITLE = 0;
     private const int SECOND_TITLE = 1;
     private const int THIRD_TITLE = 2;
@@ -18,6 +18,15 @@ public class JournalManager : MonoBehaviour
     private const int SECOND_IMG = 1;
     private const int THIRD_IMG = 2;
     private const int FOURTH_IMG = 3;
+
+    public List<Sprite> worldImages = new List<Sprite>();
+    public GameObject worldImage;
+    public Image journalImage;
+    public Sprite journalNoImage;
+    public Sprite journalForImage;
+    private GameManager gameManager;
+    public TextMeshProUGUI headlineText;
+    private Button NextScene;
 
     #region CLASS_DATA
 
@@ -98,12 +107,17 @@ public class JournalManager : MonoBehaviour
     private void Start()
     {
         ShowTextDescriptions();
-        ShowIMGJournal();
-    }
-
-    private void ShowIMGJournal()
-    {
-
+        if(gameManager.day == 7)
+        {
+            worldImage.SetActive(true);
+            journalImage.sprite = journalForImage;
+            worldImage.GetComponent<Image>().sprite = worldImages[GetKnowledgeJournal(gameManager.knowledge)];
+        }
+        else
+        {
+            journalImage.sprite = journalNoImage;
+            worldImage.SetActive(false);
+        }
     }
 
     private void ShowTextDescriptions()
@@ -140,17 +154,38 @@ public class JournalManager : MonoBehaviour
         if (knowledge <= range.maxRangeFirstTitle) return FIRST_TITLE;
         if (knowledge <= range.maxRangeSecondTitle) return SECOND_TITLE;
         if (knowledge <= range.maxRangeThirdTitle) return THIRD_TITLE;
-        if (knowledge <= range.maxRangeFourthTitle) return FOURTH_TITLE;
+        if (knowledge >= range.maxRangeFourthTitle) return FOURTH_TITLE;
 
         return FIRST_TITLE;
     }
 
-    private int GetMalusIndex(int malus)
+    private int GetKnowledgeJournal(int knowledge)
     {
-        if (malus == 0) return FIRST_IMG;
-        if (malus == 1) return SECOND_IMG;
-        if (malus == 2) return THIRD_IMG;
-        if (malus == 3) return FOURTH_IMG;
+        DayRange range = dayData[7].range;
+        if (knowledge <= 0) 
+        {
+            gameManager.invasion = true;
+            gameManager.UnlockAchievement("ACH_INVASION", gameManager.invasion);
+            return FIRST_IMG; 
+        }
+        if (knowledge <= 3)
+        {
+            gameManager.exodus = true;
+            gameManager.UnlockAchievement("ACH_EXODUS", gameManager.exodus);
+            return SECOND_IMG;
+        }
+        if (knowledge <= 10)
+        {
+            gameManager.hope = true;
+            gameManager.UnlockAchievement("ACH_HOPE", gameManager.hope);
+            return THIRD_IMG;
+        }
+        if (knowledge >=11)
+        {
+            gameManager.insurrection = true;
+            gameManager.UnlockAchievement("ACH_INSURRECTION", gameManager.insurrection);
+            return FOURTH_IMG;
+        }
 
         return FIRST_IMG;
     }
