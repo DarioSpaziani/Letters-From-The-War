@@ -1,9 +1,6 @@
 using Sirenix.OdinInspector;
-using Sirenix.Utilities;
 using System.Collections.Generic;
-using System.Linq;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -148,14 +145,17 @@ public class FillerList : MonoBehaviour
             if (word.wordData.category == WordData.wordCategory.GREEN)
             {
                 gameManager.listGreenWords.Add(word);
+                //word.GetComponent<Image>().color = Color.green;
             }
             else if (word.wordData.category == WordData.wordCategory.YELLOW)
             {
                 gameManager.listYellowWords.Add(word);
+                //word.GetComponent<Image>().color = Color.yellow;
             }
             else if (word.wordData.category == WordData.wordCategory.RED)
             {
                 gameManager.listRedWords.Add(word);
+                //word.GetComponent<Image>().color = Color.red;
             }
         }
     }
