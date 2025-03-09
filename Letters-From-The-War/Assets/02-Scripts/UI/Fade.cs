@@ -25,7 +25,7 @@ public class Fade : MonoBehaviour
     public float timeFadeDay = 1f;
     public float timeFadeEffect = 1f;
     public bool isFadeEnded;
-    public Button continueSlide;
+    public Button continueButton;
 
     #endregion
 
@@ -37,6 +37,15 @@ public class Fade : MonoBehaviour
         isFadeEnded = true;
         gameManager = FindObjectOfType<GameManager>();
         _fadeImage.canvasRenderer.SetAlpha(0);
+        continueButton = GameObject.Find("Continue").GetComponent<Button>();
+    }
+
+    private void Update()
+    {
+        if (isFadeEnded)
+            continueButton.interactable = true;
+        else
+            continueButton.interactable = false;
     }
 
     public void ButtonFadeImages()
@@ -67,7 +76,6 @@ public class Fade : MonoBehaviour
         _fadeImage.canvasRenderer.SetAlpha(0f);
         _fadeImage.CrossFadeAlpha(1.0f,speedEffectGradient, false);
         yield return new WaitForSeconds(timeFadeEffect);
-        isFadeEnded = true;
     }
 
     public void FadeReverseEffect()
@@ -162,7 +170,8 @@ public class Fade : MonoBehaviour
     public IEnumerator CheckFadeAndLoadScene(string sceneName)
     {
         FadeEffectFunc();
-        yield return new WaitUntil(() => isFadeEnded);
+        yield return new WaitUntil(() => _fadeImage.canvasRenderer.GetAlpha() >= 0.99f);
+        continueButton.interactable = false;
         yield return new WaitForSeconds(timeDelayLoadScene);
         SceneManager.LoadScene(sceneName);
     }

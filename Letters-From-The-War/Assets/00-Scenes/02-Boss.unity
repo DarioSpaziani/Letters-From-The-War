@@ -581,6 +581,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 72b6a3c70f76c414e9e50432e34a830b, type: 3}
+    - target: {fileID: 1689609221767518477, guid: 1d6bffa36ab6992439b2a3533fd6662d, type: 3}
+      propertyPath: m_Name
+      value: Continue
+      objectReference: {fileID: 0}
     - target: {fileID: 3501409226815353206, guid: 1d6bffa36ab6992439b2a3533fd6662d, type: 3}
       propertyPath: m_text
       value: As a member of the censorship organization, you have to help your country
@@ -803,7 +807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 2460704511432689916}
-  audioManager: {fileID: 0}
+  _audioManager: {fileID: 0}
   selectedButton: {fileID: 21300000, guid: d3963cf32a75eb743ad4d1f963a9f927, type: 3}
   deselctedButton: {fileID: 21300000, guid: 287c0b01e32832042ab6c9b70ae3dac1, type: 3}
 --- !u!1660057539 &9223372036854775807

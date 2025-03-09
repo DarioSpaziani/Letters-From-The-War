@@ -6483,6 +6483,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -21.43
       objectReference: {fileID: 0}
+    - target: {fileID: 5850143951014152635, guid: 04a51f73ced61ab4499cfd6ea9ff1d6e, type: 3}
+      propertyPath: m_Name
+      value: Continue
+      objectReference: {fileID: 0}
     - target: {fileID: 5872463499331128587, guid: 04a51f73ced61ab4499cfd6ea9ff1d6e, type: 3}
       propertyPath: m_SizeDelta.x
       value: 49.3
@@ -10777,7 +10781,7 @@ PrefabInstance:
         from the Russian army and I fear they are moving forward our borders. Peter
         has some spare coffee; we drink it together to ease our nerves. Whenever
         I drink something warm while looking at the sunset, it always reminds me
-        of us just a few years ago. I miss those days before the war; Now I can\u2019t
+        of us just a few years ago. I miss those days before the war; now I can\u2019t
         go a single day without worrying that if we fail, we will bring the enemy's
         army to our doorstep. I can\u2019t wait to see you again."
       objectReference: {fileID: 0}

@@ -13,7 +13,6 @@ public class Boss : MonoBehaviour
     [SerializeField] private Fade fade;
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private const int fired = 4;
-    [SerializeField] private Button continueButton;
     private int currentIndex = 0;
 
     #endregion
@@ -65,8 +64,6 @@ public class Boss : MonoBehaviour
 
     private void Awake()
     {
-        continueButton = GetComponentInChildren<Button>();
-        continueButton.interactable = true;
         gameManager = FindObjectOfType<GameManager>();
         fade = FindObjectOfType<Fade>();
         InitializeDailyDialogues();
@@ -132,19 +129,16 @@ public class Boss : MonoBehaviour
         {
             if (gameManager.hasStarted)
             {
-                continueButton.interactable = false;
                 gameManager.day++;
                 gameManager.hasStarted = false;
                 fade.CheckFadeAndLoad("02-Boss");
             }
             else if (DetermineMalusLevel(gameManager.malus) >= fired)
             {
-                continueButton.interactable = false;
                 fade.CheckFadeAndLoad("05-End");
             }
             else
             {
-                continueButton.interactable = false;
                 gameManager.malusDaily = 0;
                 fade.CheckFadeAndLoad("03-Letter");
             }
@@ -208,14 +202,12 @@ public class Boss : MonoBehaviour
         {
             if (gameManager.hasStarted)
             {
-                continueButton.interactable = false;
                 gameManager.day++;
                 gameManager.hasStarted = false;
                 fade.CheckFadeAndLoad("02-Boss");
             }
             else if (DetermineMalusLevel(gameManager.malus) >= fired)
             {
-                continueButton.interactable = false;
                 gameManager.getFired = true;
                 gameManager.UnlockAchievement("ACH_FIRED", gameManager.getFired);
                 Debug.LogWarning("LICENZIATO");
@@ -223,7 +215,6 @@ public class Boss : MonoBehaviour
             }
             else
             {
-                continueButton.interactable = false;
                 gameManager.malusDaily = 0;
                 fade.CheckFadeAndLoad("03-Letter");
             }

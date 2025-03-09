@@ -802,6 +802,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasJournal
       objectReference: {fileID: 0}
+    - target: {fileID: 1635612269539578214, guid: 87ff0e4ac00cb534aabf4fd3e7c2a8cd, type: 3}
+      propertyPath: m_Name
+      value: Continue
+      objectReference: {fileID: 0}
     - target: {fileID: 1866953401150067331, guid: 87ff0e4ac00cb534aabf4fd3e7c2a8cd, type: 3}
       propertyPath: m_Type
       value: 0
@@ -988,7 +992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 2117478737}
-  audioManager: {fileID: 0}
+  _audioManager: {fileID: 0}
   selectedButton: {fileID: 21300000, guid: d3963cf32a75eb743ad4d1f963a9f927, type: 3}
   deselctedButton: {fileID: 21300000, guid: 287c0b01e32832042ab6c9b70ae3dac1, type: 3}
 --- !u!224 &6886663627048618436 stripped

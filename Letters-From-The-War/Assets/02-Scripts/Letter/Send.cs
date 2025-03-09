@@ -8,7 +8,6 @@ public class Send : MonoBehaviour
 
     private Fade fade;
     private GameManager gameManager;
-    private Button sendButton;
     private bool allObscured;
     public bool allGreenObs, allYellowObs, allRedObs;
 
@@ -18,8 +17,6 @@ public class Send : MonoBehaviour
 
     private void Awake()
     {
-        sendButton = GetComponent<Button>();
-        sendButton.interactable = true;
         gameManager = FindObjectOfType<GameManager>();
         fade = FindObjectOfType<Fade>();
     }
@@ -148,7 +145,6 @@ public class Send : MonoBehaviour
     public void SeeJournal()
     {
         CheckWords();
-        sendButton.interactable = false;
         
         gameManager.Knowledge();
 
