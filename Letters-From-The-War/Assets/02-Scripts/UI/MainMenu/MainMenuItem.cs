@@ -52,10 +52,7 @@ public class MainMenuItem : MonoBehaviour, IPointerEnterHandler
                 SceneManager.LoadScene("01-Intro");
                 break;
             case 1:
-                _lettersFTWImage.SetActive(false);
-                _timbre.SetActive(false);
-                _creditsScreen.SetActive(true);
-                transform.parent.gameObject.SetActive(false);
+                SceneManager.LoadScene("05-End");
                 break;
             case 2:
                 Application.Quit();
