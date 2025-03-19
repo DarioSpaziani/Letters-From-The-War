@@ -310,13 +310,13 @@ MonoBehaviour:
     text: July 1941. The Second World War decimates people in every nation.
   - image: {fileID: 21300000, guid: d56e5cebec7ff2741b7c3b8b0ec52727, type: 3}
     text: The regimes are trying to persuade the people that the war is in their
-      favour, but wars is never in favour of anyone.
+      favour, but wars are never in favour of anyone.
   - image: {fileID: 21300000, guid: 8f1cac5c7a8d10c4fb4e4f53afeaf0a0, type: 3}
     text: You are a poor young man living in a small town of Vitulia, unable to enlist
       because of an old injury that makes you limp.
   - image: {fileID: 21300000, guid: 5d954b556be2020439431a959515301f, type: 3}
     text: Fortunately, you recently saw a job posting for the Vitulian Censorship
-      Nation Authority.
+      National Authority.
   _showedImage: {fileID: 5483389671838814006}
   _showedText: {fileID: 7654588871150505742}
   counter: 0
