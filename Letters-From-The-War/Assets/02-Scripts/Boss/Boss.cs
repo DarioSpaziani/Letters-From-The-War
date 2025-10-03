@@ -125,28 +125,30 @@ public class Boss : MonoBehaviour
     private void Update()
     {
 #if UNITY_EDITOR
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (gameManager.hasStarted)
-            {
-                gameManager.day++;
-                gameManager.hasStarted = false;
-                fade.CheckFadeAndLoad("02-Boss");
-            }
-            else if (DetermineMalusLevel(gameManager.malus) >= fired)
-            {
-                fade.CheckFadeAndLoad("05-End");
-            }
-            else
-            {
-                gameManager.malusDaily = 0;
-                fade.CheckFadeAndLoad("03-Letter");
-            }
-        }
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            gameManager.day = 6;
-        }
+        /*KEYS DEBUG*/
+
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    if (gameManager.hasStarted)
+        //    {
+        //        gameManager.day++;
+        //        gameManager.hasStarted = false;
+        //        fade.CheckFadeAndLoad("02-Boss");
+        //    }
+        //    else if (DetermineMalusLevel(gameManager.malus) >= fired)
+        //    {
+        //        fade.CheckFadeAndLoad("05-End");
+        //    }
+        //    else
+        //    {
+        //        gameManager.malusDaily = 0;
+        //        fade.CheckFadeAndLoad("03-Letter");
+        //    }
+        //}
+        //if (Input.GetKeyDown(KeyCode.M))
+        //{
+        //    gameManager.day = 6;
+        //}
 #endif
     }
 

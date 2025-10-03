@@ -72,15 +72,17 @@ public class GameManager : MonoBehaviour
     public void Update()
     {
 #if UNITY_EDITOR
-        if (Input.GetKeyDown(KeyCode.U))
-        {
-            day += 1;
-            SceneManager.LoadScene("03-Letter");
-        }
-        if(Input.GetKeyDown(KeyCode.A))
-        {
-            malus = 0;
-        }
+        /*KEYS DEBUG*/
+
+        //if (Input.GetKeyDown(KeyCode.U))
+        //{
+        //    day += 1;
+        //    SceneManager.LoadScene("03-Letter");
+        //}
+        //if(Input.GetKeyDown(KeyCode.A))
+        //{
+        //    malus = 0;
+        //}
 #endif
 
         comprensibility = Mathf.Clamp(comprensibility, minLevelComprensibilityOne, maxLevelComprensibilityTwo);
@@ -148,6 +150,12 @@ public class GameManager : MonoBehaviour
             Steamworks.SteamUserStats.GetAchievement(achievemntID, out value);
         }
     }
+
+    #region DEBUG KEYS
+
+
+
+    #endregion
 
     #endregion
 }

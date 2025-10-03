@@ -70,10 +70,13 @@ public class Intro : MonoBehaviour
     public void Update()
     {
 #if UNITY_EDITOR
+        /*KEYS DEBUG*/
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             SkipIntro();
         }
+
 #endif
         if (CheckEnd())
         {

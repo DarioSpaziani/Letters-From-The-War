@@ -24,26 +24,28 @@ public class Send : MonoBehaviour
     private void Update()
     {
     #if (UNITY_EDITOR)
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            for (int i = 0; i < gameManager.listGreenWords.Count; i++)
-            {
-                gameManager.listGreenWords[i].obscured = true;
-                allGreenObs = true;
-            }
-            
-            for(int i = 0; i < gameManager.listYellowWords.Count; i++)
-            {
-                gameManager.listYellowWords[i].obscured = true;
-                allYellowObs = true;
-            }
+        /*KEYS DEBUG*/
 
-            for(int i = 0; i < gameManager.listRedWords.Count; i++)
-            {
-                gameManager.listRedWords[i].obscured = true;
-                allRedObs = true;
-            }
-        }
+        //if (Input.GetKeyDown(KeyCode.S))
+        //{
+        //    for (int i = 0; i < gameManager.listGreenWords.Count; i++)
+        //    {
+        //        gameManager.listGreenWords[i].obscured = true;
+        //        allGreenObs = true;
+        //    }
+            
+        //    for(int i = 0; i < gameManager.listYellowWords.Count; i++)
+        //    {
+        //        gameManager.listYellowWords[i].obscured = true;
+        //        allYellowObs = true;
+        //    }
+
+        //    for(int i = 0; i < gameManager.listRedWords.Count; i++)
+        //    {
+        //        gameManager.listRedWords[i].obscured = true;
+        //        allRedObs = true;
+        //    }
+        //}
 
     #endif
 
